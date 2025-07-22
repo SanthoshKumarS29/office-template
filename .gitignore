@@ -1,0 +1,39 @@
+# ✅ Node Modules
+node_modules/
+
+# ✅ Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ✅ Build Output (for Next.js, React, or other bundlers)
+dist/
+build/
+.next/
+out/
+
+# ✅ Env files (secrets!)
+.env
+.env.local
+.env.*.local
+
+# ✅ OS Files
+.DS_Store  # Mac
+Thumbs.db  # Windows
+
+# ✅ IDE Files
+.vscode/
+.idea/
+*.swp
+
+# ✅ Coverage reports
+coverage/
+
+# ✅ TypeScript
+*.tsbuildinfo
+
+# ✅ Optional: Lock files (if you only use one)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
