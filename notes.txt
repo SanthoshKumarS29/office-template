@@ -1,0 +1,10 @@
+server.js
+
+app.set('view engine', 'ejs');
+
+This line tells Express: I’m using EJS as my templating engine. ex:views/home.ejs
+
+
+app.set('views', './views');
+
+This tells Express:My EJS files (views) are stored in the ./views folder. ex:./views/pages/about.ejs
