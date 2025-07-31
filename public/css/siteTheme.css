@@ -1,0 +1,18 @@
+
+:root{
+    --padding-top: 4.5rem;
+    --white-clr: #FFF
+}
+
+
+main{
+    padding-top: var(--padding-top);
+}
+
+.custom-container{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1450px;
+}
+

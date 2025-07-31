@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Home",
+    "href": "/"
+  },
+  {
+    "title": "Products",
+    "children": [
+      { "title": "ChatGPT", "href": "/products/chatgpt" },
+      { "title": "DALL·E", "href": "/products/dalle" },
+      { "title": "Codex", "href": "/products/codex" }
+    ]
+  },
+  {
+    "title": "Solutions",
+    "children": [
+      { "title": "Startups", "href": "/solutions/startups" },
+      { "title": "Enterprises", "href": "/solutions/enterprises" }
+    ]
+  }
+]
