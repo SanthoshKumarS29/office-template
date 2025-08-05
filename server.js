@@ -1,5 +1,6 @@
 import express from 'express';
 import path from 'path';
+import loadJson from './middleware/loadJson.js';
 // routes
 
 import siteRoutes from './routes/siteRoutes.js';
@@ -19,6 +20,9 @@ app.set("views", path.join(__dirname, "views"));
 
 // static folder
 app.use(express.static(path.join(__dirname, "public")));
+
+// middleware
+app.use(loadJson(['nav']));
 
 app.use('/', siteRoutes);
 

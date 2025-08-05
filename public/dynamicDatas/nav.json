@@ -1,0 +1,45 @@
+{
+  "homeHeader": [
+      {
+        "title": "Home",
+        "path": "/",
+        "rel": "follow"
+      },
+      {
+        "title":"Trendings",
+        "path":"/trending",
+        "rel":"follow",
+        "isdropDown":true
+      },
+      {
+        "title":"Products",
+        "path":"/trending/crypto-exchange-development",
+        "rel":"follow",
+        "isdropDown":true
+      },     
+      {
+        "title":"Service",
+        "path":"/service",
+        "rel":"follow",
+        "isdropDown":true
+      },
+      {
+        "title":"Blog",
+        "path":"/blog",
+        "rel":"follow",
+        "isdropDown":true
+      },
+      {
+        "title":"Company",
+        "path":"/company",
+        "rel":"follow",
+        "isdropDown":true
+      },
+      {
+        "title":"Contact",
+        "path":"/contact-us",
+        "rel":"follow",
+        "isdropDown":true
+      }
+    ]
+}

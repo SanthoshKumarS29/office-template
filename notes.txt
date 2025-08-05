@@ -8,3 +8,7 @@ This line tells Express: I’m using EJS as my templating engine. ex:views/home.
 app.set('views', './views');
 
 This tells Express:My EJS files (views) are stored in the ./views folder. ex:./views/pages/about.ejs
+
+req.params: gets the dynamic portion of the URL.
+
+

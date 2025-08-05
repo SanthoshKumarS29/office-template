@@ -1,0 +1,19 @@
+<% if (typeof nav !=='undefined' && nav.homeHeader && Array.isArray(nav.homeHeader)) { %>
+    <% nav.homeHeader.forEach(link=> { %>
+        <li class="<%= link.isdropDown ? 'withDropdown' : 'dropdown' %>">
+            <a href="<%= link.path %>" rel="<%= link.rel %>">
+            <%= link.title %>
+                <% if (link.isdropDown) { %>
+                    <span>
+                        <img src="/images/png/right-arrow-black.png" alt="Right-Arrow" width="24" height="24"
+                            class="img-fluid arrow-transition-effect" />
+                    </span>
+                <% } %>
+            </a>
+        </li>
+    <% }) %>
+    <% } else { %>
+    <li class="no-nav">
+        <span>Navigation not available</span>
+    </li>
+<% } %>
