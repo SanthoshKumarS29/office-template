@@ -1,5 +1,15 @@
 <div class="sidebar">
-    <ul class="redirects">
+    <% if (currentSection === 'trendings') { %>
+        <%- include('../../components/partials/headerComponents/trendingSidebar.ejs') %>
+    <% } else if (currentSection === 'products') { %>
+        <%- include('../../components/partials/headerComponents/productsSidebar.ejs') %>
+    <% } else if (currentSection === 'services') { %>
+        <%- include('../../components/partials/headerComponents/serviceSidebar.ejs') %>
+    <% } else if (currentSection === 'blog') { %>
+        <%- include('../../components/partials/headerComponents/blogSidebar.ejs') %>
+    <% } else if (currentSection === 'company') { %>
+        <%- include('../../components/partials/headerComponents/companySidebar.ejs') %>
+    <% } else { %>
         <%- include('../../components/partials/headerComponents/homeSideBar.ejs') %>
-    </ul>
+    <% } %>
 </div>

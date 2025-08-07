@@ -13,7 +13,7 @@
       },
       {
         "title":"Products",
-        "path":"/trending/crypto-exchange-development",
+        "path":"/product",
         "rel":"follow",
         "isdropDown":true
       },     
@@ -39,7 +39,93 @@
         "title":"Contact",
         "path":"/contact-us",
         "rel":"follow",
-        "isdropDown":true
+        "isdropDown":false
+      }
+    ],
+    "trendings": [
+      {
+        "title": "Home",
+        "path": "/",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title": "Trendings",
+        "path": "/trending",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Crypto Exchange Development",
+        "path":"/trending/crypto-exchange-development",
+        "rel":"follow",
+        "isdropDown":false
+      }
+    ],
+    "products": [
+      {
+        "title": "Home",
+        "path": "/",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title": "Products",
+        "path": "/product",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Product Crypto Exchange sccript",
+        "path":"/product/exchange-script",
+        "rel":"follow",
+        "isdropDown":false
+      }
+    ],
+    "services": [
+      {
+        "title": "Home",
+        "path": "/",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title": "Service",
+        "path": "/service",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Crypto Exchange Development",
+        "path":"/service/crypto-exchange-development",
+        "rel":"follow",
+        "isdropDown":false
+      }
+    ],
+    "company": [
+      {
+        "title": "Home",
+        "path": "/",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title": "about",
+        "path": "/about",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title":"career",
+        "path":"/trending/career",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Portfolio",
+        "path":"/trending/portfolio",
+        "rel":"follow",
+        "isdropDown":false
       }
     ]
 }

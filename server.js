@@ -1,10 +1,10 @@
 import express from 'express';
 import path from 'path';
+// files
 import loadJson from './middleware/loadJson.js';
-// routes
-
 import siteRoutes from './routes/siteRoutes.js';
 import { fileURLToPath } from 'url';
+import dynamicSidebarRender from './middleware/dynamicSideBarRender.js';
 
 
 const app = express();
@@ -23,7 +23,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // middleware
 app.use(loadJson(['nav']));
+app.use(dynamicSidebarRender)
 
+// routes
 app.use('/', siteRoutes);
 
 

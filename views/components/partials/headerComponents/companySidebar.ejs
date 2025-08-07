@@ -1,7 +1,7 @@
 
 <ul class="redirects">
-    <% if (typeof nav !=='undefined' && nav.homeHeader && Array.isArray(nav.homeHeader)) { %>
-        <% nav.homeHeader.forEach(link=> { %>
+    <% if (typeof nav !=='undefined' && nav.company && Array.isArray(nav.company)) { %>
+        <% nav.company.forEach(link=> { %>
             <li class="<%= link.isdropDown ? 'withDropdown' : 'dropdown' %>">
                 <a href="<%= link.path %>" rel="<%= link.rel %>">
                 <%= link.title %>

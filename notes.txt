@@ -9,6 +9,19 @@ app.set('views', './views');
 
 This tells Express:My EJS files (views) are stored in the ./views folder. ex:./views/pages/about.ejs
 
-req.params: gets the dynamic portion of the URL.
+req.params: gets the dynamic portion of the URL.\
+
+let slug = "crypto-exchange-development";
+
+const formatTitle = (slug) => {
+    return slug
+        .split("-") // ➡️ ["crypto", "exchange", "development"]
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1)) 
+        // ➡️ ["Crypto", "Exchange", "Development"]
+        .join(" "); // ➡️ "Crypto Exchange Development"
+};
+
+
+don't have caseStudies page if you want to add make portfolio to design in add case study
 
 
