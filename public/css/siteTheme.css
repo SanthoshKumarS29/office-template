@@ -1,20 +1,110 @@
-
-:root{
+:root {
     --padding-top: 4.5rem;
     --white-clr: #FFF;
     --black-clr: #111;
     --grey-clr: #e9ecef;
+    --brand-clr: #8a4fff;
+    --brand-clr-lig: #c3bef7;
+    --blue-clr: #0d6efd;
 }
 
-
-main{
+main {
     padding-top: var(--padding-top);
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.custom-container{
+/* fonts and bg colors */
+
+.brand-clr{
+    color: var(--brand-clr);
+}
+
+.blue-clr{
+    color: var(--blue-clr);
+}
+
+/* fonts and bg colors end */
+
+/* buttons */
+
+.brand-btn{
+    position: relative;
+    padding: .5rem 1rem;
+    background-color: var(--white-clr);
+    color: var(--black-clr);
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.view-more-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: .05rem;
+    text-decoration: none;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    background-color: var(--blue-clr);
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+}
+
+.arrow-view-effect{
+    opacity: 0;
+    transform: translateX(-60%);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.view-more-btn:hover .arrow-view-effect{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.view-more-btn:hover{
+    transform: scale(1.045);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* buttons end */ 
+
+.custom-container {
     margin: 0 auto;
-    padding: 0;
+    padding: 0 1rem;
     width: 100%;
-    max-width: 1450px;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+}
+
+@media only screen and (min-width: 577px) and (max-width:767px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width:992px) {
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1439px) {
+}
+
+@media screen and (min-width: 1570px) and (max-width: 1919px) {
+    .custom-container {
+        width: 100%;
+        max-width: 1450px;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+    .custom-container {
+        width: 100%;
+        max-width: 1450px;
+    }
 }
 
