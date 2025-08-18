@@ -44,7 +44,50 @@
 }
 
 .custom-overflow-scroll {
-    overflow-x: hidden
+    overflow-x: visible;
+}
+
+.custom-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.custom-flex>div {
+    flex: 0 0 calc(33.333% - 1rem);
+}
+
+.blg-btn-handler {
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+}
+
+.blg-btn {
+    border: none;
+    background-color: var(--white-clr);
+    padding: 1rem;
+    border-radius: .75rem 0 0 0;
+}
+
+.cta-bg {
+    padding: 0;
+    height: 250px;
+    background-color: var(--blue-clr);
+    border-radius: 0 1.5rem;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    color: var(--white-clr);
+    height: 100%;
+    width: 100%;
 }
 
 /* -------------------------------------- Responive Code -------------------------------------------- */
@@ -60,6 +103,16 @@
         overflow-x: auto;
     }
 
+    .custom-flex>div {
+        flex: 0 0 100%;
+    }
+
+
+    .cta-bg {
+        padding: 0;
+        height: 250px;
+    }
+
 }
 
 @media only screen and (min-width: 577px) and (max-width:767px) {
@@ -71,6 +124,10 @@
     .custom-overflow-scroll {
         overflow-x: auto;
     }
+
+    .custom-flex>div {
+        flex: 0 0 calc(50% - 1rem);
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width:992px) {
@@ -81,6 +138,10 @@
 
     .custom-overflow-scroll {
         overflow-x: auto;
+    }
+
+    .custom-flex>div {
+        flex: 0 0 calc(60% - 1rem);
     }
 }
 
