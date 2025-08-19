@@ -41,8 +41,8 @@
         "rel":"follow",
         "isdropDown":false
       }
-    ],
-    "trendings": [
+  ],
+  "trendings": [
       {
         "title": "Home",
         "path": "/",
@@ -61,8 +61,8 @@
         "rel":"follow",
         "isdropDown":false
       }
-    ],
-    "products": [
+  ],
+  "products": [
       {
         "title": "Home",
         "path": "/",
@@ -81,8 +81,8 @@
         "rel":"follow",
         "isdropDown":false
       }
-    ],
-    "services": [
+  ],
+  "services": [
       {
         "title": "Home",
         "path": "/",
@@ -101,8 +101,8 @@
         "rel":"follow",
         "isdropDown":false
       }
-    ],
-    "company": [
+  ],
+  "company": [
       {
         "title": "Home",
         "path": "/",
@@ -127,5 +127,87 @@
         "rel":"follow",
         "isdropDown":false
       }
-    ]
+  ],
+  "footer": [
+    {
+      "title":"Products",
+      "links":[
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        },
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        },
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        }
+      ]
+    },
+    {
+      "title":"Service",
+      "links":[
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        },
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        },
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        }
+      ]
+    },
+    {
+      "title":"Blogs",
+      "links":[
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        },
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        },
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        }
+      ]
+    },
+    {
+      "title":"Company",
+      "links":[
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        },
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        },
+        {
+          "href":"/contactus",
+          "name":"Crypto product",
+          "rel":"nofollow"
+        }
+      ]
+    }
+  ]
 }

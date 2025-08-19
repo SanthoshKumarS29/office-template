@@ -6,6 +6,8 @@
     --brand-clr: #8a4fff;
     --brand-clr-lig: #c3bef7;
     --blue-clr: #0d6efd;
+    --pink-clr: #F527E4;
+    --green-clr: #2EFF2E;
 }
 
 main {
@@ -22,6 +24,11 @@ main {
 
 .blue-clr{
     color: var(--blue-clr);
+}
+
+.text-normal{
+    font-family: 1.05rem;
+    font-weight: 400;
 }
 
 /* fonts and bg colors end */

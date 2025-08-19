@@ -7,20 +7,23 @@
 </head>
 <body>
     <%- include('../components/partials/header.ejs') %>
-    <main class="bodyflex">
+    <div class="bodyflex">
         <div class="sidebar-links" id="sidebar">
             <%- include('../components/partials/sideBar.ejs') %>
         </div>    
         <div class="custom-container">
-            <%- include('../components/home/banner.ejs') %>
-            <%- include('../components/home/service.ejs') %>
-            <%- include('../components/home/ideaToImpact.ejs') %>
-            <%- include('../components/home/caseStudy.ejs') %>
-            <%- include('../components/home/latestProducts.ejs') %>
-            <%- include('../components/home/homeBlogs.ejs') %>
-            <%- include('../components/home/homeCta.ejs') %>
+            <main>
+                <%- include('../components/home/banner.ejs') %>
+                <%- include('../components/home/service.ejs') %>
+                <%- include('../components/home/ideaToImpact.ejs') %>
+                <%- include('../components/home/caseStudy.ejs') %>
+                <%- include('../components/home/latestProducts.ejs') %>
+                <%- include('../components/home/homeBlogs.ejs') %>
+                <%- include('../components/home/homeCta.ejs') %>
+            </main>
+            <%- include('../components/partials/footer.ejs') %>
         </div>
-    </main>
+    </div>
     <%- include('../components/partials/footerLinks.ejs') %>
 </body>
 </html>
