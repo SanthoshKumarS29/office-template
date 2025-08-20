@@ -1,11 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./common.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>hello world</h1>
+    <nav>
+        <div class="header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="flex-grow-1 flex-md-grow-0 d-flex justify-content-between align-items-center gap-3">
+                    <div>
+                        <img src="/images/dummy-logo.webp" alt="Company-logo" width="150" height="66" class="img-fluid">
+                    </div>
+                    <button id="hamburger">
+                        <img src="/images/menu.webp" alt="Hamburger-icon" width="30" height="30" class="img-fluid"
+                            id="menu-btn" />
+                    </button>
+                </div>
+                <div class="d-none d-md-block">
+                    <button class="btn btn-primary">Inquire Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="custom-container">
+        <section>
+            <div class="banner-background py-4">
+                <picture class="position-relative">
+                    <source media="(max-width:767px)" srcset="/images/png/Dummy-banner-sm.png">
+                    <source media="(max-width:1339px)" srcset="/images/png/Dummy-banner-md.png">
+                    <img src="/images/png/Dummy-banner.png" alt="Dummy" width="1500" height="600"
+                        class="img-fluid rounded-2 object-fit-cover">
+                    <div class="col-lg-8 col-xl-6 mx-auto banner-content">
+                        <h1><strong>AI</strong> & <strong>Blockchain Development</strong> for the Future of Business
+                        </h1>
+                        <p>We build intelligent AI solutions and secure blockchain platforms that drive innovation,
+                            enhance efficiency,
+                            and empower enterprises to lead in the digital era.</p>
+                        <button class="btn btn-primary">Get Started Today</button>
+                    </div>
+                </picture>
+            </div>
+        </section>
+        <section>
+            <div class="py-4">
+                <div class="row gy-4">
+                    <div class="col-12 col-lg-8">
+                        <div class="sticky-content service-short-cut">
+                            <picture>
+                                <source media="(max-width:576px)" srcset="/images/png/service-post.png">
+                                <img src="/images/png/service-banner.png" alt="Dummy" width="1000" height="400"
+                                    class="img-fluid rounded-2">
+                            </picture>
+                            <div class="my-2 text-center text-sm-start">
+                                <h2 class="fw-medium text-color-effect"><span class="text-primary">Crypto
+                                        Exchange</span>
+                                    Development Company</h2>
+                                <p>Build secure and scalable crypto exchanges with global market features</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="d-flex flex-column flex-sm-row flex-lg-column gap-2 justify-content-center">
+                            <div class="service-short-cut">
+                                <img src="/images/png/service-post.png" alt="Dummy" width="600" height="600"
+                                    class="img-fluid rounded-2">
+                                <div class="my-2 text-center text-md-start">
+                                    <h2 class="fs-4 fw-medium text-color-effect"><span class="text-primary">Trading
+                                            Bot</span> Development
+                                    </h2>
+                                    <p>Smart trading bots with real-time analytics and automated strategies.</p>
+                                </div>
+                            </div>
+                            <div class="service-short-cut">
+                                <img src="/images/png/service-post.png" alt="Dummy" width="600" height="600"
+                                    class="img-fluid rounded-2">
+                                <div class="my-2 text-center text-md-start">
+                                    <h2 class="fs-4 fw-medium text-color-effect"><span class="text-primary">Token</span>
+                                        Development
+                                    </h2>
+                                    <p>Create immersive games with stunning visuals and engaging gameplay.</p>
+                                </div>
+                            </div>
+                            <div class="service-short-cut">
+                                <img src="/images/png/service-post.png" alt="Dummy" width="600" height="600"
+                                    class="img-fluid rounded-2">
+                                <div class="my-2 text-center text-md-start">
+                                    <h2 class="fs-4 fw-medium text-color-effect"><span class="text-primary">Game</span>
+                                        Development
+                                    </h2>
+                                    <p>Develop secure, blockchain-compliant tokens for ICOs, NFTs, and apps.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="py-4">
+                <div class="mb-4 text-center text-sm-start">
+                    <h2>From Idea to Impact</h2>
+                </div>
+                <div class="row gy-3">
+                    <div
+                        class="col-12 col-xl-6 d-flex flex-column flex-sm-row align-items-center gap-2 text-center text-sm-start">
+                        <picture class="col-12 col-sm-4">
+                            <img src="/images/png/idea-side-img.png" alt="Dummy" width="225" height="225"
+                                class="img-fluid rounded-2">
+                        </picture>
+                        <div class="col-12 col-sm-8">
+                            <h3 class="fs-4">Understanding Your Vision</h3>
+                            <p>We gather your goals, audience, and technical needs to set the right direction.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-xl-6 d-flex flex-column flex-sm-row align-items-center gap-2 text-center text-sm-start">
+                        <picture class="col-12 col-sm-4">
+                            <img src="/images/png/idea-side-img.png" alt="Dummy" width="225" height="225"
+                                class="img-fluid rounded-2">
+                        </picture>
+                        <div class="col-12 col-sm-8">
+                            <h3 class="fs-4">Smart Strategies for Success</h3>
+                            <p>A clear roadmap aligning timelines, features, and market opportunities.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-xl-6 d-flex flex-column flex-sm-row align-items-center gap-2 text-center text-sm-start">
+                        <picture class="col-12 col-sm-4">
+                            <img src="/images/png/idea-side-img.png" alt="Dummy" width="225" height="225"
+                                class="img-fluid rounded-2">
+                        </picture>
+                        <div class="col-12 col-sm-8">
+                            <h3 class="fs-4">Creative UI/UX Prototypes</h3>
+                            <p>We create user-focused layouts ensuring a seamless visual experience.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-xl-6 d-flex flex-column flex-sm-row align-items-center gap-2 text-center text-sm-start">
+                        <picture class="col-12 col-sm-4">
+                            <img src="/images/png/idea-side-img.png" alt="Dummy" width="225" height="225"
+                                class="img-fluid rounded-2">
+                        </picture>
+                        <div class="col-12 col-sm-8">
+                            <h3 class="fs-4">Fast, Flexible Development</h3>
+                            <p>Our team builds scalable solutions with fast, iterative improvements.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-xl-6 d-flex flex-column flex-sm-row align-items-center gap-2 text-center text-sm-start">
+                        <picture class="col-12 col-sm-4">
+                            <img src="/images/png/idea-side-img.png" alt="Dummy" width="225" height="225"
+                                class="img-fluid rounded-2">
+                        </picture>
+                        <div class="col-12 col-sm-8">
+                            <h3 class="fs-4">Rigorous Testing for Quality</h3>
+                            <p>Every feature is tested for speed, security, and flawless performance.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-xl-6 d-flex flex-column flex-sm-row align-items-center gap-2 text-center text-sm-start">
+                        <picture class="col-12 col-sm-4">
+                            <img src="/images/png/idea-side-img.png" alt="Dummy" width="225" height="225"
+                                class="img-fluid rounded-2">
+                        </picture>
+                        <div class="col-12 col-sm-8">
+                            <h3 class="fs-4">Seamless Product Launch</h3>
+                            <p>We launch your product and provide regular updates to keep it at peak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="py-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Our Case Study</h2>
+                    <a href="" class="link-hover-effect">View All</a>
+                </div>
+                <div class="custom-overflow-scroll">
+                    <div class="custom-flex">
+                        <div>
+                            <img src="/images/png/case-study.png" alt="caseStudy" width="500" height="650"
+                                class="img-fluid rounded-2" loading="lazy">
+                            <h3 class="fs-4 mt-2">AI-Powered Crypto Trading</h3>
+                        </div>
+
+                        <div>
+                            <img src="/images/png/case-study.png" alt="caseStudy" width="500" height="650"
+                                class="img-fluid rounded-2" loading="lazy">
+                            <h3 class="fs-4 mt-2">Blockchain-Based Gaming</h3>
+                        </div>
+
+                        <div>
+                            <img src="/images/png/case-study.png" alt="caseStudy" width="500" height="560"
+                                class="img-fluid rounded-2" loading="lazy">
+                            <h3 class="fs-4 mt-2">Secure Crypto Exchange</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="py-4">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h2>Latest Products</h2>
+                    <a href="" class="link-hover-effect">View all</a>
+                </div>
+                <div class="custom-overflow-scroll">
+                    <div class="row gx-2 gy-3">
+                        <div class="col-12 col-md-6">
+                            <a href="" class="text-decoration-none text-dark">
+                                <img src="/images/png/latest-product.png" alt="Dummy" width="750" height="450"
+                                    class="img-fluid rounded-2 mb-2">
+                                <h3>AI Crypto Trading Bot</h3>
+                                <p>An intelligent bot designed to analyze market trends, execute trades, and maximize
+                                    ROI with
+                                    precision and speed.</p>
+                                <a href="" class="view-more-btn"><span>Explore Trading Bot</span><img
+                                        src="/images/png/right-arrow-black.png" alt="Right-Arrow" width="24" height="24"
+                                        class="img-fluid arrow-view-effect" /></a>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="" class="text-decoration-none text-dark">
+                                <img src="/images/png/latest-product.png" alt="Dummy" width="750" height="450"
+                                    class="img-fluid rounded-2 mb-2">
+                                <h3>White-Label Crypto Exchange</h3>
+                                <p>A ready-to-launch exchange solution with secure transactions, advanced features, and
+                                    full customization options.</p>
+                                <a href="" class="view-more-btn"><span>See Exchange Demo</span><img
+                                        src="/images/png/right-arrow-black.png" alt="Right-Arrow" width="24" height="24"
+                                        class="img-fluid arrow-view-effect" /></a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="py-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Our Blogs</h2>
+                    <a href="" class="link-hover-effect">View All</a>
+                </div>
+                <div class="custom-overflow-scroll">
+                    <div class="custom-flex">
+                        <div>
+                            <div class="position-relative">
+                                <img src="/images/png/Dummy-blog.png" alt="caseStudy" width="500" height="650"
+                                    class="img-fluid rounded-2" loading="lazy">
+                                <div class="blg-btn-handler">
+                                    <button class="blg-btn"><img src="/images/png/up-right-arrow.png" width="24"
+                                            height="24" class="img-fluid" /></button>
+                                </div>
+                            </div>
+                            <h3 class="fs-4 mt-2">AI-Powered Crypto Trading</h3>
+                        </div>
+
+                        <div>
+                            <div class="position-relative">
+                                <img src="/images/png/Dummy-blog.png" alt="caseStudy" width="500" height="650"
+                                    class="img-fluid rounded-2" loading="lazy">
+                                <div class="blg-btn-handler">
+                                    <button class="blg-btn"><img src="/images/png/up-right-arrow.png" width="24"
+                                            height="24" class="img-fluid" /></button>
+                                </div>
+                            </div>
+                            <h3 class="fs-4 mt-2">Blockchain-Based Gaming</h3>
+                        </div>
+
+                        <div>
+                            <div class="position-relative">
+                                <img src="/images/png/Dummy-blog.png" alt="caseStudy" width="500" height="560"
+                                    class="img-fluid rounded-2" loading="lazy">
+                                <div class="blg-btn-handler">
+                                    <button class="blg-btn"><img src="/images/png/up-right-arrow.png" width="24"
+                                            height="24" class="img-fluid" /></button>
+                                </div>
+                            </div>
+                            <h3 class="fs-4 mt-2">Secure Crypto Exchange</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
