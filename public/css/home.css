@@ -33,44 +33,6 @@
     color: var(--blue-clr);
 }
 
-.link-hover-effect {
-    color: black;
-    text-decoration: none;
-    transition: 0.4s ease-in-out;
-}
-
-.link-hover-effect:hover {
-    color: var(--blue-clr);
-}
-
-.custom-overflow-scroll {
-    overflow-x: visible;
-}
-
-.custom-flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-}
-
-.custom-flex>div {
-    flex: 0 0 calc(33.333% - 1rem);
-}
-
-.blg-btn-handler {
-    position: absolute;
-    right: 0%;
-    bottom: 0;
-}
-
-.blg-btn {
-    border: none;
-    background-color: var(--white-clr);
-    padding: 1rem;
-    border-radius: .75rem 0 0 0;
-}
-
 .cta-bg {
     padding: 0;
     height: 300px;
@@ -99,15 +61,6 @@
         top: 0%;
     }
 
-    .custom-overflow-scroll {
-        overflow-x: auto;
-    }
-
-    .custom-flex>div {
-        flex: 0 0 100%;
-    }
-
-
     .cta-bg {
         padding: 0;
         height: 250px;
@@ -120,14 +73,6 @@
         position: static;
         top: 0%;
     }
-
-    .custom-overflow-scroll {
-        overflow-x: auto;
-    }
-
-    .custom-flex>div {
-        flex: 0 0 calc(50% - 1rem);
-    }
 }
 
 @media only screen and (min-width: 768px) and (max-width:992px) {
@@ -135,24 +80,12 @@
         position: static;
         top: 0%;
     }
-
-    .custom-overflow-scroll {
-        overflow-x: auto;
-    }
-
-    .custom-flex>div {
-        flex: 0 0 calc(60% - 1rem);
-    }
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
     .sticky-content {
         position: sticky;
         top: 10%;
-    }
-
-    .custom-overflow-scroll {
-        overflow-x: auto;
     }
 }
 

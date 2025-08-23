@@ -13,6 +13,7 @@
     opacity: 1;
     visibility: visible;
     transform: translateX(0%);
+    z-index: 10;
     transition: all 0.4s ease-in-out;
 }
 
@@ -22,6 +23,34 @@
     visibility: hidden;
     width: 0%;
     transform: translateX(-100%);
+}
+
+.custom-overflow-scroll {
+    overflow-x: visible;
+}
+
+.custom-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.custom-flex>div {
+    flex: 0 0 calc(33.333% - 1rem);
+}
+
+.blg-btn-handler {
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+}
+
+.blg-btn {
+    border: none;
+    background-color: var(--white-clr);
+    padding: 1rem;
+    border-radius: .75rem 0 0 0;
 }
 
 /* Extra Small Devices (Phones) */
@@ -47,6 +76,15 @@
         visibility: visible;
         transform: translateX(0%);
     }
+
+    .custom-overflow-scroll {
+        overflow-x: auto;
+    }
+
+    .custom-flex>div {
+        flex: 0 0 100%;
+    }
+
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
@@ -70,16 +108,54 @@
         visibility: visible;
         transform: translateX(0%);
     }
+
+
+    .custom-overflow-scroll {
+        overflow-x: auto;
+    }
+
+    .custom-flex>div {
+        flex: 0 0 calc(50% - 1rem);
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .sidebar-links {
-        width: 200px;
+        position: fixed;
+        top: var(--padding-top);
+        left: 0;
+        margin-right: 0rem;
+        opacity: 0;
+        visibility: hidden;
+        width: 0%;
+        transform: translateX(-100%);
+        transition: all 0.4s ease-in-out;
+        height: 100dvh;
+    }
+
+    .sidebar-links.open {
+        width: 250px;
+        margin-right: 1rem;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+
+    .custom-overflow-scroll {
+        overflow-x: auto;
+    }
+
+    .custom-flex>div {
+        flex: 0 0 calc(50% - 1rem);
     }
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
     .sidebar-links {
         width: 225px;
+    }
+
+    .custom-overflow-scroll {
+        overflow-x: auto;
     }
 }
