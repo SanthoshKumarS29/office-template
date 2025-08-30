@@ -1,0 +1,181 @@
+.ep-tag {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    border-radius: 1rem;
+    padding: .25rem 1rem;
+    border: 1px solid var(--blue-clr);
+    background-color: var(--white-clr);
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.ep-tag::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25%;
+    width: 0%;
+    height: 150px;
+    cursor: pointer;
+    border: 4px solid var(--ligblue-clr);
+    transform: skewX(-25deg);
+    z-index: -1;
+    transition: left 1s ease-in-out;
+}
+
+.ep-tag:hover::before {
+    left: 85%;
+}
+
+.ep-tag span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 1rem;
+    background-color: var(--blue-clr);
+}
+
+.exchangePage-banner {
+    height: 80dvh;
+    padding: 2rem;
+}
+
+.cardDesign {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border-top: 8px solid var(--blue-clr);
+    border-bottom: 2px solid var(--ligblue-clr);
+    border-left: 2px solid var(--ligblue-clr);
+    border-right: 2px solid var(--ligblue-clr);
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+    transform: translateY(0%);
+    transition: 0.4s ease-in-out;
+}
+
+.cardDesign:hover {
+    transform: translateY(-2%);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.div1,
+.div2,
+.div3,
+.div4 {
+    height: 200px;
+    border: 2px solid var(--blue-clr);
+}
+
+.div5 {
+    border: 2px solid var(--blue-clr);
+    height: 100%;
+}
+
+.div1 {
+    grid-row: span 2 / span 2;
+}
+
+.div2 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.div3 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.div4 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div5 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+
+/* -----------------------------------------------Responsive Code----------------------------------------- */
+
+@media only screen and (max-width: 576px) {
+
+    .exchangePage-banner {
+        height: auto;
+        padding: 2rem;
+    }
+
+
+    .div1 {
+        grid-row: span 2 / span 2;
+    }
+
+    .div2 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .div3 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .div4 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+    .div5 {
+        grid-row: span 4 / span 4;
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:767px) {
+
+    .exchangePage-banner {
+        height: 40dvh;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:992px) {
+
+    .exchangePage-banner {
+        height: 50dvh;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .exchangePage-banner {
+        height: 60dvh;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1439px) {}
