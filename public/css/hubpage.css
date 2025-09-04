@@ -120,42 +120,6 @@
     transform: scale(1.025);
 }
 
-.hubpage-cta {
-    position: relative;
-    background-color: var(--blue-clr);
-    color: var(--white-clr);
-    padding: 2.5rem;
-    height: 300px;
-    border-radius: 2rem 0;
-    overflow: hidden;
-}
-
-.hubpage-cta::before {
-    content: '';
-    position: absolute;
-    right: -4%;
-    bottom: -20%;
-    background-color: var(--black-clr);
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
-    border: 5px solid var(--white-clr)
-}
-
-.hc-button {
-    border: 2px solid transparent;
-    background-color: var(--black-clr);
-    color: var(--white-clr);
-    padding: .5rem 1.25rem;
-    border-radius: .5rem;
-    transform: scale(1);
-    transition: 0.4s ease-in-out, transform 0.4s ease-in-out;
-}
-
-.hc-button:hover {
-    transform: scale(1.025);
-}
-
 /* _______________________________Responive code_____________________________ */
 
 @media only screen and (max-width: 576px) {

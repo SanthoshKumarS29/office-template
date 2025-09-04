@@ -11,6 +11,8 @@
     --ligpink-clr: #f527e476;
     --green-clr: #2EFF2E;
     --liggreen-clr: #2eff2e75;
+
+    --blue-v1:#e3f2fd;
 }
 
 main {
@@ -30,6 +32,10 @@ main {
 
 .grey-clr-bg{
     background-color: var(--grey-clr);
+}
+
+.blue-v1{
+    background-color: var(--blue-v1);
 }
 
 .text-justify{

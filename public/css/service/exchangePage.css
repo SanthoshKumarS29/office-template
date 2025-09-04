@@ -65,53 +65,67 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 8px;
+.flex-x-exchange{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.div1,
-.div2,
-.div3,
-.div4 {
-    height: 200px;
-    border: 2px solid var(--blue-clr);
-}
-
-.div5 {
-    border: 2px solid var(--blue-clr);
+.gl-box-inner{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    padding: 1rem;
+    background-color: var(--white-clr);
+    border-radius: .5rem;
     height: 100%;
 }
 
-.div1 {
-    grid-row: span 2 / span 2;
+.dp-card-v1{
+    position: relative;
+    padding: 1rem;
+    border: 2px solid var(--blue-v1);
+    border-radius: .5rem;
+    transition: 0.4s ease-in-out;
 }
 
-.div2 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 3;
+.dpc-num-v1{
+    position: absolute;
+    font-size: clamp(2rem, 6vw, 6rem);
+    font-weight: 800;
+    line-height: 90px;
+    top: 1%;
+    right: 1%;
+    z-index: -1;
+    color: var(--grey-clr);
+    transition: 0.4s ease-in-out;
 }
 
-.div3 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 1;
+.dp-card-v1:hover .dpc-num-v1{
+    color: var(--blue-v1);
 }
 
-.div4 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 3;
+.dp-card-v1:hover{
+    border: 2px solid var(--blue-clr);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.div5 {
-    grid-row: span 4 / span 4;
-    grid-column-start: 3;
-    grid-row-start: 1;
+.wcu-box-v1{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    align-items: center;
+    text-align: center;
+    border-radius: .5rem;
+    padding: 1rem;
+    height: 100%;
+    transform: translateY(0%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.4s ease-in-out;
+
+    &:hover{
+        transform: translateY(-4%);
+    }
 }
 
 
@@ -124,34 +138,6 @@
         padding: 2rem;
     }
 
-
-    .div1 {
-        grid-row: span 2 / span 2;
-    }
-
-    .div2 {
-        grid-row: span 2 / span 2;
-        grid-column-start: 1;
-        grid-row-start: 3;
-    }
-
-    .div3 {
-        grid-row: span 2 / span 2;
-        grid-column-start: 2;
-        grid-row-start: 1;
-    }
-
-    .div4 {
-        grid-row: span 2 / span 2;
-        grid-column-start: 2;
-        grid-row-start: 3;
-    }
-
-    .div5 {
-        grid-row: span 4 / span 4;
-        grid-column-start: 3;
-        grid-row-start: 1;
-    }
 }
 
 @media only screen and (min-width: 577px) and (max-width:767px) {

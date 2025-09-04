@@ -29,11 +29,19 @@
     overflow-x: visible;
 }
 
-.custom-flex,
-.custom-flex-four {
+.scrollbar-hide{
+    scrollbar-width: none;
+}
+
+.custom-flex{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
+    gap: 1rem;
+}
+
+.custom-flex-four{
+    display: flex;
     gap: 1rem;
 }
 
@@ -72,6 +80,43 @@
     border-radius: .75rem 0 0 0;
 }
 
+.cta {
+    position: relative;
+    background-color: var(--blue-clr);
+    color: var(--white-clr);
+    padding: 2.5rem;
+    height: 300px;
+    border-radius: 2rem 0;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    right: -4%;
+    bottom: -20%;
+    background-color: var(--black-clr);
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--white-clr)
+}
+
+.cta-button {
+    border: 2px solid var(--black-clr);
+    background-color: var(--black-clr);
+    color: var(--white-clr);
+    padding: .75rem 1.25rem;
+    border-radius: .5rem;
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+}
+
+.cta-button:hover {
+    border: 2px solid var(--white-clr);
+    transform: scale(1.025);
+}
+
 /* Extra Small Devices (Phones) */
 @media only screen and (max-width: 576px) {
 
@@ -100,8 +145,7 @@
         overflow-x: auto;
     }
 
-    .custom-flex,
-    .custom-flex-four {
+    .custom-flex {
         flex-wrap: nowrap;
     }
 
@@ -142,8 +186,7 @@
         overflow-x: auto;
     }
 
-    .custom-flex,
-    .custom-flex-four {
+    .custom-flex {
         flex-wrap: nowrap;
     }
 
@@ -182,8 +225,7 @@
         overflow-x: auto;
     }
 
-    .custom-flex,
-    .custom-flex-four {
+    .custom-flex {
         flex-wrap: nowrap;
     }
 
