@@ -1,0 +1,25 @@
+<section>
+    <div class="py-5">
+        <div class="row">
+            <div class="col-12 col-lg-6 align-self-center">
+                <div class="text-justify">
+                    <h2 class="fs-2"><%- page.about.title %></h2>
+                    <% page.about.description.forEach(f => { %>
+                        <p class="text-normal"><%- f %></p>
+                    <% }) %>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-center">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="<%- page.about.imgsm %>">
+                        <source media="(max-width:992px)" srcset="<%- page.about.imgmd %>">
+                        <source media="(max-width:1200px)" srcset="<%- page.about.imglg %>">
+                        <img src="<%- page.about.finalimg %>" alt="<%- page.about.title %>" width="450" height="450"
+                            class="img-fluid" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

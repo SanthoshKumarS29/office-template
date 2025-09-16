@@ -19,19 +19,6 @@ export const tredingHubPage = (req, res) => {
     })
 }
 
-export const tredingRelatedPages = (req,res) => {
-    const {slug} = req.params; 
-    const viewPath = path.join(__dirname, `../views/pages/trendings/${slug}.ejs`);
-    
-    if(fs.existsSync(viewPath)){
-        res.render(`pages/trendings/${slug}.ejs`,{
-            currentSection:"trendings",
-        })
-    } else {
-        res.status(404).render('pages/static/notFound.ejs');
-    }
-}
-
 export const serviceHubPage = (req, res) => {
     res.render("pages/services/hubPage.ejs",{
         currentSection:"services",
@@ -40,11 +27,14 @@ export const serviceHubPage = (req, res) => {
 
 export const serviceRelatedPages = (req,res) => {
     const {slug} = req.params; 
-    const viewPath = path.join(__dirname, `../views/pages/services/${slug}.ejs`);
+    const jsonPath = path.join(__dirname, `../public/dynamicDatas/service/${slug}.json`);
     
-    if(fs.existsSync(viewPath)){
+    if(fs.existsSync(jsonPath)){
+        const pageData = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
+
         res.render(`pages/services/${slug}.ejs`,{
-            currentSection:"service",
+            currentSection:"services",
+            page: pageData
         })
     } else {
         res.status(404).render('pages/static/notFound.ejs');
@@ -90,7 +80,7 @@ export const blogDetailPage = (req,res) => {
 }
 
 export const companyHubPage = (req, res) => {
-    res.render("pages/company/hubPage.ejs",{
+    res.render("pages/company/about.ejs",{
         currentSection:"company",
     })
 }

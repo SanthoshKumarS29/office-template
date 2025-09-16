@@ -123,9 +123,10 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.4s ease-in-out;
 
-    &:hover{
-        transform: translateY(-4%);
-    }
+}
+
+.wcu-box-v1:hover{
+    transform: translateY(-4%);
 }
 
 

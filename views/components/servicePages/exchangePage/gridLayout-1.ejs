@@ -1,0 +1,33 @@
+<section>
+    <div class="py-5 grey-clr-bg px-2 px-md-4">
+        <div class="text-center">
+            <h2><%- page.gridLayout1.title %></h2>
+        </div>
+        <div class="pt-4">
+            <div class="row justify-content-center g-3">
+               <% page.gridLayout1.cards.slice(0,2).forEach(card => { %>
+                <div class="col-md-6">
+                    <div class="gl-box-inner">
+                        <div class="flex-x-exchange">
+                            <img src="<%= card.icon %>" alt="<%= card.headtxt %>" width="40" height="40" class="img-fluid">
+                            <strong class="card-txt-h blue-clr"><%= card.headtxt %></strong>
+                        </div>
+                        <p class="card-txt-p"><%= card.headdes %></p>
+                    </div>
+                </div>
+                <% }) %>
+                <% page.gridLayout1.cards.slice(2,6).forEach(card => { %>
+                <div class="col-md-6 col-xl-4">
+                    <div class="gl-box-inner">
+                        <div class="flex-x-exchange">
+                            <img src="<%= card.icon %>" alt="<%= card.headtxt %>" width="40" height="40" class="img-fluid">
+                            <strong class="card-txt-h blue-clr"><%= card.headtxt %></strong>
+                        </div>
+                        <p class="card-txt-p"><%= card.headdes %></p>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+</section>

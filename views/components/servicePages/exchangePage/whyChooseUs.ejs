@@ -1,0 +1,18 @@
+<section>
+    <div class="py-5">
+        <div class="text-center pb-4">
+            <h2><%- page.whyChooseUs.title %></h2>
+        </div>
+        <div class="row justify-content-center g-3">
+            <% page.whyChooseUs.cards.forEach(card => { %>
+            <div class="col-md-6 col-xl-4">
+                <div class="wcu-box-v1">
+                    <img src="<%= card.icon %>" alt="<%= card.headtxt %>" width="40" height="40" class="img-fluid">
+                    <strong class="card-txt-h blue-clr"><%= card.headtxt %></strong>
+                    <p class="card-txt-p"><%= card.headdes %></p>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+</section>

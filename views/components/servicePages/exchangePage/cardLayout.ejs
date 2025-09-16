@@ -1,0 +1,17 @@
+<section>
+    <div class="py-5">
+        <div class="text-center pb-4">
+            <h2><%- page.cardLayout.title %></h2>
+        </div>
+        <div class="custom-overflow-scroll">
+            <div class="custom-flex">
+                <% page.cardLayout.cards.forEach(card => { %>
+                <div class="cardDesign">
+                    <strong class="fs-4 fw-medium blue-clr"><%= card.headtxt %></strong>
+                    <p class="text-normal lh-base"><%= card.headdes %></p>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+</section>

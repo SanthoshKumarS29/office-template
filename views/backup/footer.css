@@ -1,0 +1,41 @@
+.footer-links{
+    font-size: 1.05rem;
+    font-weight: 400;
+    transform: translateX(0%);
+    transition: transform 0.4s ease-in-out, 0.4s ease-in-out;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: var(--black-clr);
+    transition: 0.4s ease-in-out;
+}
+
+.footer-links:hover,
+.footer-links a:hover{
+    color: var(--blue-clr);
+    transform: translateX(3%);
+}
+
+.custom-shadow{
+    border-radius: 1.75rem;
+    padding: .5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.blue{
+    border: 2px solid var(--blue-clr);
+}
+
+.pink{
+    border: 2px solid var(--pink-clr);
+}
+
+.green{
+    border: 2px solid var(--green-clr);
+}
+
+.black{
+    border: 2px solid var(--black-clr);
+}
+

@@ -7,19 +7,19 @@
       },
       {
         "title":"Trendings",
-        "path":"/trending",
+        "path":"/trendings",
         "rel":"follow",
         "isdropDown":true
       },
       {
         "title":"Products",
-        "path":"/product",
+        "path":"/products",
         "rel":"follow",
         "isdropDown":true
       },     
       {
         "title":"Service",
-        "path":"/service",
+        "path":"/services",
         "rel":"follow",
         "isdropDown":true
       },
@@ -51,13 +51,13 @@
       },
       {
         "title": "Trendings",
-        "path": "/trending",
+        "path": "/trendings",
         "rel": "follow",
         "isdropDown":false
       },
       {
         "title":"Crypto Exchange Development",
-        "path":"/trending/crypto-exchange-development",
+        "path":"/services/crypto-exchange-development",
         "rel":"follow",
         "isdropDown":false
       }
@@ -71,13 +71,13 @@
       },
       {
         "title": "Products",
-        "path": "/product",
+        "path": "/products",
         "rel": "follow",
         "isdropDown":false
       },
       {
         "title":"Product Crypto Exchange sccript",
-        "path":"/product/exchange-script",
+        "path":"/products/exchange-script",
         "rel":"follow",
         "isdropDown":false
       }
@@ -91,13 +91,13 @@
       },
       {
         "title": "Service",
-        "path": "/service",
+        "path": "/services",
         "rel": "follow",
         "isdropDown":false
       },
       {
         "title":"Crypto Exchange Development",
-        "path":"/service/crypto-exchange-development",
+        "path":"/services/crypto-exchange-development",
         "rel":"follow",
         "isdropDown":false
       }
@@ -110,101 +110,50 @@
         "isdropDown":false
       },
       {
-        "title": "about",
-        "path": "/about",
-        "rel": "follow",
-        "isdropDown":false
-      },
-      {
         "title":"career",
-        "path":"/trending/career",
+        "path":"/company/career",
         "rel":"follow",
         "isdropDown":false
       },
       {
         "title":"Portfolio",
-        "path":"/trending/portfolio",
+        "path":"/company/portfolio",
         "rel":"follow",
         "isdropDown":false
       }
   ],
   "footer": [
     {
-      "title":"Products",
-      "links":[
-        {
-          "href":"/contactus",
-          "name":"Crypto product",
-          "rel":"nofollow"
-        },
-        {
-          "href":"/contactus",
-          "name":"Crypto product",
-          "rel":"nofollow"
-        },
-        {
-          "href":"/contactus",
-          "name":"Crypto product",
-          "rel":"nofollow"
-        }
-      ]
-    },
-    {
       "title":"Service",
       "links":[
         {
           "href":"/contactus",
-          "name":"Crypto product",
+          "name":"Web Design ",
           "rel":"nofollow"
         },
         {
           "href":"/contactus",
-          "name":"Crypto product",
+          "name":"Machine Lernings",
           "rel":"nofollow"
         },
         {
           "href":"/contactus",
-          "name":"Crypto product",
-          "rel":"nofollow"
-        }
-      ]
-    },
-    {
-      "title":"Blogs",
-      "links":[
-        {
-          "href":"/contactus",
-          "name":"Crypto product",
+          "name":"Blockchain",
           "rel":"nofollow"
         },
         {
           "href":"/contactus",
-          "name":"Crypto product",
+          "name":"crypto exchange development",
           "rel":"nofollow"
         },
         {
           "href":"/contactus",
-          "name":"Crypto product",
-          "rel":"nofollow"
-        }
-      ]
-    },
-    {
-      "title":"Company",
-      "links":[
-        {
-          "href":"/contactus",
-          "name":"Crypto product",
+          "name":"Ai Development",
           "rel":"nofollow"
         },
         {
           "href":"/contactus",
-          "name":"Crypto product",
-          "rel":"nofollow"
-        },
-        {
-          "href":"/contactus",
-          "name":"Crypto product",
+          "name":"cloud Computing",
           "rel":"nofollow"
         }
       ]

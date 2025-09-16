@@ -1,0 +1,20 @@
+<section>
+    <div class="py-5">
+        <div class="text-center py-4">
+            <h2><%- page.developmentProcess.title %></h2>
+        </div>
+        <div class="overflow-x-auto scrollbar-hide pb-3">
+            <div class="custom-flex">
+                <% page.developmentProcess.cards.forEach((card, i) => { %>
+                <div class="dp-card-v1">
+                    <strong class="card-txt-h mb-2 d-block blue-clr"><%= card.headtxt %></strong>
+                    <p class="card-txt-p lh-base"><%= card.headdes %></p>
+                    <div class="dpc-num-v1">
+                        <span>0<%= i+1 %></span>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+</section>

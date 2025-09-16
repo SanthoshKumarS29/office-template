@@ -1,50 +1,63 @@
 <footer>
-    <div class="py-5">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5">
-            <% nav.footer.forEach(content=> { %>
-            <div class="footer-container">
-                <p class="fs-5 mb-1 fw-semibold"><%= content.title %></p>
-                <ul class="p-2">
-                    <% content.links.forEach(subLink=> { %>
-                    <li class="list-unstyled mb-2 footer-links"><a href="<%= subLink.href %>" rel="<%= subLink.rel %>" class=""><%= subLink.name %></a></li>
-                    <% }) %>
-                </ul>
+    <div class="pt-5">
+        <div class="row justify-content-between">
+            <div class="col-md-8 col-xl-6">
+                <div class="d-flex flex-column gap-4">
+                    <div>
+                        <strong class="fs-1">Subscribe <i class="fw-lighter">Newsletter</i></strong>
+                        <p class="text-normal lh-base my-2">We understand that every challenge is an opportunity we are here seize a team of dedicated professionals and a culture</p>
+                    </div>
+                    <div>
+                        <div class="flex-x gap-2 mb-2">
+                            <div class="flex-x gap-2 footer-email-feild">
+                                <img src="/images/mail.webp" alt="Email-icon" width="24" height="24" class="img-fluid">
+                                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                            </div>
+                            <button class="footer-send-btn">Send</button>
+                        </div>
+                        <p class="text-normal mt-3">By subscribe, you're accept <a href="/" class="fw-bold text-black">Privacy Policy</a></p>
+                    </div>
+                </div>
             </div>
-            <% }) %>
-            <div>
-                <p class="fs-5 mb-1 fw-semibold">Contact</p>
-                <div class="p-2">
-                    <p class="text-normal d-flex align-items-start gap-1">
-                        <img src="/images/footer-location.webp" alt="Location" class="img-fluid" width="24" height="24" loading="lazy">
-                        <span>Wisconsin Ave, Suite 700 Chevy Chase, Maryland 20815</span>
-                    </p>
-                    <p class="text-normal d-flex align-items-start gap-1">
-                        <img src="/images/footer-mail.webp" alt="Mail" class="img-fluid" width="24" height="24" loading="lazy">
-                        <span>support@figma.com</span>
-                    </p>
+            <div class="col-md-4 col-xl-3">
+                <% nav.footer.forEach(content=> { %>
+                <div class="footer-container">
+                    <p class="fs-5 mb-1 fw-semibold"><%= content.title %></p>
+                    <ul class="p-2">
+                        <% content.links.forEach(subLink=> { %>
+                        <li class="list-unstyled mb-2 footer-links"><a href="<%= subLink.href %>" rel="<%= subLink.rel %>" class=""><%= subLink.name %></a></li>
+                        <% }) %>
+                    </ul>
+                </div>
+                <% }) %>
+            </div>
+            <div class="col-md-12 col-xl-3">
+                <div class="d-flex flex-column flex-md-row flex-xl-column gap-3 gap-md-5 gap-xl-0">
+                    <div>
+                        <strong class="card-txt-h">Locations</strong>
+                        <p class="card-txt-p my-3">55 Main Street, 2nd block Malborne, India</p>
+                    </div>
+                    <div>
+                        <strong class="card-txt-h">Contact</strong>
+                        <div class="d-flex flex-column flex-md-row flex-xl-column mt-2 gap-3">
+                            <p class="card-txt-p">CompanyName@gmail.com</p>
+                            <p class="card-txt-p">9088878787</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="d-flex flex-wrap justify-content-between align-items-center mt-3 gap-3 gap-md-0">
-            <div class="d-flex align-items-center gap-3">
-                <div class="custom-shadow blue">
-                    <img src="/images/footer-facebook.webp" alt="Facebook" class="img-fluid" width="24" height="24" loading="lazy">
-                </div>
-                <div class="custom-shadow pink">
-                    <img src="/images/footer-instagram.webp" alt="Instagram" class="img-fluid" width="24" height="24" loading="lazy">
-                </div>
-                <div class="custom-shadow black">
-                    <img src="/images/footer-twitter.webp" alt="Twitter" class="img-fluid" width="20" height="20" loading="lazy">
-                </div>
-                <div class="custom-shadow green">
-                    <img src="/images/footer-whatsapp.webp" alt="whatsapp" class="img-fluid" width="24" height="24" loading="lazy">
-                </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-4 gap-md-0 py-4">
+            <div>
+                <p class="card-txt-p">@ 2025 <strong>Company name</strong> - It Service, All rights resvered</p>
             </div>
             <div>
-                <p class="text-normal mb-0">Copyright © 2025 Name technologies | All Rights Reserved</p>
-            </div>
-            <div>
-                <p class="text-normal mb-0">Terms and Privacy</p>
+                <ul class="list-unstyled d-flex flex-wrap align-items-center justify-content-between gap-1 gap-lg-4">
+                    <li class="list-unstyled mb-2 footer-links"><a href="/">Home</a></li>
+                    <li class="list-unstyled mb-2 footer-links"><a href="/">About</a></li>
+                    <li class="list-unstyled mb-2 footer-links"><a href="/">Privacy Policy</a></li>
+                    <li class="list-unstyled mb-2 footer-links"><a href="/">Contact</a></li>
+                </ul>
             </div>
         </div>
     </div>
