@@ -1,0 +1,161 @@
+{
+    "url_slug": "token-development-service",
+    "banner": {
+        "tag": "Blockchain Innovation",
+        "title": "<span class='blue-clr'>Token</span> Development Services",
+        "description": "Create Secure, Scalable & Utility-Driven Tokens for Every Use Case",
+        "content": "We specialize in building <strong>custom tokens</strong> for businesses, startups, and enterprises. Whether you need <strong>utility tokens, security tokens, stablecoins, or governance tokens,</strong> our blockchain experts deliver future-ready token solutions that fuel your ecosystem.",
+        "button": "Launch Your Token Today"
+    },
+    "about": {
+        "title": "About Our <span class='blue-clr'>Token</span> Development Services",
+        "description": [
+            "At [Your Company], we design and develop <strong>blockchain-based tokens</strong> that align with your business model and industry needs. From initial strategy to deployment, we ensure your tokens are secure, scalable, and compliant.",
+            "Our team has hands-on expertise in creating tokens across multiple blockchains, including <strong>Ethereum (ERC-20, ERC-721, ERC-1155), Binance Smart Chain (BEP-20), Polygon, Solana, and Hyperledger.</strong>",
+            "Whether you want to <strong>raise capital via ICO/STO, launch a utility token for your platform, or create governance tokens for DAOs,</strong> we provide full-cycle development services with enterprise-grade security and usability."
+        ],
+         "imgsm": "/images/png/exchange-about-us-sm.png",
+        "imgmd": "/images/png/exchange-about-us-md.png",
+        "imglg": "/images/png/exchange-about-us-lg.png",
+        "finalimg": "/images/png/exchange-about-us.png",
+        "alt": "About Our Token Development Services",
+        "width": "450",
+        "height": "450"
+    },
+    "cardLayout": {
+        "title": "Our <span class='blue-clr'>Token</span> Solutions",
+        "cards": [
+            {
+                "headtxt": "Utility Token Dev",
+                "headdes": "Create <strong>utility tokens</strong> that power your ecosystem by enabling payments, access to services, and seamless transactions."
+            },
+            {
+                "headtxt": "Security Token Dev",
+                "headdes": "We develop <strong>security tokens</strong> backed by real-world assets, ensuring compliance with global securities regulations."
+            },
+            {
+                "headtxt": "Stablecoin Dev",
+                "headdes": "Launch <strong>stablecoins</strong> pegged to fiat or other assets, providing stability and trust for digital transactions."
+            },
+            {
+                "headtxt": "NFT Token Standards",
+                "headdes": "Build <strong>ERC-721 & ERC-1155 tokens</strong> to power NFT marketplaces, gaming, and digital collectibles."
+            }
+        ]
+    },
+    "gridLayout1": {
+        "title": "Key Features of Our <span class='blue-clr'>Token Development</span>",
+        "cards": [
+            {
+                "icon": "/images/png/icon-dummy.png",
+                "headtxt": "Multi-Chain Support",
+                "headdes": "We create tokens across Ethereum, BSC, Polygon, Solana, Avalanche, and other major networks."
+            },
+            {
+                "icon": "/images/png/icon-dummy.png",
+                "headtxt": "Regulatory Compliance",
+                "headdes": "Our token solutions are compliant with AML, KYC, and global securities laws where applicable."
+            },
+            {
+                "icon": "/images/png/icon-dummy.png",
+                "headtxt": "Smart Contract Security",
+                "headdes": "All tokens are powered by thoroughly audited smart contracts ensuring safety and transparency."
+            },
+            {
+                "icon": "/images/png/icon-dummy.png",
+                "headtxt": "Custom Tokenomics",
+                "headdes": "We design tokenomics models that drive adoption, growth, and long-term ecosystem sustainability."
+            },
+            {
+                "icon": "/images/png/icon-dummy.png",
+                "headtxt": "Wallet & Exchange Integration",
+                "headdes": "Your tokens are fully compatible with leading wallets and can be listed on popular exchanges."
+            }
+        ]
+    },
+    "developmentProcess": {
+        "title": "Our <span class='blue-clr'>Token Development</span> Process",
+        "cards": [
+            {
+                "headtxt": "Requirement Analysis",
+                "headdes": "We gather requirements and define the right blockchain, token type, and tokenomics model for your project."
+            },
+            {
+                "headtxt": "Token Architecture",
+                "headdes": "Our experts design a secure token architecture with clear utility and governance mechanisms."
+            },
+            {
+                "headtxt": "Smart Contract Development",
+                "headdes": "We code and deploy smart contracts for your token on the chosen blockchain, ensuring compliance and security."
+            },
+            {
+                "headtxt": "Testing & Audits",
+                "headdes": "Every token undergoes rigorous functional testing and smart contract audits to ensure zero vulnerabilities."
+            },
+            {
+                "headtxt": "Deployment & Integration",
+                "headdes": "We deploy tokens on mainnet and integrate them into wallets, dApps, and exchanges."
+            }
+        ]
+    },
+    "whyChooseUs": {
+        "title": "Why Choose Us for <span class='blue-clr'>Token Development</span>",
+        "cards": [
+            {
+                "icon": "/images/png/icon-dummy.png",
+                "headtxt": "End-to-End Token Solutions",
+                "headdes": "From concept to deployment, we provide complete token development services."
+            },
+            {
+                "icon": "/images/png/icon-dummy.png",
+                "headtxt": "Expert Blockchain Developers",
+                "headdes": "Our team consists of seasoned blockchain developers with expertise in multiple networks."
+            },
+            {
+                "icon": "/images/png/icon-dummy.png",
+                "headtxt": "Customizable Solutions",
+                "headdes": "We build tokens tailored to your unique business needs and industry requirements."
+            },
+            {
+                "icon": "/images/png/icon-dummy.png",
+                "headtxt": "Enterprise-Grade Security",
+                "headdes": "Every token is backed by audited smart contracts and strong encryption protocols."
+            },
+            {
+                "icon": "/images/png/icon-dummy.png",
+                "headtxt": "Post-Launch Support",
+                "headdes": "We provide 24/7 support, maintenance, and upgrades to ensure your token’s success."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to Launch Your Own Token?",
+        "titledes": "Whether it’s a utility token, security token, or stablecoin, we build tokens that drive real-world adoption and success.",
+        "btntxt": "Request a Free Consultation"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions <span class='blue-clr'>(FAQ)</span>",
+        "qnsAns": [
+            {
+                "qns": "1. What types of tokens can you develop?",
+                "ans": "We create utility tokens, security tokens, governance tokens, stablecoins, and NFT standards like ERC-721 & ERC-1155."
+            },
+            {
+                "qns": "2. How long does it take to build a token?",
+                "ans": "It usually takes 2–6 weeks depending on the blockchain, features, and level of customization."
+            },
+            {
+                "qns": "3. Can you help with token listing on exchanges?",
+                "ans": "Yes, we assist in integrating and listing your tokens on major centralized and decentralized exchanges."
+            },
+            {
+                "qns": "4. Is token development secure?",
+                "ans": "Absolutely. We follow strict security audits, multi-signature protocols, and encryption to ensure safety."
+            },
+            {
+                "qns": "5. Do you provide white-label token solutions?",
+                "ans": "Yes, we offer ready-to-deploy token solutions that can be customized to fit your business needs."
+            }
+        ]
+    }
+}

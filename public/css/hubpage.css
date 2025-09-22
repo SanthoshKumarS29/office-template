@@ -67,12 +67,6 @@
     transition: transform 0.4s ease-in-out, 0.4s ease-in-out;
 }
 
-.flex-x {
-    display: flex;
-    gap: .5rem;
-    align-items: center;
-}
-
 .flex-y {
     display: flex;
     flex-direction: column;

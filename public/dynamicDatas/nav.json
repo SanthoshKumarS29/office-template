@@ -96,8 +96,32 @@
         "isdropDown":false
       },
       {
-        "title":"Crypto Exchange Development",
+        "title":"Crypto Exchange Dev",
         "path":"/services/crypto-exchange-development",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Crypto Wallet Dev",
+        "path":"/services/crypto-wallet-development",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title":"NFT Market Dev",
+        "path":"/services/nft-marketplace-development",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Defi Dev Service",
+        "path":"/services/defi-development-service",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Token Dev Service",
+        "path":"/services/token-development-service",
         "rel":"follow",
         "isdropDown":false
       }
