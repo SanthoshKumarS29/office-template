@@ -20,8 +20,13 @@ export const tredingHubPage = (req, res) => {
 }
 
 export const serviceHubPage = (req, res) => {
+    const seoData = JSON.parse(fs.readFileSync(SEO_Path, "utf-8"))
+    const seo = seoData[slug] || {}
+
     res.render("pages/services/hubPage.ejs",{
         currentSection:"services",
+        page: pageData,
+        seo
     })
 }
 

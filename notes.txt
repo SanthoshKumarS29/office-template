@@ -21,7 +21,24 @@ const formatTitle = (slug) => {
         .join(" "); // ➡️ "Crypto Exchange Development"
 };
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-don't have caseStudies page if you want to add make portfolio to design in add case study
+Those are used for modern, cross-platform method to get the current file and directory paths in an ES module (ESM)
 
+seoData[slug] = {metaTitle,metaDescription,metaKeywords};
+
+fs.writeFileSync(SEO_PATH, JSON.stringify(seoData, null, 2))
+
+How it works step-by-step
+
+    The seoData object is passed to JSON.stringify().
+
+    JSON.stringify() converts the object into a JSON string, adding indentation because of the 2 argument.
+
+    The resulting JSON string is passed to fs.writeFileSync().
+
+    fs.writeFileSync() takes the string and writes it to the file specified by the SEO_PATH variable.
+
+    The program's execution is paused until the file has been successfully written to disk. 
 

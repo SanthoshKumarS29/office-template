@@ -1,0 +1,13 @@
+<h2>Edit SEO for <%= slug %></h2>
+<form action="/admin/seo/<%= slug %>" method="post">
+  <label>Meta Title</label>
+  <input type="text" name="metaTitle" value="<%= seo.metaTitle || '' %>" />
+
+  <label>Meta Description</label>
+  <textarea name="metaDescription"><%= seo.metaDescription || '' %></textarea>
+
+  <label>Meta Keywords</label>
+  <input type="text" name="metaKeywords" value="<%= seo.metaKeywords || '' %>" />
+
+  <button type="submit">Save</button>
+</form>

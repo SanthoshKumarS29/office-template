@@ -1,10 +1,12 @@
 import express from 'express';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import session from "express-session";
 // files
 import loadJson from './middleware/loadJson.js';
 import siteRoutes from './routes/siteRoutes.js';
-import { fileURLToPath } from 'url';
 import dynamicSidebarRender from './middleware/dynamicSideBarRender.js';
+import adminRouter from './admin/routes/adminRoutes.js';
 
 
 const app = express();
@@ -15,7 +17,10 @@ const __dirname = path.dirname(__filename)
 
 // set View engine
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+app.set("views", [
+    path.join(__dirname, "views"),
+    path.join(__dirname, "admin/views")
+]);
 
 
 // static folder
@@ -23,10 +28,21 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // middleware
 app.use(loadJson(['nav']));
-app.use(dynamicSidebarRender)
+app.use(dynamicSidebarRender);
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(
+  session({
+    secret: "super-secret",
+    resave: false,
+    saveUninitialized: false,
+  })
+);
+
 
 // routes
 app.use('/', siteRoutes);
+app.use('/admin', adminRouter);
 
 
 // start Server

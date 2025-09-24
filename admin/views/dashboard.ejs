@@ -1,0 +1,9 @@
+<h1>Admin Dashboard</h1>
+<ul>
+  <% Object.keys(seoData).forEach(slug => { %>
+    <li>
+      <%= slug %> 
+      <a href="/admin/seo/<%= slug %>">Edit SEO</a>
+    </li>
+  <% }) %>
+</ul>
