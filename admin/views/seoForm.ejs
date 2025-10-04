@@ -1,13 +1,49 @@
-<h2>Edit SEO for <%= slug %></h2>
-<form action="/admin/seo/<%= slug %>" method="post">
-  <label>Meta Title</label>
-  <input type="text" name="metaTitle" value="<%= seo.metaTitle || '' %>" />
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SEO Dashboard</title>
+</head>
+<body>
+  <h1>SEO Dashboard</h1>
 
-  <label>Meta Description</label>
-  <textarea name="metaDescription"><%= seo.metaDescription || '' %></textarea>
+  <h2>Add New SEO</h2>
+  <form action="/admin/metaForm" method="POST">
+    <label>URL:</label><br>
+    <input type="text" name="slug" required><br>
 
-  <label>Meta Keywords</label>
-  <input type="text" name="metaKeywords" value="<%= seo.metaKeywords || '' %>" />
+    <label>Meta Title:</label><br>
+    <input type="text" name="metaTitle" required><br>
 
-  <button type="submit">Save</button>
-</form>
+    <label>Meta Description:</label><br>
+    <textarea name="metaDescription" required></textarea><br>
+
+    <label>Meta Keyword:</label><br>
+    <input type="text" name="metaKeyword"><br>
+
+    <button type="submit">Save</button>
+  </form>
+
+  <h2>Existing SEO Entries</h2>
+  <table>
+    <tr>
+      <th>URL</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Keywords</th>
+      <th>Actions</th>
+    </tr>
+    <% seoList.forEach(seo => { %>
+      <tr>
+        <td><%= seo.slug %></td>
+        <td><%= seo.metaTitle %></td>
+        <td><%= seo.metaDescription %></td>
+        <td><%= seo.metaKeyword %></td>
+        <td>
+          <a href="/admin/metaForm/<%= seo._id %>/edit">Edit</a> | 
+          <a href="/admin/metaForm/<%= seo._id %>/delete">Delete</a>
+        </td>
+      </tr>
+    <% }) %>
+  </table>
+</body>
+</html>

@@ -8,7 +8,7 @@
                 <% page.developmentProcess.cards.forEach((card, i) => { %>
                 <div class="dp-card-v1">
                     <strong class="card-txt-h mb-2 d-block blue-clr"><%= card.headtxt %></strong>
-                    <p class="card-txt-p lh-base"><%= card.headdes %></p>
+                    <p class="card-txt-p lh-base"><%- card.headdes %></p>
                     <div class="dpc-num-v1">
                         <span>0<%= i+1 %></span>
                     </div>

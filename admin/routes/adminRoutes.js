@@ -1,5 +1,5 @@
 import express from "express";
-import { getDashboard, getLogin, getSeoForm, postLogin, postSeoForm } from "../controllers/adminControllers.js";
+import {  createSeoData, dashboard, deleteSeoForm, editSeoForm, getLogin, postLogin, updateSeoForm} from "../controllers/metaFormControllers.js";
 import { isAuthenticated } from "../middleware/auth.js";
 
 const adminRouter = express.Router();
@@ -7,9 +7,11 @@ const adminRouter = express.Router();
 adminRouter.get("/login", getLogin);
 adminRouter.post("/login", postLogin);
 
-adminRouter.get("/dashboard", isAuthenticated, getDashboard);
+adminRouter.get('/dashboard', dashboard);
 
-adminRouter.get("/seo/:slug", isAuthenticated, getSeoForm);
-adminRouter.post("/seo/:slug", isAuthenticated, postSeoForm);
+adminRouter.post('/metaForm', createSeoData);
+adminRouter.get('/metaForm/:id/edit', editSeoForm);
+adminRouter.post('/metaForm/:id/update', updateSeoForm);
+adminRouter.get('/metaForm/:id/delete', deleteSeoForm)
 
 export default adminRouter;

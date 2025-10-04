@@ -7,6 +7,7 @@ import loadJson from './middleware/loadJson.js';
 import siteRoutes from './routes/siteRoutes.js';
 import dynamicSidebarRender from './middleware/dynamicSideBarRender.js';
 import adminRouter from './admin/routes/adminRoutes.js';
+import connectDb from './admin/config/db.js';
 
 
 const app = express();
@@ -48,5 +49,6 @@ app.use('/admin', adminRouter);
 // start Server
 app.listen(2003, () => {
     console.log('Server is runnings')
+    connectDb();
 })
 

@@ -42,3 +42,6 @@ How it works step-by-step
 
     The program's execution is paused until the file has been successfully written to disk. 
 
+Async funtion
+    Wait here until this task finishes, then move on.”
+

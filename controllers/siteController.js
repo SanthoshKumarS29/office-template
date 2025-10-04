@@ -1,64 +1,99 @@
 import path from "path";
 import fs from "fs"
 import { fileURLToPath } from "url";
+import Seo from "../admin/models/Seo.js";
 
 // get file 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename)
 
+const metadetailPath = path.join(__dirname, '../public/dynamicDatas/seo.json')
 
-export const getHome = (req, res) => {
+
+export const getHome = async (req, res) => {
+    const {slug} = req.params;
+
+    // fetch seo from DB
+    const seoData = await Seo.findOne({ slug }).lean()
+    const seo = seoData || {}
+
     res.render('pages/home',{
         currentSection:"home",
+        seo,
     })
 }
 
-export const tredingHubPage = (req, res) => {
+export const tredingHubPage = async (req, res) => {
+    const {slug} = req.params;
+
+    // fetch seo from DB
+    const seoData = await Seo.findOne({ slug }).lean()
+    const seo = seoData || {}
     res.render("pages/trendings/hubPage.ejs",{
         currentSection:"trendings",
+        seo,
     })
 }
 
-export const serviceHubPage = (req, res) => {
-    const seoData = JSON.parse(fs.readFileSync(SEO_Path, "utf-8"))
-    const seo = seoData[slug] || {}
+export const serviceHubPage = async (req, res) => {
+    const {slug} = req.params;
+
+    // fetch seo from DB
+    const seoData = await Seo.findOne({ slug }).lean()
+    const seo = seoData || {}
 
     res.render("pages/services/hubPage.ejs",{
         currentSection:"services",
-        page: pageData,
         seo
     })
 }
 
-export const serviceRelatedPages = (req,res) => {
+export const serviceRelatedPages = async (req,res) => {
     const {slug} = req.params; 
     const jsonPath = path.join(__dirname, `../public/dynamicDatas/service/${slug}.json`);
     
     if(fs.existsSync(jsonPath)){
         const pageData = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
 
+        // fetch seo from DB
+        const seoData = await Seo.findOne({ slug }).lean()
+        const seo = seoData || {}
+
         res.render(`pages/services/${slug}.ejs`,{
             currentSection:"services",
-            page: pageData
+            page: pageData,
+            seo
         })
     } else {
         res.status(404).render('pages/static/notFound.ejs');
     }
 }
 
-export const productHubPage = (req, res) => {
+export const productHubPage = async (req, res) => {
+    const {slug} = req.params;
+
+    // fetch seo from DB
+    const seoData = await Seo.findOne({ slug }).lean()
+    const seo = seoData || {}
+
     res.render("pages/products/hubPage.ejs",{
         currentSection:"products",
+        seo
     })
 }
 
-export const productRelatedPages = (req,res) => {
+export const productRelatedPages = async (req,res) => {
     const {slug} = req.params; 
     const viewPath = path.join(__dirname, `../views/pages/products/${slug}.ejs`);
     
     if(fs.existsSync(viewPath)){
+        
+        const seoData = await Seo.findOne({ slug }).lean()
+        const seo = seoData || {}
+
         res.render(`pages/products/${slug}.ejs`,{
             currentSection:"products",
+            seo
         })
     } else {
         res.status(404).render('pages/static/notFound.ejs');

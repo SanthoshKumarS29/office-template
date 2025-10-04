@@ -1,9 +1,14 @@
-<h1>Admin Dashboard</h1>
-<ul>
-  <% Object.keys(seoData).forEach(slug => { %>
-    <li>
-      <%= slug %> 
-      <a href="/admin/seo/<%= slug %>">Edit SEO</a>
-    </li>
-  <% }) %>
-</ul>
+<section>
+  <div class="roe justify-content-center">
+    <div class="col-xl-2">
+      <div>
+        <span><a href="/">Seo Form</a></span>
+      </div>
+    </div>
+    <div class="col-xl-10">
+      <div>
+          <%- include('./seoForm.ejs') %>
+      </div>
+    </div>
+  </div>
+</section>

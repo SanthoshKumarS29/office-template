@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit SEO</title>
+</head>
+<body>
+  <h1>Edit SEO Entry</h1>
+  <form action="/admin/metaForm/<%= seo._id %>/update" method="POST">
+    <label>URL:</label><br>
+    <input type="text" name="slug" value="<%= seo.slug %>" required><br>
+
+    <label>Meta Title:</label><br>
+    <input type="text" name="metaTitle" value="<%= seo.metaTitle %>" required><br>
+
+    <label>Meta Description:</label><br>
+    <textarea name="metaDescription" value="<%= seo.metaDescription %>" required><%= seo.metaDescription %></textarea><br>
+
+    <label>Meta Keywords:</label><br>
+    <input type="text" name="metaKeyword" value="<%= seo.metaKeyword %>"><br>
+
+    <button type="submit">Update</button>
+  </form>
+</body>
+</html>
