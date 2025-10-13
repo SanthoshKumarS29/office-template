@@ -45,3 +45,11 @@ How it works step-by-step
 Async funtion
     Wait here until this task finishes, then move on.”
 
+
+IF you want to get any file from local 
+
+// get file 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename)
+
+const metadetailPath = path.join(__dirname, '../public/dynamicDatas/seo.json')

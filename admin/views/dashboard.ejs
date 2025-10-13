@@ -1,14 +1,37 @@
-<section>
-  <div class="roe justify-content-center">
-    <div class="col-xl-2">
-      <div>
-        <span><a href="/">Seo Form</a></span>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/admin/admin.css">
+  <link rel="stylesheet" href="/css/siteTheme.css">
+</head>
+
+<body>
+  <section class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-2 p-0 bg-black text-white overflow-y-auto scrollbar-hide dvh sticky-top">
+        <div class="p-3">
+          <h2 class="py-3">Dashboard</h2>
+          <div>
+            <p class="text-secondary m-0">Add Meta Detail Page</p>
+            <ul class="list-unstyled ps-3">
+              <li class="admin-link <%= activePage === 'detail' ? 'active' : '' %>"><a href="/admin/detailPage">Detail Page</a></li>
+              <li class="admin-link <%= activePage === 'metaForm' ? 'active' : '' %>"><a href="/admin/dashboard">Seo Form</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-10">
+        <div class="p-3">
+          <%- include(partialView) %>
+        </div>
       </div>
     </div>
-    <div class="col-xl-10">
-      <div>
-          <%- include('./seoForm.ejs') %>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</body>
+<script src="/js/bootstrap/bootstrap.min.js"></script>
+</html>

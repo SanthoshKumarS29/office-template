@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import Seo from '../models/Seo.js';
-// import '../../'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -40,21 +39,36 @@ export const postLogin = (req, res) => {
 
 
 export const dashboard = async (req, res) => {
-    
+
     try {
         const seoList = await Seo.find().lean();
-        res.render('dashboard', { seoList })    // <- pass it to the EJS view
+        res.render('dashboard', {
+            partialView: 'seoForm',
+            activePage: 'metaForm',
+            seoList
+        })    // <- pass it to the EJS view
     } catch (err) {
         res.status(500).send("Error loading dashboard: " + err.message);
     }
 }
 
 // Show dashboard with seo list
-export const getSeoForm = async (req, res) => {
+export const getDatas = async (req, res) => {
+    const searchQuery = req.query.q || '';
 
     try {
-        const seoList = await Seo.find().lean();
-        res.render('seoForm', { seoList })    // <- pass it to the EJS view
+        let filter = {};
+        if (searchQuery) {
+            filter.slug = { $regex: searchQuery, $option: 'i'}
+        }
+
+        const seoList = await Seo.find(filter).lean();
+        res.render('dashboard', {
+            partialView: 'pages/renderDetails',
+            activePage: 'detail',
+            seoList,
+            searchQuery
+        })    // <- pass it to the EJS view
     } catch (err) {
         res.status(500).send("Error loading dashboard: " + err.message);
     }
@@ -74,7 +88,10 @@ export const createSeoData = async (req, res) => {
 // Show edit form
 export const editSeoForm = async (req, res) => {
     const seo = await Seo.findById(req.params.id).lean();
-    res.render('editSeoForm', { seo })
+    res.render('pages/editSeoForm', {
+        activePage: 'editMetaForm',
+        seo
+    })
 }
 
 // Update seoForm entry

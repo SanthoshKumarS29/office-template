@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Page</title>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/admin/admin.css">
+    <link rel="stylesheet" href="/css/siteTheme.css">
+</head>
+<body>
+  <h2>Existing SEO Entries</h2>
+  <form method="get" action="/admin/dashboard" class="d-flex mb-3" style="max-width: 400px;">
+   <input 
+    type="text" 
+    name="q" 
+    placeholder="Search by URL..." 
+    value="<%= searchQuery %>" 
+    class="form-control" 
+    style="width:300px; display:inline-block;"
+  />
+    <button type="submit" class="btn btn-primary ms-2">Search</button>
+  </form>
+  <table>
+    <thead>
+      <tr class="table-head">
+        <th>URL</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Keywords</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% if (seoList.length === 0) { %>
+        <tr class="table-body">
+          <td colspan="5" class="text-center text-muted">No records found</td></tr>
+      <% } else { %>
+      <% seoList.forEach(seo => { %>
+        <tr class="table-body">
+          <td><%= seo.slug %></td>
+          <td><%= seo.metaTitle %></td>
+          <td><%= seo.metaDescription %></td>
+          <td><%= seo.metaKeyword %></td>
+          <td class="d-flex align-items-center gap-2">
+            <a href="/admin/metaForm/<%= seo._id %>/edit" class="btn btn-success btn-sm">Edit</a>
+            <a href="/admin/metaForm/<%= seo._id %>/delete" class="btn btn-danger btn-sm">Delete</a>
+          </td>
+        </tr>
+        <% }) %>
+      <% } %>
+    </tbody>
+  </table>
+
+</body>
+</html>

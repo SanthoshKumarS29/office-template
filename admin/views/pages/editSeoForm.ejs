@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Meta Form</title>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/admin/admin.css">
+</head>
+<body>
+  <div class="dvh">
+    <div class="d-flex flex-column justify-content-center h-100">
+      <h1 class="text-center">Edit Meta Form</h1>
+      <form action="/admin/metaForm/<%= seo._id %>/update" method="POST" class="col-xl-6 mx-auto">
+        <div class="form-feild">
+          <label>URL:</label>
+          <input type="text" name="slug" value="<%= seo.slug %>" class="form-control" required>
+        </div>
+        <div class="form-feild">
+          <label>Meta Title:</label>
+          <input type="text" name="metaTitle" value="<%= seo.metaTitle %>" class="form-control" required>
+        </div>
+        <div class="form-feild">
+          <label>Meta Keywords:</label>
+          <input type="text" name="metaKeyword" value="<%= seo.metaKeyword %>" class="form-control">
+        </div>
+        <div class="form-feild">
+          <label>Meta Description:</label>
+          <textarea name="metaDescription" value="<%= seo.metaDescription %>" class="form-control" required><%= seo.metaDescription %></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

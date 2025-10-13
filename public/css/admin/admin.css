@@ -1,0 +1,92 @@
+.dvh{
+    height: 100dvh;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+.form-feild{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.admin-link{
+    position: relative;
+    padding: 1rem 0;
+    margin: .5rem 0;
+    background-color: var(--black-clr);
+    border-radius: .4rem;
+    transition: 0.4s ease-in-out;
+}
+
+.admin-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white-clr);
+    width: 0%;
+    height: 2px;
+    transition: 0.4s ease-in-out;
+}
+
+.admin-link:hover::before{
+    width: 100%;
+}
+
+.admin-link:hover,
+.admin-link.active{
+    background-color: var(--grey-clr1);
+}
+
+.admin-link a{
+    color: var(--white-clr);
+    font-weight: 500;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.table-head{
+    background-color: var(--black-clr);
+    color: var(--white-clr);
+    border-radius: 1rem;
+}
+
+.table-head th{
+    padding: 1rem;
+}
+
+.table-head th:nth-child(1){
+    border-radius: 1rem 0 0 0;
+}
+
+.table-head th:nth-child(5){
+    border-radius: 0 1rem 0 0;
+}
+
+.table-body{
+    background-color: var(--white-clr);
+    transition: 0.2s ease-in-out;
+}
+
+.table-body td{
+    font-size: .95rem;
+    font-weight: 400;
+    padding: .5rem;
+}
+
+.table-body:hover{
+    background-color: var(--grey-clr);
+}

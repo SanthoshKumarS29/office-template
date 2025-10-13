@@ -1,49 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>SEO Dashboard</title>
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/admin/admin.css">
 </head>
+
 <body>
-  <h1>SEO Dashboard</h1>
+  <h2 class="text-start">Seo Form</h2>
+  <form action="/admin/metaForm" method="POST" class="row row-cols-1 gap-2">
+    <div class="form-feild">
+      <label>URL:</label>
+      <input type="text" name="slug" class="form-control" required >
+    </div>
+    <div class="form-feild">
+      <label>Meta Title:</label>
+      <input type="text" name="metaTitle" class="form-control" required>
+    </div>
 
-  <h2>Add New SEO</h2>
-  <form action="/admin/metaForm" method="POST">
-    <label>URL:</label><br>
-    <input type="text" name="slug" required><br>
-
-    <label>Meta Title:</label><br>
-    <input type="text" name="metaTitle" required><br>
-
-    <label>Meta Description:</label><br>
-    <textarea name="metaDescription" required></textarea><br>
-
-    <label>Meta Keyword:</label><br>
-    <input type="text" name="metaKeyword"><br>
-
-    <button type="submit">Save</button>
+    <div class="form-feild">
+      <label>Meta Description:</label>
+      <textarea name="metaDescription" class="form-control" required></textarea>
+    </div>
+    <div class="form-feild">
+      <label>Meta Keyword:</label>
+      <input type="text" name="metaKeyword" class="form-control">
+    </div>
+    <div class="mt-3s">
+      <button type="submit" class="btn btn-primary">Save</button>
+    </div>
   </form>
-
-  <h2>Existing SEO Entries</h2>
-  <table>
-    <tr>
-      <th>URL</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Keywords</th>
-      <th>Actions</th>
-    </tr>
-    <% seoList.forEach(seo => { %>
-      <tr>
-        <td><%= seo.slug %></td>
-        <td><%= seo.metaTitle %></td>
-        <td><%= seo.metaDescription %></td>
-        <td><%= seo.metaKeyword %></td>
-        <td>
-          <a href="/admin/metaForm/<%= seo._id %>/edit">Edit</a> | 
-          <a href="/admin/metaForm/<%= seo._id %>/delete">Delete</a>
-        </td>
-      </tr>
-    <% }) %>
-  </table>
 </body>
+
 </html>

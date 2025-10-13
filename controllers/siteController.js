@@ -3,11 +3,8 @@ import fs from "fs"
 import { fileURLToPath } from "url";
 import Seo from "../admin/models/Seo.js";
 
-// get file 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename)
-
-const metadetailPath = path.join(__dirname, '../public/dynamicDatas/seo.json')
+const __dirname = path.dirname(__filename);
 
 
 export const getHome = async (req, res) => {

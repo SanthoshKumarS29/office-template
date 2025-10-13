@@ -1,8 +1,9 @@
 :root {
     --padding-top: 4.5rem;
     --white-clr: #FFF;
-    --black-clr: #111;
+    --black-clr: #000000;
     --grey-clr: #e9ecef;
+    --grey-clr1: #232323;
     --brand-clr: #8a4fff;
     --brand-clr-lig: #c3bef7;
     --blue-clr: #0d6efd;
