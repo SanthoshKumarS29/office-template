@@ -1,24 +1,4 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
 import Seo from '../models/Seo.js';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const SEO_PATH = path.join(__dirname, '../../public/dynamicDatas/seo.json');
-
-// uitiliy
-function readSeoData() {
-    if (fs.existsSync(SEO_PATH)) {
-        return JSON.parse(fs.readFileSync(SEO_PATH, 'utf-8'))
-    }
-    return {}
-}
-
-function writeSeoData(data) {
-    fs.writeFileSync(SEO_PATH, JSON.stringify(data, null, 2))
-}
 
 
 // Get Login 
@@ -31,7 +11,7 @@ export const postLogin = (req, res) => {
     const { username, password } = req.body;
     if (username === "admin" && password === "1234") {
         req.session.isLoggedIn = true;
-        res.redirect('/admin/dashboard');
+        res.redirect('/admin/detailPage');
     } else {
         res.render("login", { error: "Invalid credentials" })
     }
@@ -59,7 +39,7 @@ export const getDatas = async (req, res) => {
     try {
         let filter = {};
         if (searchQuery) {
-            filter.slug = { $regex: searchQuery, $option: 'i'}
+            filter.slug = { $regex: searchQuery, $options: 'i'}
         }
 
         const seoList = await Seo.find(filter).lean();

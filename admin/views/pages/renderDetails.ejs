@@ -10,7 +10,7 @@
 </head>
 <body>
   <h2>Existing SEO Entries</h2>
-  <form method="get" action="/admin/dashboard" class="d-flex mb-3" style="max-width: 400px;">
+  <form method="GET" action="/admin/detailPage" class="d-flex mb-3" style="max-width: 400px;">
    <input 
     type="text" 
     name="q" 
@@ -19,9 +19,12 @@
     class="form-control" 
     style="width:300px; display:inline-block;"
   />
+  <div class="d-flex gap-2">
     <button type="submit" class="btn btn-primary ms-2">Search</button>
+    <a href="/admin/detailPage" class="btn btn-secondary">Reset</a>
+  </div>
   </form>
-  <table>
+  <table class="w-100">
     <thead>
       <tr class="table-head">
         <th>URL</th>
