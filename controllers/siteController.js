@@ -2,6 +2,7 @@ import path from "path";
 import fs from "fs"
 import { fileURLToPath } from "url";
 import Seo from "../admin/models/Seo.js";
+import Blog from "../admin/models/Blog.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -97,24 +98,39 @@ export const productRelatedPages = async (req,res) => {
     }
 }
 
-export const blogHubPage = (req, res) => {
-    res.render("pages/blog/hubPage.ejs",{
-        currentSection:"blog",
-    })
-}
+export const blogHubPage = async (req, res) => {
+  try {
+    const blogs = await Blog.find({ status: "published" }).sort({ createdAt: -1 }).lean();
 
-export const blogDetailPage = (req,res) => {
-    const {slug} = req.params; 
-    const viewPath = path.join(__dirname, `../views/pages/blog/${slug}.ejs`);
+    res.render("pages/blog/hubPage.ejs", {
+      currentSection: "blog",
+      blogs, // plural
+    });
+
+    console.log("Blogs loaded:", blogs.length);
+  } catch (error) {
+    console.error("Error loading blogs:", error);
+    res.status(500).send("Error loading blogs");
+  }
+};
+
+
+export const blogDetailPage = async (req, res) => {
+  const { slug } = req.params;
+  try {
+    const blog = await Blog.findOne({ slug, status: "published" }).lean();
+    if (!blog) return res.status(404).render("pages/static/notFound");
     
-    if(fs.existsSync(viewPath)){
-        res.render(`pages/blog/${slug}.ejs`,{
-            currentSection:"blog",
-        })
-    } else {
-        res.status(404).render('pages/static/notFound.ejs');
-    }
-}
+    res.render("pages/blog/blogDetail.ejs", {
+      currentSection: "blog",
+      blog,
+    });
+  } catch (err) {
+    console.error("Error loading blog:", err);
+    res.status(500).send("Server error");
+  }
+};
+
 
 export const companyHubPage = (req, res) => {
     res.render("pages/company/about.ejs",{

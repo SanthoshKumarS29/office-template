@@ -1,0 +1,121 @@
+<!-- admin/views/blogForm.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= blog && blog._id ? "Edit Blog" : "New Blog" %>
+  </title>
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/admin/admin.css">
+  <script src="https://cdn.tiny.cloud/1/flq3hfncn3uln2ktq69nhxv22hf0x1kngpt611hhkj4il3cq/tinymce/8/tinymce.min.js"
+    referrerpolicy="origin"></script>
+  <style>
+    .editor-preview {
+      border: 1px solid #ddd;
+      padding: 16px;
+      margin-top: 16px;
+      background: #fff;
+    }
+
+    .form-row {
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    <%= blog && blog._id ? "Edit Blog" : "Create New Blog" %>
+  </h1>
+
+  <form action="<%= blog && blog._id ? '/admin/blogs/' + blog._id : '/admin/blogs' %>" method="POST"
+    enctype="multipart/form-data">
+    <div class="form-field">
+      <label>Status</label>
+      <select name="status" class="form-control">
+        <option value="draft" <%= blog.status === "draft" ? "selected" : "" %>>Draft</option>
+        <option value="published" <%= blog.status === "published" ? "selected" : "" %>>Published</option>
+      </select>
+    </div>
+
+    <div class="form-feild">
+      <label>Title</label>
+      <input type="text" name="title" id="title" value="<%= blog.title || '' %>" required class="form-control" />
+    </div>
+
+    <div class="form-feild">
+      <label>Slug (auto-generated if empty)</label>
+      <input type="text" name="slug" id="slug" value="<%= blog.slug || '' %>"
+        placeholder="e.g. crypto-exchange-development" class="form-control" />
+    </div>
+
+    <div class="form-feild">
+      <label>Category</label>
+      <input type="text" name="category" value="<%= blog.category || '' %>" placeholder="e.g. Blockchain"
+        class="form-control" />
+    </div>
+
+    <div class="form-feild">
+      <label>Description (short)</label>
+      <textarea name="description" rows="2" class="form-control"><%= blog.description || '' %></textarea>
+    </div>
+
+    <div class="form-feild">
+      <label>Featured Image (optional)</label>
+      <% if (blog.image) { %>
+        <div class="blue-btn"><img src="<%= blog.image %>" alt="featured" /></div>
+        <% } %>
+          <input type="file" name="image" accept="image/*" />
+    </div>
+
+    <div class="form-feild">
+      <label>Content</label>
+      <textarea id="content" name="content"><%= blog.content || '' %></textarea>
+    </div>
+
+    <div class="d-flex gap-2 align-items-center">
+      <button type="button" id="previewBtn" class="btn btn-primary">Preview Below</button>
+      <button type="submit" class="btn btn-success">
+        <%= blog && blog._id ? 'Update Blog' : 'Save Blog' %>
+      </button>
+
+    </div>
+  </form>
+
+  <h3>Preview</h3>
+  <div id="preview" class="editor-preview">
+    <!-- live preview will be injected here -->
+  </div>
+
+  <script>
+    tinymce.init({
+      selector: '#content',
+      height: 400,
+      plugins: 'table link image lists code',
+      toolbar: 'undo redo | bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | link image | table | code',
+      menubar: false
+    });
+
+    // preview button
+    document.getElementById('previewBtn').addEventListener('click', () => {
+      const content = tinymce.get('content').getContent();
+      document.getElementById('preview').innerHTML = content;
+      // Optionally scroll to preview
+      document.getElementById('preview').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // auto-update preview while typing (optional)
+    tinymce.init({
+      selector: '#content',
+      setup(editor) {
+        editor.on('keyup change', () => {
+          // update preview live if you want:
+          // document.getElementById('preview').innerHTML = editor.getContent();
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

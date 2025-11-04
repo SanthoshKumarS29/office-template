@@ -8,6 +8,7 @@ import siteRoutes from './routes/siteRoutes.js';
 import dynamicSidebarRender from './middleware/dynamicSideBarRender.js';
 import adminRouter from './admin/routes/adminRoutes.js';
 import connectDb from './admin/config/db.js';
+import blogRouter from './admin/routes/blogRoutes.js';
 
 
 const app = express();
@@ -44,6 +45,7 @@ app.use(
 // routes
 app.use('/', siteRoutes);
 app.use('/admin', adminRouter);
+app.use('/admin', blogRouter);
 
 
 // start Server

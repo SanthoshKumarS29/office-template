@@ -146,6 +146,20 @@
         "isdropDown":false
       }
   ],
+  "blog": [
+      {
+        "title": "Home",
+        "path": "/",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Blog",
+        "path":"/blog",
+        "rel":"follow",
+        "isdropDown":false
+      }
+  ],
   "footer": [
     {
       "title":"Service",

@@ -9,7 +9,7 @@
   <div class="dvh">
     <div class="d-flex flex-column justify-content-center h-100">
       <h1 class="text-center">Edit Meta Form</h1>
-      <form action="/admin/metaForm/<%= seo._id %>/update" method="POST" class="col-xl-6 mx-auto">
+      <form action="/admin/metaForm/<%= seo._id %>/update" method="POST" enctype="multipart/form-data" class="col-xl-6 mx-auto">
         <div class="form-feild">
           <label>URL:</label>
           <input type="text" name="slug" value="<%= seo.slug %>" class="form-control" required>

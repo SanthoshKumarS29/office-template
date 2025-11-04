@@ -15,7 +15,7 @@ const blogSchema = new mongoose.Schema({
         type:String,
         default: ''
     },
-    descripition: {
+    description: {
         type:String,
         default: ''
     },
@@ -26,7 +26,15 @@ const blogSchema = new mongoose.Schema({
     content: {
         type: String,
         default: ''
+    },
+
+    status: {
+        type: String,
+        enum : ["draft","published"],
+        default: "draft"
     }
+
+
 }, {timestamps: true})
 
 export default mongoose.model("Blog", blogSchema)
