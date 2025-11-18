@@ -1,4 +1,4 @@
-import Blog from '../models/Blog.js';
+import Blog from '../../models/Blog.js';
 import slugify from '../../utils/slugify.js';
 import fs from 'fs';
 import path from 'path';

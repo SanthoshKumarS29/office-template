@@ -1,5 +1,5 @@
 const dynamicSidebarRender = (req,res,next) => {
-    res.locals.currentSection="home"
+    res.locals.currentSection = "home"
     next()
 }
 

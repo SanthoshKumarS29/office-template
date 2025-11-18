@@ -1,8 +1,8 @@
 import path from "path";
 import fs from "fs"
 import { fileURLToPath } from "url";
-import Seo from "../admin/models/Seo.js";
-import Blog from "../admin/models/Blog.js";
+import Seo from "../models/Seo.js";
+import Blog from "../models/Blog.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -114,7 +114,6 @@ export const blogHubPage = async (req, res) => {
   }
 };
 
-
 export const blogDetailPage = async (req, res) => {
   const { slug } = req.params;
   try {
@@ -131,22 +130,43 @@ export const blogDetailPage = async (req, res) => {
   }
 };
 
+export const companyHubPage = async (req, res) => {
+    const { slug } = req.params;
 
-export const companyHubPage = (req, res) => {
+    const seoData = await Seo.findOne({ slug }).lean()
+    const seo = seoData || {}
+
     res.render("pages/company/about.ejs",{
         currentSection:"company",
+        seo
     })
 }
 
-export const companyRelatedPages = (req,res) => {
+export const companyRelatedPages = async (req,res) => {
     const {slug} = req.params; 
     const viewPath = path.join(__dirname, `../views/pages/company/${slug}.ejs`);
     
     if(fs.existsSync(viewPath)){
+        const seoData = await Seo.findOne({ slug }).lean()
+        const seo = seoData || {}
+
         res.render(`pages/company/${slug}.ejs`,{
             currentSection:"company",
+            seo
         })
     } else {
         res.status(404).render('pages/static/notFound.ejs');
     }
+}
+
+export const contact = async (req,res) => {
+    const { slug } = req.params;
+    
+    const seoData = await Seo.findOne({ slug }).lean()
+    const seo = seoData || {}
+
+    res.render("pages/contact.ejs", {
+        currentSection: "contact",
+        seo
+    })
 }

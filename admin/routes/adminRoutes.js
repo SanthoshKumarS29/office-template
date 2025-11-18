@@ -1,11 +1,14 @@
 import express from "express";
 import {  createSeoData, dashboard, deleteSeoForm, editSeoForm, getDatas, getLogin, postLogin, updateSeoForm} from "../controllers/metaFormControllers.js";
 import { isAuthenticated } from "../middleware/auth.js";
+import { getAllContacts } from "../controllers/contactControllers.js";
 
 const adminRouter = express.Router();
 
 adminRouter.get("/login", getLogin);
 adminRouter.post("/login", postLogin);
+
+adminRouter.get("/contactSub", getAllContacts)
 
 adminRouter.get('/dashboard', dashboard);
 adminRouter.get('/detailPage', getDatas);

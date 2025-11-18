@@ -1,4 +1,4 @@
-import Seo from '../models/Seo.js';
+import Seo from '../../models/Seo.js';
 
 
 // Get Login 

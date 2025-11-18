@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Page</title>
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/admin/admin.css">
+  <link rel="stylesheet" href="/css/siteTheme.css">
+</head>
+
+<body>
+  <h2>Contact Entries</h2>
+
+  <div class="d-flex gap-2 align-items-center mb-3">
+    <a href="/admin/contactSub" class="btn btn-primary <%= currentType === 'all' ? 'active' : '' %>">All</a>
+    <a href="/admin/contactSub?type=contact" class="btn btn-primary <%= currentType === 'contact' ? 'active' : '' %>">Contact</a>
+    <a href="/admin/contactSub?type=newsletter" class="btn btn-primary <%= currentType === 'newsletter' ? 'active' : '' %>">Newsletter</a>
+    <a href="/admin/contactSub?type=popup" class="btn btn-primary <%= currentType === 'popup' ? 'active' : '' %>">Popup</a>
+  </div>
+
+  <table class="w-100">
+    <thead>
+      <tr class="table-head">
+        <th>Type</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Message</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% contacts.forEach(contact => { %>
+      <tr class="table-body">
+        <td class="text-uppercase fw-bold"><%= contact.formType %></td>
+        <td><%= contact.name || '---' %></td>
+        <td><%= contact.email %></td>
+        <td><%= contact.countryCode || '----' %>+ <%= contact.phoneNumber || '----' %></td>
+        <td><%= contact.message || '----' %></td>
+        <td><%= new Date(contact.createdAt).toLocaleString() %></td>
+      </tr>
+    <% }) %>
+    </tbody>
+  </table>
+
+</body>
+
+</html>

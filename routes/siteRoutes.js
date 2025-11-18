@@ -1,5 +1,6 @@
 import express from 'express'
-import {blogDetailPage, blogHubPage, companyHubPage, companyRelatedPages, getHome, productHubPage, productRelatedPages, serviceHubPage, serviceRelatedPages, tredingHubPage} from '../controllers/siteController.js'
+import {blogDetailPage, blogHubPage, companyHubPage, companyRelatedPages, contact, getHome, productHubPage, productRelatedPages, serviceHubPage, serviceRelatedPages, tredingHubPage} from '../controllers/siteController.js'
+
 
 
 const router = express.Router()
@@ -14,5 +15,6 @@ router.get('/blog', blogHubPage);
 router.get('/blog/:slug', blogDetailPage);
 router.get('/company', companyHubPage);
 router.get('/company/:slug', companyRelatedPages);
+router.get('/contact-us', contact);
 
 export default router

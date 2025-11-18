@@ -17,10 +17,16 @@
         <div class="p-3">
           <h2 class="py-3">Dashboard</h2>
           <div>
-            <p class="text-secondary m-0">Add Meta Detail Page</p>
+            <p class="text-secondary m-0 ">Contact Detail Page</p>
             <ul class="list-unstyled ps-3">
-              <li class="admin-link <%= activePage === 'detail' ? 'active' : '' %>"><a href="/admin/detailPage">Detail Page</a></li>
+              <li class="admin-link <%= activePage === 'contacts' ? 'active' : '' %>"><a href="/admin/contactSub">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-secondary m-0 ">Add Meta Detail Page</p>
+            <ul class="list-unstyled ps-3">
               <li class="admin-link <%= activePage === 'metaForm' ? 'active' : '' %>"><a href="/admin/dashboard">Seo Form</a></li>
+              <li class="admin-link <%= activePage === 'detail' ? 'active' : '' %>"><a href="/admin/detailPage">Detail Page</a></li>
             </ul>
           </div>
           <div>
