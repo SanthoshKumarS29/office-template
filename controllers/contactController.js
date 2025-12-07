@@ -1,20 +1,17 @@
 import Contact from "../models/Contact.js";
-import validator from 'validator';
+import { contactRules, validate } from "../utils/feildCheck.js";
 
 export const formSubmit = async (req, res) => {
     try {
+
         console.log("📩 Form data received:", req.body);
         const { name, email, message, countryCode, phoneNumber, formType } = req.body;
 
         // validation
-        if (!email || !validator.isEmail(email)) {
-            return res.status(400).json({
-                success: false,
-                message: "Invalid Email"
-            })
-        }
-        if (!name || !email || !phoneNumber || !countryCode) {
-            return res.status(400).json({ success: false, message: "All fields are required." });
+        const errors = validate(req.body, contactRules)
+
+        if  (Object.keys(errors).length > 0) {
+            return res.status(400).json({ errors });
         }
 
         const newContact = new Contact({

@@ -1,0 +1,60 @@
+<section>
+    <div>
+        <h1 class="text-start">Career Form</h1>
+    </div>
+    <div>
+        <form class="career-form"  enctype="multipart/form-data">
+            <div>
+                <label for="name" class="form-label">Enter Your Name:</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name"
+                    autocomplete="name">
+                <span class="feildError" id="nameError"></span>
+            </div>
+            <div>
+                <label for="email" class="form-label">Enter Your Email:</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email"
+                    autocomplete="email">
+                <span class="feildError" id="emailError"></span>
+            </div>
+            <div>
+                <label for="email" class="form-label">Enter Your Number:</label>
+                <input id="phone-contact" name="phone" class="iti-input form-control" type="tel"
+                    placeholder="Enter Your Phone number" />
+                <!-- optional hidden fields (not required, we'll append in JS) -->
+                <input type="hidden" name="countryCode" />
+                <span class="feildError" id="phoneError"></span>
+            </div>
+            <div>
+                <label class="form-label">Job Role</label>
+                <select name="jobRole" class="form-control">
+                    <option value="">Select</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Blockchain Developer">Blockchain Developer</option>
+                </select>
+                <span class="feildError" id="jobRoleError"></span>
+            </div>
+
+            <div>
+                <label class="form-label">Experience</label>
+                <select name="experience" class="form-control">
+                    <option value="">Select</option>
+                    <option value="Fresher">Fresher</option>
+                    <option value="1-2 years">1–2 years</option>
+                    <option value="3-5 years">3–5 years</option>
+                    <option value="6+ years">6+ years</option>
+                </select>
+                <span class="feildError" id="experienceError"></span>
+            </div>
+
+            <div>
+                <label class="form-label">Resume (PDF only)</label>
+                <input type="file" name="resume" class="form-control" />
+                <span class="feildError" id="resumeError"></span>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </form>
+    </div>
+</section>

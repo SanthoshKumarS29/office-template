@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Page</title>
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/admin/admin.css">
+  <link rel="stylesheet" href="/css/siteTheme.css">
+</head>
+
+<body>
+  <h2>Career Entries</h2>
+
+  <table class="w-100">
+    <thead>
+      <tr class="table-head">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>JobRole</th>
+        <th>Experience</th>
+        <th>Resume</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% careerList.forEach(career => { %>
+      <tr class="table-body">
+        <td><%= career.name || '---' %></td>
+        <td><%= career.email %></td>
+        <td><%= career.countryCode || '----' %>+ <%= career.phoneNumber || '----' %></td>
+        <td><%= career.jobRole || '----' %></td>
+        <td><%= career.experience || '----' %></td>
+        <td><%= career.resume || '----' %></td>
+        <td><%= new Date(career.createdAt).toLocaleString() %></td>
+      </tr>
+    <% }) %>
+    </tbody>
+  </table>
+
+</body>
+
+</html>

@@ -24,8 +24,13 @@
 
 .admin-link{
     position: relative;
-    padding: 1rem 0;
+    display: block;
+    padding: 1rem;
     margin: .5rem 0;
+    color: var(--white-clr);
+    font-size: .85rem;
+    font-weight: 500;
+    text-decoration: none;
     background-color: var(--black-clr);
     border-radius: .4rem;
     transition: 0.4s ease-in-out;
@@ -42,6 +47,7 @@
     transition: 0.4s ease-in-out;
 }
 
+.admin-link.active::before,
 .admin-link:hover::before{
     width: 100%;
 }
@@ -49,14 +55,6 @@
 .admin-link:hover,
 .admin-link.active{
     background-color: var(--grey-clr1);
-}
-
-.admin-link a{
-    color: var(--white-clr);
-    font-size: .85rem;
-    font-weight: 500;
-    padding: .5rem .75rem;
-    text-decoration: none;
 }
 
 .table-head{

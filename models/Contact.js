@@ -11,7 +11,7 @@ const contactSchema = new mongoose.Schema({
     message: String,
     formType: {
         type: String,
-        enum: ['contact', 'popup', 'newsletter', 'footer', 'career'],
+        enum: ['contact', 'footer'],
         required: true
     },
     createdAt: {

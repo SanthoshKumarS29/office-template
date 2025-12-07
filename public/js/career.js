@@ -1,7 +1,7 @@
-import { validate, contactRules } from "/js/partials/feildCheck.js";
+import { careerRules, validate } from "./partials/feildCheck.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const forms = document.querySelectorAll(".contact-form");
+  const forms = document.querySelectorAll(".career-form");
 
   forms.forEach(form => {
     const phoneInputField = form.querySelector(".iti-input");
@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     form.querySelectorAll("input, textarea, select").forEach(field => {
       field.addEventListener("input", () => {
         const errorElement = document.getElementById(field.name + "Error");
+        console.log('ids and name:', document.getElementById(field.name))
         if (errorElement) errorElement.textContent = "";
       });
     });
@@ -44,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
 
@@ -52,20 +52,19 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".feildError").forEach(el => el.textContent = "");
 
       // Collect form data
-      const formType = form.dataset.formtype;
       const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
 
       if (iti) {
         const phoneNumber = iti.getNumber();
         const countryCode = iti.getSelectedCountryData().dialCode;
-        data.phoneNumber = phoneNumber;
-        data.countryCode = countryCode;
+        formData.set("phoneNumber", phoneNumber);
+        formData.set("countryCode", countryCode);
       }
 
-      const errors = validate(data, contactRules);
+      const updatedData = Object.fromEntries(formData.entries());
+      const errors = validate(updatedData, careerRules);
 
-      // errors check
+            // errors check
       if (Object.keys(errors).length > 0) {
         for (let field in errors) {
           const el = document.getElementById(`${field}Error`);
@@ -74,14 +73,13 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      data.formType = formType;
+      console.log('formData', formData)
 
       // Send data to backend
       try {
-        const res = await fetch("/contact-us", {
+        const res = await fetch("/career", {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data),
+          body: formData,
         });
 
         const result = await res.json();
