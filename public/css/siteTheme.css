@@ -1,21 +1,3 @@
-:root {
-    --padding-top: 4.5rem;
-    --white-clr: #FFF;
-    --black-clr: #000000;
-    --grey-clr: #e9ecef;
-    --grey-clr1: #232323;
-    --brand-clr: #8a4fff;
-    --brand-clr-lig: #c3bef7;
-    --blue-clr: #0d6efd;
-    --ligblue-clr: #0d6dfd6d;
-    --pink-clr: #F527E4;
-    --ligpink-clr: #f527e476;
-    --green-clr: #2EFF2E;
-    --liggreen-clr: #2eff2e75;
-
-    --blue-v1:#e3f2fd;
-}
-
 main {
     padding-top: var(--padding-top);
     font-family: Arial, Helvetica, sans-serif;

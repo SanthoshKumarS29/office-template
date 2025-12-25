@@ -25,6 +25,163 @@
     transform: translateX(-100%);
 }
 
+.clients-slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    padding: 2rem 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.clients-slider-container::before,
+.clients-slider-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    /* fade width */
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Left fade */
+.clients-slider-container::before {
+    left: 0;
+    background: linear-gradient(to right,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+/* Right fade */
+.clients-slider-container::after {
+    right: 0;
+    background: linear-gradient(to left,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.clients-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+.clients-slider img {
+    flex-shrink: 0;
+    margin-right: 1rem;
+    /* use margin instead of gap */
+}
+
+.clients-slider-container:hover .clients-slider {
+    animation-play-state: paused;
+}
+
+
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.techstack-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: .2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.tech-tab {
+    background-color: var(--white-clr);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.tech-tab.active {
+    border-left: 2px solid var(--black-clr);
+}
+
+.frontend,
+.backend,
+.server,
+.database,
+.devops,
+.mobile,
+.cms,
+.blockchain {
+    position: relative;
+}
+
+.frontend::before,
+.backend::before,
+.server::before,
+.database::before,
+.devops::before,
+.mobile::before,
+.cms::before,
+.blockchain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 0 .5rem 0;
+}
+
+.frontend::before {
+    background-color: var(--brand-clr);
+}
+
+.backend::before {
+    background-color: var(--blue-clr);
+}
+
+.server::before {
+    background-color: var(--pink-clr);
+}
+
+.database::before {
+    background-color: var(--green-clr);
+}
+
+.devops::before {
+    background-color: var(--grey-clr1);
+}
+
+.mobile::before {
+    background-color: var(--ligblue-clr);
+}
+
+.cms::before {
+    background-color: var(--grey-clr2);
+}
+
+.blockchain::before {
+    background-color: var(--ligpink-clr);
+}
+
+.client-bg1,
+.client-bg3 {
+    background-color: var(--grey-clr3);
+}
+
+.client-bg2,
+.client-bg4 {
+    background-color: var(--grey-clr4);
+}
+
+
 .custom-overflow-scroll {
     overflow-x: visible;
 }
@@ -37,7 +194,6 @@
     display: flex;
     align-items: center;
 }
-
 
 .custom-flex {
     display: flex;
@@ -59,7 +215,7 @@
 }
 
 .custom-flex>div {
-    flex: 0 0 calc(33.333% - 1rem);
+    flex: 0 0 calc(28.333% - 1rem);
 }
 
 .custom-flex-four>div {
@@ -130,6 +286,79 @@
     transform: scale(1.025);
 }
 
+.calltoaction-container {
+    position: relative;
+    height: 100%;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--black-clr);
+    color: var(--white-clr);
+    border-radius: .5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.calltoaction-container::before,
+.calltoaction-container::after {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1rem solid var(--white-clr);
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+
+.calltoaction-container::before {
+    top: -10%;
+    left: -5%;
+}
+
+.calltoaction-container::after {
+    bottom: -10%;
+    right: -5%;
+}
+
+.calltoaction-container strong {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    line-height: 2rem;
+}
+
+.calltoaction-container p {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    line-height: 2rem;
+    color: var(--white-clr);
+}
+
+.calltoaction-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.calltoaction-container button {
+    padding: .5rem 1rem;
+    background-color: var(--white-clr);
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.calltoaction-container button:hover {
+    transform: scale(1.025);
+}
+
 .accordion-item {
     font-size: 1rem;
     border: 4px var(--blue-clr);
@@ -184,7 +413,7 @@
     }
 
     .custom-flex>div {
-        flex: 0 0 100%;
+        flex: 0 0 calc(90% - 1rem);
     }
 
     .custom-flex-four>div {
@@ -193,6 +422,22 @@
 
     .cta {
         height: auto;
+    }
+
+    .calltoaction-container::before,
+    .calltoaction-container::after {
+        width: 70px;
+        height: 70px;
+    }
+
+    .calltoaction-container::before{
+        top: -8%;
+        left: -8%;
+    }
+
+    .calltoaction-container::before{
+        bottom: -8%;
+        right: -8%;
     }
 
 }
@@ -234,9 +479,25 @@
     .custom-flex-four>div {
         flex: 0 0 calc(50.333% - 1rem);
     }
-    
+
     .cta {
         height: auto;
+    }
+
+    .calltoaction-container::before,
+    .calltoaction-container::after {
+        width: 100px;
+        height: 100px;
+    }
+
+    .calltoaction-container::before{
+        top: -8%;
+        left: -8%;
+    }
+
+    .calltoaction-container::before{
+        bottom: -8%;
+        right: -8%;
     }
 }
 
@@ -277,6 +538,12 @@
     .custom-flex-four>div {
         flex: 0 0 calc(33.333% - 1rem);
     }
+    
+    .calltoaction-container::before,
+    .calltoaction-container::after {
+        width: 125px;
+        height: 125px;
+    }
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
@@ -284,11 +551,25 @@
         width: 225px;
     }
 
+    .clients-slider-container {
+        max-width: 800px;
+    }
+
     .custom-overflow-scroll {
         overflow-x: auto;
     }
 
+    .custom-flex>div {
+        flex: 0 0 calc(37.777% - 1rem);
+    }
+
     .custom-flex-four>div {
         flex: 0 0 calc(33.333% - 1rem);
+    }
+     
+    .calltoaction-container::before,
+    .calltoaction-container::after {
+        width: 125px;
+        height: 125px;
     }
 }

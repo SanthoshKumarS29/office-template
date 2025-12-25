@@ -1,0 +1,73 @@
+/* .about-banner{
+    height: 100dvh;
+} */
+
+.about-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    height: 100%;
+}
+
+.bullet-points1{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    padding: 1rem;
+    border-radius: .25rem;
+    font-weight: 400;
+    background-color: var(--grey-clr3);
+    transform: translateY(0);
+    transition: .3s ease-in-out;
+}
+
+.bullet-points1:hover{
+    transform: translateY(-5%);
+}
+
+.card-misvis{
+    background-color: var(--grey-clr3);
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: .25rem;
+}
+
+.bullet-points2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+    background-color: var(--grey-clr3);
+    border-radius: .5rem;
+    height: 100%;
+}
+
+.bullet-points2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 2px solid var(--black-clr);
+    border-right: 2px solid var(--black-clr);
+    width: 15px;
+    height: 15px;
+    border-radius: .15rem;
+    transition: width .2s ease-in-out, height .2s ease-in-out;
+}
+
+.bullet-points2:hover::before{
+    width: 25px;
+    height: 25px;
+}

@@ -1,9 +1,38 @@
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><%= seo.metaTitle || "AI Development Company" %></title>
-<meta name="description" content="<%= seo.metaDescription || '' %>" />
-<meta name="keywords" content="<%= seo.metaKeyword || '' %>" />
+<!-- Preconnect for best performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Inter (400, 500, 600) + Montserrat (600, 700) -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap"
+    rel="stylesheet">
+
+
+
 
 <style>
+    :root {
+        --padding-top: 4.5rem;
+        --white-clr: #FFF;
+        --black-clr: #000000;
+        --grey-clr: #e9ecef;
+        --grey-clr1: #232323;
+        --grey-clr2: #555;
+        --grey-clr3: #F2F2F2;
+        --grey-clr4: #DBDBDB;
+        --grey-clr5: #C4C4C4;
+        --brand-clr: #8a4fff;
+        --brand-clr-lig: #c3bef7;
+        --blue-clr: #0d6efd;
+        --ligblue-clr: #0d6dfd6d;
+        --pink-clr: #F527E4;
+        --ligpink-clr: #f527e476;
+        --green-clr: #2EFF2E;
+        --liggreen-clr: #2eff2e75;
+        --blue-v1: #e3f2fd;
+    }
+
     /* Global Reset */
     *,
     *::before,
@@ -11,9 +40,60 @@
         box-sizing: border-box;
     }
 
+    /* Global font family (safe override) */
     body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI', sans-serif;
+        font-family: "Inter", sans-serif;
+        color: #111;
+        line-height: 1.7;
+    }
+
+    /* Headings — override Bootstrap sizes safely */
+    h1,
+    .h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(2rem, 4vw + 1rem, 3rem);
+        font-weight: 700;
+    }
+
+    h2,
+    .h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(1.8rem, 3vw + 1rem, 2.4rem);
+        font-weight: 700;
+    }
+
+    h3,
+    .h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(1.5rem, 2.5vw + 1rem, 2rem);
+        font-weight: 600;
+    }
+
+    h4,
+    .h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    h5,
+    .h5 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    h6,
+    .h6 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    /* Paragraph */
+    p {
+        font-size: 1rem;
+        color: var(--grey-clr2);
+        margin-bottom: 0 !important;
     }
 </style>
