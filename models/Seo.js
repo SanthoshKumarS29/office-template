@@ -2,7 +2,12 @@ import mongoose from "mongoose";
 
 const seoSchema = new mongoose.Schema({
     slug: {
-        type:String,
+        type: String,
+        required: true,
+        unique: true
+    },
+    pageName: {
+        type: String,
         required: true,
         unique: true
     },
@@ -15,6 +20,6 @@ const seoSchema = new mongoose.Schema({
     metaKeyword: {
         type: String
     }
-}, {timestamps: true})
+}, { timestamps: true })
 
 export default mongoose.model("Seo", seoSchema)

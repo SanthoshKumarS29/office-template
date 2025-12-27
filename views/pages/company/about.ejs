@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="/css/company/about.css">
 </head>
 <body>
-    <%- include('../../components/partials/header.ejs') %>
+    <header>
+        <%- include('../../components/partials/header.ejs') %>
+    </header>
     <main class="bodyflex">
-        <div class="sidebar-links" id="sidebar">
+        <aside class="sidebar-links" id="sidebar">
             <%- include('../../components/partials/sideBar.ejs') %>
-        </div>    
+        </aside>    
         <div class="custom-container">
             <%- include('../../components/company/about/banner.ejs') %>
             <%- include('../../components/company/about/aboutUs.ejs') %>
@@ -21,6 +23,9 @@
             <%- include('../../components/partials/footerContact.ejs') %>
         </div>
     </main>
-    <%- include('../../components/partials/footerLinks.ejs') %>
+    <footer class="custom-container">
+        <%- include('../../components/partials/footer.ejs') %>
+        <%- include('../../components/partials/footerLinks.ejs') %>
+    </footer>
 </body>
 </html>

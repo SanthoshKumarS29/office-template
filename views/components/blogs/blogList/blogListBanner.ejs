@@ -1,0 +1,51 @@
+<section>
+    <div class="py-5">
+        <div class="text-center col-xl-7 mx-auto py-4">
+            <h1>Latest Insights on <span class="blue-clr">Blockchain, Crypto & Web3</span></h1>
+            <p>Explore expert-written articles covering blockchain development, crypto exchanges, DeFi platforms, NFT
+                marketplaces, tokenization, and emerging Web3 technologies.</p>
+        </div>
+        <div class="carousel-wrapper pt-5">
+            <div class="d-flex justify-content-between align-items-center gap-2">
+                <div>
+                    <h2>Latest Blogs</h2>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <div class="side-btn">
+                        <button class="prev" aria-label="Previous"><img src="/images/png/left-circle-arrow.png" alt="Previous"
+                                width="24" height="24" class="img-fluid" loading="lazy"></button>
+                    </div>
+                    <div class="side-btn">
+                        <button class="next" aria-label="Next"><img src="/images/png/right-circle-arrow.png" alt="Next" width="24"
+                                height="24" class="img-fluid" loading="lazy"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-view">
+                <div class="carousel-track">
+                    <% if (blogs && blogs.length> 0) { %>
+                        <% blogs.forEach(lblog=> { %>
+                            <div class="latest-blog-card">
+                                <div class="blog-card">
+                                    <img src="<%= lblog.image %>" alt="<%= lblog.title %>" width="610" height="610" class="img-fluid">
+                                    <small>
+                                        <%= lblog.category %>
+                                    </small>
+                                    <a href="/lblogs/<%= lblog.slug %>" class="blog-redirect">
+                                        <%= lblog.title %>
+                                    </a>
+                                    <p>
+                                        <%= lblog.description %>
+                                    </p>
+                                    <a href="/lblogs/<%= lblog.slug %>" class="blog-redirect-btn">Read More</a>
+                                </div>
+                            </div>
+                        <% }) %>
+                    <% } else { %>
+                        <p>No blogs found.</p>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

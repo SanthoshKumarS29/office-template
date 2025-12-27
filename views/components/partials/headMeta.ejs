@@ -8,6 +8,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap"
     rel="stylesheet">
 
+<% if (currentSection === "blogDetail") { %>
+    <title><%= blog.title %></title>
+    <meta name="description" content="<%= blog.description %>" />
+<% } else { %>
+    <title><%= seo.metaTitle || "AI Development Company" %></title>
+    <meta name="description" content="<%= seo.metaDescription || '' %>" />
+    <meta name="keywords" content="<%= seo.metaKeyword || '' %>" />
+<% } %>
 
 
 

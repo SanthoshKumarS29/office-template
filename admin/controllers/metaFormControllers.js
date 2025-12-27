@@ -57,8 +57,8 @@ export const getDatas = async (req, res) => {
 // create a seoForm entry
 export const createSeoData = async (req, res) => {
     try {
-        const { slug, metaTitle, metaDescription, metaKeyword } = req.body;
-        await Seo.create({ slug, metaTitle, metaDescription, metaKeyword });
+        const { slug, pageName, metaTitle, metaDescription, metaKeyword } = req.body;
+        await Seo.create({ slug, pageName, metaTitle, metaDescription, metaKeyword });
         res.render('success', { message: "SEO data saved successfully!" });
     } catch (err) {
         res.status(400).send("Error creating SEO: " + err.message);

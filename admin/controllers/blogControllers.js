@@ -24,7 +24,6 @@ export const createBlog = async (req, res) => {
         const slug = slugInput ? slugify(slugInput) : slugify(title)
         let imagepath = "";
         if (req.file) imagepath = `/uploads/blogs/${req.file.filename}`;
-        console.log("Uploaded file:", req.file);
 
         const exists = await Blog.findOne({ slug });
         if (exists) {
@@ -69,8 +68,6 @@ export const updateBlog = async (req, res) => {
         blog.description = description;
         blog.content = content;
         blog.status = status || blog.status;
-
-        console.log("Saved image path:", blog.image);
 
         await blog.save();
         res.redirect('/admin/blogs');

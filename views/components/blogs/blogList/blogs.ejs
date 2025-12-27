@@ -1,0 +1,68 @@
+<section>
+  <div class="py-5">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 pb-4">
+      <div>
+        <h3>Our Blogs</h3>
+      </div>
+      <div>
+        <form method="GET" action="/blogs" class="d-flex align-items-center gap-2">
+          <div class="blog-search-feild">
+            <input type="search" name="search" value="<% search || '' %>" placeholder="Search Your Blogs"
+              class="form-control">
+          </div>
+          <div class="blog-select-feild">
+            <select name="category" class="form-select">
+              <option value="">All Categories</option>
+              <% categories.forEach(cat=> { %>
+                <option value="<%= cat %>" <%=selectedCategory===cat ? 'selected' : '' %>>
+                  <%= cat %>
+                </option>
+                <% }) %>
+            </select>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary">Filter</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row justify-content-between g-4 g-md-3">
+      <% if (blogs && blogs.length> 0) { %>
+        <% blogs.forEach(blog=> { %>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-card">
+              <img src="<%= blog.image %>" alt="<%= blog.title %>" width="450" height="450" class="img-fluid">
+              <small>
+                <%= blog.category %>
+              </small>
+              <a href="/blogs/<%= blog.slug %>" class="blog-redirect">
+                <%= blog.title %>
+              </a>
+              <p>
+                <%= blog.description %>
+              </p>
+              <a href="/blogs/<%= blog.slug %>" class="blog-redirect-btn">Read More</a>
+            </div>
+          </div>
+          <% }) %>
+            <% } else { %>
+              <p>No blogs found.</p>
+              <% } %>
+    </div>
+    <div class="mt-5">
+      <div class="pagination justify-content-center">
+
+        <% for (let i=1; i <=totalPages; i++) { %>
+          <p class="page-item <%= currentPage === i ? 'active' : '' %>">
+            <a class="page-link"
+              href="?page=<%= i %>&search=<%= search || '' %>&category=<%= selectedCategory || '' %>">
+              <%= i %>
+            </a>
+          </p>
+          <% } %>
+
+        </div>
+    </div>
+
+  </div>
+</section>

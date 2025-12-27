@@ -28,6 +28,7 @@
     <thead>
       <tr class="table-head">
         <th>URL</th>
+        <th>PageName</th>
         <th>Title</th>
         <th>Description</th>
         <th>Keywords</th>
@@ -43,6 +44,7 @@
       <% seoList.forEach(seo => { %>
         <tr class="table-body">
           <td><%= seo.slug %></td>
+          <td><%= seo.pageName %></td>
           <td><%= seo.metaTitle %></td>
           <td><%= seo.metaDescription %></td>
           <td><%= seo.metaKeyword %></td>

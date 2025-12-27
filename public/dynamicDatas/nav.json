@@ -25,7 +25,7 @@
       },
       {
         "title":"Blog",
-        "path":"/blog",
+        "path":"/blogs",
         "rel":"follow",
         "isdropDown":true
       },
@@ -155,7 +155,19 @@
       },
       {
         "title":"Blog",
-        "path":"/blog",
+        "path":"/blogs",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Company",
+        "path":"/company",
+        "rel":"follow",
+        "isdropDown":true
+      },
+      {
+        "title":"Contact",
+        "path":"/contact-us",
         "rel":"follow",
         "isdropDown":false
       }

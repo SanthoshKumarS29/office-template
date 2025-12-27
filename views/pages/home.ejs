@@ -6,29 +6,31 @@
     <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-    <%- include('../components/partials/header.ejs') %>
-    <div class="bodyflex">
-        <div class="sidebar-links" id="sidebar">
+    <header>
+        <%- include('../components/partials/header.ejs') %>
+    </header>
+    <main class="bodyflex">
+        <aside class="sidebar-links" id="sidebar">
             <%- include('../components/partials/sideBar.ejs') %>
-        </div>    
+        </aside>    
         <div class="custom-container">
-            <main>
-                <%- include('../components/home/banner.ejs') %>
-                <%- include('../components/partials/trustedClients.ejs') %>
-                <%- include('../components/home/about.ejs') %>
-                <%- include('../components/home/service.ejs') %>
-                <%- include('../components/home/industry.ejs') %>
-                <%- include('../components/home/caseStudy.ejs') %>
-                <%- include('../components/home/ideaToImpact.ejs') %>
-                <%- include('../components/partials/techStack.ejs') %>
-                <%- include('../components/partials/testimonial.ejs') %>
-                <%- include('../components/partials/ourBlogs.ejs') %>
-                <%- include('../components/home/homeCta.ejs') %>
-                <%- include('../components/partials/footerContact.ejs') %>
-            </main>
-            <%- include('../components/partials/footer.ejs') %>
+            <%- include('../components/home/banner.ejs') %>
+            <%- include('../components/partials/trustedClients.ejs') %>
+            <%- include('../components/home/about.ejs') %>
+            <%- include('../components/home/service.ejs') %>
+            <%- include('../components/home/industry.ejs') %>
+            <%- include('../components/home/caseStudy.ejs') %>
+            <%- include('../components/home/ideaToImpact.ejs') %>
+            <%- include('../components/partials/techStack.ejs') %>
+            <%- include('../components/partials/testimonial.ejs') %>
+            <%- include('../components/partials/ourBlogs.ejs') %>
+            <%- include('../components/home/homeCta.ejs') %>
+            <%- include('../components/partials/footerContact.ejs') %>
         </div>
-    </div>
-    <%- include('../components/partials/footerLinks.ejs') %>
+    </main>
+    <footer class="custom-container border-1 border-top">
+        <%- include('../components/partials/footer.ejs') %>
+        <%- include('../components/partials/footerLinks.ejs') %>
+    </footer>
 </body>
 </html>
