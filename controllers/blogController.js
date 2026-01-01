@@ -10,7 +10,7 @@ export const blogHubPage = async (req, res) => {
         const currentPage = Math.max(1, parseInt(page));
         const skip = (currentPage - 1) * limit;
 
-        // 🔒 SAFE base filter
+        // SAFE base filter
         const filter = {
             status: { $regex: "^published$", $options: "i" }
         };

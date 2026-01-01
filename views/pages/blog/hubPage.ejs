@@ -3,29 +3,29 @@
 
 <head>
   <%- include('../../components/partials/headMeta.ejs') %>
-  <%- include('../../components/partials/headLinks.ejs') %>
-  <link rel="stylesheet" href="/css/blog/blogList.css">
+    <%- include('../../components/partials/headLinks.ejs') %>
+      <link rel="stylesheet" href="/css/blog/blogList.css">
 </head>
 
 <body>
   <header>
     <%- include('../../components/partials/header.ejs') %>
   </header>
-    <main class="bodyflex">
-      <aside class="sidebar-links" id="sidebar">
-        <%- include('../../components/partials/sideBar.ejs') %>
-      </aside>
-      <div class="custom-container">
-        <%- include('../../components/blogs/blogList/blogListBanner.ejs') %>
+  <main class="bodyflex">
+    <aside class="sidebar-links" id="sidebar">
+      <%- include('../../components/partials/sideBar.ejs') %>
+    </aside>
+    <div class="custom-container">
+      <%- include('../../components/blogs/blogList/blogListBanner.ejs') %>
         <%- include('../../components/blogs/blogList/blogs.ejs') %>
-        <%- include('../../components/partials/footerContact.ejs') %>
-      </div>
-    </main>
-    <footer class="custom-container">
-      <%- include('../../components/partials/footer.ejs') %>
+          <%- include('../../components/partials/footerContact.ejs') %>
+    </div>
+  </main>
+  <footer class="custom-container">
+    <%- include('../../components/partials/footer.ejs') %>
       <script src="/js/blogList.js"></script>
       <%- include('../../components/partials/footerLinks.ejs') %>
-    </footer>
+  </footer>
 </body>
 
 </html>
