@@ -1,12 +1,46 @@
-.blog-share-btn {
-    border: 2px solid var(--black-clr);
+.blog-detail-category-highlighter {
+    position: relative;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: .6rem;
+}
+
+.blog-detail-category-highlighter::before,
+.blog-detail-category-highlighter::after {
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 40%;
+    border-radius: .2rem;
+}
+
+.blog-detail-category-highlighter::before {
+    top: 0;
+    left: 0;
+    border-top: 2px solid var(--blue-clr);
+    border-left: 2px solid var(--blue-clr);
+}
+
+.blog-detail-category-highlighter::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid var(--blue-clr);
+    border-right: 2px solid var(--blue-clr);
+}
+
+.blog-share-btn, .blog-copy-btn {
     border-radius: .5rem;
-    padding: .5rem .75rem;
+    padding: .40rem 1.05rem;
     display: flex;
     align-items: center;
     gap: .25rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
+    border: 1px solid transparent;
+    background-color: transparent;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .blog-content {
@@ -15,7 +49,7 @@
     margin: auto;
 }
 
-.blog-content h3{
+.blog-content h3 {
     scroll-margin-top: 380px;
 }
 
@@ -26,6 +60,8 @@
 }
 
 .blog-content p {
+    font-size: 1.07rem !important;
+    line-height: 1.75rem;
     text-align: justify;
     margin-bottom: .5rem !important;
 }
@@ -44,7 +80,7 @@
     transition: .3s ease-in-out;
 }
 
-.blog-toc-container.toc-visible{
+.blog-toc-container.toc-visible {
     opacity: 1;
     transform: translateY(0%);
 }
@@ -57,30 +93,30 @@
     border-radius: .2rem;
 }
 
-.toc-arrow{
+.toc-arrow {
     transform: rotate(90deg);
     transition: transform 0.3s ease;
 }
 
 .toc-arrow.rotate-up {
-  transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 .toc-arrow.rotate-down {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
-.toc-links li{
+.toc-links li {
     list-style: none;
     margin-bottom: .5rem;
 }
 
-.toc-links li a{
+.toc-links li a {
     text-decoration: none;
     color: var(--grey-clr2);
     transition: .2s ease-in-out;
 }
 
-.toc-links li a:hover{
+.toc-links li a:hover {
     color: var(--black-clr);
 }

@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const content = document.querySelector(".blog-content");
   const collapseEl = document.getElementById("collapseExample");
   const arrow = document.querySelector(".toc-arrow");
-  const shareBtn = document.querySelector(".blog-share-btn")
+  const shareBtn = document.querySelector(".blog-share-btn");
+  const copyBtn = document.querySelector(".blog-copy-btn");
 
   if (!toc || !content) return;
 
@@ -65,14 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  shareBtn.addEventListener("click", async() => {
+  shareBtn.addEventListener("click", async () => {
     const shareData = {
       title: document.title,
-      url: window.location.href
+      url: window.location.href,
+      // text: document.querySelector("meta[name='description']")?.content || "",
     }
 
-    if(navigator.share){
-      try{
+    if (navigator.share) {
+      try {
         await navigator.share(shareData);
       } catch (err) {
         console.log("share cancelled")
@@ -82,8 +84,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-  function copyToClipBoard(text){
+  function copyToClipBoard(text) {
     navigator.clipboard.writeText(text)
   }
+
+  copyBtn.addEventListener("click", async () => {
+    try{
+      // const url =
+      //   document.querySelector("link[rel='canonical']")?.href ||
+      //   window.location.href;
+      const url = window.location.href;
+
+      await navigator.clipboard.writeText(url);
+
+      copyBtn.querySelector("span").textContent = "Copied!"
+      setTimeout(() => {
+        copyBtn.querySelector("span").textContent = "Copy"
+      }, 2000)
+    } catch (err) {
+      console.error("Copy Failed", err)
+    }
+
+
+  })
 
 });

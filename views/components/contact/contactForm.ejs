@@ -1,39 +1,81 @@
 <section>
-    <div>
-        <h1 class="text-center">Contact Form</h1>
-    </div>
-    <div>
-        <form class="contact-form" data-formtype="contact">
-            <div>
-                <label for="name" class="form-label">Enter Your Name:</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name"
-                    autocomplete="name">
-                <span class="feildError" id="nameError"></span>
-            </div>
-            <div>
-                <label for="email" class="form-label">Enter Your Email:</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email"
-                    autocomplete="email">
-                <span class="feildError" id="emailError"></span>
-            </div>
-            <div>
-                <div>
-                    <label for="email" class="form-label">Enter Your Number:</label>
-                    <input id="phone-contact" name="phone" class="iti-input form-control" type="tel" placeholder="Enter Your Phone number" />
+    <div class="pb-5 half-bg">
+        <div class="py-4 col-lg-7 mx-auto text-center">
+            <span class="display-5 fw-semibold mb-2 d-inline-block">Get In Touch</span>
+            <p>Uprankly’s contact form idea is all about speed. The layout is split into two sections: contact details on
+                the left, and a short inquiry form on the right.</p>
+        </div>
+        <div class="col-xl-10 mx-auto mt-4 contact-shadow">
+            <div class="row justify-content-center p-3 g-0">
+                <div class="col-md-5 col-lg-4">
+                    <div class="contact-info">
+                        <div class="flex-y align-items-start gap-2">
+                            <strong class="fs-5 fw-medium">Contact Information</strong>
+                            <p>The layout is split into two sections: contact details on
+                                the left, and a short inquiry form on the right.</p>
+                        </div>
+                        <div class="flex-x gap-2">
+                            <img src="/images/png/phone.png" alt="phone Icon" width="24" height="24" class="img-fluid" loading="lazy">
+                            <p class="ci-text">+91 89774689823</p>
+                        </div>
+                        <div class="flex-x gap-2">
+                            <img src="/images/mail.webp" alt="phone Icon" width="24" height="24" class="img-fluid" loading="lazy">
+                            <p class="ci-text">companyName@gmail.com</p>
+                        </div>
+                        <div class="flex-x gap-2">
+                            <img src="/images/footer-location.webp" alt="phone Icon" width="24" height="24" class="img-fluid" loading="lazy">
+                            <p class="ci-text">Madurai, TamilNadu</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- optional hidden fields (not required, we'll append in JS) -->
-                <input type="hidden" name="countryCode" />
-                <span class="feildError" id="phoneError"></span>
+                <div class="col-md-7 col-lg-8">
+                    <div class="px-1 py-4 px-md-4 py-md-4 px-xxl-5 py-xxl-5">
+                        <form class="row justify-content-center g-3 contact-form" data-formtype="contact">
+                            <div class="col-md-6">
+                                <div class="flex-y">
+                                    <label for="name" class="contact-form-label">Enter Your Name:</label>
+                                    <input type="text" name="name" id="name" class="contact-form-feild" placeholder="Name"
+                                        autocomplete="name">
+                                    <span class="feildError" id="nameError"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="flex-y">
+                                    <label for="email" class="contact-form-label">Enter Your Email:</label>
+                                    <input type="email" name="email" id="email" class="contact-form-feild" placeholder="Email"
+                                        autocomplete="email">
+                                    <span class="feildError" id="emailError"></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <div class="flex-y">
+                                        <label for="email" class="contact-form-label">Enter Your Number:</label>
+                                        <input id="phone-contact" name="phone" class="iti-input contact-form-feild" type="tel"
+                                            placeholder="Phone/Whatsapp number" />
+                                        <span class="feildError" id="phoneError"></span>
+                                    </div>
+                                    <!-- optional hidden fields (not required, we'll append in JS) -->
+                                    <input type="hidden" name="countryCode" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="flex-y">
+                                    <label for="message" class="contact-form-label">Enter Your Message:</label>
+                                    <textarea name="message" id="message" class="contact-form-feild" placeholder="Message" rows="5"
+                                        autocomplete="off"></textarea>
+                                    <span class="feildError" id="messageError"></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <button type="submit" class="contact-button">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="message" class="form-label">Enter Your Message:</label>
-                <textarea name="message" id="message" class="form-control" placeholder="Enter Your Message" rows="5"
-                    autocomplete="off"></textarea>
-                <span class="feildError" id="messageError"></span>
-            </div>
-            <div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </div>
-        </form>
+        </div>
     </div>
 </section>

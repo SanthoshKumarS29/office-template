@@ -1,6 +1,10 @@
 export const validate = (data, rules) => {
     const errors = {};
 
+    const formatFieldName = (field) =>
+        field.charAt(0).toUpperCase() + field.slice(1);
+
+
     for (let field in rules) {
         const validation = rules[field];
 
@@ -33,7 +37,7 @@ export const validate = (data, rules) => {
         let value = data[field]?.toString().trim();
 
         if (validation.required && (!value || value === "")) {
-            errors[field] = `${field} is required`;
+            errors[field] = `${formatFieldName(field)} is required`;
             continue;
         }
 
