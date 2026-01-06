@@ -350,6 +350,31 @@
     transform: scale(1.025);
 }
 
+
+.fcontact-form-label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.fcontact-form-feild {
+    background-color: transparent;
+    border: 2px var(--grey-clr5);
+    border-style: none none solid none;
+    width: 100%;
+    padding: .75rem 0rem;
+    outline: none;
+    color: var(--grey-clr1);
+}
+
+.fcontact-button {
+    background-color: var(--blue-clr);
+    padding: .5rem 1.5rem;
+    border: 1px solid var(--blue-v1);
+    color: var(--white-clr);
+    border-radius: .5rem;
+}
+
+
 .accordion-item {
     font-size: 1rem;
     border: 4px var(--blue-clr);

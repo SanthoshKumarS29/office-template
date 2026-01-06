@@ -1,37 +1,105 @@
 <section>
-    <div>
-        <h1 class="text-center">Contact Form</h1>
-    </div>
-    <div class="py-4">
-        <form class="contact-form" data-formtype="footer">
-            <div>
-                <label for="name" class="form-label">Enter Your Name:</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name"
-                    autocomplete="name">
-                <span class="feildError" id="nameError"></span>
+    <div class="px-3 py-5 grey-clr-bg">
+        <div class="text-center pb-4">
+            <h2>Contact Us</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="row justify-content-evenly align-items-center gy-4 gx-3 py-4">
+            <div class="col-lg-5 col-xl-4">
+                <div class="row justify-content-between g-5">
+                    <div class="col-12 col-md-6 col-lg-12 order-0">
+                        <div class="flex-y gap-2">
+                            <h3>Let's Talk</h3>
+                            <p>Have some big idea or brand to develop and need help? Then reach out we'd love to hear about
+                                your
+                                project and provide help.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-12 order-1">
+                        <div>
+                            <h3>Email</h3>
+                            <div class="flex-x gap-2">
+                                <img src="/images/mail.webp" alt="phone Icon" width="24" height="24" class="img-fluid"
+                                    loading="lazy">
+                                <p>companyName@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-12 order-4 order-lg-3">
+                        <div>
+                            <h3>Socials</h3>
+                            <div class="flex-x gap-2">
+                                <img src="/images/footer-facebook.webp" alt="social icon" width="24" height="24"
+                                    class="img-fluid" loading="lazy">
+                                <img src="/images/footer-instagram.webp" alt="social icon" width="24" height="24"
+                                    class="img-fluid" loading="lazy">
+                                <img src="/images/footer-twitter.webp" alt="social icon" width="24" height="24"
+                                    class="img-fluid" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-12 order-3 order-lg-4">
+                        <div class="flex-y gap-2">
+                            <h3>Awards</h3>
+                            <div class="flex-x gap-2 overflow-scroll scrollbar-hide">
+                                <img src="/images/png/service-post.png" alt="Awards" width="150" height="150"
+                                    class="img-fluid" loading="lazy">
+                                <img src="/images/png/service-post.png" alt="Awards" width="150" height="150"
+                                    class="img-fluid" loading="lazy">
+                                <img src="/images/png/service-post.png" alt="Awards" width="150" height="150"
+                                    class="img-fluid" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="email" class="form-label">Enter Your Email:</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email"
-                    autocomplete="email">
-                <span class="feildError" id="emailError"></span>
+            <div class="col-lg-6 col-xl-5">
+                <div class="white-bg p-4 rounded-4">
+                    <form class="row justify-content-center g-3 contact-form" data-formtype="footer">
+                        <div class="col-12">
+                            <div class="flex-y">
+                                <label for="name" class="fcontact-form-label">Enter Your Name:</label>
+                                <input type="text" name="name" id="name" class="fcontact-form-feild" placeholder="Name"
+                                    autocomplete="name">
+                                <span class="feildError" id="nameError"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="flex-y">
+                                <label for="email" class="fcontact-form-label">Enter Your Email:</label>
+                                <input type="email" name="email" id="email" class="fcontact-form-feild"
+                                    placeholder="Email" autocomplete="email">
+                                <span class="feildError" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div>
+                                <div class="flex-y">
+                                    <label for="email" class="fcontact-form-label">Enter Your Number:</label>
+                                    <input id="phone-contact" name="phone" class="iti-input fcontact-form-feild"
+                                        type="tel" placeholder="Phone/Whatsapp number" />
+                                    <span class="feildError" id="phoneError"></span>
+                                </div>
+                                <!-- optional hidden fields (not required, we'll append in JS) -->
+                                <input type="hidden" name="countryCode" />
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="flex-y">
+                                <label for="message" class="fcontact-form-label">Enter Your Message:</label>
+                                <textarea name="message" id="message" class="fcontact-form-feild" placeholder="Message"
+                                    rows="5" autocomplete="off"></textarea>
+                                <span class="feildError" id="messageError"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div>
+                                <button type="submit" class="fcontact-button">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div>
-                <label for="email" class="form-label">Enter Your Number:</label>
-                <input id="phone-contact" name="phone" class="iti-input form-control" type="tel" placeholder="Enter Your Phone number" />
-                <!-- optional hidden fields (not required, we'll append in JS) -->
-                <input type="hidden" name="countryCode" />
-                <span class="feildError" id="phoneError"></span>
-            </div>
-            <div>
-                <label for="message" class="form-label">Enter Your Message:</label>
-                <textarea name="message" id="message" class="form-control" placeholder="Enter Your Message" rows="5"
-                    autocomplete="off"></textarea>
-                <span class="feildError" id="messageError"></span>
-            </div>
-            <div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </div>
-        </form>
+        </div>
     </div>
 </section>

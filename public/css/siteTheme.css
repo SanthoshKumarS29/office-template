@@ -16,6 +16,10 @@ main {
     background-color: var(--grey-clr);
 }
 
+.white-bg{
+    background-color: var(--white-clr);
+}
+
 .blue-v1{
     background-color: var(--blue-v1);
 }
