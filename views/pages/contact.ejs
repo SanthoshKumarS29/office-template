@@ -6,19 +6,21 @@
     <link rel="stylesheet" href="/css/contact.css">
 </head>
 <body>
-    <%- include('../components/partials/header.ejs') %>
-    <div class="bodyflex">
-        <div class="sidebar-links" id="sidebar">
+    <header>
+        <%- include('../components/partials/header.ejs') %>
+    </header>
+    <main class="bodyflex">
+        <aside class="sidebar-links" id="sidebar">
             <%- include('../components/partials/sideBar.ejs') %>
-        </div>    
+        </aside>    
         <div class="custom-container">
-            <main>
-                <%- include('../components/contact/contactForm.ejs') %>
-                <%- include('../components/contact/callToAction.ejs') %>
-            </main>
-            <%- include('../components/partials/footer.ejs') %>
+            <%- include('../components/contact/contactForm.ejs') %>
+            <%- include('../components/contact/callToAction.ejs') %>
         </div>
-    </div>
-    <%- include('../components/partials/footerLinks.ejs') %>
+    </main>
+    <footer class="custom-container border-1 border-top">
+        <%- include('../components/partials/footer.ejs') %>
+        <%- include('../components/partials/footerLinks.ejs') %>
+    </footer>
 </body>
 </html>

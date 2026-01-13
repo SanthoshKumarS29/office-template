@@ -1,60 +1,124 @@
 <section>
-    <div>
-        <h1 class="text-start">Career Form</h1>
-    </div>
-    <div>
-        <form class="career-form"  enctype="multipart/form-data">
-            <div>
-                <label for="name" class="form-label">Enter Your Name:</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name"
-                    autocomplete="name">
-                <span class="feildError" id="nameError"></span>
+    <div class="py-5 opc-scrollmargin" id="career-application">
+        <div class="text-center">
+            <h2>Hiring Process and Career Form</h2>
+            <p>Find your next opportunity and join our growing team.</p>
+        </div>
+        <div class="row justify-content-center align-items-center g-3 mt-3">
+            <div class="col-md-5 col-xl-5">
+                <div class="flex-y gap-3">
+                    <div class="hiring-step">
+                        <div class="hs-number">
+                            <span>1</span>
+                        </div>
+                        <div class="flex-y gap-1">
+                            <strong class="fs-6">Application Review</strong>
+                            <p>We carefully review every application within 3-5 business days.</p>
+                        </div>
+                    </div>
+                    <div class="hiring-step">
+                        <div class="hs-number">
+                            <span>2</span>
+                        </div>
+                        <div class="flex-y gap-1">
+                            <strong class="fs-6">Initial Call</strong>
+                            <p>A 30-minute conversation to learn about you and discuss the role.</p>
+                        </div>
+                    </div>
+                    <div class="hiring-step">
+                        <div class="hs-number">
+                            <span>3</span>
+                        </div>
+                        <div class="flex-y gap-1">
+                            <strong class="fs-6">Team Interview</strong>
+                            <p>Meet potential teammates and dive deeper into your experience.</p>
+                        </div>
+                    </div>
+                    <div class="hiring-step">
+                        <div class="hs-number">
+                            <span>4</span>
+                        </div>
+                        <div class="flex-y gap-1">
+                            <strong class="fs-6">Offer</strong>
+                            <p>If it's a match, we'll extend an offer and welcome you aboard.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="email" class="form-label">Enter Your Email:</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email"
-                    autocomplete="email">
-                <span class="feildError" id="emailError"></span>
-            </div>
-            <div>
-                <label for="email" class="form-label">Enter Your Number:</label>
-                <input id="phone-contact" name="phone" class="iti-input form-control" type="tel"
-                    placeholder="Enter Your Phone number" />
-                <!-- optional hidden fields (not required, we'll append in JS) -->
-                <input type="hidden" name="countryCode" />
-                <span class="feildError" id="phoneError"></span>
-            </div>
-            <div>
-                <label class="form-label">Job Role</label>
-                <select name="jobRole" class="form-control">
-                    <option value="">Select</option>
-                    <option value="Frontend Developer">Frontend Developer</option>
-                    <option value="Backend Developer">Backend Developer</option>
-                    <option value="Blockchain Developer">Blockchain Developer</option>
-                </select>
-                <span class="feildError" id="jobRoleError"></span>
-            </div>
+            <div class="col-md-7 col-xl-7 career-form-container">
+                <div>
+                    <div class="mb-4">
+                        <strong class="fs-5 text-secondary">Personal Informations</strong>
+                    </div>
+                    <form class="career-form row justify-content-center g-3" enctype="multipart/form-data">
+                        <div class="col-md-6">
+                            <div class="flex-y">
+                                <label for="name" class="fcontact-fcontact-form-label">Enter Your Name:</label>
+                                <input type="text" name="name" id="name" class="fcontact-form-feild"
+                                    placeholder="Enter Your Name" autocomplete="name">
+                                <span class="feildError" id="nameError"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="flex-y">
+                                <label for="email" class="fcontact-form-label">Enter Your Email:</label>
+                                <input type="email" name="email" id="email" class="fcontact-form-feild"
+                                    placeholder="Enter Your Email" autocomplete="email">
+                                <span class="feildError" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <div class="flex-y">
+                                    <label for="email" class="fcontact-form-label">Enter Your Number:</label>
+                                    <input id="phone-contact" name="phone" class="iti-input fcontact-form-feild"
+                                        type="tel" placeholder="Enter Your Phone number" />
+                                    <span class="feildError" id="phoneError"></span>
+                                </div>
+                                <input type="hidden" name="countryCode" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="flex-y">
+                                <label class="fcontact-form-label">Job Role</label>
+                                <select name="jobRole" class="fcontact-form-feild">
+                                    <option value="">Select</option>
+                                    <option value="Frontend Developer">Frontend Developer</option>
+                                    <option value="Backend Developer">Backend Developer</option>
+                                    <option value="Blockchain Developer">Blockchain Developer</option>
+                                </select>
+                                <span class="feildError" id="jobRoleError"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="flex-y">
+                                <label class="fcontact-form-label">Experience</label>
+                                <select name="experience" class="fcontact-form-feild">
+                                    <option value="">Select</option>
+                                    <option value="Fresher">Fresher</option>
+                                    <option value="1-2 years">1–2 years</option>
+                                    <option value="3-5 years">3–5 years</option>
+                                    <option value="6+ years">6+ years</option>
+                                </select>
+                                <span class="feildError" id="experienceError"></span>
+                            </div>
+                        </div>
 
-            <div>
-                <label class="form-label">Experience</label>
-                <select name="experience" class="form-control">
-                    <option value="">Select</option>
-                    <option value="Fresher">Fresher</option>
-                    <option value="1-2 years">1–2 years</option>
-                    <option value="3-5 years">3–5 years</option>
-                    <option value="6+ years">6+ years</option>
-                </select>
-                <span class="feildError" id="experienceError"></span>
+                        <div class="col-12">
+                            <div class="flex-y">
+                                <label class="fcontact-form-label">Resume (PDF only)</label>
+                                <input type="file" name="resume" class="fcontact-form-feild" />
+                                <span class="feildError" id="resumeError"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="w-100">
+                                <button type="submit" class="fcontact-button">Submit Here</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-
-            <div>
-                <label class="form-label">Resume (PDF only)</label>
-                <input type="file" name="resume" class="form-control" />
-                <span class="feildError" id="resumeError"></span>
-            </div>
-            <div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </div>
-        </form>
+        </div>
     </div>
 </section>

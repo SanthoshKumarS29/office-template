@@ -133,6 +133,28 @@ main {
     color: var(--blue-clr);
 }
 
+.common-btn-primary{
+    background-color: var(--black-clr);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-size: .90rem;
+    font-weight: 500;
+    color: var(--white-clr);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.common-btn-secondary{
+    border: 2px solid var(--grey-clr);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-size: .90rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--black-clr);
+}
+
 /* buttons end */ 
 
 .custom-container {

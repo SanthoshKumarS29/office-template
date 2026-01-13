@@ -240,42 +240,6 @@
     border-radius: .75rem 0 0 0;
 }
 
-.cta {
-    position: relative;
-    background-color: var(--blue-clr);
-    color: var(--white-clr);
-    padding: 2.5rem;
-    height: 300px;
-    border-radius: 2rem 0;
-    overflow: hidden;
-}
-
-.cta::before {
-    content: '';
-    position: absolute;
-    right: -4%;
-    bottom: -20%;
-    background-color: var(--black-clr);
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
-    border: 5px solid var(--white-clr)
-}
-
-.cta-button {
-    border: 2px solid var(--black-clr);
-    background-color: var(--black-clr);
-    color: var(--white-clr);
-    padding: .75rem 1.25rem;
-    border-radius: .5rem;
-    transform: scale(1);
-    transition: 0.4s ease-in-out;
-}
-
-.cta-button:hover {
-    border: 2px solid var(--white-clr);
-    transform: scale(1.025);
-}
 
 .calltoaction-container {
     position: relative;
@@ -377,14 +341,9 @@
 
 .accordion-item {
     font-size: 1rem;
-    border: 4px var(--blue-clr);
-    border-style: none solid none solid;
     margin-bottom: 1rem;
     transition: 0.4s ease-in-out;
-}
-
-.accordion-item:hover {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .accordion-button:focus {
