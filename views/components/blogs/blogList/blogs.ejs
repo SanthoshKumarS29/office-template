@@ -14,7 +14,7 @@
             <select name="category" class="form-select">
               <option value="">All Categories</option>
               <% categories.forEach(cat=> { %>
-                <option value="<%= cat %>" <%=selectedCategory===cat ? 'selected' : '' %>>
+                <option value="<%= cat %>" <%= selectedCategory === cat ? 'selected' : '' %>>
                   <%= cat %>
                 </option>
                 <% }) %>

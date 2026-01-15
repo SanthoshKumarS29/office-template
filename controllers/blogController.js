@@ -4,6 +4,10 @@ import Blog from "../models/Blog.js";
 
 export const blogHubPage = async (req, res) => {
     try {
+        const { slug } = req.params;
+        const data = {
+            url: slug
+        }
         const { search = "", category = "all", page = 1 } = req.query;
 
         const limit = 6;
@@ -54,7 +58,7 @@ export const blogHubPage = async (req, res) => {
         const latestBlogs = await Blog.find({
             status: { $regex: "^published$", $options: "i" }
         })
-            .select("title slug createdAt")
+            .select("title slug image category createdAt description")
             .sort({ createdAt: -1 })
             .limit(5)
             .lean();
@@ -74,7 +78,8 @@ export const blogHubPage = async (req, res) => {
             endPage,
             search,
             selectedCategory: category,
-            categories
+            categories,
+            pageData: data
         });
 
     } catch (err) {
@@ -86,6 +91,10 @@ export const blogHubPage = async (req, res) => {
 
 export const blogDetailPage = async (req, res) => {
     const { slug } = req.params;
+    const data = {
+        url: slug
+    }
+
     try {
         const blog = await Blog.findOne({ slug, status: "published" }).lean();
         if (!blog) return res.status(404).render("pages/static/notFound");
@@ -94,6 +103,7 @@ export const blogDetailPage = async (req, res) => {
             relatedPage: "blogDetail",
             currentSection: "blogDetail",
             blog,
+            pageData: data
         });
     } catch (err) {
         console.error("Error loading blog:", err);

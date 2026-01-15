@@ -23,8 +23,8 @@
             </div>
             <div class="carousel-view">
                 <div class="carousel-track">
-                    <% if (blogs && blogs.length> 0) { %>
-                        <% blogs.forEach(lblog=> { %>
+                    <% if (latestBlogs && latestBlogs.length> 0) { %>
+                        <% latestBlogs.forEach(lblog=> { %>
                             <div class="latest-blog-card">
                                 <div class="blog-card">
                                     <img src="<%= lblog.image %>" alt="<%= lblog.title %>" width="610" height="610" class="img-fluid">
