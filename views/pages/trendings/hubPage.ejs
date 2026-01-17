@@ -6,22 +6,26 @@
     <link rel="stylesheet" href="/css/hubPage.css">
 </head>
 <body>
-    <%- include('../../components/partials/header.ejs') %>
+    <header>
+        <%- include('../../components/partials/header.ejs') %>
+    </header>
     <main class="bodyflex">
-        <div class="sidebar-links" id="sidebar">
+        <aside class="sidebar-links" id="sidebar">
             <%- include('../../components/partials/sideBar.ejs') %>
-        </div>    
+        </aside>    
         <div class="custom-container">
-            <%- include('../../components/trendingPages/hubPage/banner.ejs') %>
-            <%- include('../../components/trendingPages/hubPage/about.ejs') %>
-            <%- include('../../components/trendingPages/hubPage/categories.ejs') %>
-            <%- include('../../components/trendingPages/hubPage/whyChooseUs.ejs') %>
-            <%- include('../../components/partials/ourBlogInsights.ejs') %>
-            <%- include('../../components/trendingPages/hubPage/hubpageCta.ejs') %>
-            <%- include('../../components/partials/footer.ejs') %>
+            <%- include('../../components/productPages/hubPage/banner.ejs') %>
+            <%- include('../../components/partials/trustedClients.ejs') %>
+            <%- include('../../components/productPages/hubPage/ourProducts.ejs') %>
+            <%- include('../../components/productPages/hubPage/developmentProcess.ejs') %>
+            <%- include('../../components/productPages/hubPage/benefits.ejs') %>
+            <%- include('../../components/partials/testimonial.ejs') %>
+            <%- include('../../components/productPages/hubPage/faq.ejs') %>
+            <%- include('../../components/partials/footerContact.ejs') %>
         </div>
     </main>
-    <footer>
+    <footer class="custom-container border-1 border-top">
+        <%- include('../../components/partials/footer.ejs') %>
         <%- include('../../components/partials/footerLinks.ejs') %>
     </footer>
 </body>

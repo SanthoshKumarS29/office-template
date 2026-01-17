@@ -134,6 +134,12 @@
         "isdropDown":false
       },
       {
+        "title": "About Us",
+        "path": "/company",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
         "title":"career",
         "path":"/company/career",
         "rel":"follow",
@@ -143,6 +149,18 @@
         "title":"Portfolio",
         "path":"/company/portfolio",
         "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title":"CaseStudy",
+        "path":"/company/caseStudy",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title": "Service",
+        "path": "/services",
+        "rel": "follow",
         "isdropDown":false
       }
   ],

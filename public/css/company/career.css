@@ -118,3 +118,9 @@
     padding: 1.5rem;
     border-radius: 1rem;
 }
+
+@media (width <=767px) {
+    .career-banner {
+        height: calc(75vh - var(--padding-top));
+    }
+}
