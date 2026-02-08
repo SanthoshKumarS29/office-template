@@ -1,0 +1,31 @@
+<section>
+    <div class="py-5">
+        <div class="col-lg-10 col-xl-7 mx-auto text-center">
+            <h2 class="display-6"><%= page.developProcess.title %></h2>
+            <p><%= page.developProcess.shortDes %></p>
+        </div>
+        <div>
+            <div class="d-flex flex-column justify-content-center gap-3 mt-3">
+                <% page.developProcess.content.forEach((relatedCont, i) => { %>
+                    <div class="row justify-content-evenly align-items-center g-2 p-4 p-xl-5 border-bottom number-hover-effect">
+                        <div class="col-md-1 col-xl-2">
+                            <div>
+                                <span class="dp-num">0<%= i+1 %> </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4">
+                            <div>
+                                <h3 class="mb-0"><%= relatedCont.head %></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-xl-5">
+                            <div>
+                                <p class="fs-6"><%= relatedCont.headDes %></p>
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+</section>

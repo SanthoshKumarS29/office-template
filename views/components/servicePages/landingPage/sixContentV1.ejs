@@ -1,0 +1,18 @@
+<section>
+    <div class="py-5">
+        <div class="col-lg-8 mx-auto text-center">
+            <h2 class="display-6"><%= page.sixContentV1.title %></h2>
+            <p><%= page.sixContentV1.shortDes %></p>
+        </div>
+        <div class="row justify-content-center g-3 mt-5">
+            <% page.sixContentV1.content.forEach(relatedCnt => { %>
+                <div class="<%= relatedCnt.width %>">
+                    <div class="flex-y gap-2 card-layout-1">
+                        <h3 class="fs-6 fw-medium cl-hover"><%= relatedCnt.head %></h3>
+                        <p><%= relatedCnt.headDes %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</section>

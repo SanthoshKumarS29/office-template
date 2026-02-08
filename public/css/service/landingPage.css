@@ -1,0 +1,191 @@
+.lp-banner-container {
+    height: calc(80vh - var(--padding-top));
+}
+
+.lp-banner-higlig {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.lp-banner-higlig::before {
+    content: '';
+    padding: .25rem;
+    background-color: var(--black-clr);
+    border-radius: 1rem;
+}
+
+.about-cta-btn{
+    display: inline-block;
+    padding: .5rem 1rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+    background-color: var(--black-clr);
+    border-radius: .5rem;
+    color: var(--white-clr);
+    text-decoration: none;
+}
+
+.scroll-highlight {
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: linear-gradient(to right, var(--ligblue-clr), var(--ligblue-clr));
+    animation: mark-it linear forwards;
+    animation-timeline: view();
+    animation-range: contain 0% contain 100%;
+}
+
+@keyframes mark-it {
+    0% {
+        background-size: 0 100%;
+    }
+
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+.difference-table {
+    border-radius: .75rem;
+    padding: .25rem;
+    background-color: var(--grey-clr);
+    height: 100%;
+}
+
+.difference-table h3 {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.dt-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--white-clr);
+    border-radius: .75rem;
+}
+
+.card-layout-1 {
+    background-color: var(--grey-clr);
+}
+
+.card-layout-1 {
+    padding: 1rem;
+    border-radius: .5rem;
+    height: 100%;
+    transition: .3s ease-in-out;
+}
+
+.card-layout-2 {
+    padding: 1.5rem;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.card-layout-2:hover .cl2-hover{
+    transition: .3s ease-in-out;
+    color: var(--blue-clr);
+}
+
+
+.card-layout-2:hover {
+    transform: scale(1.015);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-layout-3 {
+    padding: 1rem;
+    border: 1px solid var(--grey-clr);
+}
+
+.left-scroll-sticky {
+    position: sticky;
+    top: 13%;
+    left: 0;
+}
+
+.dp-num{
+    font-size: clamp(3rem, 4vw, 4rem);
+    font-weight: 600;
+}
+
+.number-hover-effect:hover .dp-num{
+    transition: .3s ease-in-out;
+    color: var(--blue-clr);
+}
+
+.card-layout-4{
+    position: relative;
+    padding: 1rem;
+    background-color: var(--grey-clr);
+    height: 100%;
+    border-radius: .5rem;
+    transition: .3s ease-in-out;
+}
+
+.card-layout-4::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--black-clr);
+    width: 24px;
+    height: 24px;
+    border-top-left-radius: 1rem;
+}
+
+.card-layout-4:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+    border: none;
+    transition: 0.4s ease-in-out;
+}
+
+.accordion-button{
+    font-size: .95rem;
+    padding: 1rem 0;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--blue-clr);
+    background-color: transparent;
+}
+
+.accordion-body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: .02rem;
+    text-align: justify;
+    padding: .5rem 0rem;
+}
+
+.faq-cta{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .75rem;
+    padding: 1rem;
+    border: 2px solid var(--grey-clr);
+    border-radius: .5rem;
+}
+
+@media (width <=1023px) {
+    .card-layout-2 {
+        padding: 1rem;
+    }
+
+    .lp-banner-container {
+        height: calc(55vh - var(--padding-top));
+    }
+}
