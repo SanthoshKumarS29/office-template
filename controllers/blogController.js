@@ -91,18 +91,44 @@ export const blogHubPage = async (req, res) => {
 
 export const blogDetailPage = async (req, res) => {
     const { slug } = req.params;
-    const data = {
-        url: slug
-    }
+    const data = { url: slug}
 
     try {
         const blog = await Blog.findOne({ slug, status: "published" }).lean();
         if (!blog) return res.status(404).render("pages/static/notFound");
 
+        let content = blog.content;
+        const toc = [];
+
+        // Match all h3 headings
+        const headingRegex  = /<h3[^>]*>(.*?)<\/h3>/gi;
+        let match;
+
+        while ((match = headingRegex.exec(content)) !== null) {
+            const text = match[1].replace(/<[^>]+>/g, "").trim();
+
+            const id = text
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, "-")
+                .replace(/(^-|-$)/g, "");
+
+            toc.push({ id, text });
+
+            // Replace heading with ID injected
+            content = content.replace(
+                match[0],
+                `<h3 id="${id}">${match[1]}</h3>`
+            );
+        }
+
         res.render("pages/blog/blogDetail.ejs", {
             relatedPage: "blogDetail",
             currentSection: "blogDetail",
-            blog,
+            blog: {
+                ...blog,
+                content
+            },
+            toc,
             pageData: data
         });
     } catch (err) {

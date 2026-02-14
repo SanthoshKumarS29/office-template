@@ -1,5 +1,48 @@
+
 .lp-banner-container {
     height: calc(80vh - var(--padding-top));
+}
+
+.relate-btn{
+    position: fixed;
+    top: 11.5%;
+    right: 0.5%;
+    z-index: 99;
+    animation: bounce 1.8s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(15%); }
+}
+
+
+.rb-link{
+    position: relative;
+    border-radius: 100%;
+    background-color: var(--white-clr);
+    padding: .5rem .45rem;
+}
+
+.rb-link-txt{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    opacity: 0;
+    visibility: hidden;
+    font-size: .60rem;
+    white-space: nowrap;
+    background-color: var(--black-clr);
+    color: var(--white-clr);
+    padding: .45rem;
+    border-radius: .25rem;
+    transition: .3s ease-in-out;
+}
+
+.rb-link:hover .rb-link-txt{
+    opacity: 1;
+    visibility: visible;
 }
 
 .lp-banner-higlig {
@@ -141,35 +184,6 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.accordion-item {
-    margin-bottom: 1rem;
-    border: none;
-    transition: 0.4s ease-in-out;
-}
-
-.accordion-button{
-    font-size: .95rem;
-    padding: 1rem 0;
-}
-
-.accordion-button:focus {
-    box-shadow: none !important;
-}
-
-.accordion-button:not(.collapsed) {
-    color: var(--blue-clr);
-    background-color: transparent;
-}
-
-.accordion-body{
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.75rem;
-    letter-spacing: .02rem;
-    text-align: justify;
-    padding: .5rem 0rem;
-}
-
 .faq-cta{
     display: flex;
     flex-direction: column;
@@ -178,6 +192,10 @@
     padding: 1rem;
     border: 2px solid var(--grey-clr);
     border-radius: .5rem;
+}
+
+.rpl-section{
+    scroll-margin-top: 150px;
 }
 
 @media (width <=1023px) {

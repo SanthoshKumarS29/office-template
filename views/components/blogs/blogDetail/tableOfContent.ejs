@@ -1,9 +1,22 @@
 <div class="blog-toc-container">
-    <div class="blog-toc" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <div class="blog-toc" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample">
         <strong class="fs-6 fw-medium">Table of Contents</strong>
-        <img src="/images/png/right-arrow-black.png" alt="arrow-icon" width="24" height="24" class="img-fluid toc-arrow">
+        <img src="/images/png/right-arrow-black.png" alt="arrow-icon" width="24" height="24"
+            class="img-fluid toc-arrow">
     </div>
     <div class="collapse" id="collapseExample">
-        <ul class="p-2 toc-links" id="toc"></ul>
+        <ul class="p-2 toc-links" id="toc">
+            <% if (toc && toc.length> 0) { %>
+                <% toc.forEach(item=> { %>
+                    <li>
+                        <a href="#<%= item.id %>">
+                            <%= item.text %>
+                        </a>
+                    </li>
+                <% }) %>
+            <% } %>
+        </ul>
+
     </div>
 </div>

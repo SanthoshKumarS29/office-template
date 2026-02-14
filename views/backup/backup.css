@@ -39,3 +39,13 @@
     border: 2px solid var(--black-clr);
 }
 
+.client-bg1,
+.client-bg3 {
+    background-color: var(--grey-clr3);
+}
+
+.client-bg2,
+.client-bg4 {
+    background-color: var(--grey-clr4);
+}
+

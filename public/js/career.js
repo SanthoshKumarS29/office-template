@@ -12,9 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
       iti = window.intlTelInput(phoneInputField, {
         initialCountry: "auto",
         geoIpLookup: callback => {
-          fetch("https://ipapi.co/json")
+          fetch("/ip-data")
             .then(res => res.json())
-            .then(data => callback(data.country_code))
+            .then(data => {
+              callback(data.country || "us");
+            })
             .catch(() => callback("us"));
         },
         utilsScript:
@@ -25,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     form.querySelectorAll("input, textarea, select").forEach(field => {
       field.addEventListener("input", () => {
         const errorElement = document.getElementById(field.name + "Error");
-        console.log('ids and name:', document.getElementById(field.name))
         if (errorElement) errorElement.textContent = "";
       });
     });
@@ -72,8 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         return;
       }
-
-      console.log('formData', formData)
 
       // Send data to backend
       try {

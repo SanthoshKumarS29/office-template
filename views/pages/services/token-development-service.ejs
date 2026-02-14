@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <%- include('../../components/partials/headMeta.ejs') %>
     <%- include('../../components/partials/headLinks.ejs') %>
-    <link rel="stylesheet" href="/css/service/exchangePage.css">
+    <link rel="stylesheet" href="/css/service/landingPage.css">
 </head>
 <body>
-    <%- include('../../components/partials/header.ejs') %>
+    <header>
+        <%- include('../../components/partials/header.ejs') %>
+    </header>
     <main class="bodyflex">
-        <div class="sidebar-links" id="sidebar">
+        <aside class="sidebar-links" id="sidebar">
             <%- include('../../components/partials/sideBar.ejs') %>
-        </div>    
+        </aside>    
         <div class="custom-container">
-            <%- include('../../components/servicePages/exchangePage/banner.ejs') %>
-            <%- include('../../components/servicePages/exchangePage/about.ejs') %>
-            <%- include('../../components/servicePages/exchangePage/cardLayoutGrid.ejs') %>
-            <%- include('../../components/servicePages/exchangePage/gridLayout-1.ejs') %>
-            <%- include('../../components/servicePages/exchangePage/developmentProcess.ejs') %>
-            <%- include('../../components/servicePages/exchangePage/whyChooseUs.ejs') %>
-            <%- include('../../components/servicePages/exchangePage/exchangeCta.ejs') %>
-            <%- include('../../components/servicePages/exchangePage/faq.ejs') %>
-            <%- include('../../components/partials/footer.ejs') %>
+            <%- include('../../components/servicePages/landingPage/banner.ejs') %>
+            <%- include('../../components/partials/trustedClients.ejs') %>
+            <%- include('../../components/servicePages/landingPage/about.ejs') %>
+            <%- include('../../components/servicePages/landingPage/differentTable.ejs') %>
+            <%- include('../../components/servicePages/landingPage/callToAction1.ejs') %>
+            <%- include('../../components/servicePages/landingPage/sixContentV1.ejs') %>
+            <%- include('../../components/servicePages/landingPage/leftScroll.ejs') %>
+            <%- include('../../components/servicePages/landingPage/bentoGridV1.ejs') %>
+            <%- include('../../components/servicePages/landingPage/callToAction2.ejs') %>
+            <%- include('../../components/partials/commonIndustry.ejs') %>
+            <%- include('../../components/servicePages/landingPage/developmentProcess.ejs') %>
+            <%- include('../../components/servicePages/landingPage/bulletPoint.ejs') %>
+            <%- include('../../components/servicePages/landingPage/leftImg.ejs') %>
+            <%- include('../../components/servicePages/landingPage/lastSection.ejs') %>
+            <%- include('../../components/servicePages/landingPage/faq.ejs') %>
+            <%- include('../../components/partials/footerContact.ejs') %>
         </div>
     </main>
-    <%- include('../../components/partials/footerLinks.ejs') %>
+    <footer class="custom-container border-1 border-top">
+        <%- include('../../components/partials/footer.ejs') %>
+        <%- include('../../components/partials/footerLinks.ejs') %>
+        <script src="/js/partials/landingPage.js"></script>
+    </footer>
 </body>
 </html>

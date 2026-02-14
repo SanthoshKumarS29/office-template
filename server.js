@@ -46,6 +46,7 @@ app.use(
 // routes
 app.use('/', siteRoutes);
 app.use('/', formRouter);
+
 app.use('/admin', adminRouter);
 app.use('/admin', blogRouter);
 
