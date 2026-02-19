@@ -1,27 +1,27 @@
 {
     "banner": {
-        "tag": "Artificial Intelligence",
-        "title": "AI Agent Development Company",
+        "tag": "Token Development",
+        "title": "Token Development Company",
         "content": "Transform your startup with autonomous AI agents that don't just follow scripts; they reason, adapt, and execute complex workflows across your entire business ecosystem."
     },
     "about": {
-        "title": "Why Businesses Are Turning to AI Agents?",
+        "title": "Why Businesses Are Turning to Tokens?",
         "content": "AI agent adoption is surging across startups and high-growth businesses, unlocking the power to make faster decisions, slash costs, and deliver personalization at scale. Forward-thinking founders are already leveraging <span class='scroll-highlight'>AI agent development</span> to turn operational bottlenecks into competitive advantages, and those who act early gain the biggest edge.",
         "btntxt": "Talk to our experts"
     },
     "cta1": {
-        "title": "Ready To Transform Your Business With Intelligent AI Agents?",
-        "content": "Start your AI Agent journey with company Technologies today and unlock smarter, autogen solutions that deliver real ROI.",
+        "title": "Ready To Transform Your Business With Intelligent Tokens?",
+        "content": "Start your Token journey with company Technologies today and unlock smarter, autogen solutions that deliver real ROI.",
         "btntxt": "Get Demo Today"
     },
     "cta2": {
-        "title": "Want to See How Custom AI Agents Can Transform Your Business?",
+        "title": "Want to See How Custom Tokens Can Transform Your Business?",
         "content": "Explore bespoke AI solutions that fit your unique needs and deliver measurable impact from day one.",
         "btntxt": "Get Demo Today"
     },
     "differenceTable": {
         "title": "What's the difference",
-        "shortDes": "AI Agent Development is the process of creating intelligent software systems that can think, decide, and act without constant human input.",
+        "shortDes": "Token Development is the process of creating intelligent software systems that can think, decide, and act without constant human input.",
         "table": [
             {
                 "tableTitle": "Traditional ChatBot",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "tableTitle": "AI Agent",
+                "tableTitle": "Token",
                 "tablePoints": [
                     "Performs tasks autonomously and makes decisions",
                     "Adaptive and learns from data & interactions",
@@ -48,8 +48,8 @@
         ]
     },
     "sixContentV1": {
-        "title": "AI Agent Development Services for Businesses",
-        "shortDes": "From strategic planning through hands-on development, seamless integration, and ongoing optimization, we ensure your AI Agents drive measurable impact and support long-term scalability.",
+        "title": "Token Development Services for Businesses",
+        "shortDes": "From strategic planning through hands-on development, seamless integration, and ongoing optimization, we ensure your Tokens drive measurable impact and support long-term scalability.",
         "content": [
             {
                 "head": "AI Strategy & Consulting",
@@ -57,13 +57,13 @@
                 "width": "col-md-6 col-xl-3"
             },
             {
-                "head": "Custom AI Agent Development",
-                "headDes": "No two startups operate the same way, which is why our goal-driven AI Agents are never off-the-shelf. We tailor them to your workflows, data sources, industry regulations, and service-level requirements.",
+                "head": "Custom Token Development",
+                "headDes": "No two startups operate the same way, which is why our goal-driven Tokens are never off-the-shelf. We tailor them to your workflows, data sources, industry regulations, and service-level requirements.",
                 "width": "col-md-6 col-xl-5"
             },
             {
-                "head": "Conversational AI Agents",
-                "headDes": "Go beyond basic chatbots. Our Conversational AI Agents use advanced Natural Language Understanding (NLU), contextual memory",
+                "head": "Conversational Tokens",
+                "headDes": "Go beyond basic chatbots. Our Conversational Tokens use advanced Natural Language Understanding (NLU), contextual memory",
                 "width": "col-md-6 col-xl-3"
             },
             {
@@ -92,7 +92,7 @@
         "content": [
             {
                 "head": "Autonomous Decision-Making",
-                "headDes": "Empower your AI Agent to act on pre-defined business rules or dynamically learned policies."
+                "headDes": "Empower your Token to act on pre-defined business rules or dynamically learned policies."
             },
             {
                 "head": "Multi-Modal Interaction",
@@ -100,7 +100,7 @@
             },
             {
                 "head": "Context Awareness",
-                "headDes": "AI Agents remember customer history, previous interactions, and business context."
+                "headDes": "Tokens remember customer history, previous interactions, and business context."
             },
             {
                 "head": "Personalized Recommendations",
@@ -116,7 +116,7 @@
             },
             {
                 "head": "Self-Improvement",
-                "headDes": "Using continuous feedback self-correction loops, your AI Agent learns from outcomes."
+                "headDes": "Using continuous feedback self-correction loops, your Token learns from outcomes."
             },
             {
                 "head": "Compliance",
@@ -130,7 +130,7 @@
         "content": [
             {
                 "image": "/images/png/icon-dummy.png",
-                "head": "Conversational AI Agents",
+                "head": "Conversational Tokens",
                 "headDes": "Advanced, goal-oriented dialogue systems powered by a master agent/controller go beyond scripted responses. They manage customer support, sales inquiries, onboarding, and troubleshooting using contextual memory, sentiment analysis, and natural language understanding, delivering human-like engagement at scale.",
                 "width": "col-md-6"
             },
@@ -191,7 +191,7 @@
         ]
     },
     "bulletPoint": {
-        "title": "Strategic Business Benefits of Custom AI Agents",
+        "title": "Strategic Business Benefits of Custom Tokens",
         "shortDes": "Tangible outcomes startups and scaleups can expect when deploying custom AI agents",
         "content": [
             {
@@ -238,7 +238,7 @@
         ]
     },
     "lastSection": {
-        "title": "What Makes company Technologies Stand Out in AI Agent Development?",
+        "title": "What Makes company Technologies Stand Out in Token Development?",
         "shortDes": "Delivering transformational business outcomes is our standard as an AI solution provider. That’s why innovative enterprises trust company Technologies as their top choice for an AI partnership.",
         "content": [
             {
@@ -283,5 +283,41 @@
         "ctaHead": "Need More Help?",
         "ctaDes": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'",
         "ctaBtnTxt": "Contact us"
+    },
+    "relatedPage": {
+        "title": "Explore It",
+        "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "links": [
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            },
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            },
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            },
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            },
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            },
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            }
+        ]
     }
 }

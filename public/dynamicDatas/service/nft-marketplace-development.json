@@ -1,16 +1,16 @@
 {
     "banner": {
-        "tag": "Artificial Intelligence",
-        "title": "AI Agent Development Company",
+        "tag": "NFT MarkPlace",
+        "title": "NFT Development Company",
         "content": "Transform your startup with autonomous AI agents that don't just follow scripts; they reason, adapt, and execute complex workflows across your entire business ecosystem."
     },
     "about": {
-        "title": "Why Businesses Are Turning to AI Agents?",
+        "title": "Why Businesses Are Turning to NFT",
         "content": "AI agent adoption is surging across startups and high-growth businesses, unlocking the power to make faster decisions, slash costs, and deliver personalization at scale. Forward-thinking founders are already leveraging <span class='scroll-highlight'>AI agent development</span> to turn operational bottlenecks into competitive advantages, and those who act early gain the biggest edge.",
         "btntxt": "Talk to our experts"
     },
     "cta1": {
-        "title": "Ready To Transform Your Business With Intelligent AI Agents?",
+        "title": "Ready To Transform Your Business With Intelligent NFT",
         "content": "Start your AI Agent journey with company Technologies today and unlock smarter, autogen solutions that deliver real ROI.",
         "btntxt": "Get Demo Today"
     },
@@ -283,5 +283,41 @@
         "ctaHead":"Need More Help?",
         "ctaDes":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'",
         "ctaBtnTxt":"Contact us"
+    },
+    "relatedPage": {
+        "title": "Explore It",
+        "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "links": [
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            },
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            },
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            },
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            },
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            },
+            {
+                "linkTxt": "AI ChatBot Development",
+                "link": "/",
+                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
+            }
+        ]
     }
 }

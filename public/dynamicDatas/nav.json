@@ -60,6 +60,12 @@
         "path":"/services/crypto-exchange-development",
         "rel":"follow",
         "isdropDown":false
+      },
+      {
+        "title":"Contact",
+        "path":"/contact-us",
+        "rel":"follow",
+        "isdropDown":false
       }
   ],
   "products": [
@@ -76,8 +82,14 @@
         "isdropDown":false
       },
       {
-        "title":"Product Crypto Exchange sccript",
-        "path":"/products/exchange-script",
+        "title":"Crypto Exchange Script",
+        "path":"/products/crypto-exchange-script",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Contact",
+        "path":"/contact-us",
         "rel":"follow",
         "isdropDown":false
       }
@@ -124,6 +136,12 @@
         "path":"/services/token-development-service",
         "rel":"follow",
         "isdropDown":false
+      },
+      {
+        "title":"Contact",
+        "path":"/contact-us",
+        "rel":"follow",
+        "isdropDown":false
       }
   ],
   "company": [
@@ -161,6 +179,18 @@
         "title": "Service",
         "path": "/services",
         "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title": "Products",
+        "path": "/products",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Contact",
+        "path":"/contact-us",
+        "rel":"follow",
         "isdropDown":false
       }
   ],

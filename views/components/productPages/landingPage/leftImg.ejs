@@ -1,0 +1,26 @@
+<section>
+    <div class="py-5">
+        <div class="row justify-content-center g-3">
+            <div class="col-xl-6">
+                <div class="flex-y align-items-center align-items-lg-start text-center text-lg-start gap-2">
+                    <small class="d-inline-block fs-5  fw-medium"><%= page.leftImg.subTitle %></small>
+                    <h2><%= page.leftImg.title %></h2>
+                    <div>
+                        <img src="<%= page.leftImg.image %>" alt="images" width="<%= page.leftImg.width %>" height="<%= page.leftImg.height %>" class="img-fluid"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="flex-y gap-3">
+                    <% page.leftImg.content.forEach(relatecCnt => { %>
+                        <div class="p-3">
+                            <h3 class="fs-4"><%= relatecCnt.head %></h3>
+                            <p><%= relatecCnt.headDes %></p>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

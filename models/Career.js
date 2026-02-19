@@ -10,7 +10,10 @@ const Career = new mongoose.Schema({
     experience: { type: String, required: true},
 
     resume: { type: String},
-    createdAt: {type: Date, default: Date.Now}
+    createdAt: {
+        type: Date, 
+        default: Date.now
+    }
 })
 
 export default mongoose.model("career", Career)

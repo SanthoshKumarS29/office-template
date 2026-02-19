@@ -195,7 +195,23 @@
 }
 
 .rpl-section{
-    scroll-margin-top: 150px;
+    scroll-margin-top: 200px;
+}
+
+.rpl-link-container{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    text-decoration: none;
+    border: 2px solid var(--grey-clr4);
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: .4s ease-in-out;
+}
+
+.rpl-link-container:hover{
+    border: 2px solid var(--black-clr);
+    background-color: var(--grey-clr3);
 }
 
 @media (width <=1023px) {

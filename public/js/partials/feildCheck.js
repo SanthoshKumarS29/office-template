@@ -143,3 +143,16 @@ export const careerRules = {
         maxSize: 2 * 1024 * 1024     // 2MB
     }
 }
+
+export const quickLeadRules = {
+  phoneNumber: {
+    required: true,
+    message: "Phone number is required",
+  },
+  purpose: {
+    required: true,
+    message: "Please select purpose",
+  },
+};
+
+

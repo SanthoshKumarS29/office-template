@@ -1,0 +1,24 @@
+<section>
+    <div class="py-5">
+        <div class="col-lg-8 col-xxl-6 mx-auto text-center">
+            <h2 class="display-6"><%= page.differenceTable.title %></h2>
+            <p><%= page.differenceTable.shortDes %></p>
+        </div>
+        <div class="col-xl-8 mx-auto mt-5">
+            <div class="row justify-content-center g-3">
+                <% page.differenceTable.table.forEach(tableData => { %>
+                <div class="col-md-6">
+                    <div class="difference-table">
+                        <h3><%= tableData.tableTitle %></h3>
+                        <div class="dt-points">
+                            <% tableData.tablePoints.forEach(points => { %>
+                            <p><%= points %></p>
+                            <% }) %>
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,4 +1,4 @@
-import { validate, contactRules } from "/js/partials/feildCheck.js";
+import { validate, contactRules, quickLeadRules } from "/js/partials/feildCheck.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const forms = document.querySelectorAll(".contact-form");
@@ -65,7 +65,16 @@ document.addEventListener("DOMContentLoaded", () => {
         data.countryCode = countryCode;
       }
 
-      const errors = validate(data, contactRules);
+      let rules;
+
+      if (formType === "quick-lead") {
+        rules = quickLeadRules;
+      } else {
+        rules = contactRules;
+      }
+
+      const errors = validate(data, rules);
+
 
       // errors check
       if (Object.keys(errors).length > 0) {
@@ -78,9 +87,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
       data.formType = formType;
 
+      const endpoint =
+        formType === "quick-lead"
+          ? "/quick-lead"
+          : "/contact-us";
+
+
       // Send data to backend
+      console.log(endpoint)
       try {
-        const res = await fetch("/contact-us", {
+        const res = await fetch(endpoint, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),

@@ -1,5 +1,6 @@
 import Career from '../../models/Career.js';
-import Contact from '../../models/Contact.js'
+import Contact from '../../models/Contact.js';
+import QuickLead from '../../models/QuickLead.js';
 
 export const getAllContacts = async (req, res) => {
     try {
@@ -27,6 +28,19 @@ export const getAllCareer = async (req, res) => {
             partialView: 'careerSubmission',
             activePage: 'Career',
             careerList
+        })
+    } catch (error) {
+        res.status(500).send("Error loading careerList: " + error.message);
+    }
+}
+
+export const getAllQuickLead = async (req, res) => {
+    try {
+        const leadList = await QuickLead.find().lean();
+        res.render('dashboard', {
+            partialView: 'quickLeadSubmission',
+            activePage: 'quickLead',
+            leadList
         }) 
     } catch (error) {
         res.status(500).send("Error loading careerList: " + error.message);

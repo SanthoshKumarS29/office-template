@@ -1,0 +1,27 @@
+<section>
+    <div class="py-5">
+        <div class="col-md-7 col-xl-6 text-start mb-5">
+            <h2 class="display-6"><%= page.leftScroll.title %></h2>
+            <p><%= page.leftScroll.shortDes %></p>
+        </div>
+        <div class="row justify-content-center g-4 g-md-2">
+            <div class="col-md-5 col-xl-6">
+                <div class="left-scroll-sticky">
+                    <img src="<%= page.leftScroll.image %>" alt="images" width="<%= page.leftScroll.width %>" height="<%= page.leftScroll.height %>" class="img-fluid"
+                        loading="lazy">
+                </div>
+            </div>
+            <div class="col-md-7 col-xl-6">
+                <div class="flex-y gap-3">
+                    <% page.leftScroll.content.forEach(relatedCnt => { %>
+                        <div class="flex-y gap-2 card-layout-2">
+                            <h3 class="fs-6 fw-medium cl2-hover"><%= relatedCnt.head %></h3>
+                            <p><%= relatedCnt.headDes %>
+                            </p>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

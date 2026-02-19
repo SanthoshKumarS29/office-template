@@ -1,27 +1,27 @@
 {
     "banner": {
-        "tag": "Defi Platform",
-        "title": "Defi Development Company",
+        "tag": "Crypto Exchange Script",
+        "title": "Crypto Exchange Script Development Company",
         "content": "Transform your startup with autonomous AI agents that don't just follow scripts; they reason, adapt, and execute complex workflows across your entire business ecosystem."
     },
     "about": {
-        "title": "Why Businesses Are Turning to Defis?",
+        "title": "Why Businesses Are Turning to Crypto Exchange Scripts?",
         "content": "AI agent adoption is surging across startups and high-growth businesses, unlocking the power to make faster decisions, slash costs, and deliver personalization at scale. Forward-thinking founders are already leveraging <span class='scroll-highlight'>AI agent development</span> to turn operational bottlenecks into competitive advantages, and those who act early gain the biggest edge.",
         "btntxt": "Talk to our experts"
     },
     "cta1": {
-        "title": "Ready To Transform Your Business With Intelligent Defis?",
-        "content": "Start your Defi journey with company Technologies today and unlock smarter, autogen solutions that deliver real ROI.",
+        "title": "Ready To Transform Your Business With Intelligent Crypto Exchange Scripts?",
+        "content": "Start your Crypto Exchange Script journey with company Technologies today and unlock smarter, autogen solutions that deliver real ROI.",
         "btntxt": "Get Demo Today"
     },
     "cta2": {
-        "title": "Want to See How Custom Defis Can Transform Your Business?",
+        "title": "Want to See How Custom Crypto Exchange Scripts Can Transform Your Business?",
         "content": "Explore bespoke AI solutions that fit your unique needs and deliver measurable impact from day one.",
         "btntxt": "Get Demo Today"
     },
     "differenceTable": {
         "title": "What's the difference",
-        "shortDes": "Defi Development is the process of creating intelligent software systems that can think, decide, and act without constant human input.",
+        "shortDes": "Crypto Exchange Script Development is the process of creating intelligent software systems that can think, decide, and act without constant human input.",
         "table": [
             {
                 "tableTitle": "Traditional ChatBot",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "tableTitle": "Defi",
+                "tableTitle": "Crypto Exchange Script",
                 "tablePoints": [
                     "Performs tasks autonomously and makes decisions",
                     "Adaptive and learns from data & interactions",
@@ -48,8 +48,8 @@
         ]
     },
     "sixContentV1":{
-        "title":"Defi Development Services for Businesses",
-        "shortDes":"From strategic planning through hands-on development, seamless integration, and ongoing optimization, we ensure your Defis drive measurable impact and support long-term scalability.",
+        "title":"Crypto Exchange Script Development Services for Businesses",
+        "shortDes":"From strategic planning through hands-on development, seamless integration, and ongoing optimization, we ensure your Crypto Exchange Scripts drive measurable impact and support long-term scalability.",
         "content":[
             {
                 "head":"AI Strategy & Consulting",
@@ -57,13 +57,13 @@
                 "width":"col-md-6 col-xl-3"
             },
             {
-                "head":"Custom Defi Development",
-                "headDes":"No two startups operate the same way, which is why our goal-driven Defis are never off-the-shelf. We tailor them to your workflows, data sources, industry regulations, and service-level requirements.",
+                "head":"Custom Crypto Exchange Script Development",
+                "headDes":"No two startups operate the same way, which is why our goal-driven Crypto Exchange Scripts are never off-the-shelf. We tailor them to your workflows, data sources, industry regulations, and service-level requirements.",
                 "width":"col-md-6 col-xl-5"
             },
             {
-                "head":"Conversational Defis",
-                "headDes":"Go beyond basic chatbots. Our Conversational Defis use advanced Natural Language Understanding (NLU), contextual memory",
+                "head":"Conversational Crypto Exchange Scripts",
+                "headDes":"Go beyond basic chatbots. Our Conversational Crypto Exchange Scripts use advanced Natural Language Understanding (NLU), contextual memory",
                 "width":"col-md-6 col-xl-3"
             },
             {
@@ -92,7 +92,7 @@
         "content":[
             {
                 "head":"Autonomous Decision-Making",
-                "headDes":"Empower your Defi to act on pre-defined business rules or dynamically learned policies."
+                "headDes":"Empower your Crypto Exchange Script to act on pre-defined business rules or dynamically learned policies."
             },
             {
                 "head":"Multi-Modal Interaction",
@@ -100,7 +100,7 @@
             },
             {
                 "head":"Context Awareness",
-                "headDes":"Defis remember customer history, previous interactions, and business context."
+                "headDes":"Crypto Exchange Scripts remember customer history, previous interactions, and business context."
             },
             {
                 "head":"Personalized Recommendations",
@@ -116,7 +116,7 @@
             },
             {
                 "head":"Self-Improvement",
-                "headDes":"Using continuous feedback self-correction loops, your Defi learns from outcomes."
+                "headDes":"Using continuous feedback self-correction loops, your Crypto Exchange Script learns from outcomes."
             },
             {
                 "head":"Compliance",
@@ -130,7 +130,7 @@
         "content":[
             {
                 "image":"/images/png/icon-dummy.png",
-                "head":"Conversational Defis",
+                "head":"Conversational Crypto Exchange Scripts",
                 "headDes":"Advanced, goal-oriented dialogue systems powered by a master agent/controller go beyond scripted responses. They manage customer support, sales inquiries, onboarding, and troubleshooting using contextual memory, sentiment analysis, and natural language understanding, delivering human-like engagement at scale.",
                 "width":"col-md-6"
             },
@@ -191,7 +191,7 @@
         ]
     },
     "bulletPoint":{
-        "title":"Strategic Business Benefits of Custom Defis",
+        "title":"Strategic Business Benefits of Custom Crypto Exchange Scripts",
         "shortDes":"Tangible outcomes startups and scaleups can expect when deploying custom AI agents",
         "content":[
             {
@@ -238,7 +238,7 @@
         ]
     },
     "lastSection":{
-        "title":"What Makes company Technologies Stand Out in Defi Development?",
+        "title":"What Makes company Technologies Stand Out in Crypto Exchange Script Development?",
         "shortDes":"Delivering transformational business outcomes is our standard as an AI solution provider. That’s why innovative enterprises trust company Technologies as their top choice for an AI partnership.",
         "content":[
             {
@@ -290,7 +290,7 @@
         "links": [
             {
                 "linkTxt": "AI ChatBot Development",
-                "link": "/",
+                "link": "/services/crypto-wallet-development",
                 "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
             },
             {

@@ -8,31 +8,6 @@ export const validate = (data, rules) => {
     for (let field in rules) {
         const validation = rules[field];
 
-        // // Check resume file
-        // if (field === "resume") {
-        //     const file = data.resume;
-
-        //     if (validation.required && (!file || file.size === 0)) {
-        //         errors.resume = "Resume is required";
-        //         continue;
-        //     }
-
-        //     // file type check
-        //     if (validation.fileTypes) {
-        //         const ext = file.name.split(".").pop().toLowerCase();
-        //         if (!validation.fileTypes.includes(ext)) {
-        //             errors.resume = `Invalid file type (${ext}). Allowed: ${validation.fileTypes.join(", ")}`;
-        //         }
-        //     }
-
-        //     // file size check
-        //     if (validation.maxSize && file.size > validation.maxSize) {
-        //         errors.resume = `File too large. Max size: ${validation.maxSize / (1024 * 1024)}MB`;
-        //     }
-
-        //     continue;
-        // }
-
         // Normal text validation
         let value = data[field]?.toString().trim();
 
@@ -139,9 +114,4 @@ export const careerRules = {
         max: 4
     },
 
-    // resume: {
-    //     required: true,
-    //     fileTypes: ["pdf", "doc", "docx"],
-    //     maxSize: 2 * 1024 * 1024     // 2MB
-    // }
 }

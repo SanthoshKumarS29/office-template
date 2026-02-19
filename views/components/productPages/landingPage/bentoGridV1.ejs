@@ -1,0 +1,19 @@
+<section>
+    <div class="py-5">
+        <div class="col-lg-8 mx-auto text-center">
+            <h2 class="display-6"><%= page.bentoGridV1.title %></h2>
+            <p><%= page.bentoGridV1.shortDes %></p>
+        </div>
+        <div class="row justify-content-center g-0 mt-5">
+            <% page.bentoGridV1.content.forEach(relatecCnt => { %>
+                <div class="<%= relatecCnt.width %>">
+                    <div class="flex-y gap-2 card-layout-3">
+                        <img src="<%= relatecCnt.image %>" alt="icon" width="34" height="34" class="img-fluid" loading="lazy">
+                        <h3 class="fs-6 fw-medium"><%= relatecCnt.head %></h3>
+                        <p><%= relatecCnt.headDes %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</section>

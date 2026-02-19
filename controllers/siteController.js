@@ -59,9 +59,7 @@ export const serviceHubPage = async (req, res) => {
 
 export const serviceRelatedPages = async (req, res) => {
     const { slug } = req.params;
-    const data = {
-        url: slug
-    }
+    const data = { url: slug }
     const jsonPath = path.join(__dirname, `../public/dynamicDatas/service/${slug}.json`);
 
     if (fs.existsSync(jsonPath)) {
@@ -84,9 +82,8 @@ export const serviceRelatedPages = async (req, res) => {
 
 export const productHubPage = async (req, res) => {
     const { slug } = req.params;
-    const data = {
-        url: slug
-    }
+    const data = { url: slug }
+
 
     // fetch seo from DB
     const seoData = await Seo.findOne({ slug }).lean()
@@ -101,18 +98,18 @@ export const productHubPage = async (req, res) => {
 
 export const productRelatedPages = async (req, res) => {
     const { slug } = req.params;
-    const data = {
-        url: slug
-    }
-    const viewPath = path.join(__dirname, `../views/pages/products/${slug}.ejs`);
+    const data = { url: slug }
+    const jsonPath = path.join(__dirname, `../public/dynamicDatas/products/${slug}.json`);
 
-    if (fs.existsSync(viewPath)) {
+    if (fs.existsSync(jsonPath)) {
+        const pageData = JSON.parse(fs.readFileSync(jsonPath, "utf-8"))
 
         const seoData = await Seo.findOne({ slug }).lean()
         const seo = seoData || {}
 
         res.render(`pages/products/${slug}.ejs`, {
             currentSection: "products",
+            page: pageData,
             seo,
             pageData: data
         })

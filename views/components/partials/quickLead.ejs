@@ -1,0 +1,39 @@
+<!-- Quick Lead / Quick CTA Form -->
+<form class="contact-form quick-lead-form" data-formtype="quick-lead">
+
+    <!-- Phone Field -->
+    <div class="form-group">
+        <div>
+            <div class="flex-y">
+                <label for="email" class="fcontact-form-label">Enter Your Number:</label>
+                <input id="phone-contact" name="phoneNumber" class="iti-input fcontact-form-feild" type="tel"
+                    placeholder="Phone/Whatsapp number" />
+                <span class="feildError" id="phoneError"></span>
+            </div>
+            <!-- optional hidden fields (not required, we'll append in JS) -->
+            <input type="hidden" name="countryCode" />
+        </div>
+    </div>
+
+    <!-- Purpose Field -->
+    <div class="form-group">
+        <label for="quickPurpose">Purpose</label>
+        <select id="quickPurpose" name="purpose">
+            <option value="">Select Purpose</option>
+            <option value="Consultation">Consultation</option>
+            <option value="Project Discussion">Project Discussion</option>
+            <option value="Partnership">Partnership</option>
+            <option value="General Inquiry">General Inquiry</option>
+        </select>
+        <small id="purposeError" class="feildError"></small>
+    </div>
+
+    <!-- Hidden Page Source (Optional but Recommended) -->
+    <input type="hidden" name="pageSource" value="<%= currentSection || '' %>">
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary">
+        Request a Call
+    </button>
+
+</form>

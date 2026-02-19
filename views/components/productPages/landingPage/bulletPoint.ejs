@@ -1,0 +1,18 @@
+<section>
+    <div class="py-5">
+        <div class="col-lg-10 col-xl-7 mx-auto text-center">
+            <h2 class="display-6"><%= page.bulletPoint.title %></h2>
+            <p><%= page.bulletPoint.shortDes %></p>
+        </div>
+        <div class="col-xl-11 mx-auto pt-5">
+            <ul class="row row-cols-md-2 justify-content-center gx-4 gy-3">
+                <% page.bulletPoint.content.forEach(relatedCnt => { %>
+                    <li>
+                        <h3 class="d-inline-block mb-2 fs-6 fw-medium"><%= relatedCnt.head %></h3>
+                        <p><%= relatedCnt.headDes %></p>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+</section>

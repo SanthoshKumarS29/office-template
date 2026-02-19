@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Page</title>
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/admin/admin.css">
+  <link rel="stylesheet" href="/css/siteTheme.css">
+</head>
+
+<body>
+  <h2>Quick Lead Form Entries</h2>
+
+
+  <table class="w-100">
+    <thead>
+      <tr class="table-head">
+        <th>Phone</th>
+        <th>Purpose</th>
+        <th>PageFrom</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% leadList.forEach(contact => { %>
+      <tr class="table-body">
+        <td><%= contact.countryCode || '----' %>+ <%= contact.phoneNumber || '----' %></td>
+        <td><%= contact.purpose || '----' %></td>
+        <td><%= contact.pageSource || '----' %></td>
+        <td><%= new Date(contact.createdAt).toLocaleString() %></td>
+      </tr>
+    <% }) %>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
