@@ -210,7 +210,7 @@
 .client-bg1,
 .client-bg2,
 .client-bg3,
-.client-bg4{
+.client-bg4 {
     border: 2px solid transparent;
     border-radius: 1rem;
     transition: .4s ease-in-out;
@@ -219,7 +219,7 @@
 .client-bg1:hover,
 .client-bg2:hover,
 .client-bg3:hover,
-.client-bg4:hover{
+.client-bg4:hover {
     border: 2px solid var(--black-clr);
 }
 
@@ -376,13 +376,89 @@
     border-radius: .5rem;
 }
 
+.quick-lead-container {
+    position: fixed;
+    bottom: 1%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 600px;
+    z-index: 20;
+}
+
+.quick-lead-container.expanded {
+    width: 100%;
+}
+
+.quick-lead-bg {
+    background-color: var(--black-clr);
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.quick-lead-form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.ql-step {
+    width: 100%;
+    display: none;
+    flex: 1;
+    transition: all 0.4s ease;
+}
+
+/* Active field */
+.ql-step.active {
+    display: block;
+}
+
+.ql-input-feild {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: var(--white-clr);
+    width: 100%;
+}
+
+.ql-input-feild:focus {
+    outline: none;
+}
+
+.success-message {
+    display: none;
+    color: var(--white-clr);
+    font-size: 14px;
+    padding: .2rem;
+    text-align: center;
+}
+
+.success-message.active {
+    display: block;
+}
+
+.btn-error {
+    background-color: #e53935 !important;
+    border-color: #e53935 !important;
+    transition: 0.3s ease;
+}
+
+.btn-normal {
+    border: 1px solid var(--white-clr);
+    background-color: var(--white-clr);
+    border-color: var(--black-clr);
+    padding: .25rem;
+}
+
 .accordion-item {
     margin-bottom: 1rem;
     border: none;
     transition: 0.4s ease-in-out;
 }
 
-.accordion-button{
+.accordion-button {
     font-size: .95rem;
     padding: 1rem 0;
 }
@@ -396,7 +472,7 @@
     background-color: transparent;
 }
 
-.accordion-body{
+.accordion-body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75rem;
