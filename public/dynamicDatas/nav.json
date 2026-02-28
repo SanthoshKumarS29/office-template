@@ -222,6 +222,26 @@
   ],
   "footer": [
     {
+      "title":"Latest Insights",
+      "links":[
+        {
+          "href":"/blogs/how-digital-assets-are-transforming-global-finance",
+          "name":"Cryptocurrency Explained",
+          "rel":"follow"
+        },
+        {
+          "href":"/blogs/token-development-trends-2025",
+          "name":"Token Development Trends 2025",
+          "rel":"follow"
+        },
+        {
+          "href":"/blogs/future-of-crypto-wallets-and-security-ux-trends-2025",
+          "name":"Future of Crypto Wallets in 2025",
+          "rel":"follow"
+        }
+      ]
+    },
+    {
       "title":"Service",
       "links":[
         {

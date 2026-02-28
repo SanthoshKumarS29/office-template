@@ -13,12 +13,12 @@
 <body>
   <section class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-2 p-0 bg-black text-white overflow-y-auto scrollbar-hide dvh sticky-top">
+      <div class="col-4 col-md-4 col-xl-2 p-0 bg-black text-white overflow-y-auto scrollbar-hide dvh sticky-top">
         <div class="p-3">
-          <h2 class="py-3">Dashboard</h2>
+          <h2 class="py-3"><a class="text-decoration-none text-white" href="/admin/dashboard">Dashboard</a></h2>
           <div>
             <p class="text-secondary m-0 ">Contact Detail Page</p>
-            <ul class="list-unstyled ps-3">
+            <ul class="list-unstyled ps-xl-3">
               <li><a class="admin-link <%= activePage === 'contacts' ? 'active' : '' %>" href="/admin/contactSub">Contact</a></li>
               <li><a class="admin-link <%= activePage === 'Career' ? 'active' : '' %>" href="/admin/careerSub">Career</a></li>
               <li><a class="admin-link <%= activePage === 'quickLead' ? 'active' : '' %>" href="/admin/quickLeadSub">Quick Lead</a></li>
@@ -26,22 +26,22 @@
           </div>
           <div>
             <p class="text-secondary m-0 ">Add Meta Detail Page</p>
-            <ul class="list-unstyled ps-3">
-              <li><a class="admin-link <%= activePage === 'metaForm' ? 'active' : '' %>" href="/admin/dashboard">Seo Form</a></li>
-              <li><a class="admin-link <%= activePage === 'detail' ? 'active' : '' %>" href="/admin/detailPage">Detail Page</a></li>
+            <ul class="list-unstyled ps-xl-3">
+              <li><a class="admin-link <%= activePage === 'metaForm' ? 'active' : '' %>" href="/admin/metaform">Meta Form</a></li>
+              <li><a class="admin-link <%= activePage === 'metaDetail' ? 'active' : '' %>" href="/admin/metadetail">Meta Page Details</a></li>
             </ul>
           </div>
           <div>
             <p class="text-secondary m-0">Add Blog Page</p>
-            <ul class="list-unstyled ps-3">
+            <ul class="list-unstyled ps-xl-3">
               <li><a class="admin-link <%= activePage === 'blogForm' ? 'active' : '' %>" href="/admin/blogs/new">Blog Form</a></li>
               <li><a class="admin-link <%= activePage === 'blogList' ? 'active' : '' %>" href="/admin/blogs">Blog List</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-10">
-        <div class="p-3">
+      <div class="col-8 col-md-8 col-xl-10">
+        <div class="py-3 p-xl-3">
           <%- include(partialView) %>
         </div>
       </div>

@@ -382,18 +382,24 @@
     right: 0;
     left: 0;
     margin: 0 auto;
-    width: 50%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 300px;
     z-index: 20;
+    transition: .3s ease-in-out;
+}
+
+.quick-lead-container:hover{
+    transform: scale(1.03);
 }
 
 .quick-lead-container.expanded {
-    width: 100%;
+    transform: scale(1.03);
+    max-width: 400px;
 }
 
 .quick-lead-bg {
     background-color: var(--black-clr);
-    padding: 1rem;
+    padding: .75rem 1rem;
     border-radius: 3rem;
 }
 
@@ -427,11 +433,21 @@
     outline: none;
 }
 
+.quick-lead-btn{
+    background-color: var(--blue-clr);
+    font-size: .80rem;
+    font-weight: 500;
+    padding: .35rem 1rem;
+    border-radius: .35rem;
+    border: 1px solid transparent;
+    color: var(--white-clr);
+}
+
 .success-message {
     display: none;
     color: var(--white-clr);
     font-size: 14px;
-    padding: .2rem;
+    padding: .2rem 1rem;
     text-align: center;
 }
 
@@ -443,13 +459,6 @@
     background-color: #e53935 !important;
     border-color: #e53935 !important;
     transition: 0.3s ease;
-}
-
-.btn-normal {
-    border: 1px solid var(--white-clr);
-    background-color: var(--white-clr);
-    border-color: var(--black-clr);
-    padding: .25rem;
 }
 
 .accordion-item {

@@ -17,8 +17,7 @@ export const postLogin = (req, res) => {
     }
 };
 
-
-export const dashboard = async (req, res) => {
+export const metaForm = async (req, res) => {
 
     try {
         const seoList = await Seo.find().lean();
@@ -33,7 +32,7 @@ export const dashboard = async (req, res) => {
 }
 
 // Show dashboard with seo list
-export const getDatas = async (req, res) => {
+export const metadetail = async (req, res) => {
     const searchQuery = req.query.q || '';
 
     try {
@@ -45,7 +44,7 @@ export const getDatas = async (req, res) => {
         const seoList = await Seo.find(filter).lean();
         res.render('dashboard', {
             partialView: 'pages/renderDetails',
-            activePage: 'detail',
+            activePage: 'metaDetail',
             seoList,
             searchQuery
         })    // <- pass it to the EJS view

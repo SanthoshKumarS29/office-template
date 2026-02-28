@@ -5,7 +5,7 @@
             <div class="ql-step active" data-step="1">
                 <div class="flex-y">
                     <input id="quickPhonecontact" name="phoneNumber" class="iti-input ql-input-feild" type="tel"
-                        placeholder="Phone/Whatsapp number" />
+                        placeholder="Phone Number" />
                 </div>
                     <!-- optional hidden fields (not required, we'll append in JS) -->
                     <input type="hidden" name="countryCode" />
@@ -21,7 +21,7 @@
             <input type="hidden" name="pageSource" value="<%= currentSection || '' %>">
 
             <!-- Submit Button -->
-            <button class="btn-normal" id="qlBtn">Next</button>
+            <button class="quick-lead-btn" id="qlBtn">Next</button>
         </form>
         <div class="success-message" id="qlSuccess">
             We will call you shortly.

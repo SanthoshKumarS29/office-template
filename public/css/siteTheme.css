@@ -62,18 +62,6 @@ main {
 
 /* buttons */
 
-.brand-btn{
-    position: relative;
-    padding: .5rem 1rem;
-    background-color: var(--white-clr);
-    color: var(--black-clr);
-    font-weight: 600;
-    border: 1px solid transparent;
-    border-radius: .75rem;
-    z-index: 1;
-    overflow: hidden;
-}
-
 .view-more-btn{
     display: inline-flex;
     align-items: center;
@@ -100,24 +88,6 @@ main {
 }
 
 .view-more-btn:hover{
-    transform: scale(1.045);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.common-blue-btn{
-    text-decoration: none;
-    color: white;
-    padding: .75rem 1rem;
-    border: none;
-    border-radius: .25rem;
-    font-size: 1rem;
-    font-weight: 600;
-    background-color: var(--blue-clr);
-    transform: scale(1);
-    transition: 0.4s ease-in-out;
-}
-
-.common-blue-btn:hover{
     transform: scale(1.045);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <h2>Contact Entries</h2>
+  <h2 class="mb-4">Contact Entries</h2>
 
   <div class="d-flex gap-2 align-items-center mb-3">
     <a href="/admin/contactSub" class="btn btn-primary <%= currentType === 'all' ? 'active' : '' %>">All</a>
@@ -19,31 +19,33 @@
     <a href="/admin/contactSub?type=footer" class="btn btn-primary <%= currentType === 'footer' ? 'active' : '' %>">Footer</a>
   </div>
 
-  <table class="w-100">
-    <thead>
-      <tr class="table-head">
-        <th>Type</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Message</th>
-        <th>Date</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% contacts.forEach(contact => { %>
-      <tr class="table-body">
-        <td class="text-uppercase fw-bold"><%= contact.formType %></td>
-        <td><%= contact.name || '---' %></td>
-        <td><%= contact.email %></td>
-        <td><%= contact.countryCode || '----' %>+ <%= contact.phoneNumber || '----' %></td>
-        <td><%= contact.message || '----' %></td>
-        <td><%= new Date(contact.createdAt).toLocaleString() %></td>
-      </tr>
-    <% }) %>
-    </tbody>
-  </table>
+  <div class="overflow-scroll">
+    <table class="w-100">
+      <thead>
+        <tr class="table-head">
+          <th>Type</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Message</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+  
+      <tbody>
+        <% contacts.forEach(contact => { %>
+        <tr class="table-body">
+          <td class="text-uppercase fw-bold"><%= contact.formType %></td>
+          <td><%= contact.name || '---' %></td>
+          <td><%= contact.email %></td>
+          <td><%= contact.countryCode || '----' %>+ <%= contact.phoneNumber || '----' %></td>
+          <td><%= contact.message || '----' %></td>
+          <td><%= new Date(contact.createdAt).toLocaleString() %></td>
+        </tr>
+      <% }) %>
+      </tbody>
+    </table>
+  </div>
 
 </body>
 

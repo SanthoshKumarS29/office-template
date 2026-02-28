@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div>
+        <h2 class="fs-1 mb-5">Dashboard Overview</h2>
+        <div class="row justify-content-center g-5">
+            <div class="col-md-6">
+                <div class="dashboard-card">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h4>Total Contacts</h4>
+                        <p class="dashboard-number"><%= stats.contactCount %></p>
+                    </div>
+                    <div>
+                        <a href="/admin/contactSub" class="btn btn-primary w-100">Contact</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="dashboard-card">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h4>Total Career Applications</h4>
+                        <p class="dashboard-number"><%= stats.careerCount %></p>
+                    </div>
+                    <div>
+                        <a href="/admin/career" class="btn btn-primary w-100">Career</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="dashboard-card">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h4>Total Quick Leads</h4>
+                        <p class="dashboard-number"><%= stats.quickLeadCount %></p>
+                    </div>
+                    <div>
+                        <a href="/admin/quickLeadSub" class="btn btn-primary w-100">QuickLead</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="dashboard-card">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h4>Total Blogs</h4>
+                        <p class="dashboard-number"><%= stats.blogCount %></p>
+                    </div>
+                    <div>
+                        <a href="/admin/blogs" class="btn btn-primary w-100">Blogs</a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</body>
+
+</html>

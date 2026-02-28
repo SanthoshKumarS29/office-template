@@ -11,33 +11,35 @@
     <h3>All Blogs</h3>
     <a href="/admin/blogs/new" class="btn btn-secondary">Create New Blog</a>
   </div>
-  <table>
-    <thead>
-      <tr class="table-head">
-        <th>Title</th>
-        <th>Slug</th>
-        <th>Category</th>
-        <th>Created</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% blogs.forEach(b => { %>
-        <tr class="table-body">
-          <td><%= b.title %></td>
-          <td><%= b.slug %></td>
-          <td><%= b.category %></td>
-          <td><%= new Date(b.createdAt).toLocaleString() %></td>
-          <td class="d-flex align-items-center gap-2">
-            <a href="/admin/blogs/<%= b._id %>/edit" class="btn btn-success btn-sm">Edit</a>
-            <form method="post" action="/admin/blogs/<%= b._id %>/delete" style="display:inline;">
-              <button onclick="return confirm('Delete this blog?')" class="btn btn-danger btn-sm">Delete</button>
-            </form>
-            <a href="/blog/<%= b.slug %>" target="_blank">View</a>
-          </td>
+  <div class="overflow-scroll">
+    <table class="w-100">
+      <thead>
+        <tr class="table-head">
+          <th>Title</th>
+          <th>Slug</th>
+          <th>Category</th>
+          <th>Created</th>
+          <th>Actions</th>
         </tr>
-      <% }) %>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        <% blogs.forEach(b => { %>
+          <tr class="table-body">
+            <td><%= b.title %></td>
+            <td><%= b.slug %></td>
+            <td><%= b.category %></td>
+            <td><%= new Date(b.createdAt).toLocaleString() %></td>
+            <td class="d-flex align-items-center gap-2">
+              <a href="/admin/blogs/<%= b._id %>/edit" class="btn btn-success btn-sm">Edit</a>
+              <form method="post" action="/admin/blogs/<%= b._id %>/delete" style="display:inline;">
+                <button onclick="return confirm('Delete this blog?')" class="btn btn-danger btn-sm">Delete</button>
+              </form>
+              <a href="/blog/<%= b.slug %>" target="_blank">View</a>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>

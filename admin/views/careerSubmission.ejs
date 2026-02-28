@@ -11,35 +11,36 @@
 </head>
 
 <body>
-  <h2>Career Entries</h2>
-
-  <table class="w-100">
-    <thead>
-      <tr class="table-head">
-        <th>Name</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>JobRole</th>
-        <th>Experience</th>
-        <th>Resume</th>
-        <th>Date</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% careerList.forEach(career => { %>
-      <tr class="table-body">
-        <td><%= career.name || '---' %></td>
-        <td><%= career.email %></td>
-        <td><%= career.countryCode || '----' %>+ <%= career.phoneNumber || '----' %></td>
-        <td><%= career.jobRole || '----' %></td>
-        <td><%= career.experience || '----' %></td>
-        <td><%= career.resume || '----' %></td>
-        <td><%= new Date(career.createdAt).toLocaleString() %></td>
-      </tr>
-    <% }) %>
-    </tbody>
-  </table>
+  <h2 class="mb-4">Career Entries</h2>
+  <div class="overflow-scroll">
+    <table class="w-100">
+      <thead>
+        <tr class="table-head">
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>JobRole</th>
+          <th>Experience</th>
+          <th>Resume</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+  
+      <tbody>
+        <% careerList.forEach(career => { %>
+        <tr class="table-body">
+          <td><%= career.name || '---' %></td>
+          <td><%= career.email %></td>
+          <td><%= career.countryCode || '----' %>+ <%= career.phoneNumber || '----' %></td>
+          <td><%= career.jobRole || '----' %></td>
+          <td><%= career.experience || '----' %></td>
+          <td><%= career.resume || '----' %></td>
+          <td><%= new Date(career.createdAt).toLocaleString() %></td>
+        </tr>
+      <% }) %>
+      </tbody>
+    </table>
+  </div>
 
 </body>
 
