@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const result = await res.json();
         if (result.success) {
-          alert(result.message);
+          window.location.href = result.redirect;
           form.reset();
           if (iti) iti.setNumber("");
         }

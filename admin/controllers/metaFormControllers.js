@@ -1,22 +1,5 @@
 import Seo from '../../models/Seo.js';
 
-
-// Get Login 
-export const getLogin = (req, res) => {
-    res.render('login', { error: null })
-};
-
-// post handle login
-export const postLogin = (req, res) => {
-    const { username, password } = req.body;
-    if (username === "admin" && password === "1234") {
-        req.session.isLoggedIn = true;
-        res.redirect('/admin/detailPage');
-    } else {
-        res.render("login", { error: "Invalid credentials" })
-    }
-};
-
 export const metaForm = async (req, res) => {
 
     try {

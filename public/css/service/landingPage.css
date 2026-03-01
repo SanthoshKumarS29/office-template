@@ -1,9 +1,8 @@
-
 .lp-banner-container {
     height: calc(80vh - var(--padding-top));
 }
 
-.relate-btn{
+.relate-btn {
     position: fixed;
     top: 11.5%;
     right: 0.5%;
@@ -12,19 +11,26 @@
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(15%); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15%);
+    }
 }
 
 
-.rb-link{
+.rb-link {
     position: relative;
     border-radius: 100%;
     background-color: var(--white-clr);
     padding: .5rem .45rem;
 }
 
-.rb-link-txt{
+.rb-link-txt {
     display: inline-block;
     position: absolute;
     top: 100%;
@@ -40,7 +46,7 @@
     transition: .3s ease-in-out;
 }
 
-.rb-link:hover .rb-link-txt{
+.rb-link:hover .rb-link-txt {
     opacity: 1;
     visibility: visible;
 }
@@ -58,7 +64,7 @@
     border-radius: 1rem;
 }
 
-.about-cta-btn{
+.about-cta-btn {
     display: inline-block;
     padding: .5rem 1rem;
     font-size: 1.15rem;
@@ -128,7 +134,7 @@
     transition: .3s ease-in-out;
 }
 
-.card-layout-2:hover .cl2-hover{
+.card-layout-2:hover .cl2-hover {
     transition: .3s ease-in-out;
     color: var(--blue-clr);
 }
@@ -150,17 +156,17 @@
     left: 0;
 }
 
-.dp-num{
+.dp-num {
     font-size: clamp(3rem, 4vw, 4rem);
     font-weight: 600;
 }
 
-.number-hover-effect:hover .dp-num{
+.number-hover-effect:hover .dp-num {
     transition: .3s ease-in-out;
     color: var(--blue-clr);
 }
 
-.card-layout-4{
+.card-layout-4 {
     position: relative;
     padding: 1rem;
     background-color: var(--grey-clr);
@@ -169,7 +175,7 @@
     transition: .3s ease-in-out;
 }
 
-.card-layout-4::before{
+.card-layout-4::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -180,11 +186,11 @@
     border-top-left-radius: 1rem;
 }
 
-.card-layout-4:hover{
+.card-layout-4:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.faq-cta{
+.faq-cta {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -194,11 +200,11 @@
     border-radius: .5rem;
 }
 
-.rpl-section{
+.rpl-section {
     scroll-margin-top: 200px;
 }
 
-.rpl-link-container{
+.rpl-link-container {
     display: flex;
     flex-direction: column;
     gap: .75rem;
@@ -209,12 +215,17 @@
     transition: .4s ease-in-out;
 }
 
-.rpl-link-container:hover{
+.rpl-link-container:hover {
     border: 2px solid var(--black-clr);
     background-color: var(--grey-clr3);
 }
 
 @media (width <=1023px) {
+    .relate-btn {
+        top: 8.5%;
+        right: 1%;
+    }
+
     .card-layout-2 {
         padding: 1rem;
     }

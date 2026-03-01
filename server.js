@@ -54,15 +54,10 @@ app.use('/admin', blogRouter);
 
 
 // start Server
-// app.listen(2003, () => {
-//     console.log('Server is runnings')
-//     console.log("PORT VALUE:", process.env.PORT);
-//     connectDb();
-// })
 
-const PORT = process.env.PORT || 2004
+const PORT =  Number(process.env.PORT) || 2004
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log('Server is runnings')
   console.log("PORT VALUE:", process.env.PORT);
   connectDb();

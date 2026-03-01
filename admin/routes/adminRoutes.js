@@ -1,6 +1,6 @@
 import express from "express";
-import { createSeoData, deleteSeoForm, editSeoForm, getLogin, metaForm, metadetail, postLogin, updateSeoForm } from "../controllers/metaFormControllers.js";
-import { dashboard } from "../controllers/dashboard.js"
+import { createSeoData, deleteSeoForm, editSeoForm, metaForm, metadetail, updateSeoForm } from "../controllers/metaFormControllers.js";
+import { dashboard, getLogin, postLogin } from "../controllers/dashboard.js"
 import { getAllCareer, getAllContacts, getAllQuickLead } from "../controllers/contactControllers.js";
 import { isAuthenticated } from '../middleware/auth.js';
 

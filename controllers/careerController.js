@@ -25,9 +25,7 @@ export const submitCareer = async (req, res) => {
         await career.create({
             name, email, jobRole, experience, phoneNumber, countryCode, resume: resumePath
         })
-        return res.json({
-            success: true, message: "Form submitted successfully!"
-        })
+        return res.status(200).json({ success: true, redirect: "/success" });
     } catch (error) {
         console.error("Career form error", error);
         res.status(500).json({ error: "Internal server error" })

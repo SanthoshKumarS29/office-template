@@ -4,8 +4,6 @@ import { contactRules, validate } from "../utils/feildCheck.js";
 
 export const formSubmit = async (req, res) => {
     try {
-
-        console.log("📩 Form data received:", req.body);
         const { name, email, message, countryCode, phoneNumber, formType } = req.body;
 
         // validation
@@ -25,7 +23,7 @@ export const formSubmit = async (req, res) => {
         });
 
         await newContact.save();
-        res.status(200).json({ success: true, message: "Form submitted successfully!" });
+        res.status(200).json({ success: true, redirect: "/success" });
 
 
     } catch (error) {
@@ -39,7 +37,6 @@ export const formSubmit = async (req, res) => {
 
 export const formQuickLeadSubmit = async (req, res) => {
     try {
-        console.log("BODY:", req.body);
         const {phoneNumber, countryCode, purpose, pageSource} = req.body
 
         if(!phoneNumber && !purpose){
@@ -53,7 +50,7 @@ export const formQuickLeadSubmit = async (req, res) => {
             pageSource
         });
 
-        res.status(200).json({ success: true, success: "We will call you shortly!" });
+        res.status(200).json({ success: true, message: "We will call you shortly!" });
 
     } catch (err) {
         console.error(err);

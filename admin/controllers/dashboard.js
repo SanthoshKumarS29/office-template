@@ -3,8 +3,23 @@ import Contact from "../../models/Contact.js";
 import QuickLead from "../../models/QuickLead.js";
 import Blog from "../../models/Blog.js";
 
-export const dashboard = async (req, res) => {
+// Get Login 
+export const getLogin = (req, res) => {
+    res.render('login', { error: null })
+};
 
+// post handle login
+export const postLogin = (req, res) => {
+    const { username, password } = req.body;
+    if (username === "admin" && password === "1234") {
+        req.session.isLoggedIn = true;
+        res.redirect('/admin/dashboard');
+    } else {
+        res.render("login", { error: "Invalid credentials" })
+    }
+};
+
+export const dashboard = async (req, res) => {
     try {
         const [contactCount, careerCount, quickLeadCount, blogCount] = await Promise.all([
             Contact.countDocuments(), Career.countDocuments(), QuickLead.countDocuments(), Blog.countDocuments()

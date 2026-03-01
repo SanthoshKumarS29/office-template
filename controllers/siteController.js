@@ -171,3 +171,20 @@ export const contact = async (req, res) => {
         pageData: data
     })
 }
+
+export const successPage = async (req, res) => {
+    const { slug } = req.params;
+    const data = {
+        url: slug
+    }
+
+    // fetch seo from DB
+    const seoData = await Seo.findOne({ slug }).lean()
+    const seo = seoData || {}
+
+    res.render('pages/static/success.ejs', {
+        currentSection: "success",
+        seo,
+        pageData: data
+    })
+}
