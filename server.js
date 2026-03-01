@@ -2,6 +2,8 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import session from "express-session";
+import dotenv from "dotenv";
+
 // files
 import loadJson from './middleware/loadJson.js';
 import siteRoutes from './routes/siteRoutes.js';
@@ -21,8 +23,8 @@ const __dirname = path.dirname(__filename)
 // set View engine
 app.set("view engine", "ejs");
 app.set("views", [
-    path.join(__dirname, "views"),
-    path.join(__dirname, "admin/views")
+  path.join(__dirname, "views"),
+  path.join(__dirname, "admin/views")
 ]);
 
 
@@ -41,7 +43,7 @@ app.use(
     saveUninitialized: false,
   })
 );
-
+dotenv.config();
 
 // routes
 app.use('/', siteRoutes);
@@ -52,8 +54,17 @@ app.use('/admin', blogRouter);
 
 
 // start Server
-app.listen(2003, () => {
-    console.log('Server is runnings')
-    connectDb();
+// app.listen(2003, () => {
+//     console.log('Server is runnings')
+//     console.log("PORT VALUE:", process.env.PORT);
+//     connectDb();
+// })
+
+const PORT = process.env.PORT || 2004
+
+app.listen(PORT, () => {
+  console.log('Server is runnings')
+  console.log("PORT VALUE:", process.env.PORT);
+  connectDb();
 })
 
