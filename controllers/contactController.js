@@ -50,7 +50,7 @@ export const formQuickLeadSubmit = async (req, res) => {
             pageSource
         });
 
-        res.status(200).json({ success: true, message: "We will call you shortly!" });
+        res.status(200).json({ success: true, redirect: "/success" });
 
     } catch (err) {
         console.error(err);
