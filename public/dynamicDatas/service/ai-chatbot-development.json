@@ -1,7 +1,7 @@
 {
     "banner": {
         "tag": "Artificial Intelligence",
-        "title": "AI Agent Development Company",
+        "title": "AI Chatbot Development Company",
         "content": "Transform your startup with autonomous AI agents that don't just follow scripts; they reason, adapt, and execute complex workflows across your entire business ecosystem."
     },
     "about": {
@@ -289,27 +289,12 @@
         "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "links": [
             {
-                "linkTxt": "AI ChatBot Development",
+                "linkTxt": "AI Agent Development",
                 "link": "/",
                 "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
             },
             {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
+                "linkTxt": "AI Token Development",
                 "link": "/",
                 "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
             },

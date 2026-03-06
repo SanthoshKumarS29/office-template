@@ -2,26 +2,26 @@
     "banner": {
         "tag": "NFT MarkPlace",
         "title": "NFT Development Company",
-        "content": "Transform your startup with autonomous AI agents that don't just follow scripts; they reason, adapt, and execute complex workflows across your entire business ecosystem."
+        "content": "Transform your startup with autonomous NFT markets that don't just follow scripts; they reason, adapt, and execute complex workflows across your entire business ecosystem."
     },
     "about": {
         "title": "Why Businesses Are Turning to NFT",
-        "content": "AI agent adoption is surging across startups and high-growth businesses, unlocking the power to make faster decisions, slash costs, and deliver personalization at scale. Forward-thinking founders are already leveraging <span class='scroll-highlight'>AI agent development</span> to turn operational bottlenecks into competitive advantages, and those who act early gain the biggest edge.",
+        "content": "NFT market adoption is surging across startups and high-growth businesses, unlocking the power to make faster decisions, slash costs, and deliver personalization at scale. Forward-thinking founders are already leveraging <span class='scroll-highlight'>NFT market development</span> to turn operational bottlenecks into competitive advantages, and those who act early gain the biggest edge.",
         "btntxt": "Talk to our experts"
     },
     "cta1": {
         "title": "Ready To Transform Your Business With Intelligent NFT",
-        "content": "Start your AI Agent journey with company Technologies today and unlock smarter, autogen solutions that deliver real ROI.",
+        "content": "Start your NFT Agent journey with company Technologies today and unlock smarter, autogen solutions that deliver real ROI.",
         "btntxt": "Get Demo Today"
     },
     "cta2": {
-        "title": "Want to See How Custom AI Agents Can Transform Your Business?",
-        "content": "Explore bespoke AI solutions that fit your unique needs and deliver measurable impact from day one.",
+        "title": "Want to See How Custom NFT Agents Can Transform Your Business?",
+        "content": "Explore bespoke NFT solutions that fit your unique needs and deliver measurable impact from day one.",
         "btntxt": "Get Demo Today"
     },
     "differenceTable": {
         "title": "What's the difference",
-        "shortDes": "AI Agent Development is the process of creating intelligent software systems that can think, decide, and act without constant human input.",
+        "shortDes": "NFT Agent Development is the process of creating intelligent software systems that can think, decide, and act without constant human input.",
         "table": [
             {
                 "tableTitle": "Traditional ChatBot",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "tableTitle": "AI Agent",
+                "tableTitle": "NFT Agent",
                 "tablePoints": [
                     "Performs tasks autonomously and makes decisions",
                     "Adaptive and learns from data & interactions",
@@ -48,37 +48,37 @@
         ]
     },
     "sixContentV1":{
-        "title":"AI Agent Development Services for Businesses",
-        "shortDes":"From strategic planning through hands-on development, seamless integration, and ongoing optimization, we ensure your AI Agents drive measurable impact and support long-term scalability.",
+        "title":"NFT Agent Development Services for Businesses",
+        "shortDes":"From strategic planning through hands-on development, seamless integration, and ongoing optimization, we ensure your NFT Agents drive measurable impact and support long-term scalability.",
         "content":[
             {
-                "head":"AI Strategy & Consulting",
-                "headDes":"Our AI Consulting Services & Strategy begins by thoroughly understanding your business model and operational challenges.",
+                "head":"NFT Strategy & Consulting",
+                "headDes":"Our NFT Consulting Services & Strategy begins by thoroughly understanding your business model and operational challenges.",
                 "width":"col-md-6 col-xl-3"
             },
             {
-                "head":"Custom AI Agent Development",
-                "headDes":"No two startups operate the same way, which is why our goal-driven AI Agents are never off-the-shelf. We tailor them to your workflows, data sources, industry regulations, and service-level requirements.",
+                "head":"Custom NFT Agent Development",
+                "headDes":"No two startups operate the same way, which is why our goal-driven NFT Agents are never off-the-shelf. We tailor them to your workflows, data sources, industry regulations, and service-level requirements.",
                 "width":"col-md-6 col-xl-5"
             },
             {
-                "head":"Conversational AI Agents",
-                "headDes":"Go beyond basic chatbots. Our Conversational AI Agents use advanced Natural Language Understanding (NLU), contextual memory",
+                "head":"Conversational NFT Agents",
+                "headDes":"Go beyond basic NFTs. Our Conversational NFT Agents use advanced Natural Language Understanding (NLU), contextual memory",
                 "width":"col-md-6 col-xl-3"
             },
             {
                 "head":"RPA Integration",
-                "headDes":"We combine AI intelligence with Robotic Process Automation (RPA) to execute repetitive, rule-based processes faster",
+                "headDes":"We combine NFT intelligence with Robotic Process Automation (RPA) to execute repetitive, rule-based processes faster",
                 "width":"col-md-6 col-xl-3"
             },
             {
-                "head":"AI Integration",
+                "head":"NFT Integration",
                 "headDes":"We integrate agents seamlessly with CRMs, cloud platforms, and APIs, ensuring they become part of your existing ecosystem.",
                 "width":"col-md-6 col-xl-3"
             },
             {
                 "head":"Predictive Analytics",
-                "headDes":"Our data-powered AI agent observability analyzes historical and real-time data to forecast trends, detect anomalies, and recommend proactive actions.",
+                "headDes":"Our data-powered NFT market observability analyzes historical and real-time data to forecast trends, detect anomalies, and recommend proactive actions.",
                 "width":"col-md-6 col-xl-5"
             }
         ]
@@ -92,7 +92,7 @@
         "content":[
             {
                 "head":"Autonomous Decision-Making",
-                "headDes":"Empower your AI Agent to act on pre-defined business rules or dynamically learned policies."
+                "headDes":"Empower your NFT Agent to act on pre-defined business rules or dynamically learned policies."
             },
             {
                 "head":"Multi-Modal Interaction",
@@ -100,7 +100,7 @@
             },
             {
                 "head":"Context Awareness",
-                "headDes":"AI Agents remember customer history, previous interactions, and business context."
+                "headDes":"NFT Agents remember customer history, previous interactions, and business context."
             },
             {
                 "head":"Personalized Recommendations",
@@ -116,7 +116,7 @@
             },
             {
                 "head":"Self-Improvement",
-                "headDes":"Using continuous feedback self-correction loops, your AI Agent learns from outcomes."
+                "headDes":"Using continuous feedback self-correction loops, your NFT Agent learns from outcomes."
             },
             {
                 "head":"Compliance",
@@ -130,7 +130,7 @@
         "content":[
             {
                 "image":"/images/png/icon-dummy.png",
-                "head":"Conversational AI Agents",
+                "head":"Conversational NFT Agents",
                 "headDes":"Advanced, goal-oriented dialogue systems powered by a master agent/controller go beyond scripted responses. They manage customer support, sales inquiries, onboarding, and troubleshooting using contextual memory, sentiment analysis, and natural language understanding, delivering human-like engagement at scale.",
                 "width":"col-md-6"
             },
@@ -149,7 +149,7 @@
             {
                 "image":"/images/png/icon-dummy.png",
                 "head":"Multi-Agent Systems",
-                "headDes":"Networks of specialized AI agents collaborating to solve complex, multi-step challenges. This is the power of our multi-agent system development services.",
+                "headDes":"Networks of specialized NFT markets collaborating to solve complex, multi-step challenges. This is the power of our multi-agent system development services.",
                 "width":"col-md-6 col-xl-4"
             },
             {
@@ -170,19 +170,19 @@
             },
             {
                 "head":"Design & Prototyping",
-                "headDes":"Next, we bring your AI agent concept to life with an interactive prototype built on a robust cognitive architecture. This allows you to experience core agentic workflows firsthand, give feedback, and refine features before any production code is written, saving time and reducing risk."
+                "headDes":"Next, we bring your NFT market concept to life with an interactive prototype built on a robust cognitive architecture. This allows you to experience core agentic workflows firsthand, give feedback, and refine features before any production code is written, saving time and reducing risk."
             },
             {
-                "head":"AI Model Development",
-                "headDes":"Here, we build and train the intelligence layer of your agent. Using relevant datasets and the right algorithms, we create production-ready AI models, secure APIs, and connectors designed for seamless integration and future scalability."
+                "head":"NFT Model Development",
+                "headDes":"Here, we build and train the intelligence layer of your agent. Using relevant datasets and the right algorithms, we create production-ready NFT models, secure APIs, and connectors designed for seamless integration and future scalability."
             },
             {
                 "head":"Integration & Testing",
-                "headDes":"We connect your AI agent with your existing systems, CRM, ERP, billing, and analytics, which can run through rigorous testing. This ensures optimal performance, security, and reliability under real-world conditions before launch."
+                "headDes":"We connect your NFT market with your existing systems, CRM, ERP, billing, and analytics, which can run through rigorous testing. This ensures optimal performance, security, and reliability under real-world conditions before launch."
             },
             {
                 "head":"Deployment & Training",
-                "headDes":"Your AI agent is rolled out in a controlled, low-risk canary deployment. We provide in-depth training for your team, along with detailed runbooks to ensure smooth day-to-day operation and issue handling."
+                "headDes":"Your NFT market is rolled out in a controlled, low-risk canary deployment. We provide in-depth training for your team, along with detailed runbooks to ensure smooth day-to-day operation and issue handling."
             },
             {
                 "head":"Ongoing Optimization & Scaling",
@@ -191,8 +191,8 @@
         ]
     },
     "bulletPoint":{
-        "title":"Strategic Business Benefits of Custom AI Agents",
-        "shortDes":"Tangible outcomes startups and scaleups can expect when deploying custom AI agents",
+        "title":"Strategic Business Benefits of Custom NFT Agents",
+        "shortDes":"Tangible outcomes startups and scaleups can expect when deploying custom NFT markets",
         "content":[
             {
                 "head":"Efficiency Gains",
@@ -200,7 +200,7 @@
             },
             {
                 "head":"Revenue Growth",
-                "headDes":"Boost pipeline velocity with smarter lead scoring, faster qualification, and AI-driven follow-ups that improve close rates."
+                "headDes":"Boost pipeline velocity with smarter lead scoring, faster qualification, and NFT-driven follow-ups that improve close rates."
             },
             {
                 "head":"Customer Delight",
@@ -217,19 +217,19 @@
         ]
     },
     "leftImg":{
-        "title":"How Smart AI Supercharged Operations, Conversions, and Efficiency",
+        "title":"How Smart NFT Supercharged Operations, Conversions, and Efficiency",
         "subTitle":"Real-World Wins",
         "image":"/images/png/latest-product.png",
         "width":"600",
         "height":"600",
         "content":[
             {
-                "head":"Retail:Cutting Through Costs, AI-Powered Returns that Delight and Deliver",
-                "headDes":"Major retailers leveraging AI-powered returns triage cut support costs by 42%, shrinking returns processing from nearly a week to less than a day. Automated AI categorization, with semantic search using anthropic Claude tool for instant customer communication"
+                "head":"Retail:Cutting Through Costs, NFT-Powered Returns that Delight and Deliver",
+                "headDes":"Major retailers leveraging NFT-powered returns triage cut support costs by 42%, shrinking returns processing from nearly a week to less than a day. Automated NFT categorization, with semantic search using anthropic Claude tool for instant customer communication"
             },
             {
-                "head":"Fintech:Conversational AI, The Secret Sauce to Skyrocketing Leads to Conversions",
-                "headDes":"Forward-looking fintech teams harnessed proactive AI agents powered by Google Gemini function calling to boost lead-to-conversion rates by 28%.and automatically schedule demos, they achieved a 60% increase in sales-qualified leads"
+                "head":"Fintech:Conversational NFT, The Secret Sauce to Skyrocketing Leads to Conversions",
+                "headDes":"Forward-looking fintech teams harnessed proactive NFT markets powered by Google Gemini function calling to boost lead-to-conversion rates by 28%.and automatically schedule demos, they achieved a 60% increase in sales-qualified leads"
             },
             {
                 "head":"Healthcare:Accelerating Patient Intake, From Hours to Minutes",
@@ -238,8 +238,8 @@
         ]
     },
     "lastSection":{
-        "title":"What Makes company Technologies Stand Out in AI Agent Development?",
-        "shortDes":"Delivering transformational business outcomes is our standard as an AI solution provider. That’s why innovative enterprises trust company Technologies as their top choice for an AI partnership.",
+        "title":"What Makes company Technologies Stand Out in NFT Agent Development?",
+        "shortDes":"Delivering transformational business outcomes is our standard as an NFT solution provider. That’s why innovative enterprises trust company Technologies as their top choice for an NFT partnership.",
         "content":[
             {
                 "head":"Data Science",
@@ -289,32 +289,17 @@
         "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "links": [
             {
-                "linkTxt": "AI ChatBot Development",
+                "linkTxt": "Digital Art & Photography",
                 "link": "/",
                 "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
             },
             {
-                "linkTxt": "AI ChatBot Development",
+                "linkTxt": "Collectibles & PFPs",
                 "link": "/",
                 "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
             },
             {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
+                "linkTxt": "Gaming Assets",
                 "link": "/",
                 "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
             }

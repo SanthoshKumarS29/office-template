@@ -60,7 +60,7 @@ export const editSeoForm = async (req, res) => {
 export const updateSeoForm = async (req, res) => {
     try {
         const { slug, metaTitle, metaDescription, metaKeyword } = req.body;
-        await Seo.findByIdAndUpdate(req.params.id, { slug, metaTitle, metaDescription, metaKeyword })
+        await Seo.findByIdAndUpdate(req.params.id, { slug, pageName, metaTitle, metaDescription, metaKeyword })
         res.render('success', { message: "SEO data update successfully!" });
     } catch (err) {
         res.status(400).send("Error updating SEO: " + err.message);

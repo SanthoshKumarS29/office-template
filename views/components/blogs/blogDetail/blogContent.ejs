@@ -17,11 +17,11 @@
         </div>
         <div class="d-flex align-items-center gap-3">
             <button class="blog-share-btn">
-                <img src="/images/png/linkedin.png" alt="Link-Icon" width="18" height="18" class="img-fluid">
+                <img src="/images/png/linkedIn.png" alt="Link-Icon" width="18" height="18" class="img-fluid">
                 <span>Share</span>
             </button>
             <button class="blog-copy-btn">
-                <img src="/images/png/link-icon.png" alt="Link-Icon" width="18" height="18" class="img-fluid">
+                <img src="/images/png/linkIcon.png" alt="Link-Icon" width="18" height="18" class="img-fluid">
                 <span>Copy</span>
             </button>
         </div>
@@ -32,10 +32,10 @@
                 <img src="<%= blog.image %>" alt="<%= blog.title %>" width="1500" height="600"
                     class="img-fluid rounded-2" />
             </div>
-            <% } %>
-            <%- include('./tableOfContent.ejs') %>
-            <div class="blog-content">
-                <%- blog.content %>
-            </div>
+        <% } %>
+        <%- include('./tableOfContent.ejs') %>
+        <div class="blog-content">
+            <%- blog.content %>
+        </div>
     </div>
 </div>

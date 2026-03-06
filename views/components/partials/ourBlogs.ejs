@@ -4,41 +4,25 @@
             <h2>Our Blogs</h2>
             <a href="" class="link-hover-effect">View All</a>
         </div>
-        <div class="">
-            <div class="row justify-content-center g-3">
-                <div class="col-md-4">
-                    <div class="position-relative">
-                        <img src="/images/png/Dummy-blog.png" alt="caseStudy" width="500" height="650"
-                            class="img-fluid rounded-2" loading="lazy">
-                        <div class="blg-btn-handler">
-                            <button class="blg-btn"><img src="/images/png/up-right-arrow.png" width="24" height="24" class="img-fluid" /></button>
+        <% if (latestBlogs && latestBlogs.length > 0) { %>
+            <div class="overflow-auto scrollbar-hide">
+                <div class="d-flex justify-content-start justify-content-xl-center gap-3">
+                    <% latestBlogs.slice(0,3).forEach(lblog=> { %>
+                        <div class="ourBlog-width">
+                            <div class="position-relative">
+                                <img src="<%= lblog.image %>" alt="<%= lblog.title %>" width="500" height="650"
+                                    class="img-fluid rounded-2" loading="lazy">
+                                <div class="blg-btn-handler">
+                                    <a href="/blogs/<%= lblog.slug %>" class="blg-btn"><img src="/images/png/up-right-arrow.png" alt="Arrow icon" width="24" height="24" class="img-fluid" /></a>
+                                </div>
+                            </div>
+                            <a href="/blogs/<%= lblog.slug %>" class="common-blog-link"><%= lblog.title %></a>
                         </div>
-                    </div>
-                    <h3 class="fs-5 mt-2">AI-Powered Crypto Trading</h3>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="position-relative">
-                        <img src="/images/png/Dummy-blog.png" alt="caseStudy" width="500" height="650"
-                            class="img-fluid rounded-2" loading="lazy">
-                        <div class="blg-btn-handler">
-                            <button class="blg-btn"><img src="/images/png/up-right-arrow.png" width="24" height="24" class="img-fluid" /></button>
-                        </div>
-                    </div>
-                    <h3 class="fs-5 mt-2">Blockchain-Based Gaming</h3>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="position-relative">
-                        <img src="/images/png/Dummy-blog.png" alt="caseStudy" width="500" height="560"
-                            class="img-fluid rounded-2" loading="lazy">
-                        <div class="blg-btn-handler">
-                            <button class="blg-btn"><img src="/images/png/up-right-arrow.png" width="24" height="24" class="img-fluid" /></button>
-                        </div>
-                    </div>
-                    <h3 class="fs-5 mt-2">Secure Crypto Exchange</h3>
+                    <% }) %>
                 </div>
             </div>
-        </div>
+        <% } else { %>
+            <p>No blogs found.</p>
+        <% } %>
     </div>
 </section>
