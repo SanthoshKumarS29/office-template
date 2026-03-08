@@ -1,16 +1,16 @@
 <script src="/js/bootstrap/bootstrap.min.js"></script>
 <script src="/js/partials/navbar.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
 <!-- utils script (for number validation/formatting) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
-<script type="module" src="/js/partials/feildCheck.js"></script>
+<script type="module" src="/js/partials/feildCheck.js" defer></script>
 
 <% if(pageData.url === 'career'){ %>
 <script type="module" src="/js/career.js"></script>
 <% } else { %>
-<script type="module" src="/js/partials/quickLead.js"></script>
-<script type="module" src="/js/partials/contact.js"></script>
+    <script type="module" src="/js/partials/quickLead.js"></script>
+    <script type="module" src="/js/partials/contact.js" defer></script>
 <% } %>
 
 
