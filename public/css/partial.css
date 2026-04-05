@@ -347,7 +347,7 @@
 
 .ourBlog-width{
     width: 100%;
-    min-width: 400px;
+    min-width: 390px;
 }
 
 .blg-btn-handler {
@@ -827,6 +827,10 @@
     .calltoaction-container::after {
         width: 125px;
         height: 125px;
+    }
+
+    .ourBlog-width{
+        min-width: 250px;
     }
 }
 
