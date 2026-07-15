@@ -5,8 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <!-- Inter (400, 500, 600) + Montserrat (600, 700) -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <% if (currentSection === "blogDetail") { %>
         <title><%= blog.title %></title>
@@ -30,6 +29,14 @@
 <style>
     :root {
         --padding-top: 4.5rem;
+        --orange-clr: #FFA500;
+        --orange-lig-v1: #FFAE6E;
+        --orange-lig-v2: #fb9e57;
+        --orange-lig-v3: #ffbf8f;
+        --orange-lig-v4: #efcbb0;
+        --dark-blue: #050c13;
+        --blue-clr: blue;
+        --ligblue-clr: #c7e2fd;
         --white-clr: #FFF;
         --black-clr: #000000;
         --grey-clr: #e9ecef;
@@ -41,18 +48,36 @@
         --brand-clr: #8a4fff;
         --brand-clr-lig: #c3bef7;
         --blue-clr: #0d6efd;
-        --ligblue-clr: #0d6dfd6d;
         --pink-clr: #F527E4;
         --ligpink-clr: #f527e476;
         --green-clr: #2EFF2E;
         --liggreen-clr: #2eff2e75;
         --blue-v1: #e3f2fd;
         --red-clr: #FF0000;
+
+        --grad-clr-o: linear-gradient(90deg,
+                        #fb923c,
+                        #8b5cf6,
+                        #0ea5e9);
+        --grad-clr-b: linear-gradient(180deg,
+                        #fb923c,
+                        #8b5cf6,
+                        #0ea5e9);
+
+        --grad-clr-o-lig: linear-gradient(
+                        135deg,
+                        #F0F5FD 0%,
+                        #F6F2F7 50%,
+                        #FDEEEF 100%);
+        --grad-clr-o-hor: linear-gradient(
+                        180deg,
+                        #fb923c 0%,
+                        #F6F2F7 50%,
+                        #0ea5e9 100%);
     }
 
     /* Global font family (safe override) */
     body {
-        font-family: "Inter", sans-serif;
         color: #111;
         line-height: 1.7;
         scroll-behavior: smooth;
@@ -61,51 +86,52 @@
     /* Headings — override Bootstrap sizes safely */
     h1,
     .h1 {
-        font-family: "Montserrat", sans-serif;
-        font-size: clamp(2rem, 4vw + 1rem, 3rem);
+         font-family: "Roboto", sans-serif;
         font-weight: 700;
+        margin-bottom: 0 !important;
     }
 
     h2,
     .h2 {
-        font-family: "Montserrat", sans-serif;
-        font-size: clamp(1.8rem, 3vw + 1rem, 2.4rem);
+         font-family: "Roboto", sans-serif;
         font-weight: 700;
+        margin-bottom: 0 !important;
     }
 
     h3,
     .h3 {
-        font-family: "Montserrat", sans-serif;
-        font-size: clamp(1.5rem, 2.5vw + 1rem, 2rem);
+         font-family: "Roboto", sans-serif;
         font-weight: 600;
+        margin-bottom: 0 !important;
     }
 
     h4,
     .h4 {
-        font-family: "Montserrat", sans-serif;
+         font-family: "Roboto", sans-serif;
         font-size: 1.3rem;
         font-weight: 600;
+        margin-bottom: 0 !important;
     }
 
     h5,
     .h5 {
-        font-family: "Montserrat", sans-serif;
+         font-family: "Roboto", sans-serif;
         font-size: 1.1rem;
         font-weight: 600;
+        margin-bottom: 0 !important;
     }
 
     h6,
     .h6 {
-        font-family: "Montserrat", sans-serif;
+         font-family: "Roboto", sans-serif;
         font-size: 1rem;
         font-weight: 600;
+        margin-bottom: 0 !important;
     }
 
     /* Paragraph */
     p {
-        font-size: 1.05rem;
         color: var(--grey-clr2);
-        margin-bottom: 0 !important;
-        font-family: sans-serif;
+        font-family: "Poppins", sans-serif;
     }
 </style>

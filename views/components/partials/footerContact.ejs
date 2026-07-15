@@ -1,46 +1,64 @@
 <section>
-    <div class="mt-5 px-3 py-5 grey-clr-bg">
+    <div class="mt-5 px-3 py-5 dark-blue-bg rounded-4">
         <div class="text-center pb-4">
-            <h2>Contact Us</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <h2 class="head-txt-h2 mb-3 text-white">Contact <span class="theme-grad-text">Us</span></h2>
+            <p class="para-txt-head text-white-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
         <div class="row justify-content-evenly align-items-center gy-4 gx-3 py-4">
             <div class="col-lg-5 col-xl-4">
                 <div class="row justify-content-between g-5">
                     <div class="col-12 col-md-6 col-lg-12 order-0">
-                        <div class="flex-y gap-2">
-                            <h3>Let's Talk</h3>
-                            <p>Have some big idea or brand to develop and need help? Then reach out we'd love to hear about
+                        <div class="flex-y gap-3">
+                            <h3 class="head-txt-h3 text-white">Let's Talk</h3>
+                            <p class="para-txt text-white-50">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about
                                 your
                                 project and provide help.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-12 order-1">
-                        <div>
-                            <h3>Email</h3>
+                        <div class="flex-y gap-3">
+                            <h3 class="head-txt-h3 text-white">Email</h3>
                             <div class="flex-x gap-2">
-                                <img src="/images/mail.webp" alt="phone Icon" width="24" height="24" class="img-fluid"
-                                    loading="lazy">
-                                <p>companyName@gmail.com</p>
+                                <div class="footerMailIcon">
+                                    <svg width="28" height="28">
+                                        <use href="/images/svg/common.svg#email-icon" />
+                                    </svg>
+                                </div>
+                                <p class="para-txt mb-0 text-white-50">companyName@gmail.com</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-lg-12 order-4 order-lg-3">
-                        <div>
-                            <h3>Socials</h3>
+                        <div class="flex-y gap-3">
+                            <h3 class="head-txt-h3 text-white">Socials</h3>
                             <div class="flex-x gap-2">
-                                <img src="/images/footer-facebook.webp" alt="social icon" width="24" height="24"
-                                    class="img-fluid" loading="lazy">
-                                <img src="/images/footer-instagram.webp" alt="social icon" width="24" height="24"
-                                    class="img-fluid" loading="lazy">
-                                <img src="/images/footer-twitter.webp" alt="social icon" width="24" height="24"
-                                    class="img-fluid" loading="lazy">
+                                <div>
+                                    <a href="/" target="_blank" rel="noopener noreferrer" class="footer-social-icon linkedin-bg">
+                                        <svg width="28" height="28">
+                                            <use href="/images/svg/common.svg#linkedin-icon" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="/" target="_blank" rel="noopener noreferrer" class="footer-social-icon insta-bg">
+                                        <svg width="28" height="28">
+                                            <use href="/images/svg/common.svg#instagram-icon" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="/" target="_blank" rel="noopener noreferrer" class="footer-social-icon whatsapp-bg">
+                                        <svg width="28" height="28">
+                                            <use href="/images/svg/common.svg#whatsapp-icon" />
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-8 col-lg-12 order-3 order-lg-4">
-                        <div class="flex-y gap-2">
-                            <h3>Awards</h3>
+                        <div class="flex-y gap-3">
+                            <h3 class="head-txt-h3 text-white">Awards</h3>
                             <div class="flex-x gap-2 overflow-scroll scrollbar-hide">
                                 <img src="/images/png/service-post.png" alt="Awards" width="150" height="150"
                                     class="img-fluid" loading="lazy">
@@ -55,7 +73,7 @@
             </div>
             <div class="col-lg-6 col-xl-5">
                 <div class="white-bg p-4 rounded-4">
-                    <form class="row justify-content-center g-3 contact-form" data-formtype="footer">
+                    <form class="row justify-content-center g-4 contact-form" data-formtype="footer">
                         <div class="col-12">
                             <div class="flex-y">
                                 <label for="name" class="fcontact-form-label">Enter Your Name:</label>
@@ -93,8 +111,22 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div>
-                                <button type="submit" class="fcontact-button">Send Message</button>
+                            <div class="flex-x justify-content-between align-items-center gap-3">
+                                <div>
+                                    <p class="para-txt-sm mb-0">We reply within 24 hours.</p>
+                                </div>
+                                <div>
+                                    <!-- <button type="submit" class="fcontact-button">Send Message</button> -->
+                                    <div class="button-wrapper">
+                                        <div class="button-glow-blue"></div>
+                                        <button type="submit" class="theme-btn">Send Message
+                                            <svg class="arrow" viewBox="0 0 10 10" width="10" height="10" fill="none">
+                                                <path class="line" d="M0 5h7"></path>
+                                                <path class="arrow-head" d="M1 1l4 4-4 4"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>

@@ -1,12 +1,20 @@
 <footer>
     <div class="pt-5">
-        <div class="row justify-content-between g-4">
+        <div class="row justify-content-between g-4 py-5">
             <div class="col-md-12 col-xl-3">
                 <div class="flex-y align-items-start gap-3">
-                        <strong class="fs-2">Let’s Build Something Extraordinary</strong>
-                        <p class="text-normal lh-base my-2">We help startups and enterprises build AI-driven and blockchain-powered solutions.
-                        </p>
-                        <a href="/services" class="btn btn-primary">View all Our Service</a>
+                    <h3 class="head-txt-h3">Let’s Build Something <span class="theme-grad-text">Extraordinary</span></h3>
+                    <p class="para-txt">We help startups and enterprises build AI-driven and blockchain-powered solutions.
+                    </p>
+                    <div class="button-wrapper">
+                        <div class="button-glow-blue"></div>
+                        <a href="/services" class="theme-btn">View All Service
+                            <svg class="arrow" viewBox="0 0 10 10" width="10" height="10" fill="none">
+                                <path class="line" d="M0 5h7"></path>
+                                <path class="arrow-head" d="M1 1l4 4-4 4"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
             <% nav.footer.forEach(content=> { %>

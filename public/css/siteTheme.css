@@ -4,65 +4,124 @@ main {
 
 /* fonts and bg colors */
 
-.brand-clr{
+.brand-clr {
     color: var(--brand-clr);
 }
 
-.blue-clr{
+.blue-clr {
     color: var(--blue-clr);
 }
 
-.grey-clr-bg{
+.orange-clr {
+    color: var(--orange-clr);
+}
+
+.blue-clr {
+    color: var(--blue-clr);
+}
+
+.grey-clr2{
+    color: var(--grey-clr2);
+}
+
+.grey-clr-bg {
     background-color: var(--grey-clr);
 }
 
-.white-bg{
+.theme-grad-bg{
+    background: var(--grad-clr-o-lig);
+}
+
+.dark-blue-bg{
+    background-color: var(--dark-blue);
+}
+
+.white-bg {
     background-color: var(--white-clr);
 }
 
-.blue-v1{
+.blue-v1 {
     background-color: var(--blue-v1);
 }
 
-.text-justify{
+.text-justify {
     text-align: justify;
 }
 
-.large-text{
+.large-text {
     font-size: clamp(1.25rem, 3vw, 2rem);
 }
 
-.text-normal{
+.text-normal {
     font-size: 1.05rem;
     font-weight: 400;
 }
 
-.text-normal-sm{
+.text-normal-sm {
     font-size: 1.15rem;
     font-weight: 400;
 }
 
-.card-txt-h{
+.card-txt-h {
     font-size: 1.25rem;
     font-weight: 600;
 }
 
-.card-txt-p{
+.card-txt-p {
     font-size: 1.08rem;
     font-weight: 400;
     margin: 0;
 }
 
-.line-hs{
+.line-hs {
     letter-spacing: .05rem;
     line-height: 1.75rem;
+}
+
+.head-txt-h1 {
+    font-size: 3rem;
+}
+
+.head-txt-h2{
+    font-size: 2.25rem;
+}
+
+.head-txt-h3{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.para-txt-head{
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    line-height: 1.95;
+}
+
+.para-txt{
+    font-size: 1.02rem;
+    letter-spacing: 0.02em;
+    line-height: 1.75;
+}
+
+.para-txt-sm{
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    line-height: 1.75;
+}
+
+.theme-grad-text{
+    background: var(--grad-clr-o);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 /* fonts and bg colors end */
 
 /* buttons */
 
-.view-more-btn{
+.view-more-btn {
     display: inline-flex;
     align-items: center;
     gap: .05rem;
@@ -76,34 +135,23 @@ main {
     transition: 0.4s ease-in-out;
 }
 
-.arrow-view-effect{
+.arrow-view-effect {
     opacity: 0;
     transform: translateX(-60%);
     transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
-.view-more-btn:hover .arrow-view-effect{
+.view-more-btn:hover .arrow-view-effect {
     opacity: 1;
     transform: translateX(0%);
 }
 
-.view-more-btn:hover{
+.view-more-btn:hover {
     transform: scale(1.045);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-
-.link-hover-effect {
-    color: black;
-    text-decoration: none;
-    transition: 0.4s ease-in-out;
-}
-
-.link-hover-effect:hover {
-    color: var(--blue-clr);
-}
-
-.common-btn-primary{
+.common-btn-primary {
     background-color: var(--black-clr);
     padding: .75rem 1rem;
     border-radius: .5rem;
@@ -114,7 +162,7 @@ main {
     text-transform: capitalize;
 }
 
-.common-btn-secondary{
+.common-btn-secondary {
     border: 2px solid var(--grey-clr);
     padding: .75rem 1rem;
     border-radius: .5rem;
@@ -125,7 +173,7 @@ main {
     color: var(--black-clr);
 }
 
-/* buttons end */ 
+/* buttons end */
 
 .custom-container {
     margin: 0 auto;
@@ -134,17 +182,76 @@ main {
     max-width: 1450px;
 }
 
+@media screen and (max-width: 767px) {
+    .head-txt-h1 {
+        font-size: 2rem;
+    }
+
+    .head-txt-h2{
+        font-size: 1.75rem;
+    }
+
+    .head-txt-h3{
+        font-size: 1.35rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .head-txt-h1 {
+        font-size: 2.25rem;
+    }
+
+    .head-txt-h2{
+        font-size: 1.5rem;
+    }
+
+    .head-txt-h3{
+        font-size: 1.15rem;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .head-txt-h1 {
+        font-size: 2.5rem;
+    }
+
+    .head-txt-h2{
+        font-size: 2rem;
+    }
+
+    .head-txt-h3{
+        font-size: 1.25rem;
+    }
+}
+
+
 @media screen and (min-width: 1570px) and (max-width: 1919px) {
     .custom-container {
         width: 100%;
         max-width: 1450px;
+    }
+
+    .head-txt-h1 {
+        font-size: 3.25rem;
     }
 }
 
 @media screen and (min-width: 1920px) and (max-width: 2560px) {
     .custom-container {
         width: 100%;
-        max-width: 1450px;
+        max-width: 1500px;
+    }
+
+    .head-txt-h1 {
+        font-size: 3.5rem;
+    }
+
+    .head-txt-h2{
+        font-size: 2.5rem;
+    }
+
+    .para-txt-head{
+        font-size: 1.10rem;
     }
 }
-

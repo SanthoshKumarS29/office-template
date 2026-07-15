@@ -1,14 +1,22 @@
 <section>
     <div class="py-5">
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>Our Blogs</h2>
-            <a href="/blogs" class="link-hover-effect">View All</a>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="head-txt-h2">Our <span class="theme-grad-text">Blogs</span></h2>
+            <div class="button-wrapper">
+                <div class="button-glow-blue"></div>
+                <a href="/blogs" class="theme-btn">View More
+                    <svg class="arrow" viewBox="0 0 10 10" width="10" height="10" fill="none">
+                        <path class="line" d="M0 5h7"></path>
+                        <path class="arrow-head" d="M1 1l4 4-4 4"></path>
+                    </svg>
+                </a>
+            </div>
         </div>
         <% if (latestBlogs && latestBlogs.length > 0) { %>
-            <div class="overflow-auto scrollbar-hide">
+            <div class="overflow-scroll scrollbar-hide">
                 <div class="d-flex justify-content-start justify-content-xl-center gap-3">
                     <% latestBlogs.slice(0,3).forEach(lblog=> { %>
-                        <div class="ourBlog-width">
+                        <div class="col-12 col-md-6 col-xl-4">
                             <div class="position-relative">
                                 <img src="<%= lblog.image %>" alt="<%= lblog.title %>" width="500" height="650"
                                     class="img-fluid rounded-2" loading="lazy">
