@@ -14,14 +14,21 @@
         </div>
         <% if (latestBlogs && latestBlogs.length > 0) { %>
             <div class="overflow-scroll scrollbar-hide">
-                <div class="d-flex justify-content-start justify-content-xl-center gap-3">
+                <div class="d-flex justify-content-start gap-3">
                     <% latestBlogs.slice(0,3).forEach(lblog=> { %>
                         <div class="col-12 col-md-6 col-xl-4">
                             <div class="position-relative">
                                 <img src="<%= lblog.image %>" alt="<%= lblog.title %>" width="500" height="650"
                                     class="img-fluid rounded-2" loading="lazy">
                                 <div class="blg-btn-handler">
-                                    <a href="/blogs/<%= lblog.slug %>" class="blg-btn"><img src="/images/png/up-right-arrow.png" alt="Arrow icon" width="24" height="24" class="img-fluid" /></a>
+                                    <a href="/blogs/<%= lblog.slug %>" class="blg-btn">
+                                        <svg width="34" height="34" class="blg-arrow-svg">
+                                            <use href="/images/svg/common.svg#blg-icon"/>
+                                        </svg>
+                                        <svg width="34" height="34" class="blg-arrow-svg--copy">
+                                            <use href="/images/svg/common.svg#blg-icon"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <a href="/blogs/<%= lblog.slug %>" class="common-blog-link"><%= lblog.title %></a>

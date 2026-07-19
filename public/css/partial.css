@@ -357,6 +357,7 @@
     font-family: "Poppins", sans-serif;
     background-color: var(--black-clr);
     text-align: center;
+    border-radius: .4rem;
 }
 
 .techstack-container {
@@ -541,14 +542,33 @@
     position: absolute;
     right: 0%;
     bottom: 0;
+    background-color: var(--white-clr);
+    padding: 1rem;
+    border-radius: .75rem 0 0 0;
+    border: none;
+    overflow: hidden;
 }
 
 .blg-btn {
     display: inline-block;
-    border: none;
-    background-color: var(--white-clr);
-    padding: 1rem;
-    border-radius: .75rem 0 0 0;
+    position: relative;
+}
+
+.blg-arrow-svg--copy{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-150%, 150%);
+}
+
+.blg-btn-handler:hover .blg-arrow-svg{
+    transform: translate(-150%, 150%);
+    transition: .3s ease-in-out;
+}
+
+.blg-btn-handler:hover .blg-arrow-svg--copy{
+    transition: .3s ease-in-out;
+    transform: translate(0%, 0%);
 }
 
 .common-blog-link {
