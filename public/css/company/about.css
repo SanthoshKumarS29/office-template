@@ -17,57 +17,73 @@
     height: 100%;
 }
 
-.bullet-points1{
+.bullet-points{
     display: flex;
     align-items: center;
-    gap: .25rem;
-    padding: 1rem;
-    border-radius: .25rem;
-    font-weight: 400;
-    background-color: var(--grey-clr3);
+    justify-content: center;
+    gap: .5rem;
+    padding: 2rem 1.5rem;
+    height: 100%;
+    background: var(--black-clr);
+    border-radius: .5rem;
     transform: translateY(0);
     transition: .3s ease-in-out;
 }
 
-.bullet-points1:hover{
+.bullet-points::before{
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: var(--grad-clr-o);
+    border-radius: 50%;
+}
+
+.bullet-points:hover{
     transform: translateY(-5%);
 }
 
 .card-misvis{
-    background-color: var(--grey-clr3);
+    background: var(--grad-clr-o-lig);
     height: 100%;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: .75rem;
     border-radius: .25rem;
 }
 
-.bullet-points2{
+
+.why-chooseCard{
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
-    padding: 1rem;
-    background-color: var(--grey-clr3);
+    align-items: start;
+    gap: 1rem;
+    padding: 1.25rem;
     border-radius: .5rem;
     height: 100%;
+    z-index: 1;
 }
 
-.bullet-points2::before{
+.why-chooseCard::before{
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
-    border-top: 2px solid var(--black-clr);
-    border-right: 2px solid var(--black-clr);
-    width: 15px;
-    height: 15px;
-    border-radius: .15rem;
-    transition: width .2s ease-in-out, height .2s ease-in-out;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--grad-clr-o-lig);
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: .3s ease-in-out;
 }
 
-.bullet-points2:hover::before{
-    width: 25px;
-    height: 25px;
+.why-chooseCard:hover::before{
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
 }

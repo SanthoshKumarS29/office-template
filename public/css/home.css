@@ -57,10 +57,6 @@
 }
 
 .industry-container{
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
     padding: 2rem 1.5rem;
     height: 100%;
     background: var(--black-clr);
