@@ -1,54 +1,54 @@
 <section>
-    <div class="py-5 opc-scrollmargin" id="career-application">
-        <div class="text-center">
-            <h2>Hiring Process and Career Form</h2>
-            <p>Find your next opportunity and join our growing team.</p>
+    <div class="px-4 py-5 dark-blue-bg rounded-4 opc-scrollmargin" id="career-application">
+        <div class="text-center flex-y gap-3">
+            <h2 class="head-txt-h2 text-white">Hiring Process and <span class="theme-grad-text">Career Form</span></h2>
+            <p class="para-txt-head text-white-50">Find your next opportunity and join our growing team.</p>
         </div>
-        <div class="row justify-content-center align-items-center g-3 mt-3">
+        <div class="row justify-content-between align-items-center g-3 pt-4">
             <div class="col-md-5 col-xl-5">
                 <div class="flex-y gap-3">
                     <div class="hiring-step">
-                        <div class="hs-number">
+                        <div class="hs-number orange-clr-bg">
                             <span>1</span>
                         </div>
-                        <div class="flex-y gap-1">
-                            <strong class="fs-6">Application Review</strong>
-                            <p>We carefully review every application within 3-5 business days.</p>
+                        <div class="flex-y gap-3">
+                            <strong class="card-text-h text-white">Application Review</strong>
+                            <p class="card-text-p text-white-50">We carefully review every application within 3-5 business days.</p>
                         </div>
                     </div>
                     <div class="hiring-step">
-                        <div class="hs-number">
+                        <div class="hs-number blue-clr-bg">
                             <span>2</span>
                         </div>
-                        <div class="flex-y gap-1">
-                            <strong class="fs-6">Initial Call</strong>
-                            <p>A 30-minute conversation to learn about you and discuss the role.</p>
+                        <div class="flex-y gap-3">
+                            <strong class="card-text-h text-white">Initial Call</strong>
+                            <p class="card-text-p text-white-50">A 30-minute conversation to learn about you and discuss the role.</p>
                         </div>
                     </div>
                     <div class="hiring-step">
-                        <div class="hs-number">
+                        <div class="hs-number orange-clr-bg">
                             <span>3</span>
                         </div>
-                        <div class="flex-y gap-1">
-                            <strong class="fs-6">Team Interview</strong>
-                            <p>Meet potential teammates and dive deeper into your experience.</p>
+                        <div class="flex-y gap-3">
+                            <strong class="card-text-h text-white">Team Interview</strong>
+                            <p class="card-text-p text-white-50">Meet potential teammates and dive deeper into your experience.</p>
                         </div>
                     </div>
                     <div class="hiring-step">
-                        <div class="hs-number">
+                        <div class="hs-number blue-clr-bg">
                             <span>4</span>
                         </div>
-                        <div class="flex-y gap-1">
-                            <strong class="fs-6">Offer</strong>
-                            <p>If it's a match, we'll extend an offer and welcome you aboard.</p>
+                        <div class="flex-y gap-3">
+                            <strong class="card-text-h text-white">Offer</strong>
+                            <p class="card-text-p text-white-50">If it's a match, we'll extend an offer and welcome you aboard.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-7 col-xl-7 career-form-container">
+            <div class="col-md-7 col-xl-6 career-form-container">
                 <div>
                     <div class="mb-4">
-                        <strong class="fs-5 text-secondary">Personal Informations</strong>
+                        <strong class="head-txt-h3">Personal Information</strong>
                     </div>
                     <form class="career-form row justify-content-center g-3" enctype="multipart/form-data">
                         <div class="col-md-6">
@@ -80,7 +80,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="flex-y">
-                                <label class="fcontact-form-label">Job Role</label>
+                                <label class="fcontact-form-label">Position Applying For</label>
                                 <select name="jobRole" class="fcontact-form-feild">
                                     <option value="">Select</option>
                                     <option value="Frontend Developer">Frontend Developer</option>
@@ -92,10 +92,10 @@
                         </div>
                         <div class="col-12">
                             <div class="flex-y">
-                                <label class="fcontact-form-label">Experience</label>
+                                <label class="fcontact-form-label">Years of Experience</label>
                                 <select name="experience" class="fcontact-form-feild">
                                     <option value="">Select</option>
-                                    <option value="Fresher">0-1 years</option>
+                                    <option value="0-1 years">0-1 years</option>
                                     <option value="1-2 years">1–2 years</option>
                                     <option value="3-5 years">3–5 years</option>
                                     <option value="6+ years">6+ years</option>
@@ -112,8 +112,21 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="w-100">
-                                <button type="submit" class="fcontact-button">Submit Here</button>
+                            <div class="d-flex flex-wrap justify-content-center justify-content-md-between align-items-center gap-4">
+                                <div>
+                                    <p class="para-txt-sm mb-0">We review every application carefully.</p>
+                                </div>
+                                <div>
+                                    <div class="button-wrapper">
+                                        <div class="button-glow-blue"></div>
+                                        <button type="submit" class="theme-btn">Submit Application
+                                            <svg class="arrow" viewBox="0 0 10 10" width="10" height="10" fill="none">
+                                                <path class="line" d="M0 5h7"></path>
+                                                <path class="arrow-head" d="M1 1l4 4-4 4"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>

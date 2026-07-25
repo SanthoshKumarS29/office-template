@@ -4,7 +4,7 @@
             <h2 class="head-txt-h2">Our <span class="theme-grad-text">Blogs</span></h2>
             <div class="button-wrapper">
                 <div class="button-glow-blue"></div>
-                <a href="/blogs" class="theme-btn">View More
+                <a href="/blogs" class="theme-btn" aria-label="Navigation Blogs">View Our Blogs
                     <svg class="arrow" viewBox="0 0 10 10" width="10" height="10" fill="none">
                         <path class="line" d="M0 5h7"></path>
                         <path class="arrow-head" d="M1 1l4 4-4 4"></path>
@@ -21,7 +21,7 @@
                                 <img src="<%= lblog.image %>" alt="<%= lblog.title %>" width="500" height="650"
                                     class="img-fluid rounded-2" loading="lazy">
                                 <div class="blg-btn-handler">
-                                    <a href="/blogs/<%= lblog.slug %>" class="blg-btn">
+                                    <a href="/blogs/<%= lblog.slug %>" class="blg-btn" aria-label="Arrow Icon Navigation">
                                         <svg width="34" height="34" class="blg-arrow-svg">
                                             <use href="/images/svg/common.svg#blg-icon"/>
                                         </svg>
@@ -31,7 +31,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <a href="/blogs/<%= lblog.slug %>" class="common-blog-link"><%= lblog.title %></a>
+                            <a href="/blogs/<%= lblog.slug %>" class="common-blog-link" aria-label="/blogs/<%= lblog.slug %>"><%= lblog.title %></a>
                         </div>
                     <% }) %>
                 </div>

@@ -2,6 +2,11 @@ main {
     padding-top: var(--padding-top);
 }
 
+.sticky-value{
+    top: 15%;
+}
+
+
 /* fonts and bg colors */
 
 .brand-clr {
@@ -16,8 +21,12 @@ main {
     color: var(--orange-clr);
 }
 
-.blue-clr {
-    color: var(--blue-clr);
+.orange-clr-bg{
+    background-color: var(--orange-clr);
+}
+
+.blue-clr-bg {
+    background-color: var(--blue-clr);
 }
 
 .grey-clr2{
@@ -64,12 +73,14 @@ main {
 
 .card-txt-h {
     font-size: 1.25rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
 }
 
 .card-txt-p {
     font-size: 1.08rem;
     font-weight: 400;
-    margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 .line-hs {
@@ -111,10 +122,10 @@ main {
 
 .theme-grad-text{
     background: var(--grad-clr-o);
+    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 /* fonts and bg colors end */
