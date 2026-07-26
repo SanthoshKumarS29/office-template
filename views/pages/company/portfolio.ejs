@@ -23,6 +23,24 @@
     <footer class="custom-container border-1 border-top">
         <%- include('../../components/partials/footer.ejs') %>
         <%- include('../../components/partials/footerLinks.ejs') %>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const collapses = document.querySelectorAll(".collapse");
+                
+                collapses.forEach((collapse) => {
+                    const portfolioCard = collapse.closest(".portfolio-listCard");
+
+                    collapse.addEventListener("show.bs.collapse", () => {
+                        portfolioCard.classList.add("active");
+                    });
+
+                    collapse.addEventListener("hide.bs.collapse", () => {
+                        portfolioCard.classList.remove("active");
+                    });
+
+                })
+            })
+        </script>
     </footer>
 </body>
 </html>
