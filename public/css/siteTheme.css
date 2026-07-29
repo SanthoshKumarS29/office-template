@@ -120,6 +120,11 @@ main {
     line-height: 1.75;
 }
 
+.bold-text{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 .theme-grad-text{
     background: var(--grad-clr-o);
     text-fill-color: transparent;

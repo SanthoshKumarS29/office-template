@@ -164,6 +164,26 @@ export const companyRelatedPages = async (req, res) => {
     }
 }
 
+export const caseStudyDetailPages = async (req, res) => {
+    const { slug } = req.params;
+    const data = { url: slug}
+    const jsonPath = path.join(__dirname, `../public/dynamicDatas/caseStudyDetail/${slug}.json`);
+
+    if(fs.existsSync(jsonPath)){
+        const pageData = JSON.parse(fs.readFileSync(jsonPath, "utf-8"))
+
+        const seoData = await Seo.findOne({ slug }).lean();
+        const seo = seoData || {}
+
+        res.render(`pages/company/caseStudyDetail/${slug}.ejs`, {
+            currentSection: "caseStudyDetail",
+            page: pageData,
+            seo,
+            pageData: data
+        })
+    }
+}
+
 export const contact = async (req, res) => {
     const { slug } = req.params;
     const data = {
