@@ -1,0 +1,35 @@
+<section>
+    <div class="py-5">
+        <div class="text-start">
+            <p class="section-title"><%= page.overview.sectionLabel %></p>
+            <h2 class="head-txt-h2">
+                <%= page.overview.titlePrefix %>
+                <span class="theme-grad-text"><%= page.overview.titleHighlight %></span>
+            </h2>
+        </div>
+        <div class="row justify-content-center g-4 pt-5">
+            <div class="col-md-6">
+                <div class="flex-y align-items-start gap-4">
+                    <h3 class="head-txt-h3"><%= page.overview.aboutTitle %></h3>
+                    <p class="para-txt"><%= page.overview.aboutContent %></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="flex-y align-items-start gap-4">
+                    <h3 class="head-txt-h3"><%= page.overview.goalTitle %></h3>
+                    <p class="para-txt"><%= page.overview.goalContent %></p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="flex-y align-items-start gap-4">
+                    <h3 class="head-txt-h3"><%= page.overview.processTitle %></h3>
+                    <div class="csd-po-container">
+                        <% page.overview.processItems.forEach((item) => { %>
+                            <p><%= item %></p>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

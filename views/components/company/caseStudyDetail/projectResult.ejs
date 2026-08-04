@@ -1,0 +1,22 @@
+<section>
+    <div class="py-5">
+        <div class="text-start">
+            <p class="section-title"><%= page.results.sectionLabel %></p>
+            <h2 class="head-txt-h2">
+                <%= page.results.titlePrefix %>
+                <span class="theme-grad-text"><%= page.results.titleHighlight %></span>
+            </h2>
+            <p class="para-txt-head"><%= page.results.intro %></p>
+        </div>
+        <div class="row justify-content-center g-2 pt-4">
+            <% page.results.items.forEach((item) => { %>
+                <div class="col-6 col-md-4">
+                    <div class="csd-prjResult-card">
+                        <h3 class="csd-prjRslt-txt1 <%= item.color %>"><%= item.value %></h3>
+                        <p class="para-txt mb-0"><%= item.label %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</section>

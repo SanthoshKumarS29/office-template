@@ -1,0 +1,169 @@
+{
+    "banner": {
+        "category": "Healthcare • Web Application",
+        "title": "Enterprise",
+        "highlight": "CRM Platform",
+        "description": "A modern project management platform designed to help teams plan, collaborate, and deliver projects faster through an intuitive and responsive workspace.",
+        "techLabel": "Technologies",
+        "techValue": "Next.js · Node.js · MongoDB · Tailwind CSS",
+        "durationLabel": "Duration",
+        "durationValue": "12 Weeks"
+    },
+    "overview": {
+        "sectionLabel": "Overview",
+        "titlePrefix": "Project",
+        "titleHighlight": "Overview",
+        "aboutTitle": "About the Project",
+        "aboutContent": "Enterprise CRM Platform is a cloud-based project management platform that enables teams to organize tasks, track progress, and collaborate in real time from any device.",
+        "goalTitle": "Business Goal",
+        "goalContent": "Create a simple yet powerful project management solution that improves team productivity while reducing project delays.",
+        "processTitle": "Project Process",
+        "processItems": [
+            "UI/UX Design",
+            "Frontend Development",
+            "Backend Integration",
+            "Responsive Development",
+            "Performance Optimization"
+        ]
+    },
+    "approach": {
+        "sectionLabel": "Approach",
+        "challengeTitle": "Challenge",
+        "solutionTitle": "Solution",
+        "challengeItems": [
+            "Complex project tracking",
+            "Poor mobile experience",
+            "Difficult team collaboration",
+            "Slow dashboard performance"
+        ],
+        "solutionItems": [
+            "Designed a simplified task workflow",
+            "Built a fully responsive interface",
+            "Added real-time collaboration features",
+            "Optimized application performance"
+        ]
+    },
+    "gallery": {
+        "sectionLabel": "visuals",
+        "titlePrefix": "Project",
+        "titleHighlight": "Gallery",
+        "items": [
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Enterprise CRM Platform",
+                "caption": "Dashboard View",
+                "index": "01"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Enterprise CRM Platform",
+                "caption": "Task Management",
+                "index": "02"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Enterprise CRM Platform",
+                "caption": "Team Collaboration",
+                "index": "03"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Enterprise CRM Platform",
+                "caption": "Mobile Dashboard",
+                "index": "04"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Enterprise CRM Platform",
+                "caption": "Analytics Reports",
+                "index": "05"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Enterprise CRM Platform",
+                "caption": "Project Settings",
+                "index": "06"
+            }
+        ]
+    },
+    "features": {
+        "sectionLabel": "Capabilities",
+        "titlePrefix": "Key",
+        "titleHighlight": "Features",
+        "items": [
+            {
+                "icon": "grid-icon",
+                "title": "Project Dashboard",
+                "description": "Monitor projects and progress from a single workspace."
+            },
+            {
+                "icon": "list-icon",
+                "title": "Task Management",
+                "description": "Create, assign, and organize tasks with ease."
+            },
+            {
+                "icon": "userPlus-icon",
+                "title": "Team Collaboration",
+                "description": "Share updates, comments, and files in real time."
+            },
+            {
+                "icon": "chart-icon",
+                "title": "Analytics",
+                "description": "Track project performance with visual reports."
+            },
+            {
+                "icon": "bell-icon",
+                "title": "Notifications",
+                "description": "Receive instant updates for important activities."
+            },
+            {
+                "icon": "mble-icon",
+                "title": "Responsive Design",
+                "description": "Deliver a consistent experience across desktop, tablet, and mobile devices."
+            }
+        ]
+    },
+    "results": {
+        "sectionLabel": "Outcome",
+        "titlePrefix": "Project",
+        "titleHighlight": "Results",
+        "intro": "Measurable impact delivered over a 12-week engagement.",
+        "items": [
+            {
+                "value": "98/100",
+                "label": "Performance Score",
+                "color": "orange-clr"
+            },
+            {
+                "value": "45%",
+                "label": "Faster Page Load.",
+                "color": "blue-clr"
+            },
+            {
+                "value": "100%",
+                "label": "Mobile Responsive",
+                "color": "orange-clr"
+            },
+            {
+                "value": "4.9/5",
+                "label": "User Satisfaction.",
+                "color": "blue-clr"
+            },
+            {
+                "value": "+38%",
+                "label": "Workflow Efficiency",
+                "color": "orange-clr"
+            },
+            {
+                "value": "12 Wks",
+                "label": "Development Time",
+                "color": "blue-clr"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to Build Your Next Digital Product?",
+        "description": "From strategy and design to development and launch, we create scalable digital solutions that help businesses grow. Let's discuss your project and turn your ideas into a successful product.",
+        "buttonText": "Start Your Project"
+    }
+}

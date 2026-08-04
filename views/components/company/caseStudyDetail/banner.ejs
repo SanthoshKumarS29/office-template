@@ -1,0 +1,24 @@
+<section>
+    <div class="caseStudyDetail-banner">
+        <div class="caseStudyDetail-container">
+            <small class="csd-higlig"><%= page.banner.category %></small>
+            <h1 class="head-txt-h1">
+                <%= page.banner.title %>
+                <% if (page.banner.highlight) { %>
+                    <span class="theme-grad-text"><%= page.banner.highlight %></span>
+                <% } %>
+            </h1>
+            <p class="para-txt-head col-md-7"><%= page.banner.description %></p>
+            <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center justify-content-start gap-3 gap-md-5">
+                <div class="flex-y gap-1">
+                    <p class="csd-text-1"><%= page.banner.techLabel %></p>
+                    <p class="csd-text-2"><%= page.banner.techValue %></p>
+                </div>
+                <div class="flex-y gap-1">
+                    <p class="csd-text-1"><%= page.banner.durationLabel %></p>
+                    <p class="csd-text-2"><%= page.banner.durationValue %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

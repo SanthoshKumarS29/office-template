@@ -1,0 +1,26 @@
+<section>
+    <div class="py-5">
+         <div class="text-start">
+            <p class="section-title"><%= page.features.sectionLabel %></p>
+            <h2 class="head-txt-h2">
+                <%= page.features.titlePrefix %>
+                <span class="theme-grad-text"><%= page.features.titleHighlight %></span>
+            </h2>
+        </div>
+        <div class="row justify-content-center g-0 pt-4">
+            <% page.features.items.forEach((item, index) => { %>
+                <div class="col-md-6 col-xl-4">
+                    <div class="csd-keyFeature-card">
+                        <div class="<%= index % 2 === 0 ? 'csd-icon-even' : 'csd-icon-odd' %>">
+                            <svg width="28" height="28">
+                                <use href="/images/svg/csd.svg#<%= item.icon %>"></use>
+                            </svg>
+                        </div>
+                        <h3 class="head-txt-h3"><%= item.title %></h3>
+                        <p class="para-txt"><%= item.description %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</section>

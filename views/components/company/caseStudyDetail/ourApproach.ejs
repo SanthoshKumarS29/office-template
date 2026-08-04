@@ -1,0 +1,45 @@
+<section>
+    <div class="py-5">
+        <div class="text-start">
+            <p class="section-title"><%= page.approach.sectionLabel %></p>
+            <h2 class="head-txt-h2 flex-x align-items-center gap-2">
+                <span><%= page.approach.challengeTitle %></span>
+                <div class="csd-approch-head-icon">
+                    <svg width="35" height="20">
+                        <use href="/images/svg/common.svg#right-arrow-len-icon"></use>
+                    </svg>
+                </div>
+                <span class="theme-grad-text"><%= page.approach.solutionTitle %></span>
+            </h2>
+        </div>
+        <div class="row justify-content-center align-items-center g-3 pt-4">
+            <div class="col-xl-5">
+                <div class="csd-approach-card">
+                    <h3 class="csd-ac-headTxt1"><%= page.approach.challengeTitle %></h3>
+                    <div class="csd-ac-list1">
+                        <% page.approach.challengeItems.forEach((item) => { %>
+                            <p><%= item %></p>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="csd-approch-card-icon">
+                    <svg width="54" height="54">
+                        <use href="/images/svg/common.svg#right-arrow-icon"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-xl-5">
+                <div class="csd-approach-card">
+                    <h3 class="csd-ac-headTxt2"><%= page.approach.solutionTitle %></h3>
+                    <div class="csd-ac-list2">
+                        <% page.approach.solutionItems.forEach((item) => { %>
+                            <p><%= item %></p>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

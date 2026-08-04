@@ -236,6 +236,50 @@
         "isdropDown":false
       }
   ],
+  "caseStudyDetail": [
+      {
+        "title": "Home",
+        "path": "/",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title": "About Us",
+        "path": "/company",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Portfolio",
+        "path":"/company/portfolio",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title":"CaseStudy",
+        "path":"/company/caseStudy",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title": "Service",
+        "path": "/services",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title": "Products",
+        "path": "/products",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
+        "title":"Contact",
+        "path":"/contact-us",
+        "rel":"follow",
+        "isdropDown":false
+      }
+  ],
   "blog": [
       {
         "title": "Home",

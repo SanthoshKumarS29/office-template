@@ -15,7 +15,7 @@ router.get('/blogs', blogHubPage);
 router.get('/blogs/:slug', blogDetailPage);
 router.get('/company', companyHubPage);
 router.get('/company/:slug', companyRelatedPages);
-router.get('/case-study-detail/:slug', caseStudyDetailPages)
+router.get('/company/case-study-detail/:slug', caseStudyDetailPages)
 router.get('/contact-us', contact);
 router.get('/success', successPage);
 router.get('/not-found', notFoundPage);

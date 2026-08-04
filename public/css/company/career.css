@@ -20,9 +20,10 @@
 }
 
 .cb-higlig{
-    border: 1px solid var(--black-clr);
+    border: 2px solid transparent;
     padding: .5rem 1rem;
     color: var(--black-clr);
+    background: linear-gradient(0deg, #ffffff 0%, #ffffff 100%) padding-box, var(--grad-clr-b) border-box;
     font-weight: 400;
     font-size: .85rem;
     border-radius: 2rem;
