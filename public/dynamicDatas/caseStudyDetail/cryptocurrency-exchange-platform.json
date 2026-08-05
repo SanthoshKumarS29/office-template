@@ -1,0 +1,169 @@
+{
+    "banner": {
+        "category": "Fintech • Web Platform",
+        "title": "Cryptocurrency",
+        "highlight": "Exchange Platform",
+        "description": "A secure digital exchange designed for trading, wallet management, and real-time market access across crypto assets.",
+        "techLabel": "Technologies",
+        "techValue": "Next.js · Node.js · MongoDB · Tailwind CSS",
+        "durationLabel": "Duration",
+        "durationValue": "14 Weeks"
+    },
+    "overview": {
+        "sectionLabel": "Overview",
+        "titlePrefix": "Project",
+        "titleHighlight": "Overview",
+        "aboutTitle": "About the Project",
+        "aboutContent": "Cryptocurrency Exchange Platform enables traders to buy, sell, and monitor digital assets with enterprise-grade security and a streamlined user experience.",
+        "goalTitle": "Business Goal",
+        "goalContent": "Deliver a reliable and compliant trading platform that supports fast order execution and seamless wallet management.",
+        "processTitle": "Project Process",
+        "processItems": [
+            "Compliance Review",
+            "Platform Design",
+            "Trading Engine Development",
+            "Wallet Integration",
+            "Launch Support"
+        ]
+    },
+    "approach": {
+        "sectionLabel": "Approach",
+        "challengeTitle": "Challenge",
+        "solutionTitle": "Solution",
+        "challengeItems": [
+            "Security and fraud risk",
+            "Market data latency",
+            "Complex trading workflows",
+            "Regulatory compliance"
+        ],
+        "solutionItems": [
+            "Implemented multi-layer security",
+            "Built real-time pricing feeds",
+            "Simplified order placement flows",
+            "Ensured compliance-ready architecture"
+        ]
+    },
+    "gallery": {
+        "sectionLabel": "visuals",
+        "titlePrefix": "Project",
+        "titleHighlight": "Gallery",
+        "items": [
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Cryptocurrency Exchange Platform",
+                "caption": "Trading Dashboard",
+                "index": "01"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Cryptocurrency Exchange Platform",
+                "caption": "Order Book",
+                "index": "02"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Cryptocurrency Exchange Platform",
+                "caption": "Wallet Management",
+                "index": "03"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Cryptocurrency Exchange Platform",
+                "caption": "Market Analytics",
+                "index": "04"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Cryptocurrency Exchange Platform",
+                "caption": "Secure Login",
+                "index": "05"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Cryptocurrency Exchange Platform",
+                "caption": "Mobile Trading",
+                "index": "06"
+            }
+        ]
+    },
+    "features": {
+        "sectionLabel": "Capabilities",
+        "titlePrefix": "Key",
+        "titleHighlight": "Features",
+        "items": [
+            {
+                "icon": "grid-icon",
+                "title": "Live Order Book",
+                "description": "Track bids and asks with real-time market depth data."
+            },
+            {
+                "icon": "list-icon",
+                "title": "Wallet Management",
+                "description": "Manage deposits, withdrawals, and secure asset storage."
+            },
+            {
+                "icon": "userPlus-icon",
+                "title": "KYC Compliance",
+                "description": "Support onboarding with identity verification workflows."
+            },
+            {
+                "icon": "chart-icon",
+                "title": "Price Alerts",
+                "description": "Notify users when assets reach custom market thresholds."
+            },
+            {
+                "icon": "bell-icon",
+                "title": "Fiat Onramp",
+                "description": "Enable seamless conversion between fiat and crypto."
+            },
+            {
+                "icon": "mble-icon",
+                "title": "Mobile Trading",
+                "description": "Trade securely from any device with responsive design."
+            }
+        ]
+    },
+    "results": {
+        "sectionLabel": "Outcome",
+        "titlePrefix": "Project",
+        "titleHighlight": "Results",
+        "intro": "Delivered a secure and accessible exchange platform for modern crypto traders.",
+        "items": [
+            {
+                "value": "99.5%",
+                "label": "Uptime",
+                "color": "orange-clr"
+            },
+            {
+                "value": "55%",
+                "label": "Faster Execution",
+                "color": "blue-clr"
+            },
+            {
+                "value": "100%",
+                "label": "Secure Transaction Log",
+                "color": "orange-clr"
+            },
+            {
+                "value": "4.7/5",
+                "label": "Trust Rating",
+                "color": "blue-clr"
+            },
+            {
+                "value": "+40%",
+                "label": "Trading Volume Growth",
+                "color": "orange-clr"
+            },
+            {
+                "value": "14 Wks",
+                "label": "Development Time",
+                "color": "blue-clr"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to Build Your Next Digital Product?",
+        "description": "From strategy and design to development and launch, we create scalable digital solutions that help businesses grow. Let's discuss your project and turn your ideas into a successful product.",
+        "buttonText": "Start Your Project"
+    }
+}

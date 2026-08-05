@@ -1,0 +1,169 @@
+{
+    "banner": {
+        "category": "AI • Web Application",
+        "title": "AI Document",
+        "highlight": "Assistant",
+        "description": "An intelligent document assistant that extracts insights, summarizes content, and automates document workflows with AI-powered accuracy.",
+        "techLabel": "Technologies",
+        "techValue": "Next.js · Node.js · MongoDB · Tailwind CSS",
+        "durationLabel": "Duration",
+        "durationValue": "10 Weeks"
+    },
+    "overview": {
+        "sectionLabel": "Overview",
+        "titlePrefix": "Project",
+        "titleHighlight": "Overview",
+        "aboutTitle": "About the Project",
+        "aboutContent": "AI Document Assistant is a smart document platform that helps teams search, summarize, and manage business content with AI-driven accuracy and speed.",
+        "goalTitle": "Business Goal",
+        "goalContent": "Build a modern assistant that automates document review and delivers concise insights while maintaining security and usability.",
+        "processTitle": "Project Process",
+        "processItems": [
+            "Requirement Analysis",
+            "AI Workflow Design",
+            "Frontend Development",
+            "Backend Integration",
+            "Quality Validation"
+        ]
+    },
+    "approach": {
+        "sectionLabel": "Approach",
+        "challengeTitle": "Challenge",
+        "solutionTitle": "Solution",
+        "challengeItems": [
+            "Manual document review",
+            "Slow content search",
+            "Inconsistent summaries",
+            "Limited collaboration"
+        ],
+        "solutionItems": [
+            "Implemented intelligent extraction",
+            "Built fast semantic search",
+            "Generated concise AI summaries",
+            "Enabled secure sharing workflows"
+        ]
+    },
+    "gallery": {
+        "sectionLabel": "visuals",
+        "titlePrefix": "Project",
+        "titleHighlight": "Gallery",
+        "items": [
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "AI Document Assistant",
+                "caption": "Document Insights",
+                "index": "01"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "AI Document Assistant",
+                "caption": "Smart Search",
+                "index": "02"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "AI Document Assistant",
+                "caption": "Summary Dashboard",
+                "index": "03"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "AI Document Assistant",
+                "caption": "Workflow Automation",
+                "index": "04"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "AI Document Assistant",
+                "caption": "Security Controls",
+                "index": "05"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "AI Document Assistant",
+                "caption": "Mobile Access",
+                "index": "06"
+            }
+        ]
+    },
+    "features": {
+        "sectionLabel": "Capabilities",
+        "titlePrefix": "Key",
+        "titleHighlight": "Features",
+        "items": [
+            {
+                "icon": "grid-icon",
+                "title": "Intelligent OCR",
+                "description": "Capture text and metadata from documents automatically."
+            },
+            {
+                "icon": "list-icon",
+                "title": "Document Summaries",
+                "description": "Produce concise executive summaries for any document."
+            },
+            {
+                "icon": "userPlus-icon",
+                "title": "Smart Search",
+                "description": "Find relevant content instantly across large archives."
+            },
+            {
+                "icon": "chart-icon",
+                "title": "Workflow Automation",
+                "description": "Streamline document review and approval processes."
+            },
+            {
+                "icon": "bell-icon",
+                "title": "Secure Collaboration",
+                "description": "Share documents and feedback with controlled permissions."
+            },
+            {
+                "icon": "mble-icon",
+                "title": "Responsive Design",
+                "description": "Access the assistant from desktop, tablet, or mobile devices."
+            }
+        ]
+    },
+    "results": {
+        "sectionLabel": "Outcome",
+        "titlePrefix": "Project",
+        "titleHighlight": "Results",
+        "intro": "Measurable impact delivered through an AI-enabled document workflow.",
+        "items": [
+            {
+                "value": "99/100",
+                "label": "Performance Score",
+                "color": "orange-clr"
+            },
+            {
+                "value": "70%",
+                "label": "Faster Review",
+                "color": "blue-clr"
+            },
+            {
+                "value": "100%",
+                "label": "Mobile Responsive",
+                "color": "orange-clr"
+            },
+            {
+                "value": "4.8/5",
+                "label": "User Satisfaction",
+                "color": "blue-clr"
+            },
+            {
+                "value": "+50%",
+                "label": "Processing Speed",
+                "color": "orange-clr"
+            },
+            {
+                "value": "10 Wks",
+                "label": "Development Time",
+                "color": "blue-clr"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to Build Your Next Digital Product?",
+        "description": "From strategy and design to development and launch, we create scalable digital solutions that help businesses grow. Let's discuss your project and turn your ideas into a successful product.",
+        "buttonText": "Start Your Project"
+    }
+}

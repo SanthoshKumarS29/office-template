@@ -1,0 +1,169 @@
+{
+    "banner": {
+        "category": "Logistics • Enterprise Software",
+        "title": "Smart Logistics",
+        "highlight": "Platform",
+        "description": "An end-to-end logistics platform that optimizes routes, automates dispatch, and improves shipment visibility.",
+        "techLabel": "Technologies",
+        "techValue": "Next.js · Node.js · MongoDB · Tailwind CSS",
+        "durationLabel": "Duration",
+        "durationValue": "13 Weeks"
+    },
+    "overview": {
+        "sectionLabel": "Overview",
+        "titlePrefix": "Project",
+        "titleHighlight": "Overview",
+        "aboutTitle": "About the Project",
+        "aboutContent": "Smart Logistics Platform connects dispatchers, carriers, and customers with real-time shipment intelligence and automation across the supply chain.",
+        "goalTitle": "Business Goal",
+        "goalContent": "Reduce delivery costs, improve route efficiency, and increase transparency for logistics operations.",
+        "processTitle": "Project Process",
+        "processItems": [
+            "Route Modeling",
+            "System Design",
+            "Fleet Integration",
+            "Dashboard Development",
+            "Monitoring"
+        ]
+    },
+    "approach": {
+        "sectionLabel": "Approach",
+        "challengeTitle": "Challenge",
+        "solutionTitle": "Solution",
+        "challengeItems": [
+            "Manual route planning",
+            "Shipment delays",
+            "Siloed tracking systems",
+            "Limited carrier coordination"
+        ],
+        "solutionItems": [
+            "Created automated routing algorithms",
+            "Built live shipment tracking",
+            "Unified carrier data into one platform",
+            "Enabled smart alerting for stakeholders"
+        ]
+    },
+    "gallery": {
+        "sectionLabel": "visuals",
+        "titlePrefix": "Project",
+        "titleHighlight": "Gallery",
+        "items": [
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Smart Logistics Platform",
+                "caption": "Route Optimization",
+                "index": "01"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Smart Logistics Platform",
+                "caption": "Shipment Tracking",
+                "index": "02"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Smart Logistics Platform",
+                "caption": "Dispatch Dashboard",
+                "index": "03"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Smart Logistics Platform",
+                "caption": "Carrier Management",
+                "index": "04"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Smart Logistics Platform",
+                "caption": "Performance Metrics",
+                "index": "05"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Smart Logistics Platform",
+                "caption": "Mobile Dispatch",
+                "index": "06"
+            }
+        ]
+    },
+    "features": {
+        "sectionLabel": "Capabilities",
+        "titlePrefix": "Key",
+        "titleHighlight": "Features",
+        "items": [
+            {
+                "icon": "grid-icon",
+                "title": "Route Optimization",
+                "description": "Reduce travel time and costs with smart route planning."
+            },
+            {
+                "icon": "list-icon",
+                "title": "Fleet Tracking",
+                "description": "Monitor vehicles and shipments in real time."
+            },
+            {
+                "icon": "userPlus-icon",
+                "title": "Shipment Alerts",
+                "description": "Notify stakeholders instantly about status changes."
+            },
+            {
+                "icon": "chart-icon",
+                "title": "Carrier Management",
+                "description": "Coordinate freight partners through a unified portal."
+            },
+            {
+                "icon": "bell-icon",
+                "title": "Performance Dashboards",
+                "description": "Track delivery KPIs and operational metrics."
+            },
+            {
+                "icon": "mble-icon",
+                "title": "Responsive Access",
+                "description": "Manage logistics from desktop or mobile devices."
+            }
+        ]
+    },
+    "results": {
+        "sectionLabel": "Outcome",
+        "titlePrefix": "Project",
+        "titleHighlight": "Results",
+        "intro": "Delivered an intelligent logistics system that improves route efficiency and shipment visibility.",
+        "items": [
+            {
+                "value": "28%",
+                "label": "Reduced Delivery Time",
+                "color": "orange-clr"
+            },
+            {
+                "value": "97/100",
+                "label": "Performance Score",
+                "color": "blue-clr"
+            },
+            {
+                "value": "100%",
+                "label": "Mobile Responsive",
+                "color": "orange-clr"
+            },
+            {
+                "value": "4.8/5",
+                "label": "Operational Efficiency",
+                "color": "blue-clr"
+            },
+            {
+                "value": "+33%",
+                "label": "Route Efficiency",
+                "color": "orange-clr"
+            },
+            {
+                "value": "13 Wks",
+                "label": "Development Time",
+                "color": "blue-clr"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to Build Your Next Digital Product?",
+        "description": "From strategy and design to development and launch, we create scalable digital solutions that help businesses grow. Let's discuss your project and turn your ideas into a successful product.",
+        "buttonText": "Start Your Project"
+    }
+}

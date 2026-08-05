@@ -1,0 +1,169 @@
+{
+    "banner": {
+        "category": "Retail • SaaS",
+        "title": "E-commerce",
+        "highlight": "Management System",
+        "description": "A centralized commerce platform for managing products, orders, inventory, and marketing across sales channels.",
+        "techLabel": "Technologies",
+        "techValue": "Next.js · Node.js · MongoDB · Tailwind CSS",
+        "durationLabel": "Duration",
+        "durationValue": "11 Weeks"
+    },
+    "overview": {
+        "sectionLabel": "Overview",
+        "titlePrefix": "Project",
+        "titleHighlight": "Overview",
+        "aboutTitle": "About the Project",
+        "aboutContent": "E-commerce Management System is a retail operations platform that simplifies catalog control, order fulfillment, and inventory tracking for growing businesses.",
+        "goalTitle": "Business Goal",
+        "goalContent": "Build a scalable commerce hub that improves order accuracy, inventory visibility, and product lifecycle management.",
+        "processTitle": "Project Process",
+        "processItems": [
+            "Workflow Mapping",
+            "Dashboard Design",
+            "Inventory Automation",
+            "Channel Integration",
+            "Performance Tuning"
+        ]
+    },
+    "approach": {
+        "sectionLabel": "Approach",
+        "challengeTitle": "Challenge",
+        "solutionTitle": "Solution",
+        "challengeItems": [
+            "Fragmented order operations",
+            "Inventory mismatches",
+            "Slow product updates",
+            "Limited sales visibility"
+        ],
+        "solutionItems": [
+            "Created unified order workflows",
+            "Synchronized inventory across channels",
+            "Enabled rapid product publishing",
+            "Built actionable sales dashboards"
+        ]
+    },
+    "gallery": {
+        "sectionLabel": "visuals",
+        "titlePrefix": "Project",
+        "titleHighlight": "Gallery",
+        "items": [
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "E-commerce Management System",
+                "caption": "Product Catalog",
+                "index": "01"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "E-commerce Management System",
+                "caption": "Order Dashboard",
+                "index": "02"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "E-commerce Management System",
+                "caption": "Inventory Overview",
+                "index": "03"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "E-commerce Management System",
+                "caption": "Sales Analytics",
+                "index": "04"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "E-commerce Management System",
+                "caption": "Marketing Tools",
+                "index": "05"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "E-commerce Management System",
+                "caption": "Mobile Management",
+                "index": "06"
+            }
+        ]
+    },
+    "features": {
+        "sectionLabel": "Capabilities",
+        "titlePrefix": "Key",
+        "titleHighlight": "Features",
+        "items": [
+            {
+                "icon": "grid-icon",
+                "title": "Inventory Management",
+                "description": "Keep stock levels accurate and synchronized across channels."
+            },
+            {
+                "icon": "list-icon",
+                "title": "Order Routing",
+                "description": "Streamline order processing from purchase to fulfillment."
+            },
+            {
+                "icon": "userPlus-icon",
+                "title": "Catalog Management",
+                "description": "Manage product listings with fast updates and variants."
+            },
+            {
+                "icon": "chart-icon",
+                "title": "Sales Reporting",
+                "description": "Monitor performance with clear operational metrics."
+            },
+            {
+                "icon": "bell-icon",
+                "title": "Customer Alerts",
+                "description": "Notify customers about order status and inventory changes."
+            },
+            {
+                "icon": "mble-icon",
+                "title": "Cross-channel Sync",
+                "description": "Keep storefronts aligned across web, mobile, and marketplaces."
+            }
+        ]
+    },
+    "results": {
+        "sectionLabel": "Outcome",
+        "titlePrefix": "Project",
+        "titleHighlight": "Results",
+        "intro": "Delivered an efficient commerce platform that supports fast retail operations.",
+        "items": [
+            {
+                "value": "98/100",
+                "label": "Performance Score",
+                "color": "orange-clr"
+            },
+            {
+                "value": "33%",
+                "label": "Order Processing Improvement",
+                "color": "blue-clr"
+            },
+            {
+                "value": "100%",
+                "label": "Mobile Responsive",
+                "color": "orange-clr"
+            },
+            {
+                "value": "4.8/5",
+                "label": "Operations Satisfaction",
+                "color": "blue-clr"
+            },
+            {
+                "value": "+45%",
+                "label": "Inventory Accuracy",
+                "color": "orange-clr"
+            },
+            {
+                "value": "11 Wks",
+                "label": "Development Time",
+                "color": "blue-clr"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to Build Your Next Digital Product?",
+        "description": "From strategy and design to development and launch, we create scalable digital solutions that help businesses grow. Let's discuss your project and turn your ideas into a successful product.",
+        "buttonText": "Start Your Project"
+    }
+}

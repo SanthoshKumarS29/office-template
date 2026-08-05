@@ -1,0 +1,169 @@
+{
+    "banner": {
+        "category": "Productivity • Web Application",
+        "title": "Project Management",
+        "highlight": "Dashboard",
+        "description": "A dynamic dashboard for planning sprints, tracking milestones, and coordinating teams across projects.",
+        "techLabel": "Technologies",
+        "techValue": "Next.js · Node.js · MongoDB · Tailwind CSS",
+        "durationLabel": "Duration",
+        "durationValue": "9 Weeks"
+    },
+    "overview": {
+        "sectionLabel": "Overview",
+        "titlePrefix": "Project",
+        "titleHighlight": "Overview",
+        "aboutTitle": "About the Project",
+        "aboutContent": "Project Management Dashboard provides teams with a real-time view of progress, risks, and resource allocation for every initiative.",
+        "goalTitle": "Business Goal",
+        "goalContent": "Help organizations deliver projects on time with better visibility, coordination, and actionable reporting.",
+        "processTitle": "Project Process",
+        "processItems": [
+            "Stakeholder Workshops",
+            "Dashboard Prototyping",
+            "Integration Setup",
+            "User Testing",
+            "Launch Delivery"
+        ]
+    },
+    "approach": {
+        "sectionLabel": "Approach",
+        "challengeTitle": "Challenge",
+        "solutionTitle": "Solution",
+        "challengeItems": [
+            "Lack of visibility across projects",
+            "Inconsistent status updates",
+            "Manual reporting processes",
+            "Disconnected planning tools"
+        ],
+        "solutionItems": [
+            "Created a consolidated project view",
+            "Automated progress updates",
+            "Built interactive reporting panels",
+            "Connected task, timeline, and team data"
+        ]
+    },
+    "gallery": {
+        "sectionLabel": "visuals",
+        "titlePrefix": "Project",
+        "titleHighlight": "Gallery",
+        "items": [
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Project Management Dashboard",
+                "caption": "Milestone Tracking",
+                "index": "01"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Project Management Dashboard",
+                "caption": "Resource Planning",
+                "index": "02"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Project Management Dashboard",
+                "caption": "Task Timeline",
+                "index": "03"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Project Management Dashboard",
+                "caption": "Status Reports",
+                "index": "04"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Project Management Dashboard",
+                "caption": "Team Coordination",
+                "index": "05"
+            },
+            {
+                "image": "/images/png/csd-image.png",
+                "alt": "Project Management Dashboard",
+                "caption": "Mobile Overview",
+                "index": "06"
+            }
+        ]
+    },
+    "features": {
+        "sectionLabel": "Capabilities",
+        "titlePrefix": "Key",
+        "titleHighlight": "Features",
+        "items": [
+            {
+                "icon": "grid-icon",
+                "title": "Milestone Tracking",
+                "description": "Monitor deadlines, deliverables, and progress in one place."
+            },
+            {
+                "icon": "list-icon",
+                "title": "Resource Planning",
+                "description": "Allocate capacity and manage team workloads effectively."
+            },
+            {
+                "icon": "userPlus-icon",
+                "title": "Activity Timeline",
+                "description": "Visualize work across sprints, phases, and releases."
+            },
+            {
+                "icon": "chart-icon",
+                "title": "Status Reports",
+                "description": "Generate insights and review project health quickly."
+            },
+            {
+                "icon": "bell-icon",
+                "title": "Team Chat",
+                "description": "Keep communication aligned with updates and notes."
+            },
+            {
+                "icon": "mble-icon",
+                "title": "Custom Views",
+                "description": "Tailor dashboards to the needs of teams and stakeholders."
+            }
+        ]
+    },
+    "results": {
+        "sectionLabel": "Outcome",
+        "titlePrefix": "Project",
+        "titleHighlight": "Results",
+        "intro": "Delivered a cohesive management experience that improves project delivery and team alignment.",
+        "items": [
+            {
+                "value": "20%",
+                "label": "Faster Delivery",
+                "color": "orange-clr"
+            },
+            {
+                "value": "96/100",
+                "label": "Performance Score",
+                "color": "blue-clr"
+            },
+            {
+                "value": "100%",
+                "label": "Mobile Responsive",
+                "color": "orange-clr"
+            },
+            {
+                "value": "4.9/5",
+                "label": "User Satisfaction",
+                "color": "blue-clr"
+            },
+            {
+                "value": "+30%",
+                "label": "Schedule Adherence",
+                "color": "orange-clr"
+            },
+            {
+                "value": "9 Wks",
+                "label": "Development Time",
+                "color": "blue-clr"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to Build Your Next Digital Product?",
+        "description": "From strategy and design to development and launch, we create scalable digital solutions that help businesses grow. Let's discuss your project and turn your ideas into a successful product.",
+        "buttonText": "Start Your Project"
+    }
+}
