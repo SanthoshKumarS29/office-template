@@ -1,6 +1,6 @@
 .half-bg {
     background: #FFF;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 45%, rgba(242, 242, 242, 1) 45%);
+    background: linear-gradient(0deg, var(--white-clr) 45%, var(--dark-blue) 45%);
 }
 
 .contact-shadow {
@@ -12,8 +12,8 @@
 .contact-info {
     position: relative;
     border-radius: 1rem;
-    background-color: var(--grey-clr3);
-    padding: 1rem;
+    background-color: var(--dark-blue);
+    padding: 1.5rem 1rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,8 @@
     right: -10%;
     width: 150px;
     height: 150px;
-    background-color: var(--grey-clr5);
+    background: var(--white-clr);
+    filter: blur(100px);
     border-radius: 100px;
     z-index: -1;
 }
@@ -82,3 +83,9 @@
     height: 20px;
 }
 
+.contactMailIcon{
+    background-color: #141f29;
+    padding: .5rem;
+    border-radius: 10%;
+    color: var(--orange-clr)
+}

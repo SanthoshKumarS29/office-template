@@ -16,19 +16,18 @@
     <meta name="description" content="<%= blog.description %>" />
     <meta property="og:title" content="Trending Hub - Latest Updates" />
     <meta property="og:description" content="Showcasing our latest projects and developments." />
-    <meta property="og:image" content="https://example.com/images/banner.png" />
-    <meta property="og:url" content="https://example.com/trending-hub" />
     <% } else { %>
-        <title>
-            <%= seo.metaTitle || "AI Development Company" %>
-        </title>
+        <title><%= seo.metaTitle || "AI Development Company" %></title>
         <meta name="description" content="<%= seo.metaDescription || '' %>" />
         <meta name="keywords" content="<%= seo.metaKeyword || '' %>" />
+
         <meta property="og:title" content="Trending Hub - Latest Updates" />
         <meta property="og:description" content="Showcasing our latest projects and developments." />
-        <meta property="og:image" content="https://example.com/images/banner.png" />
-        <meta property="og:url" content="https://example.com/trending-hub" />
-        <% } %>
+
+        <meta name="author" content="Santhosh Kumar" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://office-template.onrender.com/">
+    <% } %>
 
 
 
