@@ -52,7 +52,7 @@ export const getSitemap = async (req, res) => {
 
         // json based urls
         const productUrls = await getJsonUrls("products", "/products");
-        const serviceUrls = await getJsonUrls("service", "/service");
+        const serviceUrls = await getJsonUrls("service", "/services");
         const caseStudyUrls = await getJsonUrls("caseStudyDetail", "/company/case-study-detail");
 
         // published Blogs urls
