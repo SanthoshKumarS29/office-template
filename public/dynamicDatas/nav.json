@@ -300,6 +300,24 @@
         "isdropDown":true
       },
       {
+        "title":"Portfolio",
+        "path":"/company/portfolio",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title":"CaseStudy",
+        "path":"/company/caseStudy",
+        "rel":"follow",
+        "isdropDown":false
+      },
+      {
+        "title": "Products",
+        "path": "/products",
+        "rel": "follow",
+        "isdropDown":false
+      },
+      {
         "title":"Contact",
         "path":"/contact-us",
         "rel":"follow",

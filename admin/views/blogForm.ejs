@@ -8,8 +8,9 @@
   </title>
   <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="/css/admin/admin.css">
-  <script src="https://cdn.tiny.cloud/1/flq3hfncn3uln2ktq69nhxv22hf0x1kngpt611hhkj4il3cq/tinymce/8/tinymce.min.js"
-    referrerpolicy="origin"></script>
+  <!-- Place the first <script> tag in your HTML's <head> -->
+  <script src="https://cdn.tiny.cloud/1/nnb18ua0ydssnrlyjzra6xntv65y77nmz6ld7baf7o8hrdrz/tinymce/8/tinymce.min.js"
+    referrerpolicy="origin" crossorigin="anonymous"></script>
   <style>
     .editor-preview {
       border: 1px solid #ddd;
@@ -34,8 +35,8 @@
     <div class="form-field">
       <label>Status</label>
       <select name="status" class="form-control">
-        <option value="draft" <%= blog.status === "draft" ? "selected" : "" %>>Draft</option>
-        <option value="published" <%= blog.status === "published" ? "selected" : "" %>>Published</option>
+        <option value="draft" <%=blog.status==="draft" ? "selected" : "" %>>Draft</option>
+        <option value="published" <%=blog.status==="published" ? "selected" : "" %>>Published</option>
       </select>
     </div>
 

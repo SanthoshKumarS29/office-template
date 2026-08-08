@@ -1,14 +1,16 @@
 <section>
     <div class="py-5">
-        <div class="text-center col-xl-7 mx-auto py-4">
-            <h1>Latest Insights on <span class="blue-clr">Blockchain, Crypto & Web3</span></h1>
-            <p>Explore expert-written articles covering blockchain development, crypto exchanges, DeFi platforms, NFT
-                marketplaces, tokenization, and emerging Web3 technologies.</p>
+        <div class="blog-header">
+            <div class="text-center col-xl-7 mx-auto py-4 flex-y gap-3">
+                <h1 class="head-txt-h1">Latest Insights on <span class="theme-grad-text">Blockchain, Crypto & Web3</span></h1>
+                <p class="para-txt-head">Explore expert-written articles covering blockchain development, crypto exchanges, DeFi platforms, NFT
+                    marketplaces, tokenization, and emerging Web3 technologies.</p>
+            </div>
         </div>
         <div class="carousel-wrapper pt-5">
             <div class="d-flex justify-content-between align-items-center gap-2">
                 <div>
-                    <h2>Latest Blogs</h2>
+                    <h2 class="head-txt-h2">Latest Blogs</h2>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                     <div class="side-btn">
@@ -27,8 +29,8 @@
                         <% latestBlogs.forEach(lblog=> { %>
                             <div class="latest-blog-card">
                                 <div class="blog-card">
-                                    <img src="<%= lblog.image %>" alt="<%= lblog.title %>" width="610" height="610" class="img-fluid">
-                                    <small>
+                                    <img src="<%= lblog.image %>" alt="<%= lblog.title %>" width="720" height="610" class="img-fluid">
+                                    <small class="section-title">
                                         <%= lblog.category %>
                                     </small>
                                     <a href="/blogs/<%= lblog.slug %>" class="blog-redirect">
@@ -37,7 +39,15 @@
                                     <p>
                                         <%= lblog.description %>
                                     </p>
-                                    <a href="/blogs/<%= lblog.slug %>" class="blog-redirect-btn">Read More</a>
+                                    <div class="button-wrapper">
+                                        <div class="button-glow-blue"></div>
+                                        <a href="/blogs/<%= lblog.slug %>" class="theme-btn">Read More
+                                            <svg class="arrow" viewBox="0 0 10 10" width="10" height="10" fill="none">
+                                                <path class="line" d="M0 5h7"></path>
+                                                <path class="arrow-head" d="M1 1l4 4-4 4"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         <% }) %>

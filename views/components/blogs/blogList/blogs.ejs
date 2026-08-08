@@ -32,7 +32,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="blog-card">
               <img src="<%= blog.image %>" alt="<%= blog.title %>" width="450" height="450" class="img-fluid">
-              <small>
+              <small class="section-category">
                 <%= blog.category %>
               </small>
               <a href="/blogs/<%= blog.slug %>" class="blog-redirect">
@@ -41,7 +41,15 @@
               <p>
                 <%= blog.description %>
               </p>
-              <a href="/blogs/<%= blog.slug %>" class="blog-redirect-btn">Read More</a>
+              <div class="button-wrapper">
+                <div class="button-glow-blue"></div>
+                <a href="/blogs/<%= blog.slug %>" class="theme-btn">Read More
+                    <svg class="arrow" viewBox="0 0 10 10" width="10" height="10" fill="none">
+                        <path class="line" d="M0 5h7"></path>
+                        <path class="arrow-head" d="M1 1l4 4-4 4"></path>
+                    </svg>
+                </a>
+              </div>
             </div>
           </div>
           <% }) %>
