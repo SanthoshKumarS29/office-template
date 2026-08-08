@@ -61,3 +61,31 @@ Lean()
 async and await 
     async functions always return a Promise. 
     await pauses execution until the Promise is success or rejected.
+
+
+const escapeXml = (value = "") => {
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&apos;");
+}
+
+/* Zone 1 */   /* Zone 2 */         /* Zone 3 */
+  .replace(     /&/g        ,        "&amp;"      )
+     │            │                     │
+     │            │                     └─► 3. THE REPLACER (Safe HTML Entity)
+     │            └───────────────────────► 2. THE TARGET (Global Search Regular Expression)
+     └────────────────────────────────────► 1. THE EXECUTION ACTION (String Method)
+
+
+/.replace(/&/g, "&amp;"): & (Ampersand) &amp; Prevents the browser from misinterpreting text as the start of an unintended character entity.
+
+/.replace(/</g, "&lt;"): < (Less-than) &lt; Prevents text from opening a malicious or broken script/HTML tag (e.g., <script>).
+
+/.replace(/>/g, "&gt;") > (Greater-than) &gt; Prevents text from closing existing tags early and breaking layouts.
+
+/.replace(/"/g, "&quot;") " (Double quote) &quot; Stops users from breaking out of HTML attribute boundaries (like href="..." or value="...").
+
+/.replace(/'/g, "&apos;") ' (Single quote) &apos; Performs the same protection for attributes wrapped in single quotes.

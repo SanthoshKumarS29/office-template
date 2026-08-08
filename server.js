@@ -12,6 +12,7 @@ import adminRouter from './admin/routes/adminRoutes.js';
 import connectDb from './config/db.js';
 import blogRouter from './admin/routes/blogRoutes.js';
 import formRouter from './routes/formRoutes.js';
+import sitemapRoutes from './routes/sitemapRoutes.js';
 
 
 const app = express();
@@ -46,6 +47,7 @@ app.use(
 dotenv.config();
 
 // routes
+app.use('/', sitemapRoutes);
 app.use('/', siteRoutes);
 app.use('/', formRouter);
 
