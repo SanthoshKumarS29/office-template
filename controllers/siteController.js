@@ -38,7 +38,7 @@ export const tredingHubPage = async (req, res) => {
     }
 
     // fetch seo from DB
-    const seoData = await Seo.findOne({ slug }).lean()
+    const seoData = await Seo.findOne({ pageName: "/trendings" }).lean()
     const seo = seoData || {}
     res.render("pages/trendings/hubPage.ejs", {
         currentSection: "trendings",
@@ -54,7 +54,7 @@ export const serviceHubPage = async (req, res) => {
     }
 
     // fetch seo from DB
-    const seoData = await Seo.findOne({ slug }).lean()
+    const seoData = await Seo.findOne({ pageName: `/services` }).lean()
     const seo = seoData || {}
 
     res.render("pages/services/hubPage.ejs", {
@@ -73,8 +73,8 @@ export const serviceRelatedPages = async (req, res) => {
         const pageData = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
 
         // fetch seo from DB
-        const seoData = await Seo.findOne({ slug }).lean()
-        const seo = seoData || {}
+        const seoData = await Seo.findOne({ pageName: `/services/${slug}` }).lean()
+        const seo = seoData || {};
 
         res.render(`pages/services/${slug}.ejs`, {
             currentSection: "services",
@@ -93,7 +93,7 @@ export const productHubPage = async (req, res) => {
 
 
     // fetch seo from DB
-    const seoData = await Seo.findOne({ slug }).lean()
+    const seoData = await Seo.findOne({ pageName: `/products` }).lean()
     const seo = seoData || {}
 
     res.render("pages/products/hubPage.ejs", {
@@ -112,7 +112,7 @@ export const productRelatedPages = async (req, res) => {
     if (fs.existsSync(jsonPath)) {
         const pageData = JSON.parse(fs.readFileSync(jsonPath, "utf-8"))
 
-        const seoData = await Seo.findOne({ slug }).lean()
+        const seoData = await Seo.findOne({ pageName: `/products/${slug}` }).lean()
         const seo = seoData || {}
 
         res.render(`pages/products/${slug}.ejs`, {
@@ -133,7 +133,7 @@ export const companyHubPage = async (req, res) => {
         url: slug
     }
 
-    const seoData = await Seo.findOne({ slug }).lean()
+    const seoData = await Seo.findOne({ pageName: `/company` }).lean()
     const seo = seoData || {}
 
     res.render("pages/company/about.ejs", {
@@ -151,7 +151,7 @@ export const companyRelatedPages = async (req, res) => {
     const viewPath = path.join(__dirname, `../views/pages/company/${slug}.ejs`);
 
     if (fs.existsSync(viewPath)) {
-        const seoData = await Seo.findOne({ slug }).lean()
+        const seoData = await Seo.findOne({ pageName: `/company/${slug}` }).lean()
         const seo = seoData || {}
 
         res.render(`pages/company/${slug}.ejs`, {
@@ -172,7 +172,7 @@ export const caseStudyDetailPages = async (req, res) => {
     if(fs.existsSync(jsonPath)){
         const pageData = JSON.parse(fs.readFileSync(jsonPath, "utf-8"))
 
-        const seoData = await Seo.findOne({ slug }).lean();
+        const seoData = await Seo.findOne({ pageName: `/case-studies/${slug}` }).lean();
         const seo = seoData || {}
 
         res.render(`pages/company/caseStudyDetail/${slug}.ejs`, {
@@ -190,7 +190,7 @@ export const contact = async (req, res) => {
         url: slug
     }
 
-    const seoData = await Seo.findOne({ slug }).lean()
+    const seoData = await Seo.findOne({ pageName: `/contact` }).lean()
     const seo = seoData || {}
 
     res.render("pages/contact.ejs", {
@@ -207,7 +207,7 @@ export const successPage = async (req, res) => {
     }
 
     // fetch seo from DB
-    const seoData = await Seo.findOne({ slug }).lean()
+    const seoData = await Seo.findOne({ pageName: `/success` }).lean()
     const seo = seoData || {}
 
     res.render('pages/static/success.ejs', {
@@ -224,7 +224,7 @@ export const notFoundPage = async (req, res) => {
     }
 
     // fetch seo from DB
-    const seoData = await Seo.findOne({ slug }).lean()
+    const seoData = await Seo.findOne({ pageName: `/not-found` }).lean()
     const seo = seoData || {}
 
     res.render('pages/static/notFound.ejs', {

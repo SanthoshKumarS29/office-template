@@ -59,7 +59,7 @@ export const editSeoForm = async (req, res) => {
 // Update seoForm entry
 export const updateSeoForm = async (req, res) => {
     try {
-        const { slug, metaTitle, metaDescription, metaKeyword } = req.body;
+        const { slug,pageName, metaTitle, metaDescription, metaKeyword } = req.body;
         await Seo.findByIdAndUpdate(req.params.id, { slug, pageName, metaTitle, metaDescription, metaKeyword })
         res.render('success', { message: "SEO data update successfully!" });
     } catch (err) {
