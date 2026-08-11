@@ -13,6 +13,7 @@ import connectDb from './config/db.js';
 import blogRouter from './admin/routes/blogRoutes.js';
 import formRouter from './routes/formRoutes.js';
 import sitemapRoutes from './routes/sitemapRoutes.js';
+import { notFoundPage } from './controllers/siteController.js';
 
 
 const app = express();
@@ -53,7 +54,7 @@ app.use('/', formRouter);
 
 app.use('/admin', adminRouter);
 app.use('/admin', blogRouter);
-
+app.use(notFoundPage);
 
 // start Server
 

@@ -181,6 +181,8 @@ export const caseStudyDetailPages = async (req, res) => {
             seo,
             pageData: data
         })
+    } else {
+        res.status(404).redirect("/not-found");
     }
 }
 
@@ -218,7 +220,7 @@ export const successPage = async (req, res) => {
 }
 
 export const notFoundPage = async (req, res) => {
-    const { slug } = req.params;
+    const { slug } = req.originalUrl;
     const data = {
         url: slug
     }

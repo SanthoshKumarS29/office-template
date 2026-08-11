@@ -2,7 +2,7 @@ main {
     padding-top: var(--padding-top);
 }
 
-.sticky-value{
+.sticky-value {
     top: 15%;
 }
 
@@ -21,7 +21,7 @@ main {
     color: var(--orange-clr);
 }
 
-.orange-clr-bg{
+.orange-clr-bg {
     background-color: var(--orange-clr);
 }
 
@@ -29,7 +29,7 @@ main {
     background-color: var(--blue-clr);
 }
 
-.grey-clr2{
+.grey-clr2 {
     color: var(--grey-clr2);
 }
 
@@ -37,11 +37,11 @@ main {
     background-color: var(--grey-clr);
 }
 
-.theme-grad-bg{
+.theme-grad-bg {
     background: var(--grad-clr-o-lig);
 }
 
-.dark-blue-bg{
+.dark-blue-bg {
     background-color: var(--dark-blue);
 }
 
@@ -92,45 +92,58 @@ main {
     font-size: 3rem;
 }
 
-.head-txt-h2{
+.head-txt-h2 {
     font-size: 2.25rem;
 }
 
-.head-txt-h3{
+.head-txt-h3 {
     font-size: 1.5rem;
     line-height: 1.5;
 }
 
-.para-txt-head{
+.head-txt-h4 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.para-txt-head {
     font-size: 1.05rem;
     font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.95;
 }
 
-.para-txt{
+.para-txt {
     font-size: 1.02rem;
     letter-spacing: 0.02em;
     line-height: 1.75;
 }
 
-.para-txt-sm{
+.para-txt-sm {
     font-size: 0.85rem;
     letter-spacing: 0.02em;
     line-height: 1.75;
 }
 
-.bold-text{
+.bold-text {
     font-size: 1rem;
     font-weight: 600;
 }
 
-.theme-grad-text{
+.theme-grad-text {
     background: var(--grad-clr-o);
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.roboto-font {
+    font-family: "Roboto", sans-serif;
+}
+
+.poppins-font {
+    font-family: "Poppins", sans-serif;
 }
 
 /* fonts and bg colors end */
@@ -203,12 +216,16 @@ main {
         font-size: 2rem;
     }
 
-    .head-txt-h2{
+    .head-txt-h2 {
         font-size: 1.75rem;
     }
 
-    .head-txt-h3{
+    .head-txt-h3 {
         font-size: 1.35rem;
+    }
+
+    .head-txt-h4 {
+        font-size: 1.05rem;
     }
 
 }
@@ -218,12 +235,16 @@ main {
         font-size: 2.25rem;
     }
 
-    .head-txt-h2{
+    .head-txt-h2 {
         font-size: 1.5rem;
     }
 
-    .head-txt-h3{
+    .head-txt-h3 {
         font-size: 1.15rem;
+    }
+
+    .head-txt-h4 {
+        font-size: 1.10rem;
     }
 }
 
@@ -232,15 +253,19 @@ main {
         font-size: 2.5rem;
     }
 
-    .head-txt-h2{
+    .head-txt-h2 {
         font-size: 2rem;
     }
 
-    .head-txt-h3{
+    .head-txt-h3 {
         font-size: 1.25rem;
     }
-}
 
+    .head-txt-h4 {
+        font-size: 1.25rem;
+    }
+
+}
 
 @media screen and (min-width: 1570px) and (max-width: 1919px) {
     .custom-container {
@@ -263,11 +288,11 @@ main {
         font-size: 3.5rem;
     }
 
-    .head-txt-h2{
+    .head-txt-h2 {
         font-size: 2.5rem;
     }
 
-    .para-txt-head{
+    .para-txt-head {
         font-size: 1.10rem;
     }
 }

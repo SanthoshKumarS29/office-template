@@ -1,5 +1,5 @@
 import express from 'express'
-import { caseStudyDetailPages, companyHubPage, companyRelatedPages, contact, getHome, notFoundPage, productHubPage, productRelatedPages, serviceHubPage, serviceRelatedPages, successPage, tredingHubPage } from '../controllers/siteController.js'
+import { caseStudyDetailPages, companyHubPage, companyRelatedPages, contact, getHome, productHubPage, productRelatedPages, serviceHubPage, serviceRelatedPages, successPage, tredingHubPage } from '../controllers/siteController.js'
 import { blogHubPage,blogDetailPage } from '../controllers/blogController.js';
 
 
@@ -18,6 +18,5 @@ router.get('/company/:slug', companyRelatedPages);
 router.get('/company/case-study-detail/:slug', caseStudyDetailPages)
 router.get('/contact-us', contact);
 router.get('/success', successPage);
-router.get('/not-found', notFoundPage);
 
 export default router

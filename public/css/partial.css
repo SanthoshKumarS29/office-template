@@ -249,22 +249,42 @@
     transform: scale(1.045);
 }
 
-.section-title{
+.section-title,
+.section-title-sm{
     display: flex;
     align-items: center;
     gap: .5rem;
+}
+
+.section-title{
     font-size: 1.15rem;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.03em;
 }
 
-.section-title::before{
+.section-title-sm{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.section-title::before,
+.section-title-sm::before{
     content: '';
-    width: 30px;
-    height: 5px;
     border-radius: .35rem;
     background: var(--grad-clr-o);
+}
+
+.section-title::before{
+    width: 30px;
+    height: 5px;
+}
+
+.section-title-sm::before{
+    width: 20px;
+    height: 5px;
 }
 
 .feildError {

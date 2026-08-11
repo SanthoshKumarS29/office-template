@@ -25,12 +25,12 @@
 
     <meta property="og:title" content="<%= seo.metaTitle || 'AI Development Company' %>" />
     <meta property="og:description" content="<%= seo.metaDescription || 'Showcasing our latest projects and developments.' %>" />
-    <meta property="og:url" content="https://office-template.onrender.com/">
+    <meta property="og:url" content="https://office-template.onrender.com<%= seo.slug %>">
     <meta property="og:type" content="website">
 
     <meta name="author" content="Santhosh Kumar" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://office-template.onrender.com/" />
+    <link rel="canonical" href="https://office-template.onrender.com<%= seo.slug %>" />
 <% } %>
 
 
