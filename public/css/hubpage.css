@@ -41,6 +41,10 @@
     border-radius: 3rem;
 }
 
+.pc-scroll-margin{
+    scroll-margin-top: 5rem;
+}
+
 .product-card-image{
     display: flex;
     justify-content: center;
