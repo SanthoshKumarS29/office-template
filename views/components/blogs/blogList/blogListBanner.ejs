@@ -15,11 +15,11 @@
                 <div class="d-flex align-items-center gap-2">
                     <div class="side-btn">
                         <button class="prev" aria-label="Previous"><img src="/images/png/left-circle-arrow.png" alt="Previous"
-                                width="24" height="24" class="img-fluid" loading="lazy"></button>
+                                width="24" height="24" class="img-fluid" loading="eager" fetchpriority="high"></button>
                     </div>
                     <div class="side-btn">
                         <button class="next" aria-label="Next"><img src="/images/png/right-circle-arrow.png" alt="Next" width="24"
-                                height="24" class="img-fluid" loading="lazy"></button>
+                                height="24" class="img-fluid" loading="eager" fetchpriority="high"></button>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                         <% latestBlogs.forEach(lblog=> { %>
                             <div class="latest-blog-card">
                                 <div class="blog-card">
-                                    <img src="<%= lblog.image %>" alt="<%= lblog.title %>" width="720" height="610" class="img-fluid">
+                                    <img src="<%= lblog.image %>" alt="<%= lblog.title %>" width="720" height="610" class="img-fluid" loading="eager" fetchpriority="high">
                                     <small class="section-title">
                                         <%= lblog.category %>
                                     </small>
@@ -41,7 +41,8 @@
                                     </p>
                                     <div class="button-wrapper">
                                         <div class="button-glow-blue"></div>
-                                        <a href="/blogs/<%= lblog.slug %>" class="theme-btn">Read More
+                                        <a href="/blogs/<%= lblog.slug %>" class="theme-btn" aria-label="Read more about <%= lblog.title %>">
+                                            <span class="text">Read More</span>
                                             <svg class="arrow" viewBox="0 0 10 10" width="10" height="10" fill="none">
                                                 <path class="line" d="M0 5h7"></path>
                                                 <path class="arrow-head" d="M1 1l4 4-4 4"></path>

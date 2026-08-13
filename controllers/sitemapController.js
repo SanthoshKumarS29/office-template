@@ -47,6 +47,9 @@ export const getSitemap = async (req, res) => {
             "/services",
             "/blogs",
             "/company",
+            "/company/career",
+            "/company/portfolio",
+            "/company/caseStudy",
             "/contact-us"
         ].map(url => ({url, lastmod:null}));
 

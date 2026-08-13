@@ -1,6 +1,6 @@
 User-agent: *
 
 Allow: /
-Disallow: https://office-template.onrender.com/admin/login
+Disallow: /admin/
 
 Sitemap: https://office-template.onrender.com/sitemap.xml

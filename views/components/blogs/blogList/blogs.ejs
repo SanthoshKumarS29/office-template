@@ -11,8 +11,8 @@
               class="form-control">
           </div>
           <div class="blog-select-feild">
-            <select name="category" class="form-select">
-              <option value="">All Categories</option>
+            <select name="All" class="form-select" aria-label="Filter blogs by category">
+              <option value="">All</option>
               <% categories.forEach(cat=> { %>
                 <option value="<%= cat %>" <%= selectedCategory === cat ? 'selected' : '' %>>
                   <%= cat %>
@@ -21,7 +21,7 @@
             </select>
           </div>
           <div>
-            <button type="submit" class="btn btn-primary">Filter</button>
+            <button type="submit" class="blog-filter-btn">Filter</button>
           </div>
         </form>
       </div>
@@ -29,7 +29,7 @@
     <div class="row justify-content-between g-4">
       <% if (blogs && blogs.length> 0) { %>
         <% blogs.forEach(blog=> { %>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-sm-6 col-xl-4">
             <div class="blog-card">
               <img src="<%= blog.image %>" alt="<%= blog.title %>" width="450" height="450" class="img-fluid">
               <small class="section-category">
@@ -43,11 +43,12 @@
               </p>
               <div class="button-wrapper">
                 <div class="button-glow-blue"></div>
-                <a href="/blogs/<%= blog.slug %>" class="theme-btn">Read More
-                    <svg class="arrow" viewBox="0 0 10 10" width="10" height="10" fill="none">
-                        <path class="line" d="M0 5h7"></path>
-                        <path class="arrow-head" d="M1 1l4 4-4 4"></path>
-                    </svg>
+                <a href="/blogs/<%= blog.slug %>" class="theme-btn" aria-label="Read more about <%= blog.title %>">
+                  <span class="text">Read More</span>
+                  <svg class="arrow" viewBox="0 0 10 10" width="10" height="10" fill="none">
+                    <path class="line" d="M0 5h7"></path>
+                    <path class="arrow-head" d="M1 1l4 4-4 4"></path>
+                  </svg>
                 </a>
               </div>
             </div>

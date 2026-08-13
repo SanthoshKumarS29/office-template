@@ -1,0 +1,43 @@
+# Office Template
+
+> Office Template is a technology website focused on AI, blockchain, software development, digital products, services, and technology insights.
+
+## Website
+
+- [Homepage](https://office-template.onrender.com/): Overview of the company, technology solutions, products, services, and latest work.
+- [Services](https://office-template.onrender.com/services): Software development and technology services.
+- [Products](https://office-template.onrender.com/products): Digital products, development solutions, and technology platforms.
+- [Case Studies](https://office-template.onrender.com/company): Company information, projects, and case studies.
+- [Blogs](https://office-template.onrender.com/blogs): Articles, technology insights, and industry-related content.
+- [Contact](https://office-template.onrender.com/contact-us): Contact information and business inquiries.
+
+## Services
+
+The website provides information about technology and software development services, including:
+
+- AI development
+- Blockchain development
+- Cryptocurrency exchange development
+- Crypto wallet development
+- DeFi development
+- NFT marketplace development
+- Token development
+- AI chatbot development
+
+## Products
+
+The products section contains information about software products, platforms, development scripts, and technology solutions.
+
+## Case Studies
+
+The case studies section showcases selected software projects and digital solutions, including AI platforms, cryptocurrency platforms, e-commerce systems, CRM platforms, project management systems, and logistics solutions.
+
+## Blogs
+
+The blog section contains articles covering AI, blockchain, cryptocurrency, digital assets, software development, security, and emerging technology trends.
+
+## Contact
+
+For business inquiries, project discussions, or information about services and solutions, visit:
+
+https://office-template.onrender.com/contact-us
