@@ -950,6 +950,11 @@
     color: var(--black-clr);
     border: 2px solid var(--blue-clr);
 }
+/* 
+.iti__flag {
+  background-image: url("/images/flags/flags.webp") !important;
+} */
+
 
 /* Extra Small Devices (Phones) */
 @media only screen and (max-width: 576px) {

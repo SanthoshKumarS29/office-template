@@ -3,13 +3,10 @@
 
 <meta name="google-site-verification" content="P9SPhUQsmoK7FKY7ixiN6N16aPF15EtVo2aba77G9eA" />
 <!-- Preconnect for best performance -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Inter (400, 500, 600) + Montserrat (600, 700) -->
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+<!-- Load fonts locally to avoid external network dependency and improve PageSpeed -->
+<link rel="preload" href="/fonts/poppins/poppins-devanagari-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/poppins/poppins-devanagari-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/roboto/roboto-v51-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 
 <% if (currentSection==="blogDetail" ) { %>
     <title><%= blog.title %></title>
@@ -35,6 +32,50 @@
 
 
             <style>
+                /* Local font-face declarations - using downloaded WOFF2 files in /public/fonts */
+                @font-face {
+                    font-family: 'PoppinsLocal';
+                    font-style: normal;
+                    font-weight: 400;
+                    src: url('/fonts/poppins/poppins-devanagari-400-normal.woff2') format('woff2');
+                    font-display: swap;
+                }
+                @font-face {
+                    font-family: 'PoppinsLocal';
+                    font-style: normal;
+                    font-weight: 600;
+                    src: url('/fonts/poppins/poppins-devanagari-600-normal.woff2') format('woff2');
+                    font-display: swap;
+                }
+                @font-face {
+                    font-family: 'RobotoLocal';
+                    font-style: normal;
+                    font-weight: 400;
+                    src: url('/fonts/roboto/roboto-v51-latin-regular.woff2') format('woff2');
+                    font-display: swap;
+                }
+                @font-face {
+                    font-family: 'RobotoLocal';
+                    font-style: normal;
+                    font-weight: 500;
+                    src: url('/fonts/roboto/roboto-v51-latin-500.woff2') format('woff2');
+                    font-display: swap;
+                }
+                @font-face {
+                    font-family: 'RobotoLocal';
+                    font-style: normal;
+                    font-weight: 600;
+                    src: url('/fonts/roboto/roboto-v51-latin-600.woff2') format('woff2');
+                    font-display: swap;
+                }
+                @font-face {
+                    font-family: 'RobotoLocal';
+                    font-style: normal;
+                    font-weight: 700;
+                    src: url('/fonts/roboto/roboto-v51-latin-700.woff2') format('woff2');
+                    font-display: swap;
+                }
+
                 :root {
                     --padding-top: 4.5rem;
                     --orange-clr: #FFA500;
@@ -94,28 +135,28 @@
                 /* Headings — override Bootstrap sizes safely */
                 h1,
                 .h1 {
-                    font-family: "Roboto", sans-serif;
+                    font-family: "RobotoLocal", sans-serif;
                     font-weight: 700;
                     margin-bottom: 0 !important;
                 }
 
                 h2,
                 .h2 {
-                    font-family: "Roboto", sans-serif;
+                    font-family: "RobotoLocal", sans-serif;
                     font-weight: 700;
                     margin-bottom: 0 !important;
                 }
 
                 h3,
                 .h3 {
-                    font-family: "Roboto", sans-serif;
+                    font-family: "RobotoLocal", sans-serif;
                     font-weight: 600;
                     margin-bottom: 0 !important;
                 }
 
                 h4,
                 .h4 {
-                    font-family: "Roboto", sans-serif;
+                    font-family: "RobotoLocal", sans-serif;
                     font-size: 1.3rem;
                     font-weight: 600;
                     margin-bottom: 0 !important;
@@ -123,7 +164,7 @@
 
                 h5,
                 .h5 {
-                    font-family: "Roboto", sans-serif;
+                    font-family: "RobotoLocal", sans-serif;
                     font-size: 1.1rem;
                     font-weight: 600;
                     margin-bottom: 0 !important;
@@ -131,7 +172,7 @@
 
                 h6,
                 .h6 {
-                    font-family: "Roboto", sans-serif;
+                    font-family: "RobotoLocal", sans-serif;
                     font-size: 1rem;
                     font-weight: 600;
                     margin-bottom: 0 !important;
@@ -140,6 +181,6 @@
                 /* Paragraph */
                 p {
                     color: var(--grey-clr2);
-                    font-family: "Poppins", sans-serif;
+                    font-family: "PoppinsLocal", sans-serif;
                 }
             </style>

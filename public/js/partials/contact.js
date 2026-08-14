@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       iti = window.intlTelInput(phoneInputField, {
         initialCountry: "auto",
         geoIpLookup: callback => {
+          
           fetch("/ip-data")
             .then(res => res.json())
             .then(data => {

@@ -7,8 +7,9 @@ let index = 0;
 const visibleCards = 2;
 const totalCards = cards.length;
 
+let cardWidth = cards[0] ? cards[0].offsetWidth + 20 : 0;
+
 function updateCarousel() {
-    const cardWidth = cards[0].offsetWidth + 20;
     track.style.transform = `translateX(-${index * cardWidth}px)`;
 
     prevBtn.disabled = index === 0;
@@ -29,5 +30,11 @@ nextBtn.addEventListener("click", () => {
     }
 })
 
-window.addEventListener("resize", updateCarousel);
+window.addEventListener("resize", () => {
+    if (cards[0]) {
+        cardWidth = cards[0].offsetWidth + 20;
+    }
+    updateCarousel();
+});
+
 updateCarousel()
