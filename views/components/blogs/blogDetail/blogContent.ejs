@@ -30,7 +30,7 @@
         <% if (blog.image) { %>
             <div class="d-flex justify-content-center pb-3">
                 <img src="<%= blog.image %>" alt="<%= blog.title %>" width="1500" height="600"
-                    class="img-fluid rounded-2" />
+                    class="img-fluid rounded-2" fetchpriority="high" loading="eager"/>
             </div>
         <% } %>
         <%- include('./tableOfContent.ejs') %>

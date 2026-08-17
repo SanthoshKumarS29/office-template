@@ -13,10 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const headings = content.querySelectorAll("h3");
 
   if (headings.length > 0 && tocContainer) {
-    const firstHeadingTop = headings[0].offsetTop;
-    const lastHeadingBottom =
-      headings[headings.length - 1].offsetTop +
-      headings[headings.length - 1].offsetHeight;
+    let firstHeadingTop = 0;
+    let lastHeadingBottom = 0;
+
+    const measurePosition = () => {
+      if(headings.length > 0){
+        firstHeadingTop = headings[0].offsetTop;
+        lastHeadingBottom =
+          headings[headings.length - 1].offsetTop +
+          headings[headings.length - 1].offsetHeight;
+      }
+    }
+
+    requestAnimationFrame(measurePosition)
+
 
     window.addEventListener("scroll", () => {
       const scrollPos = window.scrollY + 120;
@@ -27,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       tocContainer.classList.toggle("toc-visible", shouldShow);
     });
+
+    window.addEventListener("resize", measurePosition);
   }
 
   // Collapse arrow animation

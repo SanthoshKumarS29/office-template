@@ -1,9 +1,3 @@
-.blog-header{
-        background-image:
-        linear-gradient(to left, var(--grey-clr) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--grey-clr) 1px, transparent 1px);
-    background-size: 180px 180px;
-}
 
 .side-btn button {
     background-color: transparent;
