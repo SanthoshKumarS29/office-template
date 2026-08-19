@@ -951,16 +951,6 @@
     border: 2px solid var(--blue-clr);
 }
 
-.iti {
-  --iti-path-flags-1x: url('/images/flags.webp');
-  --iti-path-flags-2x: url('/images/flags@2x.webp');
-}
-
-
-/* .iti__flag {
-  background-image: url("/images/flags/flags@2x.webp") !important;
-} */
-
 
 /* Extra Small Devices (Phones) */
 @media only screen and (max-width: 576px) {

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(() => callback("us"));
         },
         utilsScript:
-          "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+          "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js",
       });
     }
 

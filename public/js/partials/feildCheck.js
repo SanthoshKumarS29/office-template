@@ -147,6 +147,7 @@ export const careerRules = {
 export const quickLeadRules = {
   phoneNumber: {
     required: true,
+    pattern: /^[0-9]+$/,
     message: "Phone number is required",
   },
   purpose: {

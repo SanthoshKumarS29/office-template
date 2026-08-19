@@ -1,3 +1,6 @@
+import { quickLeadRules } from "./feildCheck.js";
+
+
 const container = document.querySelector(".quick-lead-container");
 const form = document.querySelector(".quick-lead-form")
 const btn = document.getElementById("qlBtn");
@@ -45,10 +48,26 @@ form.addEventListener("submit", function (e) {
 
     if (currentStep === 0) {
         e.preventDefault();
-        if (phoneInput.value.trim() === "") {
+
+        const phoneValue = phoneInput.value.trim();
+
+        if (quickLeadRules.phoneNumber.required && phoneValue === "") {
             btn.classList.add("btn-error");
+            phoneInput.focus()
             return;
         }
+
+        // Only numbers validation
+        if (
+            quickLeadRules.phoneNumber.pattern &&
+            !quickLeadRules.phoneNumber.pattern.test(phoneValue)
+        ) {
+            btn.classList.add("btn-error");
+            phoneInput.focus();
+            return;
+        }
+
+
         btn.classList.remove("btn-error");
         currentStep = 1;
         steps[0].classList.remove("active");
