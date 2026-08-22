@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       iti = window.intlTelInput(phoneInputField, {
         initialCountry: "auto",
         geoIpLookup: callback => {
-          
+
           fetch("/ip-data")
             .then(res => res.json())
             .then(data => {
@@ -20,10 +20,32 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .catch(() => callback("us"));
         },
-        utilsScript:
-          "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js",
+        loadUtils: () =>
+          import(
+            "https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/utils.js"
+          ),
+        dropdownContainer: document.body,
+        fixDropdownWidth: false,
       });
     }
+
+    phoneInputField.addEventListener("open:countrydropdown", () => {
+      // wait one tick so the plugin finishes its own (downward) positioning first
+      requestAnimationFrame(() => {
+        const dropdown = document.querySelector(".iti__country-list");
+        if (!dropdown) return;
+
+        const inputRect = phoneInputField.getBoundingClientRect();
+        const dropdownHeight = dropdown.offsetHeight;
+        const gap = 6; // small spacing between input and popup
+
+        dropdown.style.position = "fixed";
+        dropdown.style.top = `${inputRect.top - dropdownHeight - gap}px`;
+        dropdown.style.left = `${inputRect.left}px`;
+        dropdown.style.bottom = "auto"; // clear any bottom value the plugin set
+      });
+    });
+
 
     form.querySelectorAll("input, textarea, select").forEach(field => {
       field.addEventListener("input", () => {
@@ -59,11 +81,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
 
+      console.log("[ContactForm] collected form data", { formType, data });
+
       if (iti) {
         const phoneNumber = iti.getNumber();
         const countryCode = iti.getSelectedCountryData().dialCode;
         data.phoneNumber = phoneNumber;
         data.countryCode = countryCode;
+
+        console.log("[ContactForm] intl-tel-input data", { phoneNumber, countryCode, isValidNumber: iti.isValidNumber(), });
       }
 
       let rules;
@@ -75,6 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const errors = validate(data, rules);
+
+      console.log("[ContactForm] validation result", { errors, data });
 
 
       // errors check
@@ -96,6 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Send data to backend
       console.log(endpoint)
+      console.log("[ContactForm] sending request", { endpoint, data });
       try {
         const res = await fetch(endpoint, {
           method: "POST",

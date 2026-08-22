@@ -132,7 +132,6 @@ main {
 
 .theme-grad-text {
     background: var(--grad-clr-o);
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

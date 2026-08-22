@@ -46,6 +46,12 @@ document.addEventListener("click", (e) => {
 // handle form submit
 form.addEventListener("submit", function (e) {
 
+    console.log("[QuickLead] submit event", {
+        currentStep,
+        phoneNumber: phoneInput.value,
+        purpose: purposeInput.value,
+        });
+
     if (currentStep === 0) {
         e.preventDefault();
 
@@ -80,7 +86,7 @@ form.addEventListener("submit", function (e) {
             purposeInput.focus();
             return;
         }
-
+        console.log("[QuickLead] fields completed; shared contact handler will send the request");
         // hide all feilds
         steps.forEach(step => step.classList.remove('active'));
 

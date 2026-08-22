@@ -889,7 +889,6 @@
 
 .accordion-button:not(.collapsed) {
     background: var(--grad-clr-o);
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -949,6 +948,17 @@
     background-color: var(--white-clr);
     color: var(--black-clr);
     border: 2px solid var(--blue-clr);
+}
+
+.iti__country-list {
+  /* width: 260px !important; */
+  max-height: 220px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
 }
 
 
