@@ -1,0 +1,52 @@
+<section>
+    <div class="py-5">
+        <div class="row justify-content-between g-3 text-center text-xl-start">
+            <div class="col-xl-4">
+                <div class="flex-y align-items-center gap-2 align-items-xl-start">
+                    <p class="ip-higlighter fw-bold mb-0"><%= page.devProc.tag %></p>
+                    <h2 class="head-txt-h2 mb-3"><%- page.devProc.title %></h2>
+                </div>
+            </div>
+            <div class="col-xl-7">
+                <p class="para-txt-head mb-0"><%= page.devProc.description %></p>
+            </div>
+        </div>
+        <div class="ip-devProc-container">
+            <% page.devProc.content.forEach((conts, i) => { %>
+                <div class="ip-devproc-slide">
+                    <div class="row justify-content-between g-3">
+                            <div class="col-xl-2">
+                                <div class="ip-devNum">
+                                    <strong class="<%= i % 2 ? 'orange-clr' : 'blue-clr' %>">0<%= i + 1 %></strong>
+                                </div>
+                            </div>
+                        <div class="col-xl-8">
+                                <div class="ip-devProc-content">
+                                    <strong class="text-white-50"><%= conts.subHead %></strong>
+                                    <h3 class="roboto-font"><%= conts.headTxt %></h3>
+                                    <p class="text-white-50"><%= conts.paraTxt %> </p>
+                                </div>
+                        </div>
+                        <div class="col-xl-2 align-self-xl-end">
+                            <div class="flex-x justify-content-end align-items-center gap-3">
+                                <button class="ip-devproc-left">
+                                    <svg width="24" height="12">
+                                        <use href="/images/svg/innerPage.svg#slider-left-arrow" />
+                                    </svg>
+                                </button>
+                                <div>
+                                    <p class="text-white text-nowrap mb-0">0<%= i + 1 %> <span class="text-white-50">/ <%= String(page.devProc.content.length).padStart(2, '0') %></span></p>
+                                </div>
+                                <button class="ip-devproc-right">
+                                    <svg width="24" height="12">
+                                        <use href="/images/svg/innerPage.svg#slider-right-arrow" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</section>

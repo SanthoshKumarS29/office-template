@@ -1,0 +1,314 @@
+{
+    "banner": {
+        "tag": "AI Agent Development Services",
+        "title": "AI Agents Built to <span class='theme-grad-text'>Work With Your Business</span>",
+        "content": "Build intelligent AI agents that can understand context, work with business data, connect to external tools, and automate multi-step workflows. We design custom AI agent solutions around your business processes, systems, and goals."
+    },
+    "about": {
+        "tag": "Beyond Traditional AI",
+        "title": "From AI That Responds to <span class='theme-grad-text'>AI That Acts</span>",
+        "content": "Traditional AI applications are often built to answer questions, generate content, or assist users with individual tasks.AI agents take this further by combining intelligence with tools, data, business rules, and connected systems.<span class='scroll-highlight'>An AI agent can understand a goal, gather relevant information, determine the next step, interact with connected applications, and complete defined actions within a controlled workflow.</span>",
+        "btntxt": "Talk to our experts"
+    },
+    "cardSectionOne": {
+        "tag": "The Challenge",
+        "title": "Your Business Has Workflows. <span class='theme-grad-text'>Your AI Should Understand Them.</span>",
+        "description": "Businesses often rely on repetitive processes that require employees to collect information, move data between applications, respond to requests, and perform the same actions repeatedly.As operations grow, these workflows can become difficult to manage efficiently.",
+        "content": [
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Repetitive Manual Work",
+                "heacTxtClr": "orange-clr",
+                "paraTxt": "Employees spend valuable time performing tasks that follow predictable processes."
+            },
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Disconnected Systems",
+                "heacTxtClr": "blue-clr",
+                "paraTxt": "Information is often spread across CRMs, databases, documents, communication platforms, and other business applications."
+            },
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Slow Information Processing",
+                "heacTxtClr": "orange-clr",
+                "paraTxt": "Finding, understanding, and moving information manually can slow down everyday decisions."
+            },
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Increasing Operational Complexity",
+                "heacTxtClr": "blue-clr",
+                "paraTxt": "As the business grows, adding more people isn't always the most efficient way to handle growing volumes of repetitive work."
+            }
+        ],
+        "finalPoint": "AI agents can connect these pieces together by combining intelligent processing with your existing tools and workflows."
+    },
+    "cardSectionTwo": {
+        "tag": "Our AI Agent Development Services",
+        "title": "Custom AI Agents Designed <span class='theme-grad-text'>Around Your Workflow</span>",
+        "description": "Every business has different processes, systems, and requirements. Instead of offering a one-size-fits-all AI solution, we design agents around the specific tasks you want to automate or improve.",
+        "content": [
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Custom AI Agent Development",
+                "paraTxt": "Build purpose-specific AI agents designed to understand your business requirements, process relevant information, and perform defined tasks."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "AI Workflow Automation",
+                "paraTxt": "Connect multiple steps in a workflow so that an AI agent can process information, interact with tools, and move tasks forward automatically."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "AI Knowledge Agents",
+                "paraTxt": "Give employees or customers a natural way to access information from approved documents, knowledge bases, and business data."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "AI Customer Support Agents",
+                "paraTxt": "Create intelligent support experiences that understand customer requests, retrieve relevant information, and assist with support workflows."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "AI Sales Agents",
+                "paraTxt": "Help sales teams qualify leads, collect information, organize conversations, and initiate appropriate follow-up processes."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "AI Document Agents",
+                "paraTxt": "Process documents, extract useful information, summarize content, and move structured information into downstream workflows."
+            }
+        ]
+    },
+    "clickableSec": {
+        "tag": "Practical Applications",
+        "title": "Turn Complex Workflows <span class='theme-grad-text'>Into Intelligent Processes</span>",
+        "description": "Rather than using AI simply to generate text, we can design agents to work with the information, tools, and systems your teams already use.",
+        "content": [
+            {
+                "headTxt": "Customer Support",
+                "paraTxt": "An AI agent can understand customer requests, retrieve relevant information, and assist with support workflows."
+            },
+            {
+                "headTxt": "Lead Qualification",
+                "paraTxt": "Agents can analyze incoming enquiries, collect required information, identify qualified prospects, and route them to the appropriate team."
+            },
+            {
+                "headTxt": "Document Processing",
+                "paraTxt": "AI agents can process documents, extract relevant information, summarize content, and pass structured information into another system."
+            },
+            {
+                "headTxt": "Internal Knowledge",
+                "paraTxt": "Employees can interact with approved business knowledge through natural language rather than searching through multiple documents and systems manually."
+            },
+            {
+                "headTxt": "Workflow Automation",
+                "paraTxt": "Agents can coordinate multiple tasks across connected applications and help reduce repetitive operational work."
+            },
+            {
+                "headTxt": "Data Operations",
+                "paraTxt": "Agents can retrieve, organize, transform, and process information according to defined business rules."
+            }
+        ]
+    },
+    "devProc": {
+        "tag": "Our Development Approach",
+        "title": "From Business Problem <span class='theme-grad-text'>to Production-Ready AI Agent</span>",
+        "description": "A successful AI agent starts with a clear business objective. We first understand the workflow, then design the architecture, integrations, and controls required to make the solution useful in a real-world environment.",
+        "content": [
+            {
+                "subHead": "Understand the opportunity",
+                "headTxt": "Discover",
+                "paraTxt": "We understand your business process, users, systems, data sources, and the specific problems you want the AI agent to solve."
+            },
+            {
+                "subHead": "Design the right architecture",
+                "headTxt": "Plan",
+                "paraTxt": "We define the agent's responsibilities, tools, knowledge sources, integrations, permissions, and human approval points."
+            },
+            {
+                "subHead": "Build the intelligence",
+                "headTxt": "Develop",
+                "paraTxt": "We build the agent, workflows, integrations, interfaces, and supporting application components."
+            },
+            {
+                "subHead": "Connect every moving part",
+                "headTxt": "Integrate",
+                "paraTxt": "We connect the agent with APIs, databases, business applications, knowledge bases, and other required systems."
+            },
+            {
+                "subHead": "Prove it in the real world",
+                "headTxt": "Test",
+                "paraTxt": "We evaluate responses, workflows, permissions, edge cases, and failure scenarios before moving toward production."
+            },
+            {
+                "subHead": "Keep creating momentum",
+                "headTxt": "Deploy & Improve",
+                "paraTxt": "We deploy the solution and continue refining its workflows and capabilities as your requirements evolve."
+            }
+        ]
+    },
+    "table": {
+        "tag": "Understanding the Difference",
+        "title": "AI Agents Go <span class='theme-grad-text'>Beyond Conversations</span>",
+        "description": "Chatbots are useful for conversational interactions, but some business processes require more than answering questions. AI agents can be designed to access information, interact with tools, and perform actions within defined workflows.",
+        "content": {
+            "headers": [
+                "Capability",
+                "Traditional Chatbot",
+                "AI Agent"
+            ],
+            "rows": [
+                {
+                    "Capability": "Answer questions",
+                    "Traditional Chatbot": "✓",
+                    "AI Agent": "✓"
+                },
+                {
+                    "Capability": "Understand context",
+                    "Traditional Chatbot": "✓",
+                    "AI Agent": "✓"
+                },
+                {
+                    "Capability": "Access external information",
+                    "Traditional Chatbot": "Lsimited",
+                    "AI Agent": "✓"
+                },
+                {
+                    "Capability": "Connect with business tools",
+                    "Traditional Chatbot": "Limited",
+                    "AI Agent": "✓"
+                },
+                {
+                    "Capability": "Execute multi-step workflows",
+                    "Traditional Chatbot": "-",
+                    "AI Agent": "✓"
+                },
+                {
+                    "Capability": "Trigger API actions",
+                    "Traditional Chatbot": "-",
+                    "AI Agent": "✓"
+                },
+                {
+                    "Capability": "Work with business data",
+                    "Traditional Chatbot": "Limited",
+                    "AI Agent": "✓"
+                },
+                {
+                    "Capability": "Human approval workflows",
+                    "Traditional Chatbot": "Limited",
+                    "AI Agent": "✓"
+                }
+            ]
+        },
+        "finalPoint":"The right solution depends on the problem you're trying to solve. A chatbot may be appropriate for simple conversations, while an AI agent can be useful when the workflow requires multiple systems, decisions, and actions."
+    },
+    "cardSectionThree":{
+        "tag":"Business Impact",
+        "title":"Make AI Part of the Way <span class='theme-grad-text'>Your Business Works</span>",
+        "description":"The value of an AI agent isn't simply the technology behind it. The real value comes from how effectively it improves an existing business process.",
+        "content":[
+            {
+                "width":"col-md-6 col-xl-4",
+                "headTxt":"Reduce Repetitive Work",
+                "paraTxt":"Automate routine tasks and allow teams to spend more time on work that requires human judgment."
+            },
+            {
+                "width":"col-md-6 col-xl-4",
+                "headTxt":"Improve Operational Efficiency",
+                "paraTxt":"Process information and complete defined workflows more efficiently."
+            },
+            {
+                "width":"col-md-6 col-xl-4",
+                "headTxt":"Connect Existing Systems",
+                "paraTxt":"Bring information and actions together across the tools your business already uses."
+            },
+            {
+                "width":"col-md-6 col-xl-4",
+                "headTxt":"Scale Operations",
+                "paraTxt":"Build workflows that can handle increasing demand without relying entirely on additional manual effort."
+            },
+            {
+                "width":"col-md-6 col-xl-4",
+                "headTxt":"Improve Access to Information",
+                "paraTxt":"Help employees and customers find relevant information more quickly."
+            },
+            {
+                "width":"col-md-6 col-xl-4",
+                "headTxt":"Maintain Human Oversight",
+                "paraTxt":"Keep people involved in workflows where decisions, approvals, or additional verification are important."
+            }
+        ]
+    },
+    "cardSectionFour":{
+        "tag":"Our Approach",
+        "title":"Make We Build AI Around Your Business <span class='theme-grad-text'>— Not the Other Way Around</span>",
+        "description":"AI projects can easily become technology experiments without a clear connection to business goals. Our approach starts with understanding what your business needs to accomplish and then determining where AI can provide meaningful value.",
+        "content":[
+            {
+                "width":"col-md-6 col-xl-4",
+                "headTxt":"Business-First Thinking",
+                "paraTxt":"We begin with the workflow, users, and business objective before selecting the technology."
+            },
+            {
+                "width":"col-md-6 col-xl-4",
+                "headTxt":"Custom Architecture",
+                "paraTxt":"Your agent is designed around your systems, data, integrations, and operational requirements."
+            },
+            {
+                "width":"col-md-6 col-xl-4",
+                "headTxt":"Controlled Automation",
+                "paraTxt":"Define what the agent can access, what actions it can perform, and where human approval is required."
+            },
+            {
+                "width":"col-md-6 col-xl-4",
+                "headTxt":"Scalable Foundation",
+                "paraTxt":"Build the solution with future integrations, changing workflows, and growing usage in mind."
+            }
+        ]
+    },
+    "faq": {
+        "title": "Frequently Asked Questions <span class='theme-grad-text'>About AI Agent Development</span>",
+        "subTitle": "FAQ",
+        "qnsAns": [
+            {
+                "qns": "1. What is an AI agent?",
+                "ans": "An AI agent is a software system designed to understand goals, process relevant information, use available tools, and perform defined actions within a controlled workflow."
+            },
+            {
+                "qns": "2. What is the difference between an AI agent and a chatbot?",
+                "ans": "A chatbot primarily focuses on conversations and responses. An AI agent can go further by accessing tools, retrieving information, and executing approved actions."
+            },
+            {
+                "qns": "3. Can an AI agent connect to our existing software?",
+                "ans": "Yes. Depending on the application, an AI agent can integrate with APIs, databases, SaaS platforms, webhooks, internal applications, and other systems."
+            },
+            {
+                "qns": "4. Can AI agents work with private business data?",
+                "ans": "Yes. The architecture can be designed around authentication, permissions, data access controls, and your specific security requirements."
+            },
+            {
+                "qns": "5. Can humans approve actions performed by an AI agent?",
+                "ans": "Yes. Human approval can be introduced for actions that require review, authorization, or additional verification."
+            },
+            {
+                "qns": "6. How much does AI agent development cost?",
+                "ans": "The cost depends on the complexity of the workflow, integrations, data sources, AI requirements, security requirements, and deployment environment."
+            },
+            {
+                "qns": "7. How long does development take?",
+                "ans": "Development time depends on the scope and complexity of the solution. A focused proof of concept can be developed before expanding toward a production-ready system."
+            },
+            {
+                "qns": "8. Can an AI agent be customized for our industry?",
+                "ans": "Yes. Human approval can be introduced for actions that require review, authorization, or additional verification."
+            },
+            {
+                "qns": "5. Can humans approve actions performed by an AI agent?",
+                "ans": "Yes. The workflow, knowledge sources, integrations, permissions, and user experience can be designed around the requirements of a specific business or industry."
+            }
+        ],
+        "ctaHead": "Have a Workflow Ready for AI?",
+        "ctaDes": "Tell us what you want to automate, connect, or improve. We'll help you identify where an AI agent can fit into your workflow and what it would take to build it.'",
+        "ctaBtnTxt": "Discuss Your AI Project"
+    }
+}

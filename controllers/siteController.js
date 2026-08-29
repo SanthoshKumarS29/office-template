@@ -202,6 +202,22 @@ export const contact = async (req, res) => {
     })
 }
 
+export const exploreMorePage = async (req, res) => {
+    const { slug } = req.params;
+    const data = {
+        url: slug || "/explore-more"
+    }
+
+    const seoData = await Seo.findOne({ pageName: `/explore-more` }).lean()
+    const seo = seoData || {}
+
+    res.render('pages/static/exploreMore.ejs', {
+        currentSection: "home",
+        seo,
+        pageData: data
+    })
+}
+
 export const successPage = async (req, res) => {
     const { slug } = req.params;
     const data = {

@@ -1,0 +1,47 @@
+<section>
+    <div class="py-5">
+        <div class="row justify-content-between g-3 text-center text-xl-start">
+            <div class="col-xl-4">
+                <div class="flex-y align-items-center gap-2 align-items-xl-start">
+                    <p class="ip-higlighter fw-bold mb-0">
+                        <%= page.table.tag %>
+                    </p>
+                    <h2 class="head-txt-h2 mb-3"><%- page.table.title %></h2>
+                </div>
+            </div>
+            <div class="col-xl-7">
+                <p class="para-txt-head mb-0">
+                    <%= page.table.description %>
+                </p>
+            </div>
+        </div>
+        <div class="col-xl-7 ms-auto">
+            <div class="ip-tableContainer">
+                <table class="ip-table">
+                    <thead class="ip-table-head">
+                        <% page.table.content.headers.forEach(function(header) { %>
+                            <th>
+                                <%= header %>
+                            </th>
+                            <% }); %>
+                    </thead>
+                    <tbody class="ip-table-body">
+                        <% page.table.content.rows.forEach(function(row) { %>
+                            <tr>
+                                <!-- Loop through the headers again to pull matching data -->
+                                <% page.table.content.headers.forEach(function(header) { %>
+                                    <td>
+                                        <%= row[header] || '-' %>
+                                    </td>
+                                    <% }); %>
+                            </tr>
+                            <% }); %>
+                    </tbody>
+                </table>
+            </div>
+            <% if(page.table.finalPoint){ %>
+                <p class="para-txt"><%- page.table.finalPoint %></p>
+            <% } %>
+        </div>
+    </div>
+</section>

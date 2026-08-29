@@ -73,7 +73,7 @@ main {
 
 .card-txt-h {
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Roboto", sans-serif;
 }
 
@@ -81,6 +81,7 @@ main {
     font-size: 1.08rem;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
+    line-height: 1.85;
 }
 
 .line-hs {
@@ -94,6 +95,7 @@ main {
 
 .head-txt-h2 {
     font-size: 2.25rem;
+    line-height: 1.5;
 }
 
 .head-txt-h3 {
@@ -202,6 +204,10 @@ main {
 }
 
 /* buttons end */
+
+.curson-pointer{
+    cursor: pointer;
+}
 
 .custom-container {
     margin: 0 auto;

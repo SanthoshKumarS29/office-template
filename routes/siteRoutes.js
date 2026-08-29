@@ -1,11 +1,12 @@
 import express from 'express'
-import { caseStudyDetailPages, companyHubPage, companyRelatedPages, contact, getHome, productHubPage, productRelatedPages, serviceHubPage, serviceRelatedPages, successPage, tredingHubPage } from '../controllers/siteController.js'
+import { caseStudyDetailPages, companyHubPage, companyRelatedPages, contact, exploreMorePage, getHome, productHubPage, productRelatedPages, serviceHubPage, serviceRelatedPages, successPage, tredingHubPage } from '../controllers/siteController.js'
 import { blogHubPage,blogDetailPage } from '../controllers/blogController.js';
 
 
 const router = express.Router()
 
 router.get('/', getHome);
+router.get('/explore-more', exploreMorePage);
 router.get('/trendings', tredingHubPage);
 router.get('/products', productHubPage);
 router.get('/products/:slug', productRelatedPages);

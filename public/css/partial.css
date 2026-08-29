@@ -305,7 +305,9 @@
 }
 
 .clients-slider-container::before,
-.clients-slider-container::after {
+.clients-slider-container::after,
+.ip-clients-slider-container::before,
+.ip-clients-slider-container::after {
     content: "";
     position: absolute;
     top: 0;
@@ -317,7 +319,8 @@
 }
 
 /* Left fade */
-.clients-slider-container::before {
+.clients-slider-container::before ,
+.ip-clients-slider-container::before {
     left: 0;
     background: linear-gradient(to right,
             #ffffff 0%,
@@ -325,7 +328,8 @@
 }
 
 /* Right fade */
-.clients-slider-container::after {
+.clients-slider-container::after ,
+.ip-clients-slider-container::after {
     right: 0;
     background: linear-gradient(to left,
             #ffffff 0%,

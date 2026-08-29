@@ -1,0 +1,11 @@
+<svg class="d-none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id='slider-right-arrow' viewBox="0 0 24 12" fill="none" >
+            <path d="M24 5.76L18.24 0V4.24H0V7.28H18.24V11.52L24 5.76Z" fill="currentColor"/>
+        </symbol>
+
+        <symbol id='slider-left-arrow' viewBox="0 0 24 12" fill="none">
+            <path d="M1.43051e-06 5.75999L5.76 11.52V7.27999H24V4.23999H5.76V-1.07574e-05L1.43051e-06 5.75999Z" fill="currentColor"/>
+        </symbol>
+    </defs>
+</svg>
