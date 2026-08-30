@@ -140,11 +140,11 @@ main {
 }
 
 .roboto-font {
-    font-family: "Roboto", sans-serif;
+    font-family: "RobotoLocal", sans-serif;
 }
 
 .poppins-font {
-    font-family: "Poppins", sans-serif;
+    font-family: "PoppinsLocal", sans-serif;
 }
 
 /* fonts and bg colors end */
@@ -207,6 +207,14 @@ main {
 
 .curson-pointer{
     cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .custom-container {
