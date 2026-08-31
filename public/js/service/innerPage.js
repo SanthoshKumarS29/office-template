@@ -14,11 +14,6 @@ if (container) {
 
         slides[index].style.display = "block";
 
-        const currentNumber = slides[index].querySelector(
-            ".ip-devproc-current"
-        );
-
-        currentNumber.textContent = String(index + 1).padStart(2, "0");
     }
 
 
