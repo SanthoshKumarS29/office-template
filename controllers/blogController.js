@@ -121,6 +121,15 @@ export const blogDetailPage = async (req, res) => {
             );
         }
 
+        const relatedBlogs = await Blog.find({
+            category: blog.category,
+            slug: { $ne: slug },
+            status: "published"
+        })
+        .sort({ createdAt: -1 })
+        .limit(3)
+        .lean();
+
         res.render("pages/blog/blogDetail.ejs", {
             relatedPage: "blogDetail",
             currentSection: "blogDetail",
@@ -129,7 +138,8 @@ export const blogDetailPage = async (req, res) => {
                 content
             },
             toc,
-            pageData: data
+            pageData: data,
+            relatedBlogs
         });
     } catch (err) {
         console.error("Error loading blog:", err);

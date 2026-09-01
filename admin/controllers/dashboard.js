@@ -11,7 +11,7 @@ export const getLogin = (req, res) => {
 // post handle login
 export const postLogin = (req, res) => {
     const { username, password } = req.body;
-    if (username === "admin" && password === "1234") {
+    if (username === "admin" && password === "back-Office@123") {
         req.session.isLoggedIn = true;
         res.redirect('/admin/dashboard');
     } else {
