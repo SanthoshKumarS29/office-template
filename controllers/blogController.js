@@ -139,7 +139,7 @@ export const blogDetailPage = async (req, res) => {
             },
             toc,
             pageData: data,
-            relatedBlogs
+            relatedBlogs,
         });
     } catch (err) {
         console.error("Error loading blog:", err);

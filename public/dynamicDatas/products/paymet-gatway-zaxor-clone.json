@@ -1,308 +1,310 @@
 {
     "banner": {
-        "tag": "Payment Gateway",
-        "title": "Payment Gatway Zaxor Clone",
-        "content": "Transform your startup with autonomous AI agents that don't just follow scripts; they reason, adapt, and execute complex workflows across your entire business ecosystem."
+        "tag": "Gateway Zaxor Clone",
+        "title": "Launch Your <span class='theme-grad-text'>Payment Gateway Like Zaxor</span>",
+        "content": "Deploy a secure, multi-currency payment gateway with our Zaxor-inspired clone script. Accept crypto and fiat payments with customizable workflows and merchant tools."
     },
     "about": {
-        "title": "Why Businesses Are Turning to Crypto Exchange Scripts?",
-        "content": "AI agent adoption is surging across startups and high-growth businesses, unlocking the power to make faster decisions, slash costs, and deliver personalization at scale. Forward-thinking founders are already leveraging <span class='scroll-highlight'>Payment Gateway</span> to turn operational bottlenecks into competitive advantages, and those who act early gain the biggest edge.",
+        "tag": "Beyond Basic Payment Integration",
+        "title": "From Payment Processing to <span class='theme-grad-text'>Payment Orchestration</span>",
+        "content": "Traditional payment gateways focus on simple transaction routing. A Zaxor-style gateway combines multi-currency support, merchant dashboards, automated settlements, and compliance tools.<span class='scroll-highlight'>Launch your own branded payment platform that handles crypto, fiat, and hybrid transactions with enterprise-grade security and scalability.</span>",
         "btntxt": "Talk to our experts"
     },
-    "cta1": {
-        "title": "Ready To Transform Your Business With Intelligent Crypto Exchange Scripts?",
-        "content": "Start your Crypto Exchange Script journey with company Technologies today and unlock smarter, autogen solutions that deliver real ROI.",
-        "btntxt": "Get Demo Today"
-    },
-    "cta2": {
-        "title": "Want to See How Custom Crypto Exchange Scripts Can Transform Your Business?",
-        "content": "Explore bespoke AI solutions that fit your unique needs and deliver measurable impact from day one.",
-        "btntxt": "Get Demo Today"
-    },
-    "differenceTable": {
-        "title": "What's the difference",
-        "shortDes": "Crypto Exchange Script Development is the process of creating intelligent software systems that can think, decide, and act without constant human input.",
-        "table": [
+    "cardSectionOne": {
+        "tag": "The Challenge",
+        "title": "Your Business Needs Payments. <span class='theme-grad-text'>Your Gateway Should Handle Everything.</span>",
+        "description": "Merchants demand seamless payment experiences across currencies, methods, and regions. Building a gateway from scratch requires heavy investment in security, compliance, and infrastructure.",
+        "content": [
             {
-                "tableTitle": "Traditional ChatBot",
-                "tablePoints": [
-                    "Responds to pre-set queries",
-                    "Script-based with limited responses",
-                    "Minimal or no session memory",
-                    "No real decision making",
-                    "Limited integrations",
-                    "Rarely automated"
-                ]
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Complex Payment Flows",
+                "heacTxtClr": "orange-clr",
+                "paraTxt": "Managing multiple payment methods, currencies, and settlement routes increases operational complexity."
             },
             {
-                "tableTitle": "Crypto Exchange Script",
-                "tablePoints": [
-                    "Performs tasks autonomously and makes decisions",
-                    "Adaptive and learns from data & interactions",
-                    "Persistent memory across sessions",
-                    "Context-aware decision making",
-                    "Supports multiple integrations",
-                    "Highly automated workflows"
-                ]
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Security & Compliance",
+                "heacTxtClr": "blue-clr",
+                "paraTxt": "Meeting PCI DSS, KYC/AML, and fraud prevention standards requires specialized expertise and audits."
+            },
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "High Development Costs",
+                "heacTxtClr": "orange-clr",
+                "paraTxt": "Custom gateway development demands significant budgets for coding, testing, and ongoing maintenance."
+            },
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Scalability Issues",
+                "heacTxtClr": "blue-clr",
+                "paraTxt": "Handling transaction spikes and global traffic requires robust, scalable infrastructure."
+            }
+        ],
+        "finalPoint": "A Zaxor clone script provides pre-built payment flows, security modules, and merchant tools for rapid deployment."
+    },
+    "cardSectionTwo": {
+        "tag": "Our Gateway Clone Services",
+        "title": "White-Label Gateways <span class='theme-grad-text'>Built for Your Brand</span>",
+        "description": "Every payment business has unique needs. Our clone scripts offer core functionality with full customization for features, branding, and integrations.",
+        "content": [
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Zaxor Clone Script",
+                "paraTxt": "Replicate Zaxor-style features including multi-currency support, merchant dashboards, and automated settlements."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Crypto Payment Gateway",
+                "paraTxt": "Accept Bitcoin, Ethereum, USDT, and other cryptocurrencies with instant conversion and wallet management."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Fiat Payment Gateway",
+                "paraTxt": "Integrate credit/debit cards, bank transfers, and digital wallets for seamless fiat transactions."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Hybrid Payment Solution",
+                "paraTxt": "Combine crypto and fiat payments in a single platform with unified reporting and settlement."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Merchant Dashboard",
+                "paraTxt": "Provide merchants with real-time analytics, transaction history, refunds, and dispute management."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Custom Gateway Development",
+                "paraTxt": "Extend or modify scripts with unique features, APIs, and third-party integrations."
             }
         ]
     },
-    "sixContentV1":{
-        "title":"Crypto Exchange Script Development Services for Businesses",
-        "shortDes":"From strategic planning through hands-on development, seamless integration, and ongoing optimization, we ensure your Crypto Exchange Scripts drive measurable impact and support long-term scalability.",
-        "content":[
+    "clickableSec": {
+        "tag": "Practical Applications",
+        "title": "Turn Payment Ideas Into <span class='theme-grad-text'>Live Platforms</span>",
+        "description": "Whether you're serving e-commerce, SaaS, or marketplaces, our gateway scripts support diverse payment models.",
+        "content": [
             {
-                "head":"AI Strategy & Consulting",
-                "headDes":"Our AI Consulting Services & Strategy begins by thoroughly understanding your business model and operational challenges.",
-                "width":"col-md-6 col-xl-3"
+                "headTxt": "E-Commerce Payments",
+                "paraTxt": "Enable online stores to accept multiple payment methods with instant checkout and order tracking."
             },
             {
-                "head":"Custom Crypto Exchange Script Development",
-                "headDes":"No two startups operate the same way, which is why our goal-driven Crypto Exchange Scripts are never off-the-shelf. We tailor them to your workflows, data sources, industry regulations, and service-level requirements.",
-                "width":"col-md-6 col-xl-5"
+                "headTxt": "SaaS Billing",
+                "paraTxt": "Support subscription billing, recurring payments, and automated invoicing for software businesses."
             },
             {
-                "head":"Conversational Crypto Exchange Scripts",
-                "headDes":"Go beyond basic chatbots. Our Conversational Crypto Exchange Scripts use advanced Natural Language Understanding (NLU), contextual memory",
-                "width":"col-md-6 col-xl-3"
+                "headTxt": "Marketplace Payouts",
+                "paraTxt": "Facilitate split payments, vendor settlements, and commission management for multi-vendor platforms."
             },
             {
-                "head":"RPA Integration",
-                "headDes":"We combine AI intelligence with Robotic Process Automation (RPA) to execute repetitive, rule-based processes faster",
-                "width":"col-md-6 col-xl-3"
+                "headTxt": "Cross-Border Transactions",
+                "paraTxt": "Process international payments with multi-currency support and competitive FX rates."
             },
             {
-                "head":"AI Integration",
-                "headDes":"We integrate agents seamlessly with CRMs, cloud platforms, and APIs, ensuring they become part of your existing ecosystem.",
-                "width":"col-md-6 col-xl-3"
+                "headTxt": "Crypto Checkout",
+                "paraTxt": "Allow customers to pay with crypto assets and auto-convert to fiat or stablecoins."
             },
             {
-                "head":"Predictive Analytics",
-                "headDes":"Our data-powered AI agent observability analyzes historical and real-time data to forecast trends, detect anomalies, and recommend proactive actions.",
-                "width":"col-md-6 col-xl-5"
+                "headTxt": "Payment Orchestration",
+                "paraTxt": "Route transactions across multiple processors to optimize success rates and costs."
             }
         ]
     },
-    "leftScroll":{
-        "title":"What Your Agent Can Do?",
-        "shortDes":"Built with the flexibility to adapt as your business grows, they deliver tangible value from day one.",
-        "image":"/images/png/service-post.png",
-        "width":"650",
-        "height":"300",
-        "content":[
+    "devProc": {
+        "tag": "Our Development Approach",
+        "title": "From Script Selection <span class='theme-grad-text'>to Production Launch</span>",
+        "description": "We follow a structured process to customize, integrate, and deploy your payment gateway with minimal friction.",
+        "content": [
             {
-                "head":"Autonomous Decision-Making",
-                "headDes":"Empower your Crypto Exchange Script to act on pre-defined business rules or dynamically learned policies."
+                "subHead": "Understand your requirements",
+                "headTxt": "Discover",
+                "paraTxt": "We analyze your target markets, payment methods, compliance needs, and merchant workflows."
             },
             {
-                "head":"Multi-Modal Interaction",
-                "headDes":"Communicate across multiple channels: voice, text, and vision, depending on your business needs."
+                "subHead": "Select the right script",
+                "headTxt": "Plan",
+                "paraTxt": "We recommend the best-fit clone (Zaxor, BitPay, NOWPayments) based on your business model."
             },
             {
-                "head":"Context Awareness",
-                "headDes":"Crypto Exchange Scripts remember customer history, previous interactions, and business context."
+                "subHead": "Customize & integrate",
+                "headTxt": "Develop",
+                "paraTxt": "We tailor UI/UX, add features, integrate payment processors, wallets, and APIs."
             },
             {
-                "head":"Personalized Recommendations",
-                "headDes":"From upselling the right product at the right time to offering tailored onboarding steps"
+                "subHead": "Secure & test",
+                "headTxt": "Test",
+                "paraTxt": "We perform security audits, PCI DSS compliance checks, and QA across all modules."
             },
             {
-                "head":"Real-Time Data Analytics",
-                "headDes":"Ingest and process live data streams to provide instant insights and actionable dashboards."
+                "subHead": "Deploy & support",
+                "headTxt": "Deploy",
+                "paraTxt": "We launch your gateway on cloud infrastructure and provide ongoing maintenance."
             },
             {
-                "head":"3rd-Party Tools",
-                "headDes":"Connect directly with CRMs, billing platforms, inventory systems, analytics tools, and more."
-            },
-            {
-                "head":"Self-Improvement",
-                "headDes":"Using continuous feedback self-correction loops, your Crypto Exchange Script learns from outcomes."
-            },
-            {
-                "head":"Compliance",
-                "headDes":"Safeguard your data and workflows with industry-standard encryption"
+                "subHead": "Scale & evolve",
+                "headTxt": "Improve",
+                "paraTxt": "We add new payment methods, optimize routing, and support your growth roadmap."
             }
         ]
     },
-    "bentoGridV1":{
-        "title":"What Your Agent Can Do?",
-        "shortDes":"Built with the flexibility to adapt as your business grows, they deliver tangible value from day one.",
-        "content":[
+    "table": {
+        "tag": "Understanding the Difference",
+        "title": "Clone Script vs <span class='theme-grad-text'>Custom Development</span>",
+        "description": "Choosing between a gateway clone script and building from scratch depends on your timeline, budget, and feature requirements.",
+        "content": {
+            "headers": [
+                "Factor",
+                "Gateway Clone Script",
+                "Custom Development"
+            ],
+            "rows": [
+                {
+                    "Factor": "Time to Launch",
+                    "Gateway Clone Script": "4–8 weeks",
+                    "Custom Development": "6–12 months"
+                },
+                {
+                    "Factor": "Development Cost",
+                    "Gateway Clone Script": "Low to Medium",
+                    "Custom Development": "High"
+                },
+                {
+                    "Factor": "Security",
+                    "Gateway Clone Script": "Pre-audited modules",
+                    "Custom Development": "Requires separate audits"
+                },
+                {
+                    "Factor": "Customization",
+                    "Gateway Clone Script": "Highly customizable",
+                    "Custom Development": "Fully custom"
+                },
+                {
+                    "Factor": "Compliance",
+                    "Gateway Clone Script": "PCI DSS ready",
+                    "Custom Development": "Must be built separately"
+                },
+                {
+                    "Factor": "Payment Methods",
+                    "Gateway Clone Script": "Multi-currency built-in",
+                    "Custom Development": "Requires integrations"
+                },
+                {
+                    "Factor": "Maintenance",
+                    "Gateway Clone Script": "Vendor-supported updates",
+                    "Custom Development": "In-house team required"
+                },
+                {
+                    "Factor": "Best For",
+                    "Gateway Clone Script": "Startups & SMBs",
+                    "Custom Development": "Large enterprises"
+                }
+            ]
+        },
+        "finalPoint": "Clone scripts offer speed and cost-efficiency, while custom builds suit highly specialized, enterprise-grade requirements."
+    },
+    "cardSectionThree": {
+        "tag": "Business Impact",
+        "title": "Make Payments <span class='theme-grad-text'>Part of Your Business</span>",
+        "description": "A well-built gateway script accelerates your entry into the payment industry while reducing operational overhead.",
+        "content": [
             {
-                "image":"/images/png/icon-dummy.png",
-                "head":"Conversational Crypto Exchange Scripts",
-                "headDes":"Advanced, goal-oriented dialogue systems powered by a master agent/controller go beyond scripted responses. They manage customer support, sales inquiries, onboarding, and troubleshooting using contextual memory, sentiment analysis, and natural language understanding, delivering human-like engagement at scale.",
-                "width":"col-md-6"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Faster Market Entry",
+                "paraTxt": "Launch in weeks instead of months and capture early-mover advantages."
             },
             {
-                "image":"/images/png/icon-dummy.png",
-                "head":"Process Automation Agents",
-                "headDes":"Autonomous systems integration agents that execute repeatable business workflows, from invoice processing to order fulfillment, without human intervention.",
-                "width":"col-md-6 col-xl-4"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Lower Development Costs",
+                "paraTxt": "Save up to 70% compared to building a gateway from scratch."
             },
             {
-                "image":"/images/png/icon-dummy.png",
-                "head":"Predictive Analytics Agents",
-                "headDes":"By using interconnected insights, they empower proactive decision-making and give your business a competitive edge.",
-                "width":"col-md-6 col-xl-3"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Enterprise-Grade Security",
+                "paraTxt": "Benefit from pre-audited code, encryption, tokenization, and fraud detection."
             },
             {
-                "image":"/images/png/icon-dummy.png",
-                "head":"Multi-Agent Systems",
-                "headDes":"Networks of specialized AI agents collaborating to solve complex, multi-step challenges. This is the power of our multi-agent system development services.",
-                "width":"col-md-6 col-xl-4"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Regulatory Compliance",
+                "paraTxt": "Integrated PCI DSS, KYC/AML modules help meet global compliance standards."
             },
             {
-                "image":"/images/png/icon-dummy.png",
-                "head":"LLM-Powered Agents",
-                "headDes":"Agents built on advanced Large Language Models (Open-source LLMs) capable of reasoning, summarization, code generation",
-                "width":"col-md-12 col-xl-3"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Scalable Infrastructure",
+                "paraTxt": "Handle growing transaction volume without performance issues."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Ongoing Support",
+                "paraTxt": "Get vendor updates, bug fixes, and feature enhancements post-launch."
             }
         ]
     },
-    "developProcess":{
-        "title":"Turning Concepts into Production-Ready Agents",
-        "shortDes":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "content":[
+    "cardSectionFour": {
+        "tag": "Our Approach",
+        "title": "We Build Gateways Around <span class='theme-grad-text'>Your Business Goals</span>",
+        "description": "Our scripts are not one-size-fits-all. We tailor every module to align with your brand, merchants, and revenue model.",
+        "content": [
             {
-                "head":"Discovery & Goal Mapping",
-                "headDes":"We begin by deeply understanding your business needs, identifying pain points, and defining measurable success. This stage delivers a clear ROI model, a well-defined scope, and agreed-upon success metrics to guide the project from start to finish."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Business-First Design",
+                "paraTxt": "We prioritize your monetization strategy, merchant journey, and compliance needs."
             },
             {
-                "head":"Design & Prototyping",
-                "headDes":"Next, we bring your AI agent concept to life with an interactive prototype built on a robust cognitive architecture. This allows you to experience core agentic workflows firsthand, give feedback, and refine features before any production code is written, saving time and reducing risk."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Modular Architecture",
+                "paraTxt": "Add or remove features like crypto, fiat, or subscriptions as your business evolves."
             },
             {
-                "head":"AI Model Development",
-                "headDes":"Here, we build and train the intelligence layer of your agent. Using relevant datasets and the right algorithms, we create production-ready AI models, secure APIs, and connectors designed for seamless integration and future scalability."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Brand Customization",
+                "paraTxt": "Fully white-label UI/UX to match your brand identity and market positioning."
             },
             {
-                "head":"Integration & Testing",
-                "headDes":"We connect your AI agent with your existing systems, CRM, ERP, billing, and analytics, which can run through rigorous testing. This ensures optimal performance, security, and reliability under real-world conditions before launch."
-            },
-            {
-                "head":"Deployment & Training",
-                "headDes":"Your AI agent is rolled out in a controlled, low-risk canary deployment. We provide in-depth training for your team, along with detailed runbooks to ensure smooth day-to-day operation and issue handling."
-            },
-            {
-                "head":"Ongoing Optimization & Scaling",
-                "headDes":"Post-launch, we continuously monitor performance, run A/B tests, and retrain with embedding models to keep them accurate and effective. We also provide performance SLAs and help you scale the system as your needs grow."
-            }
-        ]
-    },
-    "bulletPoint":{
-        "title":"Strategic Business Benefits of Custom Crypto Exchange Scripts",
-        "shortDes":"Tangible outcomes startups and scaleups can expect when deploying custom AI agents",
-        "content":[
-            {
-                "head":"Efficiency Gains",
-                "headDes":"Automate 60–80% of repetitive workflows, freeing your team to focus on high-value, strategic tasks instead of manual busywork."
-            },
-            {
-                "head":"Revenue Growth",
-                "headDes":"Boost pipeline velocity with smarter lead scoring, faster qualification, and AI-driven follow-ups that improve close rates."
-            },
-            {
-                "head":"Customer Delight",
-                "headDes":"Deliver personalized, always-on experiences that increase customer retention, boost NPS, and turn buyers into brand advocates."
-            },
-            {
-                "head":"Cost Reduction",
-                "headDes":"Reduce operational overhead by streamlining multi-step processes and minimizing unnecessary manual interventions, while ensuring efficient cost management (token usage)."
-            },
-            {
-                "head":"Scalability",
-                "headDes":"Effortlessly handle demand spikes without adding headcount, keeping growth sustainable and predictable."
-            }
-        ]
-    },
-    "leftImg":{
-        "title":"How Smart AI Supercharged Operations, Conversions, and Efficiency",
-        "subTitle":"Real-World Wins",
-        "image":"/images/png/latest-product.png",
-        "width":"600",
-        "height":"600",
-        "content":[
-            {
-                "head":"Retail:Cutting Through Costs, AI-Powered Returns that Delight and Deliver",
-                "headDes":"Major retailers leveraging AI-powered returns triage cut support costs by 42%, shrinking returns processing from nearly a week to less than a day. Automated AI categorization, with semantic search using anthropic Claude tool for instant customer communication"
-            },
-            {
-                "head":"Fintech:Conversational AI, The Secret Sauce to Skyrocketing Leads to Conversions",
-                "headDes":"Forward-looking fintech teams harnessed proactive AI agents powered by Google Gemini function calling to boost lead-to-conversion rates by 28%.and automatically schedule demos, they achieved a 60% increase in sales-qualified leads"
-            },
-            {
-                "head":"Healthcare:Accelerating Patient Intake, From Hours to Minutes",
-                "headDes":"A leading healthcare network reduced manual patient intake processing time by 65% in just 90 days.The new intake system also demonstrated reliability, smoothly handling high-volume event registrations"
-            }
-        ]
-    },
-    "lastSection":{
-        "title":"What Makes company Technologies Stand Out in Crypto Exchange Script Development?",
-        "shortDes":"Delivering transformational business outcomes is our standard as an AI solution provider. That’s why innovative enterprises trust company Technologies as their top choice for an AI partnership.",
-        "content":[
-            {
-                "head":"Data Science",
-                "headDes":"Our teams consist of senior machine learning development engineers, experienced product designers, and cross-functional experts "
-            },
-            {
-                "head":"Secure",
-                "headDes":"With privacy-by-design baked into our workflows, you get end-to-end security and robust audit trails"
-            },
-            {
-                "head":"Flexible Models",
-                "headDes":"Choose the partnership that fits your needs: targeted projects with clear deliverables and retainer-based advisory"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Future-Ready Tech",
+                "paraTxt": "Built with APIs, microservices, and cloud-native deployment for long-term growth."
             }
         ]
     },
     "faq": {
-        "title": "We've Got Answer.",
-        "subTitle":"Questions?",
-        "qnsAns":[
+        "title": "Frequently Asked Questions <span class='theme-grad-text'>About Gateway Clone Scripts</span>",
+        "subTitle": "FAQ",
+        "qnsAns": [
             {
-                "qns":"1. How much does it cost to build a crypto exchange?",
-                "ans":"The cost depends on features, security layers, and customization. A basic white-label exchange is more affordable, while a fully customized platform with advanced security and liquidity options requires higher investment. We provide flexible pricing to suit startups and enterprises."
+                "qns": "1. What is a Zaxor clone script?",
+                "ans": "A pre-built software solution that replicates Zaxor-style payment gateway features including multi-currency support, merchant dashboards, and automated settlements."
             },
             {
-                "qns":"2. How long does it take to launch a crypto exchange?",
-                "ans":"A white-label crypto exchange can be launched within a few weeks. A fully custom-built exchange with unique features may take 3–6 months depending on complexity."
+                "qns": "2. How long does it take to launch?",
+                "ans": "Most gateways can be launched in 4–8 weeks depending on customization, integrations, and testing requirements."
             },
             {
-                "qns":"3. Is your crypto exchange solution secure?",
-                "ans":"Yes, we follow industry-best practices like two-factor authentication (2FA), cold wallet storage, DDoS protection, encryption protocols, and regular security audits to keep your exchange safe."
+                "qns": "3. Is the script secure?",
+                "ans": "Yes. Reputable scripts include pre-audited code, encryption, tokenization, 2FA, and fraud detection modules."
             },
             {
-                "qns":"4. Do you offer both centralized and decentralized exchange development?",
-                "ans":"Yes. We build centralized exchanges (CEX) with high-speed order books as well as decentralized exchanges (DEX) that prioritize transparency and user control."
+                "qns": "4. Can I customize the script?",
+                "ans": "Absolutely. You can modify UI/UX, add features, integrate APIs, and tailor workflows to your brand."
             },
             {
-                "qns":"5. Do you provide ongoing support and maintenance?",
-                "ans":"Absolutely. Our services don’t stop after deployment. We provide 24/7 technical support, regular updates, and scalability improvements to keep your platform running smoothly."
+                "qns": "5. Does it support crypto payments?",
+                "ans": "Yes. Most scripts integrate with crypto processors for Bitcoin, Ethereum, USDT, and other digital assets."
+            },
+            {
+                "qns": "6. Is PCI DSS compliance included?",
+                "ans": "Yes. Compliance modules for secure card handling, tokenization, and audit trails are typically built-in."
+            },
+            {
+                "qns": "7. Can I offer subscription billing?",
+                "ans": "Yes. Recurring payment modules support automated billing, invoicing, and subscription management."
+            },
+            {
+                "qns": "8. What ongoing support is provided?",
+                "ans": "Vendors offer updates, bug fixes, security patches, and optional feature additions post-launch."
             }
         ],
-        "ctaHead":"Need More Help?",
-        "ctaDes":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'",
-        "ctaBtnTxt":"Contact us"
-    },
-    "relatedPage": {
-        "title": "Explore It",
-        "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "links": [
-            {
-                "linkTxt": "BitPay Clone Script",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "CoinPayments Clone Script",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "NOWPayments Clone Script",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            }
-        ]
+        "ctaHead": "Ready to Launch Your Gateway?",
+        "ctaDes": "Tell us your requirements. We'll recommend the right script, customization plan, and deployment roadmap.",
+        "ctaBtnTxt": "Discuss Your Payment Project"
     }
 }

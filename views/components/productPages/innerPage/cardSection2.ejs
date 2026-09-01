@@ -1,0 +1,26 @@
+<section>
+    <div class="py-5">
+        <div class="row justify-content-between g-3 text-center text-xl-start">
+            <div class="col-xl-4">
+                <div class="flex-y align-items-center gap-2 align-items-xl-start">
+                    <p class="ip-higlighter fw-bold mb-0"><%= page.cardSectionTwo.tag %></p>
+                    <h2 class="head-txt-h2 mb-3"><%- page.cardSectionTwo.title %></h2>
+                </div>
+            </div>
+            <div class="col-xl-7">
+                <p class="para-txt-head mb-0"><%= page.cardSectionTwo.description %></p>
+            </div>
+        </div>
+        <div class="row justify-content-center g-4 pt-4">
+            <% page.cardSectionTwo.content.forEach(conts => { %>
+                <div class="<%= conts.width %>">
+                    <div class="ip-cardSectionTwo">
+                        <div class="ip-cst-scoop"></div>
+                        <h3 class="card-txt-h"><%= conts.headTxt %></h3>
+                        <p class="card-txt-p"><%- conts.paraTxt %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</section>
