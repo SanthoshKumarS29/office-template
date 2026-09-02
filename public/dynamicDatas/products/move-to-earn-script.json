@@ -1,308 +1,310 @@
 {
     "banner": {
-        "tag": "Game Clone Script",
-        "title": "Move-to-Earn (M2E) Games",
-        "content": "Transform your startup with autonomous AI agents that don't just follow scripts; they reason, adapt, and execute complex workflows across your entire business ecosystem."
+        "tag": "Move-to-Earn (M2E) Games",
+        "title": "Launch Your <span class='theme-grad-text'>Move-to-Earn Fitness Game</span>",
+        "content": "Deploy a blockchain-powered M2E game that rewards users for walking, running, and exercising. Support NFT assets, token rewards, and social features with full white-label customization."
     },
     "about": {
-        "title": "Why Businesses Are Turning to Crypto Exchange Scripts?",
-        "content": "AI agent adoption is surging across startups and high-growth businesses, unlocking the power to make faster decisions, slash costs, and deliver personalization at scale. Forward-thinking founders are already leveraging <span class='scroll-highlight'>AI agent development</span> to turn operational bottlenecks into competitive advantages, and those who act early gain the biggest edge.",
+        "tag": "Beyond Traditional Fitness Apps",
+        "title": "From Tracking Steps to <span class='theme-grad-text'>Earning Crypto</span>",
+        "content": "Traditional fitness apps focus on health metrics and workout tracking. Move-to-Earn games combine physical activity with blockchain rewards, NFT collectibles, and gamified experiences.<span class='scroll-highlight'>Launch your own M2E platform that motivates users to stay active while earning cryptocurrency tokens and trading digital assets in a decentralized ecosystem.</span>",
         "btntxt": "Talk to our experts"
     },
-    "cta1": {
-        "title": "Ready To Transform Your Business With Intelligent Crypto Exchange Scripts?",
-        "content": "Start your Crypto Exchange Script journey with company Technologies today and unlock smarter, autogen solutions that deliver real ROI.",
-        "btntxt": "Get Demo Today"
-    },
-    "cta2": {
-        "title": "Want to See How Custom Crypto Exchange Scripts Can Transform Your Business?",
-        "content": "Explore bespoke AI solutions that fit your unique needs and deliver measurable impact from day one.",
-        "btntxt": "Get Demo Today"
-    },
-    "differenceTable": {
-        "title": "What's the difference",
-        "shortDes": "Crypto Exchange Script Development is the process of creating intelligent software systems that can think, decide, and act without constant human input.",
-        "table": [
+    "cardSectionOne": {
+        "tag": "The Challenge",
+        "title": "Your Users Want Motivation. <span class='theme-grad-text'>Your Game Should Reward Movement.</span>",
+        "description": "Fitness apps struggle with user retention and engagement. Traditional reward systems lack real value. Building an M2E game from scratch requires blockchain expertise, tokenomics design, and anti-cheat systems.",
+        "content": [
             {
-                "tableTitle": "Traditional ChatBot",
-                "tablePoints": [
-                    "Responds to pre-set queries",
-                    "Script-based with limited responses",
-                    "Minimal or no session memory",
-                    "No real decision making",
-                    "Limited integrations",
-                    "Rarely automated"
-                ]
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Low User Retention",
+                "heacTxtClr": "orange-clr",
+                "paraTxt": "Most fitness apps fail to keep users motivated beyond the first few weeks of use."
             },
             {
-                "tableTitle": "Crypto Exchange Script",
-                "tablePoints": [
-                    "Performs tasks autonomously and makes decisions",
-                    "Adaptive and learns from data & interactions",
-                    "Persistent memory across sessions",
-                    "Context-aware decision making",
-                    "Supports multiple integrations",
-                    "Highly automated workflows"
-                ]
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Complex Tokenomics",
+                "heacTxtClr": "blue-clr",
+                "paraTxt": "Designing sustainable reward systems and token economies requires specialized blockchain knowledge."
+            },
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Cheating & Fraud",
+                "heacTxtClr": "orange-clr",
+                "paraTxt": "GPS spoofing and fake movement data can undermine game integrity and token value."
+            },
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "High Development Costs",
+                "heacTxtClr": "blue-clr",
+                "paraTxt": "Custom M2E development demands significant budgets for blockchain, mobile apps, and security."
+            }
+        ],
+        "finalPoint": "An M2E clone script provides pre-built tokenomics, anti-cheat systems, and NFT marketplace integration for rapid deployment."
+    },
+    "cardSectionTwo": {
+        "tag": "Our M2E Game Services",
+        "title": "White-Label M2E Games <span class='theme-grad-text'>Built for Your Brand</span>",
+        "description": "Every M2E project has unique needs. Our clone scripts offer core functionality with full customization for features, branding, and integrations.",
+        "content": [
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "STEPN Clone Script",
+                "paraTxt": "Replicate STEPN features including NFT sneakers, GST/GMT tokens, and marketplace trading."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Step App Clone",
+                "paraTxt": "Build a fitness metaverse with STEP tokens, health records, and AI-powered workouts."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Genopet Clone Script",
+                "paraTxt": "Create NFT pet battles combined with movement tracking and DNA-based evolution mechanics."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Sweatcoin Clone",
+                "paraTxt": "Launch a free-to-play M2E app rewarding steps with SWEAT tokens and digital products."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Custom M2E Development",
+                "paraTxt": "Extend or modify scripts with unique features, game modes, and third-party integrations."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "NFT Marketplace Integration",
+                "paraTxt": "Enable in-game trading of sneakers, badges, gems, and other digital collectibles."
             }
         ]
     },
-    "sixContentV1":{
-        "title":"Crypto Exchange Script Development Services for Businesses",
-        "shortDes":"From strategic planning through hands-on development, seamless integration, and ongoing optimization, we ensure your Crypto Exchange Scripts drive measurable impact and support long-term scalability.",
-        "content":[
+    "clickableSec": {
+        "tag": "Practical Applications",
+        "title": "Turn Fitness Ideas Into <span class='theme-grad-text'>Live M2E Games</span>",
+        "description": "Whether you're targeting runners, cyclists, or gym-goers, our M2E scripts support diverse fitness models.",
+        "content": [
             {
-                "head":"AI Strategy & Consulting",
-                "headDes":"Our AI Consulting Services & Strategy begins by thoroughly understanding your business model and operational challenges.",
-                "width":"col-md-6 col-xl-3"
+                "headTxt": "Walking & Running Rewards",
+                "paraTxt": "Track outdoor movement via GPS and reward users with tokens per step or distance covered."
             },
             {
-                "head":"Custom Crypto Exchange Script Development",
-                "headDes":"No two startups operate the same way, which is why our goal-driven Crypto Exchange Scripts are never off-the-shelf. We tailor them to your workflows, data sources, industry regulations, and service-level requirements.",
-                "width":"col-md-6 col-xl-5"
+                "headTxt": "NFT Sneaker System",
+                "paraTxt": "Allow users to buy, upgrade, and trade NFT sneakers with different attributes and earning rates."
             },
             {
-                "head":"Conversational Crypto Exchange Scripts",
-                "headDes":"Go beyond basic chatbots. Our Conversational Crypto Exchange Scripts use advanced Natural Language Understanding (NLU), contextual memory",
-                "width":"col-md-6 col-xl-3"
+                "headTxt": "Token Staking & Governance",
+                "paraTxt": "Enable users to stake tokens for rewards and participate in platform governance decisions."
             },
             {
-                "head":"RPA Integration",
-                "headDes":"We combine AI intelligence with Robotic Process Automation (RPA) to execute repetitive, rule-based processes faster",
-                "width":"col-md-6 col-xl-3"
+                "headTxt": "Quest & Achievement System",
+                "paraTxt": "Create daily challenges, milestones, and achievement badges to boost engagement."
             },
             {
-                "head":"AI Integration",
-                "headDes":"We integrate agents seamlessly with CRMs, cloud platforms, and APIs, ensuring they become part of your existing ecosystem.",
-                "width":"col-md-6 col-xl-3"
+                "headTxt": "Social Fitness Features",
+                "paraTxt": "Add leaderboards, team challenges, and social sharing to build community engagement."
             },
             {
-                "head":"Predictive Analytics",
-                "headDes":"Our data-powered AI agent observability analyzes historical and real-time data to forecast trends, detect anomalies, and recommend proactive actions.",
-                "width":"col-md-6 col-xl-5"
+                "headTxt": "Fiat On-Ramp Integration",
+                "paraTxt": "Let users buy NFTs and tokens with credit cards and bank transfers for easy onboarding."
             }
         ]
     },
-    "leftScroll":{
-        "title":"What Your Agent Can Do?",
-        "shortDes":"Built with the flexibility to adapt as your business grows, they deliver tangible value from day one.",
-        "image":"/images/png/service-post.png",
-        "width":"650",
-        "height":"300",
-        "content":[
+    "devProc": {
+        "tag": "Our Development Approach",
+        "title": "From Concept Design <span class='theme-grad-text'>to App Store Launch</span>",
+        "description": "We follow a structured process to customize, integrate, and deploy your M2E game with minimal friction.",
+        "content": [
             {
-                "head":"Autonomous Decision-Making",
-                "headDes":"Empower your Crypto Exchange Script to act on pre-defined business rules or dynamically learned policies."
+                "subHead": "Understand your requirements",
+                "headTxt": "Discover",
+                "paraTxt": "We analyze your target users, tokenomics, NFT mechanics, and compliance needs."
             },
             {
-                "head":"Multi-Modal Interaction",
-                "headDes":"Communicate across multiple channels: voice, text, and vision, depending on your business needs."
+                "subHead": "Select the right script",
+                "headTxt": "Plan",
+                "paraTxt": "We recommend the best-fit clone (STEPN, Step App, Genopet) based on your goals."
             },
             {
-                "head":"Context Awareness",
-                "headDes":"Crypto Exchange Scripts remember customer history, previous interactions, and business context."
+                "subHead": "Customize & integrate",
+                "headTxt": "Develop",
+                "paraTxt": "We tailor UI/UX, add features, integrate wallets, DEXs, and payment gateways."
             },
             {
-                "head":"Personalized Recommendations",
-                "headDes":"From upselling the right product at the right time to offering tailored onboarding steps"
+                "subHead": "Secure & test",
+                "headTxt": "Test",
+                "paraTxt": "We perform security audits, anti-cheat testing, and QA across all modules."
             },
             {
-                "head":"Real-Time Data Analytics",
-                "headDes":"Ingest and process live data streams to provide instant insights and actionable dashboards."
+                "subHead": "Deploy & support",
+                "headTxt": "Deploy",
+                "paraTxt": "We publish your app on iOS and Android stores and provide ongoing maintenance."
             },
             {
-                "head":"3rd-Party Tools",
-                "headDes":"Connect directly with CRMs, billing platforms, inventory systems, analytics tools, and more."
-            },
-            {
-                "head":"Self-Improvement",
-                "headDes":"Using continuous feedback self-correction loops, your Crypto Exchange Script learns from outcomes."
-            },
-            {
-                "head":"Compliance",
-                "headDes":"Safeguard your data and workflows with industry-standard encryption"
+                "subHead": "Scale & evolve",
+                "headTxt": "Improve",
+                "paraTxt": "We add new game modes, NFTs, and optimizations to support your growth roadmap."
             }
         ]
     },
-    "bentoGridV1":{
-        "title":"What Your Agent Can Do?",
-        "shortDes":"Built with the flexibility to adapt as your business grows, they deliver tangible value from day one.",
-        "content":[
+    "table": {
+        "tag": "Understanding the Difference",
+        "title": "Clone Script vs <span class='theme-grad-text'>Custom Development</span>",
+        "description": "Choosing between an M2E clone script and building from scratch depends on your timeline, budget, and feature requirements.",
+        "content": {
+            "headers": [
+                "Factor",
+                "M2E Clone Script",
+                "Custom Development"
+            ],
+            "rows": [
+                {
+                    "Factor": "Time to Launch",
+                    "M2E Clone Script": "4–8 weeks",
+                    "Custom Development": "6–12 months"
+                },
+                {
+                    "Factor": "Development Cost",
+                    "M2E Clone Script": "$15k–$40k",
+                    "Custom Development": "$100k–$500k+"
+                },
+                {
+                    "Factor": "Tokenomics",
+                    "M2E Clone Script": "Pre-designed models",
+                    "Custom Development": "Requires separate design"
+                },
+                {
+                    "Factor": "NFT System",
+                    "M2E Clone Script": "Built-in marketplace",
+                    "Custom Development": "Requires integrations"
+                },
+                {
+                    "Factor": "Anti-Cheat",
+                    "M2E Clone Script": "GPS validation included",
+                    "Custom Development": "Must be built separately"
+                },
+                {
+                    "Factor": "Customization",
+                    "M2E Clone Script": "Highly customizable",
+                    "Custom Development": "Fully custom"
+                },
+                {
+                    "Factor": "Maintenance",
+                    "M2E Clone Script": "Vendor-supported updates",
+                    "Custom Development": "In-house team required"
+                },
+                {
+                    "Factor": "Best For",
+                    "M2E Clone Script": "Startups & SMBs",
+                    "Custom Development": "Large enterprises"
+                }
+            ]
+        },
+        "finalPoint": "Clone scripts offer speed and cost-efficiency, while custom builds suit highly specialized, enterprise-grade requirements."
+    },
+    "cardSectionThree": {
+        "tag": "Business Impact",
+        "title": "Make Fitness Fun <span class='theme-grad-text'>With Crypto Rewards</span>",
+        "description": "A well-built M2E game accelerates your entry into the GameFi market while reducing operational overhead.",
+        "content": [
             {
-                "image":"/images/png/icon-dummy.png",
-                "head":"Conversational Crypto Exchange Scripts",
-                "headDes":"Advanced, goal-oriented dialogue systems powered by a master agent/controller go beyond scripted responses. They manage customer support, sales inquiries, onboarding, and troubleshooting using contextual memory, sentiment analysis, and natural language understanding, delivering human-like engagement at scale.",
-                "width":"col-md-6"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Faster Market Entry",
+                "paraTxt": "Launch in weeks instead of months and capture early-mover advantages."
             },
             {
-                "image":"/images/png/icon-dummy.png",
-                "head":"Process Automation Agents",
-                "headDes":"Autonomous systems integration agents that execute repeatable business workflows, from invoice processing to order fulfillment, without human intervention.",
-                "width":"col-md-6 col-xl-4"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Lower Development Costs",
+                "paraTxt": "Save up to 75% compared to building an M2E game from scratch."
             },
             {
-                "image":"/images/png/icon-dummy.png",
-                "head":"Predictive Analytics Agents",
-                "headDes":"By using interconnected insights, they empower proactive decision-making and give your business a competitive edge.",
-                "width":"col-md-6 col-xl-3"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Proven Tokenomics",
+                "paraTxt": "Benefit from battle-tested reward systems and sustainable token economies."
             },
             {
-                "image":"/images/png/icon-dummy.png",
-                "head":"Multi-Agent Systems",
-                "headDes":"Networks of specialized AI agents collaborating to solve complex, multi-step challenges. This is the power of our multi-agent system development services.",
-                "width":"col-md-6 col-xl-4"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "High User Engagement",
+                "paraTxt": "Crypto rewards and NFT collectibles drive retention and daily active users."
             },
             {
-                "image":"/images/png/icon-dummy.png",
-                "head":"LLM-Powered Agents",
-                "headDes":"Agents built on advanced Large Language Models (Open-source LLMs) capable of reasoning, summarization, code generation",
-                "width":"col-md-12 col-xl-3"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "App Store Deployment",
+                "paraTxt": "Get iOS and Android apps published with compliance support and guidelines."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Ongoing Support",
+                "paraTxt": "Get vendor updates, bug fixes, and feature enhancements post-launch."
             }
         ]
     },
-    "developProcess":{
-        "title":"Turning Concepts into Production-Ready Agents",
-        "shortDes":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "content":[
+    "cardSectionFour": {
+        "tag": "Our Approach",
+        "title": "We Build M2E Games Around <span class='theme-grad-text'>Your Business Goals</span>",
+        "description": "Our scripts are not one-size-fits-all. We tailor every module to align with your brand, users, and revenue model.",
+        "content": [
             {
-                "head":"Discovery & Goal Mapping",
-                "headDes":"We begin by deeply understanding your business needs, identifying pain points, and defining measurable success. This stage delivers a clear ROI model, a well-defined scope, and agreed-upon success metrics to guide the project from start to finish."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Business-First Design",
+                "paraTxt": "We prioritize your monetization strategy, user journey, and token sustainability."
             },
             {
-                "head":"Design & Prototyping",
-                "headDes":"Next, we bring your AI agent concept to life with an interactive prototype built on a robust cognitive architecture. This allows you to experience core agentic workflows firsthand, give feedback, and refine features before any production code is written, saving time and reducing risk."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Modular Architecture",
+                "paraTxt": "Add or remove features like NFTs, staking, or social features as your business evolves."
             },
             {
-                "head":"AI Model Development",
-                "headDes":"Here, we build and train the intelligence layer of your agent. Using relevant datasets and the right algorithms, we create production-ready AI models, secure APIs, and connectors designed for seamless integration and future scalability."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Brand Customization",
+                "paraTxt": "Fully white-label UI/UX to match your brand identity and market positioning."
             },
             {
-                "head":"Integration & Testing",
-                "headDes":"We connect your AI agent with your existing systems, CRM, ERP, billing, and analytics, which can run through rigorous testing. This ensures optimal performance, security, and reliability under real-world conditions before launch."
-            },
-            {
-                "head":"Deployment & Training",
-                "headDes":"Your AI agent is rolled out in a controlled, low-risk canary deployment. We provide in-depth training for your team, along with detailed runbooks to ensure smooth day-to-day operation and issue handling."
-            },
-            {
-                "head":"Ongoing Optimization & Scaling",
-                "headDes":"Post-launch, we continuously monitor performance, run A/B tests, and retrain with embedding models to keep them accurate and effective. We also provide performance SLAs and help you scale the system as your needs grow."
-            }
-        ]
-    },
-    "bulletPoint":{
-        "title":"Strategic Business Benefits of Custom Crypto Exchange Scripts",
-        "shortDes":"Tangible outcomes startups and scaleups can expect when deploying custom AI agents",
-        "content":[
-            {
-                "head":"Efficiency Gains",
-                "headDes":"Automate 60–80% of repetitive workflows, freeing your team to focus on high-value, strategic tasks instead of manual busywork."
-            },
-            {
-                "head":"Revenue Growth",
-                "headDes":"Boost pipeline velocity with smarter lead scoring, faster qualification, and AI-driven follow-ups that improve close rates."
-            },
-            {
-                "head":"Customer Delight",
-                "headDes":"Deliver personalized, always-on experiences that increase customer retention, boost NPS, and turn buyers into brand advocates."
-            },
-            {
-                "head":"Cost Reduction",
-                "headDes":"Reduce operational overhead by streamlining multi-step processes and minimizing unnecessary manual interventions, while ensuring efficient cost management (token usage)."
-            },
-            {
-                "head":"Scalability",
-                "headDes":"Effortlessly handle demand spikes without adding headcount, keeping growth sustainable and predictable."
-            }
-        ]
-    },
-    "leftImg":{
-        "title":"How Smart AI Supercharged Operations, Conversions, and Efficiency",
-        "subTitle":"Real-World Wins",
-        "image":"/images/png/latest-product.png",
-        "width":"600",
-        "height":"600",
-        "content":[
-            {
-                "head":"Retail:Cutting Through Costs, AI-Powered Returns that Delight and Deliver",
-                "headDes":"Major retailers leveraging AI-powered returns triage cut support costs by 42%, shrinking returns processing from nearly a week to less than a day. Automated AI categorization, with semantic search using anthropic Claude tool for instant customer communication"
-            },
-            {
-                "head":"Fintech:Conversational AI, The Secret Sauce to Skyrocketing Leads to Conversions",
-                "headDes":"Forward-looking fintech teams harnessed proactive AI agents powered by Google Gemini function calling to boost lead-to-conversion rates by 28%.and automatically schedule demos, they achieved a 60% increase in sales-qualified leads"
-            },
-            {
-                "head":"Healthcare:Accelerating Patient Intake, From Hours to Minutes",
-                "headDes":"A leading healthcare network reduced manual patient intake processing time by 65% in just 90 days.The new intake system also demonstrated reliability, smoothly handling high-volume event registrations"
-            }
-        ]
-    },
-    "lastSection":{
-        "title":"What Makes company Technologies Stand Out in Crypto Exchange Script Development?",
-        "shortDes":"Delivering transformational business outcomes is our standard as an AI solution provider. That’s why innovative enterprises trust company Technologies as their top choice for an AI partnership.",
-        "content":[
-            {
-                "head":"Data Science",
-                "headDes":"Our teams consist of senior machine learning development engineers, experienced product designers, and cross-functional experts "
-            },
-            {
-                "head":"Secure",
-                "headDes":"With privacy-by-design baked into our workflows, you get end-to-end security and robust audit trails"
-            },
-            {
-                "head":"Flexible Models",
-                "headDes":"Choose the partnership that fits your needs: targeted projects with clear deliverables and retainer-based advisory"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Future-Ready Tech",
+                "paraTxt": "Built with multi-chain support, WalletConnect, and cross-platform compatibility for long-term growth."
             }
         ]
     },
     "faq": {
-        "title": "We've Got Answer.",
-        "subTitle":"Questions?",
-        "qnsAns":[
+        "title": "Frequently Asked Questions <span class='theme-grad-text'>About M2E Game Development</span>",
+        "subTitle": "FAQ",
+        "qnsAns": [
             {
-                "qns":"1. How much does it cost to build a crypto exchange?",
-                "ans":"The cost depends on features, security layers, and customization. A basic white-label exchange is more affordable, while a fully customized platform with advanced security and liquidity options requires higher investment. We provide flexible pricing to suit startups and enterprises."
+                "qns": "1. What is a Move-to-Earn game?",
+                "ans": "A blockchain-powered fitness app that rewards users with cryptocurrency tokens and NFTs for physical activities like walking, running, or exercising."
             },
             {
-                "qns":"2. How long does it take to launch a crypto exchange?",
-                "ans":"A white-label crypto exchange can be launched within a few weeks. A fully custom-built exchange with unique features may take 3–6 months depending on complexity."
+                "qns": "2. How long does it take to launch?",
+                "ans": "Most M2E games can be launched in 4–8 weeks depending on customization, integrations, and app store approval."
             },
             {
-                "qns":"3. Is your crypto exchange solution secure?",
-                "ans":"Yes, we follow industry-best practices like two-factor authentication (2FA), cold wallet storage, DDoS protection, encryption protocols, and regular security audits to keep your exchange safe."
+                "qns": "3. Is the script secure?",
+                "ans": "Yes. Reputable scripts include GPS validation, anti-cheat systems, smart contract audits, and secure wallet integration."
             },
             {
-                "qns":"4. Do you offer both centralized and decentralized exchange development?",
-                "ans":"Yes. We build centralized exchanges (CEX) with high-speed order books as well as decentralized exchanges (DEX) that prioritize transparency and user control."
+                "qns": "4. Can I customize the script?",
+                "ans": "Absolutely. You can modify UI/UX, add features, integrate APIs, and tailor game mechanics to your brand."
             },
             {
-                "qns":"5. Do you provide ongoing support and maintenance?",
-                "ans":"Absolutely. Our services don’t stop after deployment. We provide 24/7 technical support, regular updates, and scalability improvements to keep your platform running smoothly."
+                "qns": "5. What blockchains are supported?",
+                "ans": "Most scripts support Ethereum, BNB Chain, Solana, Polygon, and other EVM-compatible chains."
+            },
+            {
+                "qns": "6. Does it include NFT marketplace?",
+                "ans": "Yes. NFT trading, minting, and marketplace features are typically included for in-game assets."
+            },
+            {
+                "qns": "7. Can users buy tokens with fiat?",
+                "ans": "Yes. Most scripts integrate with payment gateways for credit card and bank token purchases."
+            },
+            {
+                "qns": "8. What ongoing support is provided?",
+                "ans": "Vendors offer updates, bug fixes, security patches, and optional feature additions post-launch."
             }
         ],
-        "ctaHead":"Need More Help?",
-        "ctaDes":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'",
-        "ctaBtnTxt":"Contact us"
-    },
-    "relatedPage": {
-        "title": "Explore It",
-        "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "links": [
-            {
-                "linkTxt": "Blockchain Game Clone Script ",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "Axie Infinity Clone Script.",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "Cryptokitties Clone script.",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            }
-        ]
+        "ctaHead": "Ready to Launch Your M2E Game?",
+        "ctaDes": "Tell us your requirements. We'll recommend the right script, customization plan, and deployment roadmap.",
+        "ctaBtnTxt": "Discuss Your M2E Project"
     }
 }
