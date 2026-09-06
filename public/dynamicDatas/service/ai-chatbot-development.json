@@ -1,308 +1,310 @@
 {
     "banner": {
-        "tag": "Artificial Intelligence",
-        "title": "AI Chatbot Development Company",
-        "content": "Transform your startup with autonomous AI agents that don't just follow scripts; they reason, adapt, and execute complex workflows across your entire business ecosystem."
+        "tag": "AI Chatbot Development Services",
+        "title": "Build Intelligent <span class='theme-grad-text'>AI Chatbots for Your Business</span>",
+        "content": "Create custom AI chatbots that understand context, integrate with your business data, connect to external tools, and automate customer conversations. We design chatbot solutions around your workflows, systems, and customer needs."
     },
     "about": {
-        "title": "Why Businesses Are Turning to AI Agents?",
-        "content": "AI agent adoption is surging across startups and high-growth businesses, unlocking the power to make faster decisions, slash costs, and deliver personalization at scale. Forward-thinking founders are already leveraging <span class='scroll-highlight'>AI agent development</span> to turn operational bottlenecks into competitive advantages, and those who act early gain the biggest edge.",
+        "tag": "Beyond Basic Chatbots",
+        "title": "From Simple Responses to <span class='theme-grad-text'>Intelligent Conversations</span>",
+        "content": "Traditional chatbots rely on pre-defined rules and limited responses. AI-powered chatbots leverage LLMs, NLP, and machine learning to understand intent, retrieve real-time data, and provide personalized assistance.<span class='scroll-highlight'>An AI chatbot can handle complex queries, integrate with your CRM and databases, escalate to human agents when needed, and continuously improve through conversation analytics.</span>",
         "btntxt": "Talk to our experts"
     },
-    "cta1": {
-        "title": "Ready To Transform Your Business With Intelligent AI Agents?",
-        "content": "Start your AI Agent journey with company Technologies today and unlock smarter, autogen solutions that deliver real ROI.",
-        "btntxt": "Get Demo Today"
-    },
-    "cta2": {
-        "title": "Want to See How Custom AI Agents Can Transform Your Business?",
-        "content": "Explore bespoke AI solutions that fit your unique needs and deliver measurable impact from day one.",
-        "btntxt": "Get Demo Today"
-    },
-    "differenceTable": {
-        "title": "What's the difference",
-        "shortDes": "AI Agent Development is the process of creating intelligent software systems that can think, decide, and act without constant human input.",
-        "table": [
+    "cardSectionOne": {
+        "tag": "The Challenge",
+        "title": "Your Customers Expect Instant Answers. <span class='theme-grad-text'>Your Support Should Deliver Them.</span>",
+        "description": "Customers demand 24/7 support with fast, accurate responses. Traditional support teams struggle with high volumes, repetitive queries, and slow response times. Generic chatbots fail to understand context or integrate with business systems.",
+        "content": [
             {
-                "tableTitle": "Traditional ChatBot",
-                "tablePoints": [
-                    "Responds to pre-set queries",
-                    "Script-based with limited responses",
-                    "Minimal or no session memory",
-                    "No real decision making",
-                    "Limited integrations",
-                    "Rarely automated"
-                ]
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "High Support Costs",
+                "heacTxtClr": "orange-clr",
+                "paraTxt": "Human support teams are expensive to scale and cannot handle unlimited concurrent conversations."
             },
             {
-                "tableTitle": "AI Agent",
-                "tablePoints": [
-                    "Performs tasks autonomously and makes decisions",
-                    "Adaptive and learns from data & interactions",
-                    "Persistent memory across sessions",
-                    "Context-aware decision making",
-                    "Supports multiple integrations",
-                    "Highly automated workflows"
-                ]
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Slow Response Times",
+                "heacTxtClr": "blue-clr",
+                "paraTxt": "Customers wait hours or days for answers, leading to frustration and lost conversions."
+            },
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Generic Chatbot Limitations",
+                "heacTxtClr": "orange-clr",
+                "paraTxt": "Off-the-shelf chatbots lack customization, business data integration, and brand voice alignment."
+            },
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Data Silos",
+                "heacTxtClr": "blue-clr",
+                "paraTxt": "Customer information is scattered across CRMs, databases, and support tools, making unified responses difficult."
+            }
+        ],
+        "finalPoint": "Custom AI chatbots solve these challenges by integrating with your systems, understanding your business data, and providing instant, accurate responses at scale."
+    },
+    "cardSectionTwo": {
+        "tag": "Our AI Chatbot Development Services",
+        "title": "Custom Chatbots Designed <span class='theme-grad-text'>Around Your Workflows</span>",
+        "description": "Every business has different customer journeys, systems, and requirements. Instead of offering generic templates, we build chatbots tailored to your specific use cases and integrations.",
+        "content": [
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Custom AI Chatbot Development",
+                "paraTxt": "Build purpose-specific chatbots trained on your business data, workflows, and brand voice for accurate responses."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Enterprise AI Chatbots",
+                "paraTxt": "Deploy secure, scalable chatbots with SOC 2, GDPR, and HIPAA compliance for regulated industries."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Customer Support Chatbots",
+                "paraTxt": "Automate FAQs, ticket routing, order tracking, and issue resolution with intelligent conversation flows."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Sales & Lead Generation Bots",
+                "paraTxt": "Qualify leads, schedule demos, collect information, and nurture prospects through automated conversations."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Internal Knowledge Chatbots",
+                "paraTxt": "Help employees access company documentation, HR policies, and internal tools through natural language queries."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Multi-Channel Chatbots",
+                "paraTxt": "Deploy across website, mobile apps, WhatsApp, Slack, Microsoft Teams, and social media platforms."
             }
         ]
     },
-    "sixContentV1": {
-        "title": "AI Agent Development Services for Businesses",
-        "shortDes": "From strategic planning through hands-on development, seamless integration, and ongoing optimization, we ensure your AI Agents drive measurable impact and support long-term scalability.",
+    "clickableSec": {
+        "tag": "Practical Applications",
+        "title": "Turn Customer Interactions <span class='theme-grad-text'>Into Intelligent Experiences</span>",
+        "description": "Whether you're in e-commerce, SaaS, healthcare, or finance, our AI chatbots support diverse industry use cases and workflows.",
         "content": [
             {
-                "head": "AI Strategy & Consulting",
-                "headDes": "Our AI Consulting Services & Strategy begins by thoroughly understanding your business model and operational challenges.",
-                "width": "col-md-6 col-xl-3"
+                "headTxt": "24/7 Customer Support",
+                "paraTxt": "Provide instant answers to FAQs, order status, returns, and troubleshooting any time of day."
             },
             {
-                "head": "Custom AI Agent Development",
-                "headDes": "No two startups operate the same way, which is why our goal-driven AI Agents are never off-the-shelf. We tailor them to your workflows, data sources, industry regulations, and service-level requirements.",
-                "width": "col-md-6 col-xl-5"
+                "headTxt": "Lead Qualification",
+                "paraTxt": "Engage website visitors, collect requirements, score leads, and route qualified prospects to sales teams."
             },
             {
-                "head": "Conversational AI Agents",
-                "headDes": "Go beyond basic chatbots. Our Conversational AI Agents use advanced Natural Language Understanding (NLU), contextual memory",
-                "width": "col-md-6 col-xl-3"
+                "headTxt": "E-Commerce Assistance",
+                "paraTxt": "Help customers find products, check inventory, apply discounts, and complete purchases within chat."
             },
             {
-                "head": "RPA Integration",
-                "headDes": "We combine AI intelligence with Robotic Process Automation (RPA) to execute repetitive, rule-based processes faster",
-                "width": "col-md-6 col-xl-3"
+                "headTxt": "Appointment Scheduling",
+                "paraTxt": "Allow users to book, reschedule, or cancel appointments integrated with your calendar systems."
             },
             {
-                "head": "AI Integration",
-                "headDes": "We integrate agents seamlessly with CRMs, cloud platforms, and APIs, ensuring they become part of your existing ecosystem.",
-                "width": "col-md-6 col-xl-3"
+                "headTxt": "HR & IT Helpdesk",
+                "paraTxt": "Automate employee queries about policies, benefits, onboarding, and IT support tickets."
             },
             {
-                "head": "Predictive Analytics",
-                "headDes": "Our data-powered AI agent observability analyzes historical and real-time data to forecast trends, detect anomalies, and recommend proactive actions.",
-                "width": "col-md-6 col-xl-5"
+                "headTxt": "Personalized Recommendations",
+                "paraTxt": "Suggest products, content, or services based on user preferences, behavior, and purchase history."
             }
         ]
     },
-    "leftScroll": {
-        "title": "What Your Agent Can Do?",
-        "shortDes": "Built with the flexibility to adapt as your business grows, they deliver tangible value from day one.",
-        "image": "/images/png/service-post.png",
-        "width": "650",
-        "height": "300",
+    "devProc": {
+        "tag": "Our Development Approach",
+        "title": "From Business Requirements <span class='theme-grad-text'>to Production Deployment</span>",
+        "description": "A successful AI chatbot starts with understanding your customers, data sources, and business objectives. We follow a structured process to design, build, and optimize your chatbot for real-world performance.",
         "content": [
             {
-                "head": "Autonomous Decision-Making",
-                "headDes": "Empower your AI Agent to act on pre-defined business rules or dynamically learned policies."
+                "subHead": "Understand your needs",
+                "headTxt": "Discover",
+                "paraTxt": "We analyze your customer journeys, use cases, data sources, integrations, and success metrics."
             },
             {
-                "head": "Multi-Modal Interaction",
-                "headDes": "Communicate across multiple channels: voice, text, and vision, depending on your business needs."
+                "subHead": "Design conversation flows",
+                "headTxt": "Plan",
+                "paraTxt": "We map user intents, dialogue structures, escalation paths, and handoff points to human agents."
             },
             {
-                "head": "Context Awareness",
-                "headDes": "AI Agents remember customer history, previous interactions, and business context."
+                "subHead": "Build & train the bot",
+                "headTxt": "Develop",
+                "paraTxt": "We configure LLMs, train on your data, build integrations, and customize the chatbot's tone and personality."
             },
             {
-                "head": "Personalized Recommendations",
-                "headDes": "From upselling the right product at the right time to offering tailored onboarding steps"
+                "subHead": "Connect your systems",
+                "headTxt": "Integrate",
+                "paraTxt": "We connect the chatbot to CRMs, databases, APIs, knowledge bases, and support ticketing systems."
             },
             {
-                "head": "Real-Time Data Analytics",
-                "headDes": "Ingest and process live data streams to provide instant insights and actionable dashboards."
+                "subHead": "Test & optimize",
+                "headTxt": "Test",
+                "paraTxt": "We evaluate response accuracy, conversation flows, edge cases, and user satisfaction before launch."
             },
             {
-                "head": "3rd-Party Tools",
-                "headDes": "Connect directly with CRMs, billing platforms, inventory systems, analytics tools, and more."
-            },
-            {
-                "head": "Self-Improvement",
-                "headDes": "Using continuous feedback self-correction loops, your AI Agent learns from outcomes."
-            },
-            {
-                "head": "Compliance",
-                "headDes": "Safeguard your data and workflows with industry-standard encryption"
+                "subHead": "Deploy & improve",
+                "headTxt": "Deploy & Improve",
+                "paraTxt": "We launch the chatbot and continuously refine its performance based on analytics and user feedback."
             }
         ]
     },
-    "bentoGridV1": {
-        "title": "What Your Agent Can Do?",
-        "shortDes": "Built with the flexibility to adapt as your business grows, they deliver tangible value from day one.",
+    "table": {
+        "tag": "Understanding the Difference",
+        "title": "Custom AI Chatbots Go <span class='theme-grad-text'>Beyond Generic Solutions</span>",
+        "description": "Off-the-shelf chatbots work for simple FAQs, but complex business needs require custom AI chatbots with deep integrations, security, and scalability.",
+        "content": {
+            "headers": [
+                "Capability",
+                "Generic Chatbot",
+                "Custom AI Chatbot"
+            ],
+            "rows": [
+                {
+                    "Capability": "Business data integration",
+                    "Generic Chatbot": "Limited",
+                    "Custom AI Chatbot": "✓"
+                },
+                {
+                    "Capability": "CRM & API connections",
+                    "Generic Chatbot": "Limited",
+                    "Custom AI Chatbot": "✓"
+                },
+                {
+                    "Capability": "Brand voice customization",
+                    "Generic Chatbot": "Limited",
+                    "Custom AI Chatbot": "✓"
+                },
+                {
+                    "Capability": "Enterprise security (SOC 2, GDPR)",
+                    "Generic Chatbot": "Limited",
+                    "Custom AI Chatbot": "✓"
+                },
+                {
+                    "Capability": "Complex workflow automation",
+                    "Generic Chatbot": "-",
+                    "Custom AI Chatbot": "✓"
+                },
+                {
+                    "Capability": "Human handoff & escalation",
+                    "Generic Chatbot": "Limited",
+                    "Custom AI Chatbot": "✓"
+                },
+                {
+                    "Capability": "Conversation analytics & insights",
+                    "Generic Chatbot": "Basic",
+                    "Custom AI Chatbot": "✓"
+                },
+                {
+                    "Capability": "Scalability & performance",
+                    "Generic Chatbot": "Limited",
+                    "Custom AI Chatbot": "✓"
+                }
+            ]
+        },
+        "finalPoint": "The right solution depends on your requirements. Generic chatbots work for simple use cases, while custom AI chatbots excel when you need integrations, security, and complex workflows."
+    },
+    "cardSectionThree": {
+        "tag": "Business Impact",
+        "title": "Make AI Chatbots Part of the Way <span class='theme-grad-text'>Your Business Works</span>",
+        "description": "The value of an AI chatbot isn't just automation. The real value comes from improved customer experiences, reduced costs, and actionable insights from conversation data.",
         "content": [
             {
-                "image": "/images/png/icon-dummy.png",
-                "head": "Conversational AI Agents",
-                "headDes": "Advanced, goal-oriented dialogue systems powered by a master agent/controller go beyond scripted responses. They manage customer support, sales inquiries, onboarding, and troubleshooting using contextual memory, sentiment analysis, and natural language understanding, delivering human-like engagement at scale.",
-                "width": "col-md-6"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Reduce Support Costs",
+                "paraTxt": "Automate up to 80% of repetitive queries and reduce human support workload significantly."
             },
             {
-                "image": "/images/png/icon-dummy.png",
-                "head": "Process Automation Agents",
-                "headDes": "Autonomous systems integration agents that execute repeatable business workflows, from invoice processing to order fulfillment, without human intervention.",
-                "width": "col-md-6 col-xl-4"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Improve Response Times",
+                "paraTxt": "Provide instant answers 24/7, reducing customer wait times from hours to seconds."
             },
             {
-                "image": "/images/png/icon-dummy.png",
-                "head": "Predictive Analytics Agents",
-                "headDes": "By using interconnected insights, they empower proactive decision-making and give your business a competitive edge.",
-                "width": "col-md-6 col-xl-3"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Increase Conversions",
+                "paraTxt": "Engage visitors proactively, qualify leads, and guide users through purchase decisions."
             },
             {
-                "image": "/images/png/icon-dummy.png",
-                "head": "Multi-Agent Systems",
-                "headDes": "Networks of specialized AI agents collaborating to solve complex, multi-step challenges. This is the power of our multi-agent system development services.",
-                "width": "col-md-6 col-xl-4"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Scale Effortlessly",
+                "paraTxt": "Handle unlimited concurrent conversations without hiring additional support staff."
             },
             {
-                "image": "/images/png/icon-dummy.png",
-                "head": "LLM-Powered Agents",
-                "headDes": "Agents built on advanced Large Language Models (Open-source LLMs) capable of reasoning, summarization, code generation",
-                "width": "col-md-12 col-xl-3"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Gain Customer Insights",
+                "paraTxt": "Analyze conversation data to identify trends, pain points, and opportunities for improvement."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Maintain Human Oversight",
+                "paraTxt": "Seamlessly escalate complex queries to human agents when the chatbot reaches its limits."
             }
         ]
     },
-    "developProcess": {
-        "title": "Turning Concepts into Production-Ready Agents",
-        "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "cardSectionFour": {
+        "tag": "Our Approach",
+        "title": "We Build Chatbots Around Your Business <span class='theme-grad-text'>— Not the Other Way Around</span>",
+        "description": "AI chatbot projects can easily become technology experiments without clear business impact. Our approach starts with understanding your customer needs and then determining where AI can provide meaningful value.",
         "content": [
             {
-                "head": "Discovery & Goal Mapping",
-                "headDes": "We begin by deeply understanding your business needs, identifying pain points, and defining measurable success. This stage delivers a clear ROI model, a well-defined scope, and agreed-upon success metrics to guide the project from start to finish."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Business-First Thinking",
+                "paraTxt": "We begin with customer journeys, use cases, and KPIs before selecting models and technologies."
             },
             {
-                "head": "Design & Prototyping",
-                "headDes": "Next, we bring your AI agent concept to life with an interactive prototype built on a robust cognitive architecture. This allows you to experience core agentic workflows firsthand, give feedback, and refine features before any production code is written, saving time and reducing risk."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Deep System Integration",
+                "paraTxt": "Your chatbot connects to CRMs, databases, APIs, and tools your teams already use daily."
             },
             {
-                "head": "AI Model Development",
-                "headDes": "Here, we build and train the intelligence layer of your agent. Using relevant datasets and the right algorithms, we create production-ready AI models, secure APIs, and connectors designed for seamless integration and future scalability."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Security & Compliance",
+                "paraTxt": "Enterprise-grade security with data encryption, access controls, and compliance certifications."
             },
             {
-                "head": "Integration & Testing",
-                "headDes": "We connect your AI agent with your existing systems, CRM, ERP, billing, and analytics, which can run through rigorous testing. This ensures optimal performance, security, and reliability under real-world conditions before launch."
-            },
-            {
-                "head": "Deployment & Training",
-                "headDes": "Your AI agent is rolled out in a controlled, low-risk canary deployment. We provide in-depth training for your team, along with detailed runbooks to ensure smooth day-to-day operation and issue handling."
-            },
-            {
-                "head": "Ongoing Optimization & Scaling",
-                "headDes": "Post-launch, we continuously monitor performance, run A/B tests, and retrain with embedding models to keep them accurate and effective. We also provide performance SLAs and help you scale the system as your needs grow."
-            }
-        ]
-    },
-    "bulletPoint": {
-        "title": "Strategic Business Benefits of Custom AI Agents",
-        "shortDes": "Tangible outcomes startups and scaleups can expect when deploying custom AI agents",
-        "content": [
-            {
-                "head": "Efficiency Gains",
-                "headDes": "Automate 60–80% of repetitive workflows, freeing your team to focus on high-value, strategic tasks instead of manual busywork."
-            },
-            {
-                "head": "Revenue Growth",
-                "headDes": "Boost pipeline velocity with smarter lead scoring, faster qualification, and AI-driven follow-ups that improve close rates."
-            },
-            {
-                "head": "Customer Delight",
-                "headDes": "Deliver personalized, always-on experiences that increase customer retention, boost NPS, and turn buyers into brand advocates."
-            },
-            {
-                "head": "Cost Reduction",
-                "headDes": "Reduce operational overhead by streamlining multi-step processes and minimizing unnecessary manual interventions, while ensuring efficient cost management (token usage)."
-            },
-            {
-                "head": "Scalability",
-                "headDes": "Effortlessly handle demand spikes without adding headcount, keeping growth sustainable and predictable."
-            }
-        ]
-    },
-    "leftImg": {
-        "title": "How Smart AI Supercharged Operations, Conversions, and Efficiency",
-        "subTitle": "Real-World Wins",
-        "image": "/images/png/latest-product.png",
-        "width": "600",
-        "height": "600",
-        "content": [
-            {
-                "head": "Retail:Cutting Through Costs, AI-Powered Returns that Delight and Deliver",
-                "headDes": "Major retailers leveraging AI-powered returns triage cut support costs by 42%, shrinking returns processing from nearly a week to less than a day. Automated AI categorization, with semantic search using anthropic Claude tool for instant customer communication"
-            },
-            {
-                "head": "Fintech:Conversational AI, The Secret Sauce to Skyrocketing Leads to Conversions",
-                "headDes": "Forward-looking fintech teams harnessed proactive AI agents powered by Google Gemini function calling to boost lead-to-conversion rates by 28%.and automatically schedule demos, they achieved a 60% increase in sales-qualified leads"
-            },
-            {
-                "head": "Healthcare:Accelerating Patient Intake, From Hours to Minutes",
-                "headDes": "A leading healthcare network reduced manual patient intake processing time by 65% in just 90 days.The new intake system also demonstrated reliability, smoothly handling high-volume event registrations"
-            }
-        ]
-    },
-    "lastSection": {
-        "title": "What Makes company Technologies Stand Out in AI Agent Development?",
-        "shortDes": "Delivering transformational business outcomes is our standard as an AI solution provider. That’s why innovative enterprises trust company Technologies as their top choice for an AI partnership.",
-        "content": [
-            {
-                "head": "Data Science",
-                "headDes": "Our teams consist of senior machine learning development engineers, experienced product designers, and cross-functional experts "
-            },
-            {
-                "head": "Secure",
-                "headDes": "With privacy-by-design baked into our workflows, you get end-to-end security and robust audit trails"
-            },
-            {
-                "head": "Flexible Models",
-                "headDes": "Choose the partnership that fits your needs: targeted projects with clear deliverables and retainer-based advisory"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Continuous Optimization",
+                "paraTxt": "Monitor performance, analyze conversations, and refine the chatbot based on real user interactions."
             }
         ]
     },
     "faq": {
-        "title": "We've Got Answer.",
-        "subTitle": "Questions?",
+        "title": "Frequently Asked Questions <span class='theme-grad-text'>About AI Chatbot Development</span>",
+        "subTitle": "FAQ",
         "qnsAns": [
             {
-                "qns": "1. How much does it cost to build a crypto exchange?",
-                "ans": "The cost depends on features, security layers, and customization. A basic white-label exchange is more affordable, while a fully customized platform with advanced security and liquidity options requires higher investment. We provide flexible pricing to suit startups and enterprises."
+                "qns": "1. What is an AI chatbot?",
+                "ans": "An AI chatbot is an intelligent conversational agent powered by LLMs and NLP that understands user intent, retrieves relevant information, and provides contextual responses."
             },
             {
-                "qns": "2. How long does it take to launch a crypto exchange?",
-                "ans": "A white-label crypto exchange can be launched within a few weeks. A fully custom-built exchange with unique features may take 3–6 months depending on complexity."
+                "qns": "2. What is the difference between AI chatbots and rule-based chatbots?",
+                "ans": "Rule-based chatbots follow pre-defined scripts and cannot handle unexpected queries. AI chatbots understand natural language, learn from interactions, and adapt to diverse conversations."
             },
             {
-                "qns": "3. Is your crypto exchange solution secure?",
-                "ans": "Yes, we follow industry-best practices like two-factor authentication (2FA), cold wallet storage, DDoS protection, encryption protocols, and regular security audits to keep your exchange safe."
+                "qns": "3. Can an AI chatbot integrate with our existing software?",
+                "ans": "Yes. AI chatbots can integrate with CRMs (Salesforce, HubSpot), support tools (Zendesk), databases, APIs, payment gateways, and other business systems."
             },
             {
-                "qns": "4. Do you offer both centralized and decentralized exchange development?",
-                "ans": "Yes. We build centralized exchanges (CEX) with high-speed order books as well as decentralized exchanges (DEX) that prioritize transparency and user control."
+                "qns": "4. Can AI chatbots work with private business data?",
+                "ans": "Yes. Chatbots can be trained on your internal documentation, product catalogs, knowledge bases, and customer data with proper access controls and security."
             },
             {
-                "qns": "5. Do you provide ongoing support and maintenance?",
-                "ans": "Absolutely. Our services don’t stop after deployment. We provide 24/7 technical support, regular updates, and scalability improvements to keep your platform running smoothly."
+                "qns": "5. Can humans take over conversations from the chatbot?",
+                "ans": "Yes. Chatbots can detect when human intervention is needed and seamlessly escalate conversations to live agents with full context."
+            },
+            {
+                "qns": "6. How much does AI chatbot development cost?",
+                "ans": "Cost depends on complexity, integrations, data sources, customization, and deployment. Simple chatbots start at $5k–$15k, while enterprise solutions range from $20k–$100k+."
+            },
+            {
+                "qns": "7. How long does development take?",
+                "ans": "A basic chatbot can be deployed in 2–4 weeks. Complex enterprise chatbots with multiple integrations typically take 6–12 weeks."
+            },
+            {
+                "qns": "8. Which platforms can the chatbot be deployed on?",
+                "ans": "Chatbots can be deployed on websites, mobile apps, WhatsApp, Facebook Messenger, Slack, Microsoft Teams, Instagram, and other messaging platforms."
             }
         ],
-        "ctaHead": "Need More Help?",
-        "ctaDes": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'",
-        "ctaBtnTxt": "Contact us"
-    },
-    "relatedPage": {
-        "title": "Explore It",
-        "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "links": [
-            {
-                "linkTxt": "AI Agent Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI Token Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            }
-        ]
+        "ctaHead": "Ready to Automate Customer Conversations?",
+        "ctaDes": "Tell us your requirements. We'll help you identify where an AI chatbot can fit into your workflows and what it would take to build it.",
+        "ctaBtnTxt": "Discuss Your AI Chatbot Project"
     }
 }

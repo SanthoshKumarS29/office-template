@@ -84,6 +84,24 @@
     </div>
   </form>
 
+  <div class="my-4">
+    <h4>Generate with AI</h4>
+    <form id="aiBlogForm">
+      <div class="form-feild">
+        <label>Blog topic</label>
+        <input type="text" id="aiTopic" name="topic" class="form-control"
+          placeholder="e.g. AI workflow for e-commerce teams" required />
+      </div>
+
+      <div class="form-feild">
+        <label>Category</label>
+        <input type="text" id="aiCategory" name="category" class="form-control" placeholder="e.g. SaaS" />
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-2">Generate Blog Draft</button>
+    </form>
+  </div>
+
   <h3>Preview</h3>
   <div id="preview" class="editor-preview">
     <!-- live preview will be injected here -->
@@ -114,6 +132,41 @@
           // update preview live if you want:
           // document.getElementById('preview').innerHTML = editor.getContent();
         });
+      }
+    });
+
+    document.getElementById("aiBlogForm").addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const topic = document.getElementById("aiTopic").value.trim();
+      const category = document.getElementById("aiCategory").value.trim();
+
+      if (!topic) return;
+
+      const response = await fetch("/admin/blogs/generate-ai", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ topic, category })
+      });
+
+      const result = await response.json();
+
+      if (!result.success) {
+        alert(result.message || "AI generation failed");
+        return;
+      }
+
+      const blog = result.blog;
+
+      document.getElementById("title").value = blog.title;
+      document.getElementById("slug").value = blog.slug;
+      document.querySelector('input[name="category"]').value = blog.category;
+      document.querySelector('textarea[name="description"]').value = blog.description;
+
+      if (typeof tinymce !== "undefined" && tinymce.get("content")) {
+        tinymce.get("content").setContent(blog.content);
       }
     });
   </script>

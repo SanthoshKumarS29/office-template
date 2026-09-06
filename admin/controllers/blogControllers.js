@@ -2,6 +2,7 @@ import Blog from '../../models/Blog.js';
 import slugify from '../../utils/slugify.js';
 import fs from 'fs';
 import path from 'path';
+import { generatedBlogDraft } from '../../services/aiBlogService.js';
 
 const uploadsDir = path.join(process.cwd(), "public", "uploads", "blogs");
 
@@ -107,5 +108,51 @@ export const listBlogs = async (req, res) => {
     } catch (error) {
         console.error(err);
         res.status(500).send("Error loading blogs: " + err.message);
+    }
+}
+
+export const generateAiBlog = async (req, res) => {
+    try{
+        const { topic, category, tone } = req.body;
+
+        if(!topic || !topic.trim()){
+            return res.status(400).json({ error: "Topic is required", success: false });
+        }
+
+        const generated = await generatedBlogDraft({ topic, category, tone });
+        return res.status(200).json({ success: true, blog: generated });
+    } catch(error){
+        console.error("Error generating AI blog:", error);
+        return res.status(500).json({ error: "Error generating AI blog", success: false, error: error.message });
+    }
+}
+
+export const saveGeneratedAiBlog = async(req, res) => {
+    try{
+        const { title, slug, category, description, content, status } = req.body;
+
+        if(!title || !slug || !category || !description || !content){
+            return res.status(400).json({ message: "Title and content are required", success: false });
+        }
+
+        const finalSlug = slugify(slug || title);
+
+        const existing = await Blog.findOne({ slug: finalSlug });
+        const uniqueSlug = existing ? `${finalSlug}-${Date.now()}` : finalSlug;
+
+        const createdBlog = await Blog.create({
+            title,
+            slug: uniqueSlug,
+            category: category || "General",
+            description: description || "",
+            content,
+            status: status || "draft"
+        })
+
+        return res.status(201).json({ success: true, blog: createdBlog, message: "Ai Generated Blog saved successfully" });
+
+    } catch(error){
+        console.error("Error saving generated AI blog:", error);
+        return res.status(500).json({ error: "Error saving generated AI blog", success: false, error: error.message });
     }
 }

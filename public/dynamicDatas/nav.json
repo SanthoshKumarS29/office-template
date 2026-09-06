@@ -36,12 +36,6 @@
       "isdropDown": true
     },
     {
-      "title": "Explore More",
-      "path": "/explore-more",
-      "rel": "follow",
-      "isdropDown": false
-    },
-    {
       "title": "Contact",
       "path": "/contact-us",
       "rel": "follow",
@@ -254,12 +248,6 @@
       "isdropDown": false
     },
     {
-      "title": "Explore More",
-      "path": "/explore-more",
-      "rel": "follow",
-      "isdropDown": false
-    },
-    {
       "title": "Contact",
       "path": "/contact-us",
       "rel": "follow",
@@ -304,12 +292,6 @@
       "isdropDown": false
     },
     {
-      "title": "Explore More",
-      "path": "/explore-more",
-      "rel": "follow",
-      "isdropDown": false
-    },
-    {
       "title": "Contact",
       "path": "/contact-us",
       "rel": "follow",
@@ -323,7 +305,12 @@
         "links": [
           {
             "title": "AI Agent Development",
-            "url": "/services/ai-agent-development-services",
+            "path": "/services/ai-agent-development-services",
+            "rel": "follow"
+          },
+          {
+            "title": "AI ChatBot Development",
+            "path": "/services/ai-chatbot-development",
             "rel": "follow"
           }
         ]
@@ -332,8 +319,8 @@
         "name": "Cryptocurrency",
         "links": [
           {
-            "title": "Crypto Exchange Dev",
-            "url": "/services/crypto-exchange-development",
+            "title": "Crypto Exchange Development",
+            "path": "/services/crypto-exchange-development",
             "rel": "follow"
           }
         ]
@@ -342,7 +329,7 @@
         "name": "Wallet",
         "links": [
           {
-            "title": "Crypto Wallet Dev",
+            "title": "Crypto Wallet Development",
             "path": "/services/crypto-wallet-development",
             "rel": "follow"
           }
@@ -352,7 +339,7 @@
         "name": "Defi",
         "links": [
           {
-            "title": "Crypto Wallet Dev",
+            "title": "Defi Development",
             "path": "/services/defi-development-service",
             "rel": "follow"
           }
@@ -372,7 +359,7 @@
         "name": "Payment Gateway",
         "links": [
           {
-            "title": "Payment Gatway Zaxor",
+            "title": "Payment Gateway Zaxor",
             "path": "/products/paymet-gatway-zaxor-clone",
             "rel": "follow"
           }
@@ -434,12 +421,6 @@
     {
       "title": "Products",
       "path": "/products",
-      "rel": "follow",
-      "isdropDown": false
-    },
-    {
-      "title": "Explore More",
-      "path": "/explore-more",
       "rel": "follow",
       "isdropDown": false
     },
