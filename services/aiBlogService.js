@@ -5,33 +5,40 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const client = new OpenAi({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: process.env.OPENROUTER_API_KEY,
+    baseURL: "https://openrouter.ai/api/v1",
+    defaultHeaders: {
+        "HTTP-Referer": "http://localhost:2003",
+        "X-Title": "Office Site Blog Generator"
+    }
 });
 
-export const generatedBlogDraft = async({ topic, category, tone = "professional0" }) => {
+export const generatedBlogDraft = async ({ topic, category, tone = "professional0" }) => {
     if (!topic || !topic.trim()) {
         throw new Error("Topic is required");
     }
 
-    const prompt = `You are an expert SEO blog writer for a software company. Generate a blog article in valid JSON only.Return this exact structure:{"title":"string", "slug":"string","category":"string", "description":"string", "content":"string"}. Requirements: -Topic: ${topic} -Category: ${category || "General"} -Tone0: ${tone}  -The article must be original, useful, and written for a professional tech audience. -The title should be catchy and SEO-friendly - The slug should be URL-friendly - The description should be a short meta-like summary. - The content must be valid HTML and include headings, paragraphs, bullet points, and strong formatting. - Do not include markdown fences or extra text outside the JSON.`;
+    const prompt = `Generate an SEO-friendly technology blog. Return JSON only:{"title":"string", "slug":"string","category":"string", "description":"string", "content":"string"}. Requirements: -Topic: ${topic} -Category: ${category || "General"} -Tone: ${tone} Requirements: - Professional tech audience. Original and useful -SEO-friendly title -Short meta description. -Content must be valid HTML. -Include headings, paragraphs, bullet lists, and <strong> formatting, 1200-1500 words,- No Markdown,- No text outside JSON`;
 
     const response = await client.chat.completions.create({
-        model: process.env.OPENAI_MODEL || "gpt-4o-mini",
+        model: process.env.OPENROUTER_MODEL || "provider/Gemini 3.7 Flash:free",
         temperature: 0.7,
-        messages:[
+        response_format: { type: "json_object" },
+        max_tokens: 4000,
+        messages: [
             {
                 "role": "system",
-                "content": "You are a senior seo content writer and return only valid JSON."
+                "content": "You are an SEO blog writer. Return only valid JSON."
             },
             {
-                "role":"user",
+                "role": "user",
                 "content": prompt
             }
         ]
     });
 
     const aiText = response.choices[0]?.message?.content;
-    if (!aiText){
+    if (!aiText) {
         throw new Error("AI Returen no content");
     }
 
@@ -39,14 +46,14 @@ export const generatedBlogDraft = async({ topic, category, tone = "professional0
         .replace(/^```json\s*/i, "")
         .replace(/```$/i, "")
         .trim();
-    
+
     const parsed = JSON.parse(cleaned);
 
     return {
-    title: parsed.title || "Untitled Blog",
-    slug: slugify(parsed.slug || parsed.title || topic),
-    category: parsed.category || category || "General",
-    description: parsed.description || "",
-    content: parsed.content || "",
-  };
+        title: parsed.title || "Untitled Blog",
+        slug: slugify(parsed.slug || parsed.title || topic),
+        category: parsed.category || category || "General",
+        description: parsed.description || "",
+        content: parsed.content || "",
+    };
 }
