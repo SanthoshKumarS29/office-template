@@ -30,6 +30,24 @@
     <%= blog && blog._id ? "Edit Blog" : "Create New Blog" %>
   </h1>
 
+  <div class="my-4">
+    <h4>Generate with AI</h4>
+    <form id="aiBlogForm">
+      <div class="form-feild">
+        <label>Blog topic</label>
+        <input type="text" id="aiTopic" name="topic" class="form-control"
+          placeholder="e.g. AI workflow for e-commerce teams" required />
+      </div>
+
+      <div class="form-feild">
+        <label>Category</label>
+        <input type="text" id="aiCategory" name="category" class="form-control" placeholder="e.g. SaaS" />
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-2">Generate Blog Draft</button>
+    </form>
+  </div>
+
   <form action="<%= blog && blog._id ? '/admin/blogs/' + blog._id : '/admin/blogs' %>" method="POST"
     enctype="multipart/form-data">
     <div class="form-field">
@@ -83,24 +101,6 @@
 
     </div>
   </form>
-
-  <div class="my-4">
-    <h4>Generate with AI</h4>
-    <form id="aiBlogForm">
-      <div class="form-feild">
-        <label>Blog topic</label>
-        <input type="text" id="aiTopic" name="topic" class="form-control"
-          placeholder="e.g. AI workflow for e-commerce teams" required />
-      </div>
-
-      <div class="form-feild">
-        <label>Category</label>
-        <input type="text" id="aiCategory" name="category" class="form-control" placeholder="e.g. SaaS" />
-      </div>
-
-      <button type="submit" class="btn btn-primary mt-2">Generate Blog Draft</button>
-    </form>
-  </div>
 
   <h3>Preview</h3>
   <div id="preview" class="editor-preview">
