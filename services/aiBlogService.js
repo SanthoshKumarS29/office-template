@@ -21,7 +21,10 @@ const BLOG_MAX_TOKENS = Number(
 // Models to try
 const MODELS = [
     process.env.OPENROUTER_MODEL || "openrouter/free",
-    "google/gemma-4-26b-a4b-it:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "inclusionai/ling-3.0-flash-vl:free",
+    "google/gemma-4-31b-it:free",
+    "google/gemma-4-26b-a4b-it:free"
 ].filter(Boolean);
 
 
