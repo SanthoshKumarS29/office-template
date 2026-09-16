@@ -46,6 +46,21 @@
             color: var(--blue-clr);
         }
 
+        @media(max-width: 767px){
+            .explore-grid{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .explore-more-wrap{
+                padding: 20px 0 40px;
+            }
+        }
+
+        @media(min-width: 768px) and (max-width: 1200px){
+            .explore-grid{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
     </style>
 </head>
 <body>

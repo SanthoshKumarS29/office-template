@@ -1,323 +1,310 @@
 {
     "banner": {
-        "tag": "Token Development",
-        "title": "Token Development Company",
-        "content": "Transform your startup with autonomous tokens that don't just follow scripts; they reason, adapt, and execute complex workflows across your entire business ecosystem."
+        "tag": "Token Development Services",
+        "title": "Create Your <span class='theme-grad-text'>Custom Crypto Token</span>",
+        "content": "Launch secure, audited tokens with custom smart contracts, tokenomics design, and multi-chain deployment. We develop ERC-20, BEP-20, SPL, and custom tokens tailored to your utility, governance, or security requirements."
     },
     "about": {
-        "title": "Why Businesses Are Turning to Tokens?",
-        "content": "Token adoption is surging across startups and high-growth businesses, unlocking the power to make faster decisions, slash costs, and deliver personalization at scale. Forward-thinking founders are already leveraging <span class='scroll-highlight'>Token Development Company</span> to turn operational bottlenecks into competitive advantages, and those who act early gain the biggest edge.",
+        "tag": "Beyond Template Tokens",
+        "title": "From Standard Contracts to <span class='theme-grad-text'>Purpose-Built Tokens</span>",
+        "content": "Template-based token creation offers quick deployment but limits functionality and long-term viability. Custom token development provides complete control over tokenomics, smart contract features, compliance, and integration capabilities.<span class='scroll-highlight'>Build a proprietary token with custom mechanics like staking rewards, reflection fees, vesting schedules, anti-whale protection, and governance features that align with your project's economic model and regulatory requirements.</span>",
         "btntxt": "Talk to our experts"
     },
-    "cta1": {
-        "title": "Ready To Transform Your Business With Intelligent Tokens?",
-        "content": "Start your Token journey with company Technologies today and unlock smarter, autogen solutions that deliver real ROI.",
-        "btntxt": "Get Demo Today"
-    },
-    "cta2": {
-        "title": "Want to See How Custom Tokens Can Transform Your Business?",
-        "content": "Explore bespoke AI solutions that fit your unique needs and deliver measurable impact from day one.",
-        "btntxt": "Get Demo Today"
-    },
-    "differenceTable": {
-        "title": "What's the difference",
-        "shortDes": "Token Development is the process of creating intelligent software systems that can think, decide, and act without constant human input.",
-        "table": [
+    "cardSectionOne": {
+        "tag": "The Challenge",
+        "title": "Your Token Needs Utility. <span class='theme-grad-text'>Your Design Should Deliver It.</span>",
+        "description": "Tokens face intense scrutiny from users, investors, and regulators. Generic tokens lack differentiation, sustainable economics, and security features. Creating from scratch requires blockchain expertise, smart contract audits, and compliance knowledge.",
+        "content": [
             {
-                "tableTitle": "Traditional ChatBot",
-                "tablePoints": [
-                    "Responds to pre-set queries",
-                    "Script-based with limited responses",
-                    "Minimal or no session memory",
-                    "No real decision making",
-                    "Limited integrations",
-                    "Rarely automated"
-                ]
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Smart Contract Risks",
+                "heacTxtClr": "orange-clr",
+                "paraTxt": "Vulnerable contracts can lead to exploits, lost tokens, and reputational damage without proper audits."
             },
             {
-                "tableTitle": "Token",
-                "tablePoints": [
-                    "Performs tasks autonomously and makes decisions",
-                    "Adaptive and learns from data & interactions",
-                    "Persistent memory across sessions",
-                    "Context-aware decision making",
-                    "Supports multiple integrations",
-                    "Highly automated workflows"
-                ]
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Poor Tokenomics",
+                "heacTxtClr": "blue-clr",
+                "paraTxt": "Unsustainable supply, distribution, or incentives lead to price dumps and project failure."
+            },
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Compliance Issues",
+                "heacTxtClr": "orange-clr",
+                "paraTxt": "Failure to meet regulatory requirements can result in legal challenges and delisting."
+            },
+            {
+                "width": "col-md-6 col-xl-3",
+                "headTxt": "Limited Functionality",
+                "heacTxtClr": "blue-clr",
+                "paraTxt": "Basic tokens lack features like staking, governance, or utility that drive long-term value."
+            }
+        ],
+        "finalPoint": "Professional token development solves these challenges with audited smart contracts, sustainable tokenomics, compliance controls, and custom features."
+    },
+    "cardSectionTwo": {
+        "tag": "Our Token Development Services",
+        "title": "Custom Tokens Designed <span class='theme-grad-text'>Around Your Use Case</span>",
+        "description": "Every token project has unique requirements based on purpose, blockchain, and business model. We build tailored solutions from the ground up with full ownership and compliance.",
+        "content": [
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Utility Token Development",
+                "paraTxt": "Create tokens for platform access, payments, rewards, and in-app transactions with custom mechanics."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Governance Token Development",
+                "paraTxt": "Build tokens with voting rights, proposal mechanisms, and DAO integration for community control."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Security Token Development",
+                "paraTxt": "Develop compliant security tokens with KYC/AML, transfer restrictions, and regulatory controls."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Stablecoin Development",
+                "paraTxt": "Create fiat-backed, crypto-backed, or algorithmic stablecoins with collateral management."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "NFT Token Standards",
+                "paraTxt": "Develop ERC-721, ERC-1155, or custom NFT contracts for digital collectibles and assets."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Multi-Chain Tokens",
+                "paraTxt": "Deploy tokens across Ethereum, BNB Chain, Polygon, Solana, and 20+ other blockchains."
             }
         ]
     },
-    "sixContentV1": {
-        "title": "Token Development Services for Businesses",
-        "shortDes": "From strategic planning through hands-on development, seamless integration, and ongoing optimization, we ensure your Tokens drive measurable impact and support long-term scalability.",
+    "clickableSec": {
+        "tag": "Practical Applications",
+        "title": "Turn Token Ideas Into <span class='theme-grad-text'>Live Digital Assets</span>",
+        "description": "Whether you're launching a DeFi protocol, gaming platform, loyalty program, or enterprise solution, our token development supports diverse use cases.",
         "content": [
             {
-                "head": "AI Strategy & Consulting",
-                "headDes": "Our AI Consulting Services & Strategy begins by thoroughly understanding your business model and operational challenges.",
-                "width": "col-md-6 col-xl-3"
+                "headTxt": "Tokenomics Design",
+                "paraTxt": "Design sustainable supply, distribution, vesting schedules, and incentive mechanisms for long-term viability."
             },
             {
-                "head": "Custom Token Development",
-                "headDes": "No two startups operate the same way, which is why our goal-driven Tokens are never off-the-shelf. We tailor them to your workflows, data sources, industry regulations, and service-level requirements.",
-                "width": "col-md-6 col-xl-5"
+                "headTxt": "Staking & Rewards",
+                "paraTxt": "Integrate staking contracts with APY rewards, lock-up periods, and emission schedules."
             },
             {
-                "head": "Conversational Tokens",
-                "headDes": "Go beyond basic Tokens. Our Conversational Tokens use advanced Natural Language Understanding (NLU), contextual memory",
-                "width": "col-md-6 col-xl-3"
+                "headTxt": "Vesting & Distribution",
+                "paraTxt": "Implement team, investor, and community vesting with cliff periods and automated releases."
             },
             {
-                "head": "RPA Integration",
-                "headDes": "We combine AI intelligence with Robotic Process Automation (RPA) to execute repetitive, rule-based processes faster",
-                "width": "col-md-6 col-xl-3"
+                "headTxt": "Anti-Whale Mechanics",
+                "paraTxt": "Add transfer limits, transaction taxes, and anti-manipulation features to protect token price."
             },
             {
-                "head": "AI Integration",
-                "headDes": "We integrate agents seamlessly with CRMs, cloud platforms, and APIs, ensuring they become part of your existing ecosystem.",
-                "width": "col-md-6 col-xl-3"
+                "headTxt": "Liquidity Pool Setup",
+                "paraTxt": "Create and configure liquidity pools on DEXs with optimal ratios and lock mechanisms."
             },
             {
-                "head": "Predictive Analytics",
-                "headDes": "Our data-powered Token observability analyzes historical and real-time data to forecast trends, detect anomalies, and recommend proactive actions.",
-                "width": "col-md-6 col-xl-5"
+                "headTxt": "Exchange Listing Support",
+                "paraTxt": "Prepare tokens for CEX and DEX listings with documentation, audits, and integration support."
             }
         ]
     },
-    "leftScroll": {
-        "title": "What Your Agent Can Do?",
-        "shortDes": "Built with the flexibility to adapt as your business grows, they deliver tangible value from day one.",
-        "image": "/images/png/service-post.png",
-        "width": "650",
-        "height": "300",
+    "devProc": {
+        "tag": "Our Development Approach",
+        "title": "From Tokenomics Design <span class='theme-grad-text'>to Mainnet Launch</span>",
+        "description": "We follow a structured process to design, build, audit, and deploy your token with enterprise-grade security and compliance.",
         "content": [
             {
-                "head": "Autonomous Decision-Making",
-                "headDes": "Empower your Token to act on pre-defined business rules or dynamically learned policies."
+                "subHead": "Understand your requirements",
+                "headTxt": "Discover",
+                "paraTxt": "We analyze your use case, target audience, blockchain preferences, and regulatory requirements."
             },
             {
-                "head": "Multi-Modal Interaction",
-                "headDes": "Communicate across multiple channels: voice, text, and vision, depending on your business needs."
+                "subHead": "Design tokenomics",
+                "headTxt": "Plan",
+                "paraTxt": "We define supply, distribution, utility, incentives, vesting, and sustainability mechanisms."
             },
             {
-                "head": "Context Awareness",
-                "headDes": "Tokens remember customer history, previous interactions, and business context."
+                "subHead": "Build smart contracts",
+                "headTxt": "Develop",
+                "paraTxt": "We develop custom token contracts with required features, integrations, and admin controls."
             },
             {
-                "head": "Personalized Recommendations",
-                "headDes": "From upselling the right product at the right time to offering tailored onboarding steps"
+                "subHead": "Audit & optimize",
+                "headTxt": "Test",
+                "paraTxt": "We perform security audits, gas optimization, and testing across testnets before mainnet."
             },
             {
-                "head": "Real-Time Data Analytics",
-                "headDes": "Ingest and process live data streams to provide instant insights and actionable dashboards."
+                "subHead": "Deploy & verify",
+                "headTxt": "Deploy",
+                "paraTxt": "We deploy to mainnet, verify contracts on explorers, and set up initial liquidity pools."
             },
             {
-                "head": "3rd-Party Tools",
-                "headDes": "Connect directly with CRMs, billing platforms, inventory systems, analytics tools, and more."
-            },
-            {
-                "head": "Self-Improvement",
-                "headDes": "Using continuous feedback self-correction loops, your Token learns from outcomes."
-            },
-            {
-                "head": "Compliance",
-                "headDes": "Safeguard your data and workflows with industry-standard encryption"
+                "subHead": "Support & maintain",
+                "headTxt": "Improve",
+                "paraTxt": "We provide ongoing support, contract upgrades, and exchange listing assistance post-launch."
             }
         ]
     },
-    "bentoGridV1": {
-        "title": "What Your Agent Can Do?",
-        "shortDes": "Built with the flexibility to adapt as your business grows, they deliver tangible value from day one.",
+    "table": {
+        "tag": "Understanding the Difference",
+        "title": "Custom Development vs <span class='theme-grad-text'>Template Tokens</span>",
+        "description": "Choosing between custom token development and template-based creation depends on your timeline, budget, and long-term vision.",
+        "content": {
+            "headers": [
+                "Factor",
+                "Template Token",
+                "Custom Development"
+            ],
+            "rows": [
+                {
+                    "Factor": "Time to Launch",
+                    "Template Token": "1–3 days",
+                    "Custom Development": "1–4 weeks"
+                },
+                {
+                    "Factor": "Development Cost",
+                    "Template Token": "$500–$2k",
+                    "Custom Development": "$3.5k–$60k+"
+                },
+                {
+                    "Factor": "Customization",
+                    "Template Token": "Limited",
+                    "Custom Development": "Full control"
+                },
+                {
+                    "Factor": "Security",
+                    "Template Token": "Basic",
+                    "Custom Development": "Audited contracts"
+                },
+                {
+                    "Factor": "Tokenomics",
+                    "Template Token": "Standard",
+                    "Custom Development": "Tailored design"
+                },
+                {
+                    "Factor": "Compliance",
+                    "Template Token": "None",
+                    "Custom Development": "Built-in controls"
+                },
+                {
+                    "Factor": "Long-Term Viability",
+                    "Template Token": "Limited utility",
+                    "Custom Development": "Purpose-built"
+                },
+                {
+                    "Factor": "Best For",
+                    "Template Token": "Testing & MVP",
+                    "Custom Development": "Production projects"
+                }
+            ]
+        },
+        "finalPoint": "Template tokens work for quick testing and MVPs, while custom development is essential for production projects with real users and regulatory requirements."
+    },
+    "cardSectionThree": {
+        "tag": "Business Impact",
+        "title": "Make Tokens <span class='theme-grad-text'>Part of Your Business</span>",
+        "description": "A well-designed token accelerates your entry into the crypto market while providing utility, governance, or value capture mechanisms for your ecosystem.",
         "content": [
             {
-                "image": "/images/png/icon-dummy.png",
-                "head": "Conversational Tokens",
-                "headDes": "Advanced, goal-oriented dialogue systems powered by a master agent/controller go beyond scripted responses. They manage customer support, sales inquiries, onboarding, and troubleshooting using contextual memory, sentiment analysis, and natural language understanding, delivering human-like engagement at scale.",
-                "width": "col-md-6"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Fundraising",
+                "paraTxt": "Raise capital through ICOs, IDOs, or private sales with compliant token structures."
             },
             {
-                "image": "/images/png/icon-dummy.png",
-                "head": "Process Automation Agents",
-                "headDes": "Autonomous systems integration agents that execute repeatable business workflows, from invoice processing to order fulfillment, without human intervention.",
-                "width": "col-md-6 col-xl-4"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "User Incentives",
+                "paraTxt": "Reward users, contributors, and stakeholders with token-based incentive programs."
             },
             {
-                "image": "/images/png/icon-dummy.png",
-                "head": "Predictive Analytics Agents",
-                "headDes": "By using interconnected insights, they empower proactive decision-making and give your business a competitive edge.",
-                "width": "col-md-6 col-xl-3"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Governance",
+                "paraTxt": "Enable community-driven decision-making through token-based voting and proposals."
             },
             {
-                "image": "/images/png/icon-dummy.png",
-                "head": "Multi-Agent Systems",
-                "headDes": "Networks of specialized Tokens collaborating to solve complex, multi-step challenges. This is the power of our multi-agent system development services.",
-                "width": "col-md-6 col-xl-4"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Value Capture",
+                "paraTxt": "Capture protocol value through token appreciation, staking rewards, and fee sharing."
             },
             {
-                "image": "/images/png/icon-dummy.png",
-                "head": "LLM-Powered Agents",
-                "headDes": "Agents built on advanced Large Language Models (Open-source LLMs) capable of reasoning, summarization, code generation",
-                "width": "col-md-12 col-xl-3"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Brand Building",
+                "paraTxt": "Establish your project's identity and community through a native token."
+            },
+            {
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Ecosystem Growth",
+                "paraTxt": "Create network effects and align incentives across users, developers, and partners."
             }
         ]
     },
-    "developProcess": {
-        "title": "Turning Concepts into Production-Ready Agents",
-        "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "cardSectionFour": {
+        "tag": "Our Approach",
+        "title": "We Build Tokens Around <span class='theme-grad-text'>Sustainable Economics</span>",
+        "description": "Our token development is not one-size-fits-all. We tailor every module to align with your use case, compliance needs, and growth strategy.",
         "content": [
             {
-                "head": "Discovery & Goal Mapping",
-                "headDes": "We begin by deeply understanding your business needs, identifying pain points, and defining measurable success. This stage delivers a clear ROI model, a well-defined scope, and agreed-upon success metrics to guide the project from start to finish."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Security by Default",
+                "paraTxt": "Audited smart contracts, secure deployment, and emergency controls to protect token holders."
             },
             {
-                "head": "Design & Prototyping",
-                "headDes": "Next, we bring your Token concept to life with an interactive prototype built on a robust cognitive architecture. This allows you to experience core agentic workflows firsthand, give feedback, and refine features before any production code is written, saving time and reducing risk."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Tokenomics First",
+                "paraTxt": "Sustainable supply, distribution, and utility design for long-term value creation."
             },
             {
-                "head": "AI Model Development",
-                "headDes": "Here, we build and train the intelligence layer of your agent. Using relevant datasets and the right algorithms, we create production-ready AI models, secure APIs, and connectors designed for seamless integration and future scalability."
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Compliance Ready",
+                "paraTxt": "Built-in KYC/AML, transfer restrictions, and regulatory controls for security tokens."
             },
             {
-                "head": "Integration & Testing",
-                "headDes": "We connect your Token with your existing systems, CRM, ERP, billing, and analytics, which can run through rigorous testing. This ensures optimal performance, security, and reliability under real-world conditions before launch."
-            },
-            {
-                "head": "Deployment & Training",
-                "headDes": "Your Token is rolled out in a controlled, low-risk canary deployment. We provide in-depth training for your team, along with detailed runbooks to ensure smooth day-to-day operation and issue handling."
-            },
-            {
-                "head": "Ongoing Optimization & Scaling",
-                "headDes": "Post-launch, we continuously monitor performance, run A/B tests, and retrain with embedding models to keep them accurate and effective. We also provide performance SLAs and help you scale the system as your needs grow."
-            }
-        ]
-    },
-    "bulletPoint": {
-        "title": "Strategic Business Benefits of Custom Tokens",
-        "shortDes": "Tangible outcomes startups and scaleups can expect when deploying custom Tokens",
-        "content": [
-            {
-                "head": "Efficiency Gains",
-                "headDes": "Automate 60–80% of repetitive workflows, freeing your team to focus on high-value, strategic tasks instead of manual busywork."
-            },
-            {
-                "head": "Revenue Growth",
-                "headDes": "Boost pipeline velocity with smarter lead scoring, faster qualification, and AI-driven follow-ups that improve close rates."
-            },
-            {
-                "head": "Customer Delight",
-                "headDes": "Deliver personalized, always-on experiences that increase customer retention, boost NPS, and turn buyers into brand advocates."
-            },
-            {
-                "head": "Cost Reduction",
-                "headDes": "Reduce operational overhead by streamlining multi-step processes and minimizing unnecessary manual interventions, while ensuring efficient cost management (token usage)."
-            },
-            {
-                "head": "Scalability",
-                "headDes": "Effortlessly handle demand spikes without adding headcount, keeping growth sustainable and predictable."
-            }
-        ]
-    },
-    "leftImg": {
-        "title": "How Smart AI Supercharged Operations, Conversions, and Efficiency",
-        "subTitle": "Real-World Wins",
-        "image": "/images/png/latest-product.png",
-        "width": "600",
-        "height": "600",
-        "content": [
-            {
-                "head": "Retail:Cutting Through Costs, AI-Powered Returns that Delight and Deliver",
-                "headDes": "Major retailers leveraging AI-powered returns triage cut support costs by 42%, shrinking returns processing from nearly a week to less than a day. Automated AI categorization, with semantic search using anthropic Claude tool for instant customer communication"
-            },
-            {
-                "head": "Fintech:Conversational AI, The Secret Sauce to Skyrocketing Leads to Conversions",
-                "headDes": "Forward-looking fintech teams harnessed proactive Tokens powered by Google Gemini function calling to boost lead-to-conversion rates by 28%.and automatically schedule demos, they achieved a 60% increase in sales-qualified leads"
-            },
-            {
-                "head": "Healthcare:Accelerating Patient Intake, From Hours to Minutes",
-                "headDes": "A leading healthcare network reduced manual patient intake processing time by 65% in just 90 days.The new intake system also demonstrated reliability, smoothly handling high-volume event registrations"
-            }
-        ]
-    },
-    "lastSection": {
-        "title": "What Makes company Technologies Stand Out in Token Development?",
-        "shortDes": "Delivering transformational business outcomes is our standard as an AI solution provider. That’s why innovative enterprises trust company Technologies as their top choice for an AI partnership.",
-        "content": [
-            {
-                "head": "Data Science",
-                "headDes": "Our teams consist of senior machine learning development engineers, experienced product designers, and cross-functional experts "
-            },
-            {
-                "head": "Secure",
-                "headDes": "With privacy-by-design baked into our workflows, you get end-to-end security and robust audit trails"
-            },
-            {
-                "head": "Flexible Models",
-                "headDes": "Choose the partnership that fits your needs: targeted projects with clear deliverables and retainer-based advisory"
+                "width": "col-md-6 col-xl-4",
+                "headTxt": "Multi-Chain Support",
+                "paraTxt": "Deploy across Ethereum, Layer 2s, BNB Chain, Solana, and other chains for broader reach."
             }
         ]
     },
     "faq": {
-        "title": "We've Got Answer.",
-        "subTitle": "Questions?",
+        "title": "Frequently Asked Questions <span class='theme-grad-text'>About Token Development</span>",
+        "subTitle": "FAQ",
         "qnsAns": [
             {
-                "qns": "1. How much does it cost to build a crypto exchange?",
-                "ans": "The cost depends on features, security layers, and customization. A basic white-label exchange is more affordable, while a fully customized platform with advanced security and liquidity options requires higher investment. We provide flexible pricing to suit startups and enterprises."
+                "qns": "1. What is token development?",
+                "ans": "The process of creating cryptocurrency tokens with custom smart contracts, tokenomics, and features on blockchain networks like Ethereum, BNB Chain, Solana, and others."
             },
             {
-                "qns": "2. How long does it take to launch a crypto exchange?",
-                "ans": "A white-label crypto exchange can be launched within a few weeks. A fully custom-built exchange with unique features may take 3–6 months depending on complexity."
+                "qns": "2. How much does it cost to create a token?",
+                "ans": "Template tokens cost $500–$2k. Custom utility tokens range from $3.5k–$15k. Complex tokens with staking, governance, or compliance can cost $20k–$60k+ depending on features."
             },
             {
-                "qns": "3. Is your crypto exchange solution secure?",
-                "ans": "Yes, we follow industry-best practices like two-factor authentication (2FA), cold wallet storage, DDoS protection, encryption protocols, and regular security audits to keep your exchange safe."
+                "qns": "3. How long does token development take?",
+                "ans": "Template tokens: 1–3 days. Custom tokens: 1–4 weeks depending on complexity, audits, and multi-chain deployment."
             },
             {
-                "qns": "4. Do you offer both centralized and decentralized exchange development?",
-                "ans": "Yes. We build centralized exchanges (CEX) with high-speed order books as well as decentralized exchanges (DEX) that prioritize transparency and user control."
+                "qns": "4. Is the token secure?",
+                "ans": "Yes. Professional development includes security audits, verified contracts, and best practices to protect token holders and prevent exploits."
             },
             {
-                "qns": "5. Do you provide ongoing support and maintenance?",
-                "ans": "Absolutely. Our services don’t stop after deployment. We provide 24/7 technical support, regular updates, and scalability improvements to keep your platform running smoothly."
+                "qns": "5. Can I customize the token?",
+                "ans": "Absolutely. Custom development provides full control over tokenomics, features like staking/vesting, and compliance controls."
+            },
+            {
+                "qns": "6. Which blockchains are supported?",
+                "ans": "We develop tokens on Ethereum (ERC-20), BNB Chain (BEP-20), Solana (SPL), Polygon, Tron, and 20+ other blockchains."
+            },
+            {
+                "qns": "7. Do you provide tokenomics design?",
+                "ans": "Yes. We offer tokenomics consulting including supply, distribution, vesting, incentives, and sustainability analysis."
+            },
+            {
+                "qns": "8. What ongoing support is provided?",
+                "ans": "We provide contract verification, exchange listing support, liquidity setup, documentation, and post-launch maintenance."
             }
         ],
-        "ctaHead": "Need More Help?",
-        "ctaDes": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'",
-        "ctaBtnTxt": "Contact us"
-    },
-    "relatedPage": {
-        "title": "Explore It",
-        "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "links": [
-            {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            },
-            {
-                "linkTxt": "AI ChatBot Development",
-                "link": "/",
-                "linkContent": "It is a long established fact that a reader will be distracted by the readable content."
-            }
-        ]
+        "ctaHead": "Ready to Launch Your Token?",
+        "ctaDes": "Tell us your requirements. We'll recommend the right tokenomics, blockchain, and features for your project.",
+        "ctaBtnTxt": "Discuss Your Token Project"
     }
 }
