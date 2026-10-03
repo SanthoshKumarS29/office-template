@@ -1,0 +1,99 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Officesite – AI & Blockchain Development",
+    "identifier": "did:web:office-template.onrender.com",
+    "documentationUrl": "https://office-template.onrender.com/"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:office-template.onrender.com:company:main",
+      "displayName": "AI & Blockchain Development Company",
+      "type": "company",
+      "url": "https://office-template.onrender.com/",
+      "description": "We build intelligent AI solutions and secure blockchain platforms including crypto exchanges, DeFi, wallets, NFT marketplaces, and custom AI chatbots/agents.",
+      "tags": ["ai-development", "blockchain", "web3", "crypto", "chatbot", "defi"],
+      "representativeQueries": [
+        "find an AI and blockchain development company",
+        "hire developers for crypto exchange",
+        "custom AI chatbot development services",
+        "build a DeFi platform or NFT marketplace"
+      ]
+    },
+    {
+      "identifier": "urn:air:office-template.onrender.com:service:ai-chatbot",
+      "displayName": "AI Chatbot Development",
+      "type": "service",
+      "url": "https://office-template.onrender.com/services/ai-chatbot-development",
+      "description": "Custom AI chatbots for customer support, sales, lead generation, and internal knowledge with real-time analytics.",
+      "tags": ["ai-chatbot", "conversational-ai", "customer-support"],
+      "representativeQueries": [
+        "build a custom AI chatbot for my business",
+        "AI chatbot for customer support and lead generation",
+        "enterprise chatbot development"
+      ]
+    },
+    {
+      "identifier": "urn:air:office-template.onrender.com:service:crypto-exchange",
+      "displayName": "Crypto Exchange Development",
+      "type": "service",
+      "url": "https://office-template.onrender.com/services/crypto-exchange-development",
+      "description": "Custom centralized (CEX), decentralized (DEX), hybrid, and P2P cryptocurrency exchange development with matching engine, wallets, KYC/AML, and liquidity.",
+      "tags": ["crypto-exchange", "cex", "dex", "trading-platform"],
+      "representativeQueries": [
+        "develop a custom crypto exchange",
+        "build a centralized or decentralized exchange",
+        "crypto exchange development company"
+      ]
+    },
+    {
+      "identifier": "urn:air:office-template.onrender.com:service:defi",
+      "displayName": "DeFi Development",
+      "type": "service",
+      "url": "https://office-template.onrender.com/services/defi-development-service",
+      "description": "Decentralized finance platforms for lending, staking, trading, yield farming, and liquidity pools.",
+      "tags": ["defi", "lending", "staking", "yield-farming"],
+      "representativeQueries": [
+        "build a DeFi lending or staking platform",
+        "DeFi development services"
+      ]
+    },
+    {
+      "identifier": "urn:air:office-template.onrender.com:service:wallet",
+      "displayName": "Crypto Wallet Development",
+      "type": "service",
+      "url": "https://office-template.onrender.com/services/crypto-wallet-development",
+      "description": "Secure cryptocurrency wallet solutions for storing, sending, and managing digital assets.",
+      "tags": ["crypto-wallet", "web3-wallet"],
+      "representativeQueries": [
+        "develop a crypto wallet",
+        "custom cryptocurrency wallet development"
+      ]
+    },
+    {
+      "identifier": "urn:air:office-template.onrender.com:products:hub",
+      "displayName": "Blockchain & AI Products",
+      "type": "product",
+      "url": "https://office-template.onrender.com/products",
+      "description": "Ready-to-deploy products including crypto exchange scripts, payment gateway clones, wallet clone scripts, and Move-to-Earn games.",
+      "tags": ["white-label", "crypto-script", "products"],
+      "representativeQueries": [
+        "buy crypto exchange script",
+        "white-label crypto wallet or payment gateway"
+      ]
+    },
+    {
+      "identifier": "urn:air:office-template.onrender.com:contact:form",
+      "displayName": "Contact / Project Inquiry",
+      "type": "contact",
+      "url": "https://office-template.onrender.com/contact-us",
+      "description": "Get in touch to discuss AI, blockchain, crypto exchange, chatbot, or Web3 projects. We reply within 24 hours.",
+      "tags": ["contact", "inquiry", "lead"],
+      "representativeQueries": [
+        "contact AI blockchain development company",
+        "request a quote for crypto exchange or AI chatbot",
+        "discuss my blockchain project"
+      ]
+    }
+  ]
+}
