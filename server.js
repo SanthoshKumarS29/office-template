@@ -33,6 +33,14 @@ app.set("views", [
 // static folder
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use(
+  "/.well-known",
+  express.static(path.join(__dirname, "public", ".well-known"), {
+    dotfiles: "allow"
+  })
+);
+
+
 // middleware
 app.use(loadJson(['nav']));
 app.use(dynamicSidebarRender);
