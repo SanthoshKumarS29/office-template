@@ -1,7 +1,6 @@
 User-agent: *
 
 Allow: /
-Agentmap: https://office-template.onrender.com/.well-known/ai-catalog.json
 
 Disallow: /admin/
 
