@@ -3,7 +3,133 @@
 <head>
     <%- include('../../components/partials/headMeta.ejs') %>
     <%- include('../../components/partials/headLinks.ejs') %>
-    <link rel="stylesheet" href="/css/hubpage.css">
+    <style>
+        .status-screen {
+            min-height: min(72vh, 760px);
+            display: grid;
+            place-items: center;
+            padding: clamp(2.5rem, 7vw, 5.5rem) 1rem;
+        }
+
+        .status-card {
+            position: relative;
+            isolation: isolate;
+            width: min(100%, 760px);
+            overflow: hidden;
+            padding: clamp(2.25rem, 7vw, 4.75rem) clamp(1.25rem, 5vw, 3.5rem);
+            border: 1px solid rgba(25, 118, 210, .12);
+            border-radius: 1.5rem;
+            background: linear-gradient(145deg, #fff 30%, #f5f8fc 100%);
+            text-align: center;
+        }
+
+        .status-card::before,
+        .status-card::after {
+            position: absolute;
+            z-index: -1;
+            content: "";
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .status-card::before {
+            top: -9rem;
+            right: -7rem;
+            width: 18rem;
+            height: 18rem;
+            background: var(--grad-clr-o-lig);
+        }
+
+        .status-card::after {
+            bottom: -12rem;
+            left: -9rem;
+            width: 20rem;
+            height: 20rem;
+            border: 1px solid rgba(25, 118, 210, .12);
+        }
+
+        .status-icon {
+            display: grid;
+            width: clamp(5.5rem, 18vw, 7rem);
+            aspect-ratio: 1;
+            place-items: center;
+            margin: 0 auto 1.75rem;
+            border: 1px solid rgba(25, 118, 210, .16);
+            border-radius: 50%;
+            background: var(--grad-clr-o-lig);
+            color: var(--blue-clr);
+            box-shadow: 0 14px 36px rgba(25, 118, 210, .12);
+        }
+
+        .status-icon svg {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .status-eyebrow {
+            margin: 0 0 .65rem;
+            color: var(--blue-clr);
+            font-family: "PoppinsLocal", sans-serif;
+            font-size: .78rem;
+            font-weight: 600;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+        }
+
+        .status-title {
+            margin: 0;
+            color: var(--dark-blue);
+            font-family: "RobotoLocal", sans-serif;
+            font-size: clamp(2rem, 6vw, 3rem);
+            font-weight: 700;
+            line-height: 1.15;
+        }
+
+        .status-copy {
+            max-width: 34rem;
+            margin: 1rem auto 1.75rem;
+            color: var(--grey-clr2);
+            font-family: "PoppinsLocal", sans-serif;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .status-home-link {
+            display: inline-flex;
+            min-height: 3rem;
+            align-items: center;
+            justify-content: center;
+            gap: .6rem;
+            padding: .75rem 1.35rem;
+            border: 1px solid var(--blue-clr);
+            border-radius: .5rem;
+            background: var(--blue-clr);
+            color: var(--white-clr);
+            font-family: "PoppinsLocal", sans-serif;
+            font-size: .95rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color .2s ease, box-shadow .2s ease, transform .2s ease;
+        }
+
+        .status-home-link:hover {
+            transform: translateY(-2px);
+            background: #1265b8;
+            color: var(--white-clr);
+            box-shadow: 0 10px 24px rgba(25, 118, 210, .24);
+        }
+
+        .status-home-link:focus-visible {
+            outline: 3px solid var(--orange-clr);
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .status-home-link {
+                transition: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,10 +140,22 @@
             <%- include('../../components/partials/sideBar.ejs') %>
         </aside>    
         <div class="custom-container">
-            <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-center gap-2 py-5 py-md-0 my-5 my-md-0">
-                <h1 class="display-1">Thank You</h1>
-                <a href="/" class="btn btn-primary">Back to Home</a>
-            </div>
+            <section class="status-screen" aria-labelledby="success-title">
+                <div class="status-card">
+                    <div class="status-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12.5L9.2 16.5L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <p class="status-eyebrow">Submission complete</p>
+                    <h1 class="status-title" id="success-title">Thank you!</h1>
+                    <p class="status-copy">Your submission has been received. Our team will be in touch with you soon.</p>
+                    <a href="/" class="status-home-link">
+                        Back to home
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+            </section>
         </div>
     </main>
     <footer class="custom-container border-1 border-top">

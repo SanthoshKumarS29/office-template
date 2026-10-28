@@ -30,9 +30,9 @@ export const validate = (data, rules) => {
             errors[field] = `${field} cannot exceed ${validation.max} characters`;
         }
 
-        if (validation.numeric && isNaN(value)) {
-            errors[field] = `${field} must be a number`;
-        }
+        // if (validation.numeric && isNaN(value)) {
+        //     errors[field] = `${field} must be a number`;
+        // }
 
         if (validation.regex && !validation.regex.test(value)) {
             errors[field] = `${field} format is invalid`;
